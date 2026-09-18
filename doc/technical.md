@@ -38,4 +38,4 @@ React 18、TypeScript、Vite 8；RPG-JS 5 beta / CanvasEngine 负责真实角色
 
 ## 当前验证边界
 
-`npm run build`、`npm test`、技能包的 `validate-world` 与 `verify-space` 已通过；真实浏览器已完成居所 → 走廊 → 服务点 → 选择保留 → 原路返回 → 刷新 → 回访，并在独立测试 origin 验证错误假设可改选、借出二次确认、借出后的返家回访。390×844 与 320×568 已检查纵横溢出、地图裁切与窄屏条款滚动。仍需新玩家试读；`comprehension unverified`，自动路线不能证明玩家已经理解世界观。试玩中的代码类型适配把冻结 StoryCartridge 的三项固定 stat 元组改为数组，使本切片可合法使用零数值 HUD；此变更已回写技能试用记录，不能默认为所有旧游戏已支持零数值。
+`npm run build`、`npm test`、技能包的 `validate-world` 与 `verify-space` 已通过；另在独立临时克隆中执行 `npm ci`、构建和测试成功，确认项目不依赖当前工作区的 `node_modules` 软链接。真实浏览器已完成居所 → 走廊 → 服务点 → 选择保留 → 原路返回 → 刷新 → 回访，并在独立测试 origin 验证错误假设可改选、借出二次确认、借出后的返家回访。390×844 与 320×568 已检查纵横溢出、地图裁切与窄屏条款滚动。仍需新玩家试读；`comprehension unverified`，自动路线不能证明玩家已经理解世界观。试玩中的代码类型适配把冻结 StoryCartridge 的三项固定 stat 元组改为数组，使本切片可合法使用零数值 HUD；此变更已回写技能试用记录，不能默认为所有旧游戏已支持零数值。
