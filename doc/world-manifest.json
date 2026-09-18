@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "world": {
+    "width": 384,
+    "height": 512,
+    "step": 4
+  },
+  "actor": {
+    "width": 9,
+    "height": 15
+  },
+  "assets": [
+    {
+      "id": "home",
+      "path": "public/art/home.png",
+      "imageWidth": 384,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 384,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "hall",
+      "path": "public/art/hall.png",
+      "imageWidth": 384,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 384,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "path": "public/art/service.png",
+      "imageWidth": 384,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 384,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "hero",
+      "path": "public/art/hero.png",
+      "imageWidth": 96,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 64,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 32,
+          "y": 32,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 64,
+          "y": 32,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 0,
+          "y": 64,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 32,
+          "y": 64,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 64,
+          "y": 64,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 0,
+          "y": 96,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 32,
+          "y": 96,
+          "w": 32,
+          "h": 32
+        },
+        {
+          "x": 64,
+          "y": 96,
+          "w": 32,
+          "h": 32
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "home",
+      "background": "home",
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 190,
+        "y": 366
+      },
+      "obstacles": [
+        {
+          "x": 90,
+          "y": 190,
+          "w": 56,
+          "h": 30
+        },
+        {
+          "x": 239,
+          "y": 198,
+          "w": 38,
+          "h": 22
+        }
+      ],
+      "targets": [
+        {
+          "id": "voice-box",
+          "approach": {
+            "x": 118,
+            "y": 248
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "receipt",
+          "approach": {
+            "x": 260,
+            "y": 251
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "home-door",
+          "approach": {
+            "x": 187,
+            "y": 115
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hall",
+      "background": "hall",
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 90,
+        "y": 190
+      },
+      "obstacles": [
+        {
+          "x": 126,
+          "y": 230,
+          "w": 18,
+          "h": 20
+        },
+        {
+          "x": 251,
+          "y": 252,
+          "w": 18,
+          "h": 20
+        }
+      ],
+      "targets": [
+        {
+          "id": "home-return",
+          "approach": {
+            "x": 82,
+            "y": 169
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "neighbor",
+          "approach": {
+            "x": 133,
+            "y": 256
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "caretaker",
+          "approach": {
+            "x": 244,
+            "y": 279
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "seal",
+          "approach": {
+            "x": 257,
+            "y": 204
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "service-door",
+          "approach": {
+            "x": 290,
+            "y": 376
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service",
+      "background": "service",
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 187,
+        "y": 380
+      },
+      "obstacles": [
+        {
+          "x": 177,
+          "y": 193,
+          "w": 22,
+          "h": 25
+        },
+        {
+          "x": 88,
+          "y": 246,
+          "w": 50,
+          "h": 29
+        },
+        {
+          "x": 251,
+          "y": 246,
+          "w": 58,
+          "h": 35
+        }
+      ],
+      "targets": [
+        {
+          "id": "clerk",
+          "approach": {
+            "x": 178,
+            "y": 242
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "ledger",
+          "approach": {
+            "x": 117,
+            "y": 291
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "choice-desk",
+          "approach": {
+            "x": 252,
+            "y": 302
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "service-exit",
+          "approach": {
+            "x": 185,
+            "y": 397
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    }
+  ],
+  "portals": [
+    {
+      "id": "to-hall",
+      "from": "home",
+      "to": "hall",
+      "arrival": {
+        "x": 90,
+        "y": 190
+      }
+    },
+    {
+      "id": "to-home",
+      "from": "hall",
+      "to": "home",
+      "arrival": {
+        "x": 184,
+        "y": 130
+      }
+    },
+    {
+      "id": "to-service",
+      "from": "hall",
+      "to": "service",
+      "arrival": {
+        "x": 187,
+        "y": 380
+      }
+    },
+    {
+      "id": "service-to-hall",
+      "from": "service",
+      "to": "hall",
+      "arrival": {
+        "x": 286,
+        "y": 349
+      }
+    }
+  ]
+}
