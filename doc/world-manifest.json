@@ -189,6 +189,19 @@
           ]
         },
         {
+          "id": "breakfast-card",
+          "approach": {
+            "x": 113,
+            "y": 352
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
           "id": "home-door",
           "approach": {
             "x": 187,
@@ -284,6 +297,19 @@
           ]
         },
         {
+          "id": "hall-notice",
+          "approach": {
+            "x": 113,
+            "y": 149
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
           "id": "service-door",
           "approach": {
             "x": 290,
@@ -359,10 +385,36 @@
           ]
         },
         {
+          "id": "terms-card",
+          "approach": {
+            "x": 274,
+            "y": 174
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
           "id": "choice-desk",
           "approach": {
             "x": 252,
             "y": 302
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "preview-screen",
+          "approach": {
+            "x": 281,
+            "y": 365
           },
           "states": [
             "static"

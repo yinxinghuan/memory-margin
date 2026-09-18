@@ -16,3 +16,10 @@
 .mm-confirm p{margin:0 0 10px;font-size:13px}
 .mm-confirm button{min-height:44px;margin-right:8px;border:1px solid #aebdb7;background:#263c43;color:#e8ebe3;padding:0 13px}
 .mm-confirm button:first-of-type{background:#e2ad68;color:#152a37;border-color:#e2ad68;font-weight:600}
+.mm-prop[data-kind="preview-on"]>span{background:repeating-linear-gradient(90deg,#69c4c5 0 3px,#284957 3px 6px);border-color:#8abbb4}
+.mm-prop[data-kind="preview-off"]>span{background:#233941;border-color:#687a7a;box-shadow:inset 0 0 0 3px #142b35,3px 3px 0 #142733}
+.mm-prop[data-kind="preview-traced"]>span{background:linear-gradient(90deg,#233941 0 70%,#e2ad68 70%);border-color:#a8a386}
+.mm-prop[data-kind="preview-off"]::after,.mm-prop[data-kind="preview-traced"]::after{content:"";position:absolute;width:80%;height:2px;background:#b6c5bb;transform:rotate(-30deg)}
+.mm-closeup[data-kind="preview-on"] .mm-closeup-symbol{border-color:#69c4c5}
+.mm-closeup[data-kind="preview-off"] .mm-closeup-symbol{background:#233941;border-color:#687a7a}
+.mm-closeup[data-kind="preview-traced"] .mm-closeup-symbol{background:#4b5450;border-color:#e2ad68}

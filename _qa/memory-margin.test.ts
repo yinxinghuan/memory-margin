@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {initialHead,resolveAction,type Head} from '../src/journey'
+import {initialHead,migrateHead,resolveAction,type Head} from '../src/journey'
 import {entities,type EntityId} from '../src/world'
 
 function step(head:Head,entity:EntityId,action:string){
@@ -53,4 +53,50 @@ test('lending retains the gap, survives return route, and prevents the other cho
  head=step(head,'service-exit','service-to-hall').head
  head=step(head,'home-return','to-home').head
  assert.match(step(head,'voice-box','revisit-voice').text,/借用中/)
+})
+
+function toPreview(choice:'choose-keep'|'choose-lend'){
+ let head=step(evidenceRoute(),'choice-desk','compare-records').head
+ head=step(head,'choice-desk',choice).head
+ head=step(head,'service-exit','service-to-hall').head
+ head=step(head,'home-return','to-home').head
+ head=step(head,'voice-box','revisit-voice').head
+ head=step(head,'home-door','to-hall').head
+ head=step(head,'neighbor','ask-neighbor-preview').head
+ head=step(head,'service-door','to-service').head
+ head=step(head,'preview-screen','read-preview-log').head
+ head=step(head,'clerk','confront-clerk-preview').head
+ return head
+}
+
+test('kept memory can stop unauthorized preview and neighbor sees the result',()=>{
+ let head=toPreview('choose-keep')
+ assert.throws(()=>resolveAction(head,{id:crypto.randomUUID(),version:head.version,scene:'service',entity:'preview-screen',action:'debrief-neighbor',position:entities['preview-screen'].approach}),/ACTION_OUTSIDE_CONTRACT/)
+ head=step(head,'preview-screen','stop-preview').head
+ assert.equal(head.save.facts.previewStopped,true)
+ const trace=resolveAction(head,{id:crypto.randomUUID(),version:head.version,scene:'service',entity:'preview-screen',action:'trace-preview',position:entities['preview-screen'].approach})
+ assert.equal(trace.accepted,false)
+ head=step(head,'service-exit','service-to-hall').head
+ assert.match(step(head,'neighbor','debrief-neighbor').text,/黑下来的窗口/)
+})
+
+test('lent memory can trade one more playback for a listener account',()=>{
+ let head=toPreview('choose-lend')
+ head=step(head,'preview-screen','trace-preview').head
+ assert.equal(head.save.facts.previewTraced,true)
+ assert.match(head.save.blocks.at(-1)?.text??'',/C-09/)
+ head=step(head,'service-exit','service-to-hall').head
+ assert.match(step(head,'neighbor','debrief-neighbor').text,/C-09/)
+})
+
+test('a saved first-arc journey gains new facts without losing its earlier choice',()=>{
+ let head=step(evidenceRoute(),'choice-desk','compare-records').head
+ head=step(head,'choice-desk','choose-keep').head
+ const old={...head,save:{...head.save,facts:Object.fromEntries(Object.entries(head.save.facts).filter(([id])=>!['previewLogRead','previewStopped','neighborPreview'].includes(id)))}}
+ const migrated=migrateHead(old)
+ assert.equal(migrated.version,head.version)
+ assert.equal(migrated.save.facts.kept,true)
+ assert.equal(migrated.save.facts.previewLogRead,false)
+ assert.equal(migrated.save.facts.previewStopped,false)
+ assert.equal(migrateHead(migrated),migrated)
 })

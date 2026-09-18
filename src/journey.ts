@@ -1,4 +1,4 @@
-import {initialStory,applyAction,type StorySave,type Locale,t} from './story'
+import {initialStory,applyAction,migrateStorySave,type StorySave,type Locale,t} from './story'
 import {entities,portals,type EntityId,type Scene,world} from './world'
 import {walkable,type Point} from './spatial/world'
 
@@ -7,7 +7,9 @@ export type Action={id:string;version:number;scene:Scene;entity:EntityId;action:
 export type Result={head:Head;text:string;accepted:boolean}
 
 export function initialHead(locale:Locale):Head{return {version:0,scene:'home',position:{...world.scenes.home.spawn},save:initialStory(locale)}}
+export function migrateHead(head:Head):Head{const save=migrateStorySave(head.save);return save===head.save?head:{...head,save}}
 export function resolveAction(head:Head,request:Action):Result{
+ head=migrateHead(head)
  if(!/^[\w-]{16,80}$/.test(request.id))throw new Error('INVALID_ACTION_ID')
  if(request.version!==head.version)throw new Error('VERSION_CONFLICT')
  const entity=entities[request.entity]

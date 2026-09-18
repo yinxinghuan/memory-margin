@@ -9,20 +9,20 @@ React 18、TypeScript、Vite 8；RPG-JS 5 beta / CanvasEngine 负责真实角色
 ## 2. 目录结构
 
 - `src/world.ts`：稳定场景、实体、接近点、障碍和双向转场的唯一空间清单。
-- `src/story.ts`：转生者的固定作者章节、条件、事实、资料、两种选择、回访文本和目标。
+- `src/story.ts`：转生者的固定作者章节、条件、事实、两轮选择、回访文本、目标和新增事实默认值。
 - `src/journey.ts`：把客户端请求校验后交给叙事 reducer，成功时由权威结果决定场景和落点。
 - `src/storage.ts` / `src/pending-journey.ts`：按部署 session 隔离的 IndexedDB head、幂等行动回执和待确认行动恢复。
 - `src/spatial/`：从技能包装配的碰撞、寻路、距离步态、RPG-JS 适配和存储命名空间。
-- `src/main.tsx` / `src/style.css`：地图操作、双语界面、人物首次可见、资料放大、三来源对照、选择确认和窄屏布局。
+- `src/main.tsx` / `src/style.css`：地图操作、双语界面、人物首次可见、资料放大、三来源对照、两次选择确认、预览屏状态和窄屏布局。
 - `src/art.ts`、`scripts/export-world.ts`、`public/art/`、`public/map/`：当前诊断图集、地图与同源导出。
 - `doc/world-manifest.json`：从实际 `world` 导出的场景/目标/转场/素材清单，供技能校验器检查。
-- `_qa/memory-margin.test.ts`：保留和借出两条权威路径及错误动作不消耗版本。
+- `_qa/memory-margin.test.ts`：保留/借出、停止/追查预览的权威路径、错误动作不消耗版本与旧档事实兼容。
 
 ## 3. 核心模块
 
-**状态和行动。** `StorySave` 是剧情事实唯一权威；空间层不另存一套剧情。`Head` 组合 StorySave、场景、位置和版本。物件行动必须来自当前场景的实体动作清单，且请求落点可行、靠近该实体。成功行动写入 IndexedDB 的同一事务；相同 ID 返回历史回执，恢复时再读取最新 head，避免旧回执覆盖后续进度。只读资料放大和未提交的推理候选不改变权威状态。
+**状态和行动。** `StorySave` 是剧情事实唯一权威；空间层不另存一套剧情。`Head` 组合 StorySave、场景、位置和版本。物件行动必须来自当前场景的实体动作清单，且请求落点可行、靠近该实体。成功行动写入 IndexedDB 的同一事务；相同 ID 返回历史回执，恢复时再读取最新 head，避免旧回执覆盖后续进度。新事实采用补默认值迁移：旧旅程保留第一轮选择、位置、版本与历史回执，缺失的第二轮事实补为未发生；迁移在读取 head 和新行动入站时均执行。只读资料放大和未提交的推理候选不改变权威状态。
 
-**地图和渲染。** `world.ts` 的尺寸为 384×512，角色碰撞脚底占地 9×15，步进 4。`scripts/export-world.ts` 依同一清单生成 Tiled 碰撞层和 manifest。`createRpgSpace` 在真实 RPG-JS 中移动与转场；前端只在权威 action 成功后调用 `restore(scene, position)`。地图裁切使用 `overflow: clip`，防止浏览器聚焦热点时将引擎 canvas 和背景一同内部滚动。
+**地图和渲染。** `world.ts` 的尺寸为 384×512，角色碰撞脚底占地 9×15，步进 4。三图现有 16 个可接近目标，第二轮复用原地图并新增生活物件与窗口预览屏。`scripts/export-world.ts` 依同一清单生成 Tiled 碰撞层和 manifest。`createRpgSpace` 在真实 RPG-JS 中移动与转场；前端只在权威 action 成功后调用 `restore(scene, position)`。地图裁切使用 `overflow: clip`，防止浏览器聚焦热点时将引擎 canvas 和背景一同内部滚动。预览屏的亮起、熄灭和账户标记只消费权威事实。
 
 **适配和输入。** 键盘 WASD/方向键、触屏摇杆及点击地面寻路共用空间适配器。点击物件先走到接近点，再开放明确操作。普通列表和资料按钮用 click；对话及资料面板可滚动。390×844 与 320×568 采用不同可用地图高度，普通 UI 自身重排；平台内构图不为外部访客栏留空。
 
@@ -38,4 +38,4 @@ React 18、TypeScript、Vite 8；RPG-JS 5 beta / CanvasEngine 负责真实角色
 
 ## 当前验证边界
 
-`npm run build`、`npm test`、技能包的 `validate-world` 与 `verify-space` 已通过；另在独立临时克隆中执行 `npm ci`、构建和测试成功，确认项目不依赖当前工作区的 `node_modules` 软链接。真实浏览器已完成居所 → 走廊 → 服务点 → 选择保留 → 原路返回 → 刷新 → 回访，并在独立测试 origin 验证错误假设可改选、借出二次确认、借出后的返家回访。390×844 与 320×568 已检查纵横溢出、地图裁切与窄屏条款滚动。仍需新玩家试读；`comprehension unverified`，自动路线不能证明玩家已经理解世界观。试玩中的代码类型适配把冻结 StoryCartridge 的三项固定 stat 元组改为数组，使本切片可合法使用零数值 HUD；此变更已回写技能试用记录，不能默认为所有旧游戏已支持零数值。
+`npm run build`、`npm test`、技能包的 `validate-world` 与 `verify-space` 已通过；另在独立临时克隆中执行 `npm ci`、构建和测试成功，确认项目不依赖当前工作区的 `node_modules` 软链接。真实浏览器此前完成居所 → 走廊 → 服务点 → 保留或借出 → 原路返回 → 刷新 → 回访；本轮在隔离端口的旧进度上继续，走通早餐便条、走廊告示、邻居证词、六秒记录放大、窗口对质、关闭预览和跨场景回访。另一独立端口从新档走完借出 → 返家 → 六秒追查 C-09 → 邻居回访 → 刷新恢复。第二轮两种选择都已在浏览器操作。390×844 与 320×568 已检查无页面横向溢出；320×568 下两次知情选择的条款和确认均可滚动、点击。仍需新玩家试读；`comprehension unverified`，自动路线不能证明玩家已经理解世界观。试玩中的代码类型适配把冻结 StoryCartridge 的三项固定 stat 元组改为数组，使本切片可合法使用零数值 HUD；此变更已回写技能试用记录，不能默认为所有旧游戏已支持零数值。
