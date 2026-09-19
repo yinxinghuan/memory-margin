@@ -13,7 +13,9 @@ npm run assets
 npm run dev
 ```
 
-试玩入口 `http://127.0.0.1:5212/`；非正式剧情的大场景评审入口为 `http://127.0.0.1:5212/?large_scene=1`，用户新房间高保真入口为 `http://127.0.0.1:5212/?generated_room=1`，静态碰撞骨架入口为 `?generated_room=1&room_phase=shell`，真实平台任务逐槽位恢复入口为 `?generated_room=1&room_phase=live&reset_room_media=1`。`npm run build` 检查 TypeScript 并生成 `dist/`；`npm test` 验证两轮选择、返回路线、四向门槛触发、两段式互动焦点、客户端/权威接近边界、第五套主题映射、两场景氛围家具碰撞、大场景五区连通、生成房间功能点可达、媒体刷新恢复/失败隔离与旧档事实迁移。更改 `src/world.ts`、`src/art.ts`、`src/large-scene-world.ts`、`assets/large-scene-generation-plan.json` 或墙段装配后须重新运行 `npm run assets`，让真实地图、动态细节包、素材与投影比例清单同时更新；随后运行 `python ../.agents/skills/build-spatial-story-game/scripts/audit-projected-art.py assets/projection-audit.json --root .` 检查人物、墙面与物件比例，运行 `python ../.agents/skills/build-spatial-story-game/scripts/audit-hero-sheet.py assets/hero-v7-assembly.json --root .` 检查主角逐帧来源与锚点，并运行 `node ../.agents/skills/build-spatial-story-game/scripts/validate-world.mjs doc/world-manifest.json .` 检查门槛、激活区和转场落点。新素材生成速度和一次成型率见 `doc/asset-generation-benchmark.md`；从功能描述到高保真房间的 9分41秒实测及渐进进入、真实媒体回调复验见 `doc/generated-room-benchmark.md`。当前独立交付包为 `deliverables/build-spatial-story-game-v1.38-trial.zip`：v1.35 的隔离试验先暴露媒体客户端、附近回调、寻路和坐标锚点四项缺口；v1.36 已由同一独立题材复验四项修复，v1.37 加入主角 P0 准入门禁，v1.38 又固化完整高度侧墙、统一等比定位、门洞裁切和禁止短段各自缩放。独立项目仍因方向门、主角和标本池没有全部签收而诚实保持“整房高保真部分通过”。
+本地入口为 `http://127.0.0.1:5212/`；非剧情的大场景评审入口为 `?large_scene=1`，新房间高保真入口为 `?generated_room=1`，静态碰撞骨架入口为 `?generated_room=1&room_phase=shell`，真实平台任务逐槽位恢复入口为 `?generated_room=1&room_phase=live&reset_room_media=1`。
+
+`npm run build` 生成 `dist/`；`npm test` 验证剧情、往返、四向门、互动、比例、氛围、大场景、生成房间与存档迁移。发布检查还会在真实浏览器验证两种手机尺寸、首次操作启动环境音乐、静音切换、发布素材响应和外部访客栏。最终交接包为 `deliverables/build-spatial-story-game-v1.39-handoff.zip`，配套报告为 `deliverables/skill-package-check-v1.39.json`。隔离接收方已经验证包自包含、真实媒体恢复、附近交互、寻路和脚点坐标；完整高保真冷启动仍须在每个新项目执行主角、方向门、整房与声画门禁。
 
 ## 来源
 
