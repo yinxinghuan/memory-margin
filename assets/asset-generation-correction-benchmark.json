@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "mode": "parallel-camera-corrections",
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "startedAt": "2026-09-19T07:55:44.524Z",
+  "endedAt": "2026-09-19T07:55:54.951Z",
+  "wallClockMs": 10426,
+  "concurrency": 2,
+  "results": [
+    {
+      "id": "memory-exchange-bench-v2",
+      "status": "succeeded",
+      "requestId": "3f03aee1-6b60-4461-b448-59be95add113",
+      "taskId": "mt_274b675040e499ca6092daca13854644",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789804549674339.png",
+      "output": "assets/benchmark/memory-exchange-bench-v2.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 3074,
+      "generationMs": 6065,
+      "downloadMs": 4287,
+      "totalMs": 10352,
+      "sha256": "267a01e142525f054dd55419ebf8d55a908871d6030187df22ca6bd894bb1126",
+      "prompt": "CAMERA AND PROPORTION CORRECTION ONLY. Preserve this exact two-seat bench identity, graphite frame, two worn teal cushions, brass charging rail, cable, color palette and mature pixel-painted detail. Re-render it from a MUCH STEEPER B-VIEW ORTHOGRAPHIC game camera, looking mostly down from above. The two seat TOP SURFACES must dominate. Compress every vertical leg and front face to about one third of its current visible height; total bench height becomes about 70 pixels while width remains about 190 pixels for an adult about 105 pixels tall. Both spatial edge families remain parallel with zero convergence and no near-side enlargement. Keep the 45-degree floor orientation, but do not use a low product-photo camera. One complete bench centered on pure uniform RGB #FF00FF. No person, floor, wall, text, logo, extra object, cast shadow or redesign."
+    },
+    {
+      "id": "memory-quarantine-locker-v2",
+      "status": "succeeded",
+      "requestId": "cc1fdcbe-90cb-4430-ab3d-c7a572bbdd7d",
+      "taskId": "mt_ce2856cd518ee2a6736eaf83f3a94485",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789804551100544.png",
+      "output": "assets/benchmark/memory-quarantine-locker-v2.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 3344,
+      "generationMs": 6916,
+      "downloadMs": 3494,
+      "totalMs": 10410,
+      "sha256": "e6fb1e2109ec4525e3ed8044735e5c794c7149fef8228737813fb03c124f7a0c",
+      "prompt": "CAMERA AND FORM CORRECTION ONLY. Preserve the graphite/brass quarantine-device identity, three blank wafer windows, amber isolation indicator, cyan slit and two sealed bays. Replace the current tall frontal cabinet proportions with a LOW WAIST-HIGH QUARANTINE BUFFER seen from a steep B-view orthographic game camera. The broad rectangular TOP SURFACE occupies at least 70 percent of the visible object height; the front face is a very short band no more than 22 percent. Top and bottom edges exactly equal, side edges parallel, zero convergence, no trapezoid. Two sealed bays become shallow horizontal drawers in the short front band. For an adult about 105 pixels tall, object width about 120 pixels and visible height about 65 pixels. Center one complete device on pure uniform RGB #FF00FF. No upright doors, tall cabinet, desk, person, floor, wall, text, glyphs, hologram, cast shadow, product-photo camera or other redesign."
+    }
+  ]
+}

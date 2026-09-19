@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "cell": [
+    256,
+    256
+  ],
+  "sourceService": "AlterU Media Service",
+  "heroFrames": [
+    {
+      "row": 0,
+      "column": 0,
+      "platformJob": "hero-step-down-l-v5",
+      "sourceSha256": "e227b72e25e4636d2f9e2a2233ea1602ef46a440b6ce63b2417406af7b592d81",
+      "transforms": [],
+      "bbox": [
+        77,
+        39,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 4,
+      "dy": 8,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "platformJob": "hero-stand-down-v5",
+      "sourceSha256": "2340e3d09e5dfa874d1269ef3222feb97e7de13b8740ceefd853ae2a907ed0f6",
+      "transforms": [],
+      "bbox": [
+        82,
+        40,
+        177,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 2,
+      "dy": 7,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "platformJob": "hero-step-down-l-v5",
+      "sourceSha256": "e227b72e25e4636d2f9e2a2233ea1602ef46a440b6ce63b2417406af7b592d81",
+      "transforms": [
+        "opposite-leg"
+      ],
+      "bbox": [
+        77,
+        39,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 4,
+      "dy": 8,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "platformJob": "hero-step-left-l-v5",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "transforms": [],
+      "bbox": [
+        83,
+        38,
+        181,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 4,
+      "dy": 38,
+      "mirrored": false,
+      "normalizedHeightFrom": 176,
+      "targetVisibleHeight": 195
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "platformJob": "hero-stand-left-v5",
+      "sourceSha256": "ff2c538dc5324ddd99b740eb151534a63cdfdc9eaa2dfa1086577b234396761e",
+      "transforms": [],
+      "bbox": [
+        96,
+        38,
+        167,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 6,
+      "dy": 6,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "platformJob": "hero-step-left-l-v5",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "transforms": [
+        "opposite-leg"
+      ],
+      "bbox": [
+        85,
+        38,
+        183,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 6,
+      "dy": 38,
+      "mirrored": false,
+      "normalizedHeightFrom": 176,
+      "targetVisibleHeight": 195
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "platformJob": "hero-step-left-l-v5",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "transforms": [
+        "mirror-direction"
+      ],
+      "bbox": [
+        75,
+        38,
+        173,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": -4,
+      "dy": 38,
+      "mirrored": true,
+      "normalizedHeightFrom": 176,
+      "targetVisibleHeight": 195
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "platformJob": "hero-stand-left-v5",
+      "sourceSha256": "ff2c538dc5324ddd99b740eb151534a63cdfdc9eaa2dfa1086577b234396761e",
+      "transforms": [
+        "mirror-direction"
+      ],
+      "bbox": [
+        89,
+        38,
+        159,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": -6,
+      "dy": 6,
+      "mirrored": true,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "platformJob": "hero-step-left-l-v5",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "transforms": [
+        "mirror-direction",
+        "opposite-leg"
+      ],
+      "bbox": [
+        73,
+        38,
+        171,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": -6,
+      "dy": 38,
+      "mirrored": true,
+      "normalizedHeightFrom": 176,
+      "targetVisibleHeight": 195
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "platformJob": "hero-step-up-l-v5",
+      "sourceSha256": "8fd4ee75133af34bae95cc246f3c96399a792fd0586e8c8799a0cd7ebd10cb14",
+      "transforms": [],
+      "bbox": [
+        80,
+        38,
+        178,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 1,
+      "dy": 38,
+      "mirrored": false,
+      "normalizedHeightFrom": 205,
+      "targetVisibleHeight": 195
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "platformJob": "hero-stand-up-v5",
+      "sourceSha256": "75cb050ccbdecbbbe0ed6cc5711cdcbff8a3301bd63664d4a41b4d355c96b5c9",
+      "transforms": [],
+      "bbox": [
+        79,
+        38,
+        179,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 2,
+      "dy": 7,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "platformJob": "hero-step-up-l-v5",
+      "sourceSha256": "8fd4ee75133af34bae95cc246f3c96399a792fd0586e8c8799a0cd7ebd10cb14",
+      "transforms": [
+        "opposite-leg"
+      ],
+      "bbox": [
+        80,
+        38,
+        178,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 1,
+      "dy": 38,
+      "mirrored": false,
+      "normalizedHeightFrom": 205,
+      "targetVisibleHeight": 195
+    }
+  ],
+  "npc": {
+    "neighbor": {
+      "platformJob": "neighbor-stand-v5",
+      "sourceSha256": "244a149207756835ede6a4aa0ac2df6a380ee38438de97a7ec2cf3a39e0f5758",
+      "path": "assets/processed/neighbor-stand-v5-aligned.png",
+      "sha256": "d02538ac78d739834162880dc2c182efb4ff0bbaa1a455ff0bb7e37557c8fbbd",
+      "bbox": [
+        84,
+        33,
+        173,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 2,
+      "dy": 6,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    "caretaker": {
+      "platformJob": "caretaker-stand-v5",
+      "sourceSha256": "31451052f82343171581907c014f1559465de2fcf042a5ed26455bf614cef109",
+      "path": "assets/processed/caretaker-stand-v5-aligned.png",
+      "sha256": "2c93605b9066e9bd163756d1c117d6367fc6cb03247b8ef3f4de1d39ee8a2ac9",
+      "bbox": [
+        78,
+        39,
+        177,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 0,
+      "dy": 7,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    },
+    "clerk": {
+      "platformJob": "clerk-stand-v5",
+      "sourceSha256": "7f9f4912652a342ad07e98d564ca1db01a91c805926555b46a3c251473706ed9",
+      "path": "assets/processed/clerk-stand-v5-aligned.png",
+      "sha256": "c4edf5d4e209a0c8c669f3c2dd24baa3c26a08a1edb04a9e31a75f475376a298",
+      "bbox": [
+        82,
+        42,
+        175,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "dx": 0,
+      "dy": 7,
+      "mirrored": false,
+      "normalizedHeightFrom": null,
+      "targetVisibleHeight": null
+    }
+  },
+  "hero": {
+    "path": "assets/processed/hero-walk-v5.png",
+    "sha256": "d20ca6e853a50dc627df66f90aa47e20e786bf501a995b338d6a3406314c284c"
+  }
+}

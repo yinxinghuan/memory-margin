@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "room": "memory-authenticity-audit",
+  "mode": "targeted-retry",
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "startedAt": "2026-09-19T08:09:55.783Z",
+  "endedAt": "2026-09-19T08:10:05.288Z",
+  "wallClockMs": 9504,
+  "concurrency": 1,
+  "results": [
+    {
+      "id": "audit-room-floor",
+      "status": "succeeded",
+      "requestId": "da8f0db0-e45f-4609-b83f-66529ddeba01",
+      "taskId": "mt_9a9cd1d7456111068c50eda8c4b04d82",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805400620850.png",
+      "output": "assets/benchmark/generated-room/audit-room-floor.png",
+      "size": [
+        768,
+        1024
+      ],
+      "serviceTimingMs": 2729,
+      "generationMs": 5244,
+      "downloadMs": 4255,
+      "totalMs": 9499,
+      "sha256": "4e25f0f27b485a0e491eb8e586df1e60c91841b893c3c9685b25f73650147a16",
+      "prompt": "NEW ROOM FLOOR GENERATION. Create ONLY the floor plate for a MEMORY AUTHENTICITY AUDIT ROOM by editing this accepted orthographic floor. Preserve the exact 768x1024 edge-to-edge floor geometry, tile scale, parallel seams, steep top-down camera and mature pixel-painted wear. Shift the material toward dark desaturated petrol-blue ceramic with restrained old brass repair seams. Embed two flat circular comparison rings in the floor, one at source coordinates around x250 y420 and one around x520 y420, linked by a thin flat brass trace to a central rectangular analysis footprint around x300-470 y600-720. Add sparse pale cyan residue marks and three tiny amber warning nodes, all completely flush with the floor. Keep a clear vertical route x315-455 from bottom to top and clear side routes around both rings. Every pixel remains horizontal walkable floor. No walls, baseboards, doors, furniture, raised scanner, cabinet, people, text, symbols, UI, vignette, perspective convergence or photorealism."
+    }
+  ]
+}

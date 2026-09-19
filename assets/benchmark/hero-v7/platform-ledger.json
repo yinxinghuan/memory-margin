@@ -1,0 +1,400 @@
+{
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "apiBase": "https://game.aiwaves.tech/alteru-media/api",
+  "startedAt": "2026-09-19T16:01:35.830Z",
+  "updatedAt": "2026-09-19T16:09:43.378Z",
+  "jobs": {
+    "hero-down-strip-v7": {
+      "requestId": "7d801346-79f7-4be3-b953-b7ee6e9ada18",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "prompt": "Create ONE horizontal three-cell walking strip of the exact same young newly uploaded adult in the reference: short charcoal hair, worn deep indigo coat, muted teal collar, dark trousers and shoes, tiny brass memory tag. Strict B-view orthographic steep overhead pixel RPG camera. Three equal 512x512 cells, left to right: LEFT LEG support/other leg swinging, neutral feet-together stand, RIGHT LEG support/opposite leg swinging. The two walking cells must be genuinely different anatomical phases, not mirrored lower-body collage, not duplicated legs. Head, hair, coat, shoulders, tag, scale and identity remain identical; crown dominates and face is only a narrow downcast sliver. Each full body centered in its own cell with the same sole baseline near y450. Mature crisp pixel-painted clusters. Perfect uniform #FF00FF background outside figures. No grid lines, text, floor, shadow, UI, extra people, frontal portrait or diagonal turn.",
+      "output": "assets/platform/hero-v7/hero-down-strip-v7.png",
+      "taskId": "mt_d3f79df7b3f580b8660858952ee9cc49",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833703076648.png",
+      "size": [
+        1536,
+        512
+      ],
+      "timingMs": 2414,
+      "sha256": "53266c251a4983ba0a6afabfac0858ba0a95c14aa25d658ed572e479644d54a4"
+    },
+    "hero-left-strip-v7": {
+      "requestId": "18af4fe4-9303-4939-a9a9-43a3599ef071",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "prompt": "Create ONE horizontal three-cell walking strip of this exact same indigo-coat character facing SCREEN LEFT in strict B-view overhead pixel RPG projection. Three equal 512x512 cells: first a left-facing step with the nearer leg supporting and the far leg passing, center a neutral left-facing stand, third the opposite step with support legs truly exchanged. Both step cells must remain strict left profile with nose pointing left and visible hair crown; do not rotate toward viewer or show the back. Preserve identical hair, face, teal collar, coat length, buttons, brass tag, shoulder width, total scale and shoe baseline across all cells. Real alternating anatomy, no reflected lower-body collage, duplicated pose, split legs or floating feet. Uniform pure #FF00FF outside figures, no grid, labels, floor, shadow, bag or extra object.",
+      "output": "assets/platform/hero-v7/hero-left-strip-v7.png",
+      "previousAttempts": [
+        {
+          "requestId": "2957f0c6-daac-4a3f-94ae-0a197eb319ee",
+          "status": "failed",
+          "error": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_4922ec5eefba91ba9cf782b5de5efc4b",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833812820937.png",
+      "size": [
+        1536,
+        512
+      ],
+      "timingMs": 4463,
+      "sha256": "171da26ba57b1b9163387ab8cf726143e8ba8b7347b473e9487f1abe8e3f1e88"
+    },
+    "hero-up-strip-v7": {
+      "requestId": "f7750600-3ca5-4ade-b33a-9de1ab160cc7",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748000053572.png",
+      "prompt": "Create ONE horizontal three-cell walking strip of this exact same indigo-coat character facing STRAIGHT UP, away from viewer, in strict B-view overhead pixel RPG projection. Three equal 512x512 cells: left support phase, neutral feet-together stand, opposite right support phase. Back of charcoal hair, teal collar and coat remain visible in every cell; absolutely no face, eye or side turn. Support legs and opposite arm swing must genuinely exchange between first and third cells, with stable torso, identity, scale and common sole baseline. No mirrored lower-body collage or duplicate phase. Uniform #FF00FF background, no grid, text, floor, shadow, bag or extra person.",
+      "output": "assets/platform/hero-v7/hero-up-strip-v7.png",
+      "taskId": "mt_3cc54dd0cf7feda0ed9ec9147cd2462d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833705199548.png",
+      "size": [
+        1536,
+        512
+      ],
+      "timingMs": 3642,
+      "sha256": "3ec3737aacca456561e5a6ecae3763deb0f7cc89fbaf94cd5cc7497ce96cb7b4"
+    },
+    "home-side-wall-v7": {
+      "requestId": "a6f0763a-cef9-43bd-856a-ee7463760bc1",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743034909233.png",
+      "prompt": "Using the reference only for exact material palette, pixel-painted density, light direction and restrained wear, create a tall uninterrupted SIDE WALL texture module for the same B-view orthographic room. It is a straight vertical architectural wall strip viewed from steep overhead: continuous muted blue-gray inner face, narrow top cap, thin dark outer edge and subtle bottom trim. No windows, frames, screens, pipes, doors, bright white panels, isolated highlights, corner wedges, furniture, floor, text or symbols. Fill the entire 256x1536 canvas edge to edge with coherent wall construction; no surrounding background and no perspective convergence. Texture must remain continuous through the central vertical band because runtime crops it narrowly.",
+      "output": "assets/platform/walls/home-side-wall-v7.png",
+      "previousAttempts": [
+        {
+          "requestId": "3d91c35d-00b0-453e-a9a5-64e888eabc8a",
+          "status": "failed",
+          "error": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_794d14a665d8d2e4b6ca5f373f612309",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833809220145.png",
+      "size": [
+        256,
+        1536
+      ],
+      "timingMs": 2153,
+      "sha256": "7991f0633af100235fcd9d54fd42c52f5dc6c791a8ec20fb31e80fd5d0a7b2f2"
+    },
+    "hall-side-wall-v7": {
+      "requestId": "0e1cf6d4-5d2c-4ed3-8c66-2642125393bb",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742959966723.png",
+      "prompt": "Using the reference only for exact cool gray-green material palette, pixel-painted density and light direction, create a tall uninterrupted SIDE WALL texture module for the same B-view orthographic public hall. Straight vertical architectural wall viewed from steep overhead, continuous inner face, narrow cap, thin dark edge and restrained lower trim. No fixtures, windows, pictures, lamps, doors, bright white blocks, isolated highlights, floor, furniture, text or symbols. Fill the complete 256x1536 canvas with one coherent wall; no perspective convergence. The central vertical band must be continuous for a narrow runtime crop.",
+      "output": "assets/platform/walls/hall-side-wall-v7.png",
+      "taskId": "mt_652afeba5936998dd4ae4df73ce93ccb",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833706551705.png",
+      "size": [
+        256,
+        1536
+      ],
+      "timingMs": 6817,
+      "sha256": "b7813a95876aae01577233a4d1cacce533504a84a9041cb4eb38b4872094b952"
+    },
+    "service-side-wall-v7": {
+      "requestId": "a573dd5b-05cf-428b-822d-cf55d86b60ae",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742966650420.png",
+      "prompt": "Using the reference only for exact cool service-room blue-gray material, muted brass accents, pixel density and light direction, create a tall uninterrupted SIDE WALL texture module for the same B-view orthographic memory service room. Straight vertical wall viewed from steep overhead with continuous inner face, narrow cap, thin dark edge and subtle lower trim. No consoles, screens, plaques, windows, doors, bright white panels, isolated highlights, floor, furniture, text or symbols. Fill all 256x1536 pixels edge to edge, no background and no perspective convergence. Keep the central crop band continuous.",
+      "output": "assets/platform/walls/service-side-wall-v7.png",
+      "previousAttempts": [
+        {
+          "requestId": "7a35e96d-ac46-4098-8426-04a26cfae60f",
+          "status": "failed",
+          "error": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_2ede7ca700e4cb6cbc715c05cf474198",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789833810727546.png",
+      "size": [
+        256,
+        1536
+      ],
+      "timingMs": 2631,
+      "sha256": "3be370450c65c3f4832b84a8f84035c3ebcd656dd8dacd99206656196fc7dea4"
+    },
+    "hero-side-opposite-v8a": {
+      "requestId": "c5a5c9b5-8884-46e6-a5ff-fa6f6fca164c",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748023207873.png",
+      "prompt": "Edit the first reference into the OPPOSITE left-walking contact phase for the exact same character. The second reference is only an anatomy guide for alternating steps. Preserve the first reference head, hair, face, coat, teal collar, brass tag, camera, pixel density, scale and strict SCREEN-LEFT profile. The shoe currently farthest to SCREEN LEFT must move back beneath the coat as the support leg; the other leg must cross and plant forward toward SCREEN LEFT, clearly changing which leg owns the forward shoe. Keep one stable ground baseline and natural opposite arm swing. Do not duplicate the source phase, reflect only the lower body, split or add legs, rotate the torso, show a frontal face, add crowns, bags, shadows, floor, words or grid. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-opposite-v8a.png",
+      "previousAttempts": [
+        {
+          "requestId": "2f1b3881-5fb7-4022-8607-a4e434a5403e",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_5cd62e3012da3a5d96e5d614fbeacb16",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834021210157.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 3958,
+      "sha256": "e38bf15a29b5d45f8cd5a80e8f9733a0055a3e3d433d9bef96636f505e8bec8f"
+    },
+    "hero-side-opposite-v8b": {
+      "requestId": "ffc68729-de22-46e0-9e22-9d6c5b5b8133",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748023207873.png",
+      "prompt": "Edit the first reference into the OPPOSITE left-walking contact phase for the exact same character. The second reference is only an anatomy guide for alternating steps. Preserve the first reference head, hair, face, coat, teal collar, brass tag, camera, pixel density, scale and strict SCREEN-LEFT profile. The shoe currently farthest to SCREEN LEFT must move back beneath the coat as the support leg; the other leg must cross and plant forward toward SCREEN LEFT, clearly changing which leg owns the forward shoe. Keep one stable ground baseline and natural opposite arm swing. Do not duplicate the source phase, reflect only the lower body, split or add legs, rotate the torso, show a frontal face, add crowns, bags, shadows, floor, words or grid. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-opposite-v8b.png",
+      "previousAttempts": [
+        {
+          "requestId": "373c0577-67ea-4879-998c-1f6acaf4f9cc",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_f3aa0211a04a5a39869018d11a5c5272",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834019819424.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 4061,
+      "sha256": "ca8a8b004ceb73ed94643891561fe6b245a68989191dd4335e40d00680964970"
+    },
+    "hero-side-opposite-v8c": {
+      "requestId": "5a0ca42f-5a56-4aff-b4d3-2e421f8a2b79",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748023207873.png",
+      "prompt": "Edit the first reference into the OPPOSITE left-walking contact phase for the exact same character. The second reference is only an anatomy guide for alternating steps. Preserve the first reference head, hair, face, coat, teal collar, brass tag, camera, pixel density, scale and strict SCREEN-LEFT profile. The shoe currently farthest to SCREEN LEFT must move back beneath the coat as the support leg; the other leg must cross and plant forward toward SCREEN LEFT, clearly changing which leg owns the forward shoe. Keep one stable ground baseline and natural opposite arm swing. Do not duplicate the source phase, reflect only the lower body, split or add legs, rotate the torso, show a frontal face, add crowns, bags, shadows, floor, words or grid. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-opposite-v8c.png",
+      "previousAttempts": [
+        {
+          "requestId": "941c190c-41e8-4d85-8d78-2a93e062dbc7",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        },
+        {
+          "requestId": "f3f16fa5-16bc-4a44-9d4b-a5b01782a395",
+          "status": "failed",
+          "error": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_699cd6fd8bd5925d9204e6e063a43a0f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834099602359.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 1538,
+      "sha256": "e5d6ddaee2e19fa2df21db1ba082957a79f425ca6eee13c0dc0fb2b3bd283e82"
+    },
+    "hero-down-opposite-v8a": {
+      "requestId": "4ce9da35-9faa-4d63-bd55-385c1121cde6",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748007041509.png",
+      "prompt": "Edit the first reference into the OPPOSITE straight-down walking contact phase for the exact same character. Use the second reference only as an anatomy guide. Preserve the first head, crown-dominant steep overhead camera, narrow downcast face, indigo coat, teal collar, brass tag, body scale and center. Move the currently forward leg back beneath the coat and plant the other leg toward the bottom of canvas; support legs must truly exchange with a natural opposite arm swing. Do not turn sideways, duplicate the same phase, reflect only the lower body, add or split limbs, change identity, add shadow, floor, grid or text. One full body on uniform pure #FF00FF with the same sole baseline.",
+      "output": "assets/platform/hero-v7/hero-down-opposite-v8a.png",
+      "previousAttempts": [
+        {
+          "requestId": "aab997dd-c2b6-4cf5-8442-1a57b32e9fcf",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_5a3fd9653946b56d58f2d5d79de440a0",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834017003002.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 3065,
+      "sha256": "eb8bab2208afebafcdb64fdcb119f5d21cd4db9c884e7e32e59b881f3b8a80ab"
+    },
+    "hero-down-opposite-v8b": {
+      "requestId": "1962d11b-2249-4062-9ebe-a78b0ecf682b",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748007041509.png",
+      "prompt": "Edit the first reference into the OPPOSITE straight-down walking contact phase for the exact same character. Use the second reference only as an anatomy guide. Preserve the first head, crown-dominant steep overhead camera, narrow downcast face, indigo coat, teal collar, brass tag, body scale and center. Move the currently forward leg back beneath the coat and plant the other leg toward the bottom of canvas; support legs must truly exchange with a natural opposite arm swing. Do not turn sideways, duplicate the same phase, reflect only the lower body, add or split limbs, change identity, add shadow, floor, grid or text. One full body on uniform pure #FF00FF with the same sole baseline.",
+      "output": "assets/platform/hero-v7/hero-down-opposite-v8b.png",
+      "previousAttempts": [
+        {
+          "requestId": "fb86b748-22ae-4071-b21f-0745c684d6d5",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        },
+        {
+          "requestId": "e6b4c6d7-d5f1-4fad-a490-8c8aea5809d3",
+          "status": "failed",
+          "error": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_56c8a009545421efa6b0c92d3653a8b1",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834093494798.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 1562,
+      "sha256": "98a68046eae56a294b1a7a96b9775d97b4f388bfc0b36d4152896c8b911a19d3"
+    },
+    "hero-up-opposite-v8a": {
+      "requestId": "fad03ba9-d101-4b6c-b062-62a17439e1cf",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748036849651.png",
+      "prompt": "Edit the first reference into the OPPOSITE straight-up walking contact phase for the exact same back-facing character. Use the second reference only as an anatomy guide. Preserve back of charcoal head, teal collar, indigo coat, steep overhead camera, identity, scale and center; absolutely no face or side turn. Exchange the supporting legs so the currently advanced leg recedes and the other advances toward the top of canvas, with natural opposite arm swing and one stable sole baseline. No duplicate phase, lower-body reflection, added/split limbs, shadow, floor, grid or text. One full body on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-up-opposite-v8a.png",
+      "previousAttempts": [
+        {
+          "requestId": "a7b37c28-cd84-4acb-8400-25f4e3edb2c1",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_c828cfa1973d2162329e258792afb843",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834015614420.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 1694,
+      "sha256": "cf878d61b1f711b185bbff5208b4502afaf960afe211cdf8daa42df4dddc7fd8"
+    },
+    "hero-up-opposite-v8b": {
+      "requestId": "bea9a661-498f-448b-8f19-fd348a9d6493",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748036849651.png",
+      "prompt": "Edit the first reference into the OPPOSITE straight-up walking contact phase for the exact same back-facing character. Use the second reference only as an anatomy guide. Preserve back of charcoal head, teal collar, indigo coat, steep overhead camera, identity, scale and center; absolutely no face or side turn. Exchange the supporting legs so the currently advanced leg recedes and the other advances toward the top of canvas, with natural opposite arm swing and one stable sole baseline. No duplicate phase, lower-body reflection, added/split limbs, shadow, floor, grid or text. One full body on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-up-opposite-v8b.png",
+      "previousAttempts": [
+        {
+          "requestId": "f92ffd3b-7b51-40ae-a988-3bcc127bab2d",
+          "status": "failed",
+          "error": "Request validation failed",
+          "retryable": false
+        }
+      ],
+      "taskId": "mt_a2b1e82c31fdb04686ba5f59008c12cf",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834018398537.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 4432,
+      "sha256": "8373778f511a48fabca6dc77b62af023e404cf3b8b4be5878329f2f2988c692f"
+    },
+    "hero-side-pass-v9a": {
+      "requestId": "8e2174c6-6668-40c8-a534-0c29fd47c3e8",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "prompt": "Animate this exact neutral SCREEN-LEFT character into a compact passing step, not a wide contact pose. Keep strict left profile and the exact same head, hair, face, indigo coat, teal collar, brass tag, pixel density, body scale and steep overhead B-view camera. The planted foot stays directly under the torso while the other knee bends and its heel lifts behind, so both legs overlap naturally and the silhouette is clearly different from a wide split-leg stride. Add a small opposite arm swing. One stable ground baseline; no floating support foot, extra limb, split leg, frontal rotation, lower-body reflection, shadow, floor, text, grid, bag or new object. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-pass-v9a.png",
+      "taskId": "mt_6d7c91d318ee80d4f835cc75967bca3c",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834094879123.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 2839,
+      "sha256": "61e1d71ef588975f126b9fbbc53f8f3a39b211fc8aa9f09d2d16551f61753479"
+    },
+    "hero-side-pass-v9b": {
+      "requestId": "8146243f-63e3-4d24-8b2c-cf4ebb7f8320",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "prompt": "Animate this exact neutral SCREEN-LEFT character into a compact passing step, not a wide contact pose. Keep strict left profile and the exact same head, hair, face, indigo coat, teal collar, brass tag, pixel density, body scale and steep overhead B-view camera. The planted foot stays directly under the torso while the other knee bends and its heel lifts behind, so both legs overlap naturally and the silhouette is clearly different from a wide split-leg stride. Add a small opposite arm swing. One stable ground baseline; no floating support foot, extra limb, split leg, frontal rotation, lower-body reflection, shadow, floor, text, grid, bag or new object. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-pass-v9b.png",
+      "taskId": "mt_220925e2a1a449afc4e3043d48f7c7db",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834096280027.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 4117,
+      "sha256": "2617ce8805ca8a06b7311f558c84026497761d988fce8e951140533f92797c97"
+    },
+    "hero-side-pass-v9c": {
+      "requestId": "218ad160-30a7-409d-831a-9809e8ad0b96",
+      "status": "succeeded",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "prompt": "Animate this exact neutral SCREEN-LEFT character into a compact passing step, not a wide contact pose. Keep strict left profile and the exact same head, hair, face, indigo coat, teal collar, brass tag, pixel density, body scale and steep overhead B-view camera. The planted foot stays directly under the torso while the other knee bends and its heel lifts behind, so both legs overlap naturally and the silhouette is clearly different from a wide split-leg stride. Add a small opposite arm swing. One stable ground baseline; no floating support foot, extra limb, split leg, frontal rotation, lower-body reflection, shadow, floor, text, grid, bag or new object. Exactly one full body centered on uniform pure #FF00FF.",
+      "output": "assets/platform/hero-v7/hero-side-pass-v9c.png",
+      "taskId": "mt_93b6251bca7ed3589ba9004a9ae13340",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834097674563.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 3919,
+      "sha256": "8f122901e352dc610bd5779f2b756a452bdfddb717e807739956d1d300e52755"
+    },
+    "hero-side-text-pass-v10a": {
+      "requestId": "f2a911b4-b4dc-475f-85d3-e631a0f698f3",
+      "status": "succeeded",
+      "referenceUrl": "",
+      "prompt": "One isolated full-body pixel RPG protagonist in a compact passing step moving SCREEN LEFT. Identity: ordinary young adult, short charcoal-black hair with long fringe, worn deep indigo knee-length coat, muted teal collar, dark charcoal trousers and brown-black shoes, tiny square brass memory tag on left chest. Strict left profile in steep B-view orthographic overhead camera; visible hair crown, only one eye or no eye, mature non-chibi proportions. Pose: the planted foot is directly under the torso; the other knee bends behind with heel lifted close to the calf, so the legs overlap and are NOT spread into a wide stride. Opposite arms swing subtly. Crisp mature pixel-painted clusters, one stable ground baseline. Exactly one character centered on perfectly uniform pure #FF00FF. No floor, shadow, text, grid, bag, extra limb, frontal turn or second pose.",
+      "output": "assets/platform/hero-v7/hero-side-text-pass-v10a.png",
+      "taskId": "mt_45dd2b2f6ed2ef849c720c4eb2b50ce6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834174720347.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 930,
+      "sha256": "5b169d596506c9a6678c3e5927f11b378fbc4ffdf8e4f7a1ca4f37d25057d4e7"
+    },
+    "hero-side-text-pass-v10b": {
+      "requestId": "e17649a9-78fb-45d5-990b-7f3970e3930a",
+      "status": "succeeded",
+      "referenceUrl": "",
+      "prompt": "One isolated full-body pixel RPG protagonist in a compact passing step moving SCREEN LEFT. Identity: ordinary young adult, short charcoal-black hair with long fringe, worn deep indigo knee-length coat, muted teal collar, dark charcoal trousers and brown-black shoes, tiny square brass memory tag on left chest. Strict left profile in steep B-view orthographic overhead camera; visible hair crown, only one eye or no eye, mature non-chibi proportions. Pose: the planted foot is directly under the torso; the other knee bends behind with heel lifted close to the calf, so the legs overlap and are NOT spread into a wide stride. Opposite arms swing subtly. Crisp mature pixel-painted clusters, one stable ground baseline. Exactly one character centered on perfectly uniform pure #FF00FF. No floor, shadow, text, grid, bag, extra limb, frontal turn or second pose.",
+      "output": "assets/platform/hero-v7/hero-side-text-pass-v10b.png",
+      "taskId": "mt_c92b9100f36c44354cd714982823414f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834174332600.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 1436,
+      "sha256": "19902c8ca3340b03fbdbb18f1f2dd227dfaa65a8f02b73540fc5e49caa863d2b"
+    },
+    "hero-side-text-pass-v10c": {
+      "requestId": "561530a1-e1a0-4eb4-b157-45574e2cd6c3",
+      "status": "succeeded",
+      "referenceUrl": "",
+      "prompt": "One isolated full-body pixel RPG protagonist in a compact passing step moving SCREEN LEFT. Identity: ordinary young adult, short charcoal-black hair with long fringe, worn deep indigo knee-length coat, muted teal collar, dark charcoal trousers and brown-black shoes, tiny square brass memory tag on left chest. Strict left profile in steep B-view orthographic overhead camera; visible hair crown, only one eye or no eye, mature non-chibi proportions. Pose: the planted foot is directly under the torso; the other knee bends behind with heel lifted close to the calf, so the legs overlap and are NOT spread into a wide stride. Opposite arms swing subtly. Crisp mature pixel-painted clusters, one stable ground baseline. Exactly one character centered on perfectly uniform pure #FF00FF. No floor, shadow, text, grid, bag, extra limb, frontal turn or second pose.",
+      "output": "assets/platform/hero-v7/hero-side-text-pass-v10c.png",
+      "taskId": "mt_d22b4d52db76443ac821bc8f65e3cfcd",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834175111552.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 1037,
+      "sha256": "4dd7c234ad976ae159ac5bc06e33bc90dfc7ba3790d96e164a14e1b440f0bd63"
+    },
+    "hero-side-text-pass-v10d": {
+      "requestId": "f4e7a82f-8cb8-45b3-8acc-96dcaf5d47cb",
+      "status": "succeeded",
+      "referenceUrl": "",
+      "prompt": "One isolated full-body pixel RPG protagonist in a compact passing step moving SCREEN LEFT. Identity: ordinary young adult, short charcoal-black hair with long fringe, worn deep indigo knee-length coat, muted teal collar, dark charcoal trousers and brown-black shoes, tiny square brass memory tag on left chest. Strict left profile in steep B-view orthographic overhead camera; visible hair crown, only one eye or no eye, mature non-chibi proportions. Pose: the planted foot is directly under the torso; the other knee bends behind with heel lifted close to the calf, so the legs overlap and are NOT spread into a wide stride. Opposite arms swing subtly. Crisp mature pixel-painted clusters, one stable ground baseline. Exactly one character centered on perfectly uniform pure #FF00FF. No floor, shadow, text, grid, bag, extra limb, frontal turn or second pose.",
+      "output": "assets/platform/hero-v7/hero-side-text-pass-v10d.png",
+      "taskId": "mt_5cfc5f2db3b20ebb6468410866f19f21",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789834175517218.png",
+      "size": [
+        512,
+        512
+      ],
+      "timingMs": 455,
+      "sha256": "887e92932b5e557c8e4e9a68d095555466f2f058c329cc3f7e2d2b77f537aff7"
+    }
+  }
+}

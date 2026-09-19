@@ -1,0 +1,1287 @@
+{
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "apiBase": "https://game.aiwaves.tech/alteru-media/api",
+  "jobs": {
+    "home": {
+      "requestId": "c6846dd9-223c-4e1d-989e-ccc25de69e0b",
+      "taskId": "mt_38dda3997297a2d733b3bf2d819ac9bf",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "sha256": "539f6ee8f90f734ae87740c78f84b7894f6e46856656969d60a4a4d6707b8ae9",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Use the reference ONLY for its approved B-view camera geometry, tile scale, parallel floor and wall lines, visible furniture top surfaces with short front faces, restrained pixel-painted edge density and upper-left practical lighting. Completely replace the train/carriage setting with a quiet near-future apartment for a newly uploaded ordinary person. Exact portrait 3:4 orthographic overhead game map, no vanishing point, no isometric diagonals and no depth-dependent shrinking. Rectangular room border, centered door on top wall, low memory player table at upper left, receipt table at upper right, two low rugs lower left and right, central walk path open. Matte slate-blue/desaturated teal tile floor and worn brass; very restrained cyan only on memory equipment. No trains, windows in train walls, characters, words, UI, extra blocking furniture or photoreal texture.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/carriage-orthogonal.png",
+      "output": "assets/platform/maps/home.png"
+    },
+    "hall": {
+      "requestId": "9be95113-5d8c-41cc-8a02-8e8a7474b952",
+      "taskId": "mt_a6f10c2592abc2c8c6fd0071bcb2afd9",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740476625496.png",
+      "sha256": "6e729e7ff80789ae81c50dd518f344e02153a662718c5080fb4cac57866f0daa",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Transform the reference map into the shared residential hall of the same building. Preserve its exact orthographic top-down camera, rectangular 3:4 frame, tile scale, matte slate-blue palette, weathered brass material, lighting direction and crisp pixel-painted finish. New layout: elevator recess at top center, return-home door on upper left wall, service-point door on lower right wall, long thin floor seam across middle, broad clear walkable floor. Remove home tables, rugs and memory player. No characters, no text, no UI, no extra blocking furniture.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "output": "assets/platform/maps/hall.png"
+    },
+    "service": {
+      "requestId": "5a63fc8d-f088-4655-915c-c7fe66b82ec5",
+      "taskId": "mt_b4dc6ebd202a71bd6cc30c3e04461824",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740498662160.png",
+      "sha256": "a945b07c4a4db499ca16c0740a979b6968c38408c1b0071904814a3f8c4d9424",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Transform the reference into a memory service office in the same near-future building. Keep exact orthographic top-down camera, 3:4 rectangular map, tile scale, matte slate-blue/desaturated teal palette, worn brass trim and premium pixel-painted texture. Layout: long public service window along top wall, small ledger counter at left middle, memory decision console desk at right middle, thin queue lines across lower middle, exit centered at bottom, open walkable paths between. Remove apartment rugs, breakfast objects and home door. No people, no words, no UI, no extra blocking furniture. Warm practical lights with pale cyan only on equipment.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "output": "assets/platform/maps/service.png"
+    },
+    "cast": {
+      "requestId": "39bcf137-748b-4cdd-8869-f0d61c583e6b",
+      "taskId": "mt_90631f2483d3e39d991e918946e8c902",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740509914247.png",
+      "sha256": "06dd90f91180a426d5836bac22e610dee2ac8b66807731ff748425b463105c50",
+      "actualSize": [
+        1024,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Exact two-by-two contact sheet of four distinct grounded human bust portraits for a premium near-future 2D RPG, one equal square quadrant each, no overlap, border, words or UI. Shared restrained pixel-painted style, crisp clustered edges, matte slate-blue and desaturated teal environment, warm amber rim light upper left, plain dark-blue background. Top left: ordinary newly uploaded young adult man, short dark hair, tired curious eyes, worn ochre jacket and slim backpack strap. Top right: Anhe, kind neighbor in her thirties, low dark hair knot, aubergine cardigan, perceptive gentle eyes. Bottom left: Uncle Luo, stern older attendant, short graying hair, weathered face, charcoal utility uniform, protective and unsmiling. Bottom right: Qiaomi, memory service clerk, neat dark bob, muted teal uniform, reassuring but guarded smile. Natural people, subtle future details, no cyber implants, no anime exaggeration.",
+      "output": "assets/platform/portraits/cast.png"
+    },
+    "cast-stand": {
+      "requestId": "ee9f7489-1584-4606-9d05-266cf6b46a28",
+      "taskId": "mt_f5e99b73d720dddd57d2dbc60c683820",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740528033847.png",
+      "sha256": "acfe6511a08203893a607d295450cfc507ee3ca74b02296b37c77fd3ee86692a",
+      "actualSize": [
+        1536,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Use reference ONLY for approved B-view orthographic overhead character projection: visible crown of head, little face, short upper torso, feet anchored to one common ground line. Replace the old yellow-clothed identity and gait atlas completely. Make four equal horizontal cells, one independent full-body standing character per cell, all facing down in the same B-view. Left to right: ordinary young adult player, charcoal hair, worn ochre jacket and slim backpack; Anhe, dark hair knot and aubergine cardigan; older attendant Luo, gray hair and charcoal utility uniform; clerk Qiaomi, dark bob and muted teal uniform. Match shared pixel density, lighting and game-world scale, readable at 24x40 world pixels. Transparent outside each silhouette; no environment, shadow, grid, words or UI. No frontal portrait camera, anime figure or isometric projection.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png",
+      "output": "assets/platform/sprites/cast-stand.png"
+    },
+    "hero-walk": {
+      "requestId": "39a0665b-b3ba-4d38-9d7b-9748b43f4551",
+      "taskId": "mt_055a8c05c74d53e825d7866853caab3a",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740564276137.png",
+      "sha256": "3054174da80483824ed54c6e094f4835bd22dc92b8a4c9c3a98238d71529c372",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Create an exact 3-column by 4-row transparent RPG walking sprite sheet of ONLY the ochre-jacket player in the leftmost reference cell. Twelve equal square cells, one full-body figure centered per cell, shoes at the same baseline within every cell. Keep short dark hair, ochre jacket, charcoal pants, dark boots and slim backpack identical across all frames. Row 1 facing DOWN: left step, stand, right step. Row 2 facing LEFT: left step, stand, right step. Row 3 facing RIGHT: left step, stand, right step. Row 4 facing UP: left step, stand, right step, backpack visible. Restrained high-quality pixel-painted art with crisp clusters. Truly transparent outside bodies; no grid, text, props, scene or extra people.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740528033847.png",
+      "output": "assets/platform/sprites/hero-walk.png"
+    },
+    "objects": {
+      "requestId": "adf2edf2-bfa8-411f-80bd-043eea633f91",
+      "taskId": "mt_cb01fd28bf9d77a48f28a0a998c0544c",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740581003086.png",
+      "sha256": "617958d02c9823b96c8e7da7f66b7bbfcf51737e2d2ccdf447b4d3a6f579fb72",
+      "actualSize": [
+        960,
+        960
+      ],
+      "status": "succeeded",
+      "prompt": "Use reference ONLY for approved B-view orthographic overhead object projection, visible top plus short front face, common ground scale, pixel-painted edge density and light direction. Replace every old train object. Exact three-column by three-row atlas, nine equal square cells, one independent object centered per cell, no overlap or grid. Row 1: matte slate memory voice player with narrow cyan waveform display; cream paper transfer receipt; handwritten breakfast note beside a small ceramic cup. Row 2: torn amber authorization seal strip; worn pale shared-hall notice; narrow teal public-use ledger book. Row 3: upright service terms placard in brass frame; small memory decision terminal with two physical slots; upright six-second preview monitor with pale cyan bars. Restrained blue-green, cream and brass palette; true transparency around each object, no people, readable text, UI, shadows or scenery. No product photo, frontal icon or isometric camera.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/props.png",
+      "output": "assets/platform/props/objects.png"
+    },
+    "home-wall": {
+      "requestId": "75621185-e205-441e-beff-0d816388a698",
+      "taskId": "mt_b55eb9d6b2b3b56d731f335dce62b259",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "sha256": "d5bdfa3cf0b0d2ec305375304c969c353fc31ac5e37a53684b673f1741ac8f0c",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Revise this same B-view orthographic overhead apartment map. The key correction is unambiguous architectural separation of WALL and FLOOR. The top wall must be a broad solid warm gray vertical wall face from image y=40 to y=180, with panel seams, a centered door, a thick dark baseboard and a continuous cast shadow onto the floor. The left and right walls must be substantial raised masonry faces with dark wall-foot edges, not thin decorative lines. The teal tiled floor begins ONLY below the baseboard and remains flat with parallel tile lines; wall panels must have no floor tile pattern. Preserve an open central walk path. Move the two plain empty tables down to image y=370-460: one at x=160-300 for a separate voice-box prop, one at x=465-600 for a separate receipt prop. Keep the two small rugs low in the room. Preserve the bottom entrance. Match the reference colors, lighting and pixel-painted texture. No objects, papers, people, text, UI, isometric slant or perspective convergence.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "output": "assets/platform/maps/home-wall.png"
+    },
+    "floor-tile": {
+      "requestId": "17681132-b162-4ed4-911b-2891c21e79dd",
+      "taskId": "mt_2b6a02200e657288c1491884cab9fcf8",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740880901846.png",
+      "sha256": "300519a37be164490a26a586e518cc7260ed57db8ff6d323567b684a3c185de3",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONE edge-to-edge, seamless repeating FLOOR TILE MATERIAL for a B-view orthographic overhead 2D exploration RPG. Use the approved reference only for camera, restrained pixel-painted grain and world-scale material. This image is solely a flat top-down slate blue ceramic floor surface, a regular 4 by 4 grid of equal square tiles, dark narrow grout, subtle wear, identical scale from top to bottom, diffuse upper-left warm light. Every pixel belongs to the floor surface; no border, room, wall, door, furniture, shadows, characters, text, perspective or vignette. Opposite edges should tile cleanly.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/carriage-orthogonal.png",
+      "output": "assets/platform/modules/floor-tile.png"
+    },
+    "wall-north": {
+      "requestId": "cd58f7ce-081a-4ce7-ae70-ff10fb534ccd",
+      "taskId": "mt_93f25e1bcbdc6834324d461462ffc9c6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740906203716.png",
+      "sha256": "524c9770f961fb1a919aafd324d97ca2ddc20915c94731ca5dee49dbac20c128",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Extract the architectural visual language of the reference but create ONLY a reusable north WALL SEGMENT asset, edge-to-edge opaque 768x256. B-view orthographic RPG: broad warm gray plaster vertical wall face, restrained panel seams, short dark brown baseboard with a clear horizontal lower edge and narrow cast shadow at the bottom. The wall has NO door or opening and NO floor, floor tile, furniture, characters, words, decorative border or perspective convergence. The horizontal ends must be clean and repeatable so this segment can join other wall segments. Pixel-painted edge clusters and matte wear match reference.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/wall-north.png"
+    },
+    "wall-side": {
+      "requestId": "9df2bc7b-bac4-44ce-9f1c-7fe92535816e",
+      "taskId": "mt_e34cbd74641c46241beec8ec31038db8",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740913098819.png",
+      "sha256": "245d45a2060a243964e12164e709faec5c40d6784c8c2c67066c620d6770d5b1",
+      "actualSize": [
+        256,
+        768
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONLY a reusable left/right SIDE WALL SEGMENT for the same B-view orthographic RPG architecture as reference. Edge-to-edge opaque 256x768 tall strip, warm gray plaster side wall face and dark narrow inner wall-foot edge on its right side, subtle material wear and restrained pixel-painted texture. Keep vertical lines parallel, consistent height and material from top to bottom. No floor tile, door, furniture, characters, text, vignette or perspective convergence. Upper and lower ends must join other sections cleanly.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/wall-side.png"
+    },
+    "door-north": {
+      "requestId": "0d20a9cc-78d5-404a-b841-fe68adb0b3ee",
+      "taskId": "mt_4c362b189cadd0859e89bedd47b1ed97",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740921411401.png",
+      "sha256": "3e904468320f4583d3a4655bdab518863371988fff0bc17f1172ad515ecbc55f",
+      "actualSize": [
+        256,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONLY one reusable CLOSED NORTH WALL DOOR module for a B-view orthographic overhead 2D RPG. Edge-to-edge 256x256 opaque rectangular architectural tile with warm gray plaster wall face, dark brown rectangular door centered, short visible lintel and jamb, wall baseboard on both sides and a dark floor threshold at bottom. Match the reference wall material, panel scale and upper-left lighting. No room floor beyond narrow threshold, no people, furniture, text, UI, isometric view or vanishing point. Straight vertical sides must connect to the reusable wall segment.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/door-north.png"
+    },
+    "floor-tile-v2": {
+      "requestId": "0407e3f8-effc-4660-9086-95c7dd17e22a",
+      "taskId": "mt_420569dd37504460bbe2e03c3cbd4baf",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741044991666.png",
+      "sha256": "a37b14346d360a35a74d2254d19eebc582ca2758d692abf3681fb38e63956051",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Seamless repeatable game FLOOR MATERIAL ONLY, 512x512 square. Flat B-view orthographic top-down ceramic paving, exactly 8 by 8 square tiles in a regular grid, each tile the same apparent size at all y positions. Uniform muted slate blue-gray across the WHOLE image: no corner light, no gradient, no vignette, no room-scale shadow. Thin dark grout in straight parallel lines, restrained pixel-painted scuffs. The left/right and top/bottom edges match for seamless repetition. Opaque edge-to-edge texture, no wall, trim, border, door, object, character, text, UI, isometric angle or photographic lighting.",
+      "output": "assets/platform/modules/floor-tile-v2.png"
+    },
+    "door-side": {
+      "requestId": "f131f90d-95a9-470d-ab72-3a78fb5b16d8",
+      "taskId": "mt_2ce088ca9d81b0ccf78e8a80660c2592",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741071103964.png",
+      "sha256": "e46e5b6ab01f954ef34dd1736cc8a62a9ef42e36c94b94b31296e0e140f58f48",
+      "actualSize": [
+        256,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONLY one reusable SIDE WALL doorway module viewed from the same B-view orthographic overhead camera as reference. Opaque 256x256 square architectural tile: warm gray side-wall plaster on top and bottom, dark brown vertical doorway opening in the middle, short visible thickness and narrow floor threshold; straight side wall edges join reusable side wall segments. No entire room, tiled floor panel, people, furniture, text, UI, isometric angle or vanishing point. Restrained pixel-painted material and upper-left light.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/door-side.png"
+    },
+    "desk-wood": {
+      "requestId": "fc2ffb30-edc7-4ec2-b145-d6b47036a73d",
+      "taskId": "mt_72321e12e46f6bb246642ccbbe65e647",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741236327656.png",
+      "sha256": "09e1ece7bc5a34ee82a1749fe30c7657ebfcf4ab57b057ba874566557b7e677e",
+      "actualSize": [
+        512,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONE independent rectangular low wooden table for placement onto a B-view orthographic overhead 2D RPG floor. Use the reference only for furniture material, camera and lighting. The tabletop fills the entire 512x256 image edge to edge, with a visible top plane and a narrow dark front fascia along the lower edge; straight sides and restrained worn walnut texture. This is a rectangular full-bleed object surface tile, no surrounding floor, room, wall, rug, chair, device, paper, text, UI, cast shadow extending outside the image or perspective vanishing point. Every pixel belongs to the tabletop or its short face.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "output": "assets/platform/modules/desk-wood.png"
+    },
+    "rug": {
+      "requestId": "84fd3742-adbc-4429-8bf8-68e892643beb",
+      "taskId": "mt_4e9dc74d279eda806190fa6872e2acae",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741245130278.png",
+      "sha256": "cf08ed7cdd2d1f46c1d1fcfc35b4413525ef6bb44c75e287e51f36227bb8320c",
+      "actualSize": [
+        512,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create one independent rectangular woven apartment rug for a B-view orthographic overhead 2D RPG. The textile surface fills the 512x256 image edge to edge, flat top-down, deep muted teal and dull ochre geometric weave, restrained pixel-painted wear, thin frayed border entirely inside the rectangle. Full-bleed opaque rectangle, no surrounding floor tile, room, wall, furniture, person, text, UI, cast shadow or perspective. All four edges straight so it can be placed as a separate ground object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740402368442.png",
+      "output": "assets/platform/modules/rug.png"
+    },
+    "desk-service": {
+      "requestId": "18c2f447-e926-471f-8a8d-a94b16d822f0",
+      "taskId": "mt_6880767a28b65b790428756992f61e04",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741262661368.png",
+      "sha256": "0ca09e39c504e3c85c01f34cb5dac1aea32b71d8ebd6f38907ed4a2ccb360231",
+      "actualSize": [
+        512,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONE independent rectangular memory service console table for a B-view orthographic overhead 2D RPG. The gray metal tabletop fills the entire 512x256 image edge to edge, with small inset cyan display, two physical slots, a few keys, worn brass side rails, and a short dark front fascia along the bottom edge. Camera projection and material density match the reference. This is a full-bleed rectangular object surface, no surrounding floor, room, wall, chair, person, words, UI, cast shadow beyond image or isometric perspective. Every pixel belongs to the device/table.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740498662160.png",
+      "output": "assets/platform/modules/desk-service.png"
+    },
+    "hero-walk-v2": {
+      "requestId": "cb4fb5e3-bb0d-4ff6-976f-a8e290504f4c",
+      "status": "failed",
+      "retryable": false,
+      "error": "PROVIDER_REJECTED: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "prompt": "Preserve the reference EXACT B-view orthographic overhead camera, exact twelve-pose 3-column by 4-row atlas arrangement, row directions DOWN LEFT RIGHT UP, body size, visible crown-to-face ratio, foot baselines and walking silhouette. Redesign ONLY the character identity consistently in all 12 cells: an ordinary newly uploaded adult with short charcoal hair, weathered deep slate-blue coat (NO yellow or orange cloth), muted teal scarf, dark trousers, black shoes and a small flat memory tag clipped to the belt (NO messenger bag). Every cell shows this same person with correct direction and left/stand/right foot phase. Do not add any other people, costumes, ponytails, row swaps, captions, grid lines, shadows or scenery. Return a clean plain pure white background around the figure in each cell, suitable for deterministic cutout; no checkerboard, gray squares or gradients. Restrained crisp pixel-painted game sprite.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png",
+      "output": "assets/platform/sprites/hero-walk-v2.png"
+    },
+    "hero-walk-v3": {
+      "requestId": "f2d3acb1-19d6-42c4-83a3-6a989f4cefbf",
+      "taskId": "mt_a6b83107a7b7e0630a947dc489b7ed9d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741549593468.png",
+      "sha256": "d9279c97a60b00ec8fe1c56f8beea911d40d3704a017c9448eafaa3a7cae2b04",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Keep the reference 3x4 B-view overhead walking atlas geometry and all 12 pose directions exactly. Change only the same character in every cell: short dark hair, deep slate-blue coat instead of yellow, muted teal scarf, black trousers and shoes, small belt tag instead of shoulder bag. No other character. Clean plain white background, no checkerboard. Crisp pixel game art.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png",
+      "output": "assets/platform/sprites/hero-walk-v3.png"
+    },
+    "hero-walk-v4": {
+      "requestId": "5cc7a4fb-a950-4e56-9de0-e4a0a0050dec",
+      "taskId": "mt_d23136a9d2ad26efa2b7f81855060a8f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741672215963.png",
+      "sha256": "aeb07414f5ed887bc5c9d697c415fb25bf387daf5ccc7a05291a7f8b54addf66",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Correct ONLY direction errors in this 3-column x 4-row walking atlas while preserving this exact same slate-blue coat character, B-view overhead camera, cell positions, scale and plain white background. Row 1 all THREE cells face DOWN; row 2 all THREE cells face LEFT in profile; row 3 all THREE cells face RIGHT in profile; row 4 all THREE cells face UP with the back of head and coat visible. In each row, left/center/right cells are left-step/stand/right-step. Never switch character, facing or clothing between cells. No checkerboard, shadows, grid lines or text.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741549593468.png",
+      "output": "assets/platform/sprites/hero-walk-v4.png"
+    },
+    "home-ground-v2": {
+      "requestId": "b46206b5-b0d0-4c24-a356-c0cd32ebfdd2",
+      "taskId": "mt_2a6a7d410dca667cad38e3273233175c",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742187297797.png",
+      "sha256": "85cf57ac35d8f3ea0edbf4f262cd0e33cef5745ecc0962ccc3b64829ee100b08",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "SOURCE SEPARATION: produce ONLY the FLOOR PLATE from this apartment reference, same exact B-view overhead grid scale, pixel-painted material and story mood. Fill the whole 768x1024 canvas edge to edge with flat muted teal worn ceramic tiles. Preserve irregular hairline scratches, uneven patina and subtle warm practical light in selected areas; no bland uniform CAD grid. The room wall, baseboard, door, tables, chairs, rugs, terminals, papers, furniture shadows and border are removed completely and replaced with continuing floor tile. Every visible pixel must be floor. Parallel tile seams, no perspective convergence, no text, no vignette.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/home-ground-v2.png"
+    },
+    "hall-ground-v2": {
+      "requestId": "d4bc8287-3818-42c4-b16a-36219be579cc",
+      "taskId": "mt_9bdc9851014df76c8c8cf7ca364833ca",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742225394589.png",
+      "sha256": "ed2277a027052d45fdc51b5b38d7130823fcd59e6ec0ba684921f3d0213c1a09",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "SOURCE SEPARATION: create ONLY an edge-to-edge residential corridor FLOOR PLATE from the reference. Same exact B-view overhead tile scale and premium restrained pixel-painted texture. Desaturated slate blue-gray tiles with credible irregular foot wear, scuffs, a few repaired seams and practical warm/cool light variation; broad navigable center remains visually quiet. Remove ALL walls, doors, threshold, borders, furnishings, typography, UI, figures and side strips. Every pixel of canvas is horizontal floor, straight parallel grout, no perspective convergence or vignette.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740476625496.png",
+      "output": "assets/platform/modules/hall-ground-v2.png"
+    },
+    "service-ground-v2": {
+      "requestId": "4be7ffdd-0577-4464-b0a0-d7bb7eeb29a0",
+      "taskId": "mt_7133da679757929c8d7a986fd9bc1345",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742288052872.png",
+      "sha256": "1f1f7aa23bd89550d6a8d1044357fa251fa56c68727ff09b247f45a7988f839b",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "SOURCE SEPARATION: create ONLY the edge-to-edge memory service office FLOOR PLATE from this reference, B-view orthographic overhead, same tile width throughout. Desaturated blue-green ceramic with uneven worn patches, fine repaired seams, subdued warm practical lighting near upper area and subtle cool spill at right, premium crisp pixel-painted grain. Leave broad clear path. Remove all walls, door, window, service counter, desk, computer, queue rail, furniture shadows, border, figures, words and UI. Every pixel must be flat horizontal tile floor, no perspective convergence or vignette.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740498662160.png",
+      "output": "assets/platform/modules/service-ground-v2.png"
+    },
+    "home-worktable-v2": {
+      "requestId": "e1fe32bb-2147-4b0c-9ac2-46cf545b5769",
+      "taskId": "mt_1532db46d829323b26c6d311818eecda",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742373232340.png",
+      "sha256": "a634527f6cd4985127dd0ccf72eee9da6e36d889e8e705280a0d4579c15f8a2a",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Create exactly ONE freestanding low wooden memory worktable isolated from the reference apartment. B-view high orthographic camera, visible broad tabletop and SHORT front face with two short legs, restrained premium pixel-painted clusters and upper-left warm light. Simple worn walnut, subtle chipped corners, no objects on top. Center one complete table filling about 75 percent width and 48 percent height. Outside its silhouette the background is a perfectly uniform pure magenta RGB #FF00FF chroma key, including between legs. Do not include floor, walls, rug, chair, device, paper, cast shadow beyond table, text, second object or isometric diagonals.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740698357371.png",
+      "output": "assets/platform/modules/home-worktable-v2.png"
+    },
+    "service-console-v2": {
+      "requestId": "06bbd7fd-5545-46f2-8c07-250433283be4",
+      "taskId": "mt_19ff30b1641e3ac344c4905c36592a62",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742426836548.png",
+      "sha256": "35bc6004fadba194c50ebba3287e681e9a0406a0d255d1db6d04dc1ec07ad858",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Create exactly ONE freestanding memory service console desk isolated from the reference office. B-view high orthographic camera, visible rectangular gray metal tabletop and SHORT front face with two legs, physically integrated inset muted cyan displays, two tangible card slots and worn brass trim. Premium restrained pixel-painted clusters and upper-left warm practical light. Center one complete object filling about 80 percent width and 50 percent height. Outside its silhouette the background is perfectly uniform pure magenta RGB #FF00FF chroma key, including between legs. No floor, wall, chair, queue rail, document, other object, readable text, UI or isometric diagonals.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740498662160.png",
+      "output": "assets/platform/modules/service-console-v2.png"
+    },
+    "home-ground-v3": {
+      "requestId": "d726669f-0aa8-403a-8a38-20bfc157f8ce",
+      "taskId": "mt_8241f5d3570f0f2d78effccf8cb4ff45",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742498347195.png",
+      "sha256": "b105234c0f3efec383860ce3ca6cc090bc5f274318719037cc6612ea1470b23e",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Make this admitted FLOOR-ONLY orthographic tile plate into the private apartment variant. Preserve its 10-column parallel grid, tile dimensions, edge-to-edge floor coverage, worn pixel-painted texture and completely wall-free composition. Shift color toward subdued desaturated teal and softer warm residential lighting, add sparse believable domestic scuffing and small stains. The entire canvas remains ONLY horizontal ceramic floor tiles from top edge to bottom edge, including all four corners; absolutely no border, wall, baseboard, door, window, room outline, table, rug, furniture, shadow of furniture, person, text or UI.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742225394589.png",
+      "output": "assets/platform/modules/home-ground-v3.png"
+    },
+    "home-worktable-v3": {
+      "requestId": "41305e37-e78f-4a50-b8cb-468da059b543",
+      "taskId": "mt_16d120355d611a0a6c864210a105c147",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742538170884.png",
+      "sha256": "d3502102663aee3863e17f2326c4fabf0341e1c889dddd797a4fc38e2e606bdc",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "STRUCTURE LOCK. Preserve the reference low RPG table exact B orthographic overhead silhouette, camera elevation, huge visible rectangular top plane, VERY SHORT dark front face, tiny stub legs, pixel cluster edges and 512x512 placement. It must read as a flat low table seen mostly from above, never as a frontal standing desk. Remove the black desk lamp and white paper completely; replace their surface with continuous worn dark walnut wood grain. Change the table color from warm brown to desaturated walnut with small dull brass corner protectors. Exactly one table only. Outside the complete table silhouette use uniform pure magenta #FF00FF, including between the short legs. No shadow, floor, walls, text, objects, front-facing console, angled isometric view or perspective convergence.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789473552754202.png",
+      "output": "assets/platform/modules/home-worktable-v3.png"
+    },
+    "service-console-v3": {
+      "requestId": "f629d231-ce6f-4c1b-9747-93021438f8d4",
+      "taskId": "mt_ec333b7e09797e25f679815a633e7d04",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742588516989.png",
+      "sha256": "965d9a311b0202390dbd5d721f45aa2cb88cc1779fc725aa27831044c8c7f2a2",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "STRUCTURE LOCK. Keep this exact approved LOW TABLE B-view orthographic overhead silhouette, the same large visible top plane, tiny front face, short legs, size, position and pure magenta background. Redesign ONLY its surface and material as a near-future memory service workstation: muted graphite metal top, one small inset cyan waveform screen and two physical brass-edged card slots flush with the TOP plane. These details lie flat on the tabletop, seen from above. Do NOT make an upright computer, monitor, wall-mounted console, vertical dashboard or frontal desk. One low table only, no extra object, no writing, no floor or wall. Outside silhouette uniform pure magenta #FF00FF. Preserve crisp pixel-painted clusters and upper-left warm light.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742538170884.png",
+      "output": "assets/platform/modules/service-console-v3.png"
+    },
+    "home-wall-v3": {
+      "requestId": "8daec056-31e1-4064-8aab-b7357288e81d",
+      "taskId": "mt_c569de08867c1807a245fb005f842fd6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742748148277.png",
+      "sha256": "3e2712c54cead53728a27d464f3938bcf7b3615b1dcb0a6d390394f77eb1b35a",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Create one continuous reusable NORTH WALL FACE MATERIAL from the approved B-view pixel RPG wall reference. Straight edge-to-edge 768x256 warm gray-teal plaster wall, pixel cluster surface, short dark lower plinth and upper trim, subtle top-left warm practical light. Along its center mount one narrow recessed cyan memory-status plaque and a small brass household key rail; tiny architectural details only, no readable lettering. Fill the central magenta gap from reference with continuing wall plaster: NO hole, NO door, NO floor. No clocks, workshop tools, big lamps, people, furniture, black border, perspective convergence or isometric diagonals. Same front wall elevation and pixel density as reference. Horizontal left and right ends join cleanly.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789454407046481.png",
+      "output": "assets/platform/modules/home-wall-v3.png"
+    },
+    "home-wall-v4": {
+      "requestId": "8b014007-c495-4e7e-bcc2-89bc6a5ef891",
+      "taskId": "mt_bfb855eb31fbaa011afeb7bdc30233ac",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742953064163.png",
+      "sha256": "eec30422b787e5640cfeb2a157196b8af70b5ce5fd870c70651e59e29b15e3a6",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Keep this same B-view orthographic continuous north wall face, exact front elevation, teal-gray plaster material, top wooden cap, bottom dark plinth, pixel density and edge-to-edge dimensions. Move the existing cyan household memory plaque and brass key rail to the FAR LEFT third (x=105..260); on the FAR RIGHT third (x=580..690) add two small stacked personal photograph frames in the same pixel-painted art. Leave the CENTER THIRD x=300..470 entirely plain plaster because the engine cuts a real doorway there. No printed words, no door drawn in this image, no floor, no magenta opening, no extra panels or perspective.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742748148277.png",
+      "output": "assets/platform/modules/home-wall-v4.png"
+    },
+    "hall-wall-v4": {
+      "requestId": "4a049d92-ac77-4866-a75f-bfb330a3efeb",
+      "taskId": "mt_f8e1732c4ddc004f1ce3d6d03174e432",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742959966723.png",
+      "sha256": "f38b3570747bd9315212bd2717054dbfb2a1bb031fb9eb1d8ec8e1be5d8e16ef",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Transform this continuous B-view overhead RPG north wall into a SHARED RESIDENTIAL HALL wall material, edge-to-edge 768x256 with no gap or door. Preserve the same pixel cluster density, short top cap, bottom plinth and exact front elevation. Desaturated blue-gray plaster with long central recessed lift-service panel and two tiny brass indicator lights at x=280..490; weathered seams and practical cold lighting. No readable words or numerals, no standalone furniture, no floor, no door, no vanishing point, no isometric view.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742748148277.png",
+      "output": "assets/platform/modules/hall-wall-v4.png"
+    },
+    "service-wall-v4": {
+      "requestId": "3f21938e-885c-48d7-8b5a-23f4a1faa7c6",
+      "taskId": "mt_69fd98f8e2ef7309d259f2fdb2223df2",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742966650420.png",
+      "sha256": "44ec7deecbdce921b91a29dc95e13e528b8d15a0151d6477f37c271eca9af60e",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Transform this continuous B-view overhead RPG north wall into the MEMORY SERVICE OFFICE back wall, edge-to-edge 768x256 with no gap or door. Preserve the exact front elevation, pixel clusters, short top cap and bottom plinth. Muted warm gray plaster, a long inset clerks service glass window with dark brass frame across the middle half, frosted teal glass and subtle warm practical light; no counter projecting onto floor. No readable text, UI, people, table, full room, floor, door, perspective convergence or isometric slant.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742748148277.png",
+      "output": "assets/platform/modules/service-wall-v4.png"
+    },
+    "home-wall-v5": {
+      "requestId": "0ac35789-8fb0-4afa-9958-4a8fa515f2f1",
+      "taskId": "mt_06ecd948b9f9627198c3c10f0dd2cb5e",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743034909233.png",
+      "sha256": "e4ee4a9e48ac55181bcdaa3b7452fbaecc5a7ed48000c7fd3fcb40887efa65c1",
+      "actualSize": [
+        768,
+        256
+      ],
+      "status": "succeeded",
+      "prompt": "Correct only the TWO picture frames at far right of this B-view game wall: remove all human faces and photographic content. Each frame must show an abstract blurred memory color field with a few broad matte pixel clusters, one ochre and one faded blue, no recognizable person or face. Keep the left cyan household plaque, brass key rail, exact wall geometry, center plain zone, top cap, bottom plinth, muted plaster and upper-left lighting unchanged. Image remains one continuous edge-to-edge north wall face, no door or floor. Restrained pixel-painted game art, no photo realism or readable lettering.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742953064163.png",
+      "output": "assets/platform/modules/home-wall-v5.png"
+    },
+    "neighbor-stand-v2": {
+      "requestId": "42353e58-d450-4175-a714-bdb015b23c19",
+      "taskId": "mt_17d4a097eb14ada93871c5cc8c63e003",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743160244878.png",
+      "sha256": "b6946db17fd72c4fe881afd555771819cee03c4336393b908c78926725515f61",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Use ONLY the top-row CENTER character of the reference for exact B-view high overhead camera, visible crown of hair, tiny face, short foreshortened torso, feet and scale. Make one standing full-body NPC woman Anhe, age thirty, dark hair in a low knot, faded aubergine cardigan and dark teal trousers. The head is seen from ABOVE as in source, not a frontal portrait. Exactly one character centered at 512x512, occupies about 45 percent width and 78 percent height, shoes near bottom. Crisp restrained pixel-painted clusters like reference. Outside silhouette perfectly uniform pure magenta #FF00FF, no grid, extra pose, wall, floor, shadow, writing or UI.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789741549593468.png",
+      "output": "assets/platform/sprites/neighbor-stand-v2.png"
+    },
+    "neighbor-stand-v3": {
+      "requestId": "aa13aec9-c2e9-4782-990f-ea5ba46a4d17",
+      "status": "pending",
+      "prompt": "CAMERA LOCK: reproduce ONLY the source atlas top-row center standing pose, cropped as a single sprite. Overhead B orthographic RPG camera steeply ABOVE the person: crown and back of dark hair dominate the head, downcast face mostly HIDDEN, short foreshortened torso, feet on common baseline. Change source yellow jacket person into neighbor Anhe with dark hair knot, muted aubergine cardigan, charcoal trousers. Preserve body-to-head ratio, shoe direction, pixel cluster style, light angle, center placement and total silhouette height of the source pose. Do not change to front-facing portrait, do not show both eyes or an upright full face. One figure only at center, about 50 percent canvas height. Pure magenta #FF00FF background outside silhouette, no grid, extra pose, floor, wall, shadow, lettering or UI.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png",
+      "output": "assets/platform/sprites/neighbor-stand-v3.png"
+    },
+    "neighbor-stand-v4": {
+      "requestId": "e2f90d74-d76c-4397-a615-346f7b5563c1",
+      "taskId": "mt_70a938fea71b28e3677a7b640dc766ca",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743324656682.png",
+      "sha256": "7141633e11e66d1cd95ce4ea471dc8c1a554f9d57b3a8d922439c2d7bc3fdf8b",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Single B-view orthographic overhead pixel RPG standing sprite of a woman named Anhe. Camera directly ABOVE and slightly south of the character, looking steeply down: large visible crown of dark hair and low knot, only a tiny downcast sliver of face, broad shoulders and shortened upper torso, small dark shoes below. Restrained medium pixel clusters, matching a 2D top-down tile RPG, NOT front-facing character concept art. Faded aubergine cardigan and dark teal trousers. One figure centered, about 55 percent canvas height, soles at y420. Pure uniform #FF00FF magenta background outside silhouette. No cast shadow, grid, words, UI, other pose or scenery.",
+      "output": "assets/platform/sprites/neighbor-stand-v4.png"
+    },
+    "caretaker-stand-v4": {
+      "requestId": "78c0c72d-970f-4acb-a54b-132c729d958a",
+      "taskId": "mt_f36674058961b6cf6b1ebadae028773d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743372920988.png",
+      "sha256": "0f67c4041a8545bb9b9c73b797fe87cc0a91e850e57096035519a6684ff90e0f",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY. Preserve the exact B-view overhead top-down camera, crown-to-face ratio with little visible face, total silhouette scale, body pose, single centered character, restrained pixel cluster style, and uniform #FF00FF magenta background. Replace this neighbor with a stern older male building caretaker Luo: short gray-streaked charcoal hair, weathered medium skin, charcoal utility jacket with a single muted brass shoulder tab, dark trousers and boots. No hair knot, no aubergine clothing. Same steep overhead view, not a front-facing portrait, no extra object or scene.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743324656682.png",
+      "output": "assets/platform/sprites/caretaker-stand-v4.png"
+    },
+    "clerk-stand-v4": {
+      "requestId": "a7d4cdae-060c-4fc0-876a-1289ff099689",
+      "taskId": "mt_d23e805f58b13b4c0d1a19041ef1b3ad",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743383001690.png",
+      "sha256": "1e50ddfeb460c48a4e3a12a33d574a2ac9d74d1dce56f37e4fe60a09058796cd",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY. Preserve the exact B-view overhead top-down camera, crown-to-face ratio with only a small downcast face, total silhouette scale, body pose, single centered figure, restrained pixel clusters, and uniform #FF00FF magenta background. Replace this neighbor with memory office clerk Qiaomi: neat short dark bob (no hair knot), muted teal uniform with one small dull brass cuff, charcoal trousers and dark shoes. Same steep overhead view, not a front-facing portrait, no desk, text, other object or scene.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743324656682.png",
+      "output": "assets/platform/sprites/clerk-stand-v4.png"
+    },
+    "door-leaf-v2": {
+      "requestId": "297c8438-6e69-4c0f-b977-2f101ec56dd8",
+      "taskId": "mt_4d17ec2c7469feb6d11c29f05828af43",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743539221685.png",
+      "sha256": "865919d2be9dce474439f108e09a107e34d9d33afba5115cb8b0fb4a1a76a028",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Extract and redesign ONLY the independent MOVABLE wooden door leaf from this platform-generated door reference. One narrow straight rectangular door slab, full front elevation for a B-view orthographic 2D RPG, muted charcoal walnut with subtle worn brass latch, a single small inset cyan frosted glass square near top. Preserve parallel vertical sides, short wood grain pixel clusters and upper-left practical light. Center complete leaf about 45 percent width and 78 percent height. Pure uniform #FF00FF magenta outside the leaf, including all four corners. No surrounding fixed doorframe, lintel, jamb, wall, floor, threshold, another door, perspective convergence, isometric slant, readable words or UI.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789740921411401.png",
+      "output": "assets/platform/modules/door-leaf-v2.png"
+    },
+    "world-props-v2": {
+      "requestId": "b29be554-bb8d-473c-aa44-42c3fcecac82",
+      "taskId": "mt_2232b850d2639821d43febc45b49e2b5",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789743786287468.png",
+      "sha256": "8c43907e945adb208c3764f0b44beac2c11982fe93272692f9164df13fc7b00f",
+      "actualSize": [
+        960,
+        960
+      ],
+      "status": "succeeded",
+      "prompt": "Exactly a 3 column x 3 row ATLAS of nine independent tiny top-down pixel RPG world props, equal 320x320 cells, one centered object per cell. Steep B orthographic overhead camera: broad TOP surfaces, very short front faces, parallel edges, no vanishing point. Restrained medium pixel clusters and matte desaturated teal/slate/ochre palette matching a tile-based 2D exploration RPG. Row 1: small charcoal voice recorder with one cyan wave slit; cream folded transfer receipt with blank lines; pale breakfast note beside a tiny top-view cup. Row 2: torn amber authorization seal; small worn pale hall notice sheet; closed teal ledger book seen from above. Row 3: compact brass-framed terms placard with blank lines; small graphite memory terminal with two physical slots; small muted cyan preview monitor seen from above. All documents are NONREADABLE blank lines, no letters, numbers, words or pseudo-text. Uniform pure magenta #FF00FF background outside each object, including all cell corners; no white or checkerboard, no cell grid, shadows, floor, walls, figures, icon outlines, photography, product renders, isometric angle or text.",
+      "output": "assets/platform/props/world-props-v2.png"
+    },
+    "hall-ground-v3": {
+      "requestId": "5c5fc98a-b86c-4c82-9731-6b1e1ee86d77",
+      "taskId": "mt_a8fc26497c93ddf2a02126b300e56586",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744303101066.png",
+      "sha256": "2753b752dfbcc71ce6679636ae5da2d5db9a7f97f482cd6896ecbe28ed8bd448",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Use this accepted orthographic overhead pixel RPG GROUND PLATE as the strict reference for tile density, irregular imperfect grout lines, hand-painted wear, scattered tiny grit, light pools, shadow pools, and lived-in richness. Create ONLY a new near-future shared residential hall FLOOR SURFACE. Entire 768x1024 rectangle is flat walkable floor, about 22-26 small tile columns across the width and same tile size everywhere, no perspective convergence. Recolor original outdoor stone to desaturated slate-blue ceramic and muted teal repaired stone, with restrained ochre scuffs and cold/warm practical lighting. Keep broad center traversable. All four corners and every edge are continuing floor surface. Absolutely NO walls, wall edges, baseboards, doors, thresholds, furniture, people, plants, leaves, papers, props, rooms, facade, frame, UI or words. Crisp pixel-painted clusters, no smooth CAD gradients, no photorealism.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789582659951850.png",
+      "output": "assets/platform/modules/hall-ground-v3.png"
+    },
+    "home-ground-v4": {
+      "requestId": "1f109dc2-9ff6-4ec7-b828-4d8176d000c5",
+      "taskId": "mt_d4516b183fc7c378c5c55da431ef9069",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744388992600.png",
+      "sha256": "8e160eddaf3f544005063b92f2bde010cde4dfad2812f5a13b79c93c2a25a0e4",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Create the newly uploaded person private apartment FLOOR SURFACE by editing only this accepted orthographic hall floor plate. Preserve EXACT tile density, grid geometry and floor-only all-edge coverage. Make desaturated teal and warm gray ceramic, softer warm window light at left, fewer civic scratches, believable uneven daily wear and a few small repaired tiles. Pixel-painted detailed worn material. Every pixel of the entire 768x1024 remains flat horizontal floor, no change of perspective, no walls, baseboards, frame, door, furniture, papers, plant, person, words or UI.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744303101066.png",
+      "output": "assets/platform/modules/home-ground-v4.png"
+    },
+    "service-ground-v3": {
+      "requestId": "6fea530d-db36-4f1f-935c-197aa4129d6c",
+      "taskId": "mt_1cce5c46f21954c95f27fbdb177d6d87",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744440682437.png",
+      "sha256": "77b23e5ba8ac900e1d281dfc7d801728150b34132bc8d26172b61cd980487031",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Create the memory service office FLOOR SURFACE by editing only this accepted orthographic hall floor plate. Preserve EXACT tile density, grid geometry, parallel seams, edge-to-edge floor-only coverage and pixel-painted grain. Shift to worn cool blue-green institutional ceramic, gentle warm lamp spill near north edge, small maintenance patches, restrained amber scuffs, subtle teal reflected light toward right. Center walkway quiet but not blank. Every pixel of the 768x1024 image is flat horizontal floor. No walls, baseboards, border, door, furniture, papers, figures, writing or UI; no perspective convergence.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744303101066.png",
+      "output": "assets/platform/modules/service-ground-v3.png"
+    },
+    "hero-stand-down-v5": {
+      "requestId": "2a770db7-a748-4297-aff7-5899b1850e1b",
+      "taskId": "mt_72f8306b64393c8bac1c9ac0699c44bc",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "sha256": "2340e3d09e5dfa874d1269ef3222feb97e7de13b8740ceefd853ae2a907ed0f6",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Make ONE isolated standing character sprite, using ONLY the TOP ROW CENTER pose in this approved B-view orthographic overhead pixel RPG reference as the exact camera, head-to-body ratio, shoulder width, foot baseline, crisp pixel-paint density and pose template. A young ordinary newly uploaded adult, short charcoal hair, worn deep indigo-blue coat with a muted teal collar, dark trousers and shoes, one tiny brass memory tag on the coat. No yellow garment, backpack or shoulder bag. Camera looks STEEPLY DOWN from above: the crown of the head is the major visible head surface, face is a narrow downcast sliver, arms hang naturally, both feet together. Preserve the reference mature handcrafted pixel game rendering, NOT simplified chibi, vector, emoji, frontal portrait or 45-degree isometric. Exactly ONE full-body figure, centered at x256, visible silhouette about 165 pixels tall, sole baseline around y410. Background outside figure is perfectly uniform bright pure magenta RGB #FF00FF for deterministic removal. No other frames, grid, floor, shadow, UI, words or scenery.",
+      "referenceUrl": "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png",
+      "output": "assets/platform/sprites/hero-stand-down-v5.png"
+    },
+    "hero-stand-left-v5": {
+      "requestId": "08e0716e-9c52-46fe-ae0e-aa29092240a0",
+      "taskId": "mt_789b789d9b5c4ed59af5a9668a210fa6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "sha256": "ff2c538dc5324ddd99b740eb151534a63cdfdc9eaa2dfa1086577b234396761e",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME single B-view overhead pixel RPG character to face SCREEN LEFT, in a neutral standing pose. Preserve identity, coat length, dark indigo cloth, charcoal hair, teal collar, brass memory tag, pixel cluster density, head/body ratio, total height, x center, and common shoe baseline. Strict LEFT PROFILE: nose points screen left, only one eye or no eye, visible crown of hair, short foreshortened torso viewed from above. Feet together and arms at rest. Do not show a frontal face, back view, diagonal three-quarter view, backpack or shoulder bag. One full body only, no animation sheet. Outside silhouette pure uniform #FF00FF magenta, no floor, shadow, text or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/hero-stand-left-v5.png"
+    },
+    "hero-stand-up-v5": {
+      "requestId": "c85a5e01-ecee-4882-843b-a2835f90d528",
+      "taskId": "mt_bb8b19b285a8d7f8cc41438cce34d241",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748000053572.png",
+      "sha256": "75cb050ccbdecbbbe0ed6cc5711cdcbff8a3301bd63664d4a41b4d355c96b5c9",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME single B-view overhead pixel RPG character to face STRAIGHT UP, away from viewer, in a neutral standing pose. Preserve identity, indigo coat, charcoal hair, muted teal collar, physical body width and height, pixel cluster density, x center and same shoe baseline. The back of the head and back of coat are visible; absolutely NO face, eyes or nose. Camera remains steeply above the character, not frontal concept art. Feet together, arms at rest. No bag or changed hairstyle. Exactly one full body; outside silhouette pure uniform #FF00FF magenta, no floor, shadow, text, grid or second pose.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/hero-stand-up-v5.png"
+    },
+    "hero-step-down-l-v5": {
+      "requestId": "754858c4-6456-4635-baa6-f1b1313eb97c",
+      "taskId": "mt_860e6ac3744c92eb07b79a57e9fa8158",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748007041509.png",
+      "sha256": "e227b72e25e4636d2f9e2a2233ea1602ef46a440b6ce63b2417406af7b592d81",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME B-view overhead indigo-coat pixel RPG character by ONE small natural walking half-step TOWARD VIEWER. Keep head facing straight down, crown dominant, downcast little face, coat/buttons/tag/teal collar and pixel art style unchanged. LEFT LEG extends forward lower on canvas by about 12 pixels, RIGHT LEG trails under coat; opposite arm swings slightly. Keep head x center, same overall scale and sole ground baseline around y450; do not shift body sideways. One full-body figure only, not a new person, not front portrait or three-quarter view. Background pure uniform #FF00FF magenta. No floor, shadow, other poses, labels or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/hero-step-down-l-v5.png"
+    },
+    "hero-step-down-r-v5": {
+      "requestId": "8c30e35e-45ce-4711-a23e-965d6ac2faf9",
+      "taskId": "mt_974dff9bcae645e6258e0694a7dc8ab5",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748012796229.png",
+      "sha256": "e96e7d6451b3197f8e4694d7d41830faf18a447d67a7d3e4216966098e838b54",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME B-view overhead indigo-coat pixel RPG character by the opposite natural walking half-step TOWARD VIEWER. Head remains straight down, crown dominant and face only a downcast sliver; preserve identity, coat, teal collar, brass tag, pixel art density and body scale. RIGHT LEG extends forward lower on canvas by about 12 pixels, LEFT LEG trails under coat; opposite arm swings subtly. Keep centered x and common shoe baseline near y450. Exactly one full-body figure, not frontal concept art, diagonal turn, new outfit or extra pose. Outside silhouette pure uniform #FF00FF magenta, no floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/hero-step-down-r-v5.png"
+    },
+    "hero-step-left-l-v5": {
+      "requestId": "15f29323-e07b-4949-b050-f12354209f68",
+      "taskId": "mt_1b89f3acc2b8b041505fafa098b93f11",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748023207873.png",
+      "sha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Make the first small walking half-step of THIS EXACT SAME indigo-coat overhead pixel RPG character moving SCREEN LEFT. Keep strict left-facing profile, nose pointing left, visible hair crown from above, same coat/collar/tag, same body height, x center and foot ground baseline as reference. Leftward leading foot extends about 14 pixels screen left, trailing foot remains near center; one opposite arm swings slightly. Full body, no diagonal/front face, no bag, no new outfit. Pure uniform #FF00FF background, no floor, shadow, UI, word, grid or second frame.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "output": "assets/platform/sprites/hero-step-left-l-v5.png"
+    },
+    "hero-step-left-r-v5": {
+      "requestId": "22735fc4-8d10-4fbc-91f8-0f782aab7712",
+      "taskId": "mt_f9782fbede3fe10c03f191dff60c42c0",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748030420355.png",
+      "sha256": "b17f0d71520b7f328f09840b14e230e10b8ab86b24ef3a188b4775461dedde63",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Make the opposite small walking half-step of THIS EXACT SAME indigo-coat overhead pixel RPG character moving SCREEN LEFT. Strict left-facing side profile, nose points left, crown visible from above; preserve exact coat/collar/tag/colors, same body size, center and shoe baseline. Trailing leg now swings forward screen left while the other supports, opposite arm swings slightly. This must differ in leg phase from a neutral stand, without turning to face viewer or away. One full body only, no bag or extra character. Background pure uniform #FF00FF magenta, no floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747993738666.png",
+      "output": "assets/platform/sprites/hero-step-left-r-v5.png"
+    },
+    "hero-step-up-l-v5": {
+      "requestId": "9cf401d2-33df-4ebd-b59a-be57a8300032",
+      "taskId": "mt_367acfc1911ca68d795670c39bc01ad6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748036849651.png",
+      "sha256": "8fd4ee75133af34bae95cc246f3c96399a792fd0586e8c8799a0cd7ebd10cb14",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME B-view overhead indigo-coat character walking straight UP, AWAY from viewer, as one small natural half-step. Keep back of charcoal head and back of coat facing viewer, NO face or eyes, same teal collar, identity, silhouette scale and pixel-painted style. LEFT LEG advances toward top of canvas, right leg trails; opposite arm moves subtly. Center x and shoe baseline remain at same ground position around y450. One full-body sprite only, background uniform pure #FF00FF magenta; no floor, shadow, diagonal turn, text or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748000053572.png",
+      "output": "assets/platform/sprites/hero-step-up-l-v5.png"
+    },
+    "hero-step-up-r-v5": {
+      "requestId": "3d1a059e-eea9-49ed-87e0-8bd9fb5d08b6",
+      "taskId": "mt_f374beb16789e9f7f660745df09abf99",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748042280912.png",
+      "sha256": "207a15e19e19308a70549066e05a8c36f0d0c975dda5e83cc6387e819537b4cc",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME B-view overhead indigo-coat character walking straight UP, AWAY from viewer, in the opposite small natural half-step. Back of hair crown and coat always visible, absolutely NO face or eyes, no body turn. RIGHT LEG advances toward top of canvas, left leg trails; opposite arm moves subtly. Preserve teal collar, identity, x center, body size, common shoe baseline around y450 and mature pixel painting. One full-body sprite only. Pure uniform #FF00FF background outside silhouette, no floor, shadow, text, grid or extra frames.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748000053572.png",
+      "output": "assets/platform/sprites/hero-step-up-r-v5.png"
+    },
+    "neighbor-stand-v5": {
+      "requestId": "7bf945e1-fc44-43dd-bfbe-72420682128a",
+      "taskId": "mt_3993d619f188b0e1ae0eadec77dc3ce4",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748106581353.png",
+      "sha256": "244a149207756835ede6a4aa0ac2df6a380ee38438de97a7ec2cf3a39e0f5758",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY AND COSTUME CHANGE ONLY. Keep this exact approved single-character B-view overhead RPG camera, top-of-head prominence, body proportions, pixel-painted density, full-body framing, x center and shoe baseline. Replace protagonist with neighbor Anhe, an ordinary woman in her thirties: dark hair in a low small knot, faded aubergine cardigan over a dark shirt, charcoal trousers and shoes, no badge. She stands still looking straight DOWN the screen, only a small downcast face visible beneath the hair crown. Do not make a portrait or change zoom, head/body scale, camera angle or canvas placement. Exactly one full-body figure, bright uniform #FF00FF background outside silhouette; no floor, scene, text or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/neighbor-stand-v5.png"
+    },
+    "caretaker-stand-v5": {
+      "requestId": "976ed16a-a8f9-4f11-ac0e-47f20736f184",
+      "taskId": "mt_074584027d8712be423f65decd465924",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748113706437.png",
+      "sha256": "31451052f82343171581907c014f1559465de2fcf042a5ed26455bf614cef109",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY AND COSTUME CHANGE ONLY. Keep the reference exact B-view STEEP overhead RPG camera, top-of-head dominance, full-body height, x center, shoe baseline and mature pixel-painted density. Replace indigo coat protagonist with older male building caretaker Luo: short gray-streaked charcoal hair, weathered medium skin visible only as a SMALL downcast face sliver, charcoal utility jacket with one muted brass shoulder tab, dark trousers and work boots. Stands still facing straight down screen. Body can be slightly broader but same adult height as reference; no giant head or frontal face. Pure uniform #FF00FF magenta outside one full-body figure, no floor, scenery, shadows, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/caretaker-stand-v5.png"
+    },
+    "clerk-stand-v5": {
+      "requestId": "3483a247-6d24-42de-80c6-b5648d3929ae",
+      "taskId": "mt_04046cf5c8144c900cdaf141ac7c8b8a",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748119519352.png",
+      "sha256": "7f9f4912652a342ad07e98d564ca1db01a91c805926555b46a3c251473706ed9",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY AND COSTUME CHANGE ONLY. Keep the reference exact B-view STEEP overhead RPG camera, crown-to-face ratio, full-body height, x center, shoe baseline, realistic adult proportions and crisp mature pixel-painted density. Replace protagonist with female memory-service clerk Qiaomi: neat dark bob, muted blue-green work jacket with tiny brass name tab, dark trousers and shoes; small downcast face barely seen below the crown. She stands still facing straight down screen. Do not change camera to frontal portrait, alter zoom or create big head/short body. Pure uniform #FF00FF magenta outside one full body, no floor, window, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789747876975583.png",
+      "output": "assets/platform/sprites/clerk-stand-v5.png"
+    },
+    "hero-step-down-r-v6": {
+      "requestId": "23c54aad-43a1-4996-ac62-9e613caadcbc",
+      "taskId": "mt_1162d806cea36b5c1941de76bd915a9f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748130735712.png",
+      "sha256": "35386cee9cc87ffc4a392577c27d00c45b7155848b868d99f129365717573c44",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Correct ONLY the walking leg phase of this SAME B-view overhead indigo-coat pixel game sprite. His current forward shoe at the LOWER LEFT of canvas must move BACK beneath the coat; the OPPOSITE shoe at the LOWER RIGHT must move forward down canvas by about 25 pixels. The right arm swings back slightly while the left swings forward. Preserve the exact head looking straight down, face sliver, hair, coat buttons, brass chest tag, canvas position, silhouette scale and magenta #FF00FF empty background. Absolutely no other change, no added object, no turn, no new outfit. One full body only. This is the opposite leg phase of the reference, not a duplicate pose.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748007041509.png",
+      "output": "assets/platform/sprites/hero-step-down-r-v6.png"
+    },
+    "hero-step-left-r-v6": {
+      "requestId": "eafbc9b4-011a-41f0-b851-f309059a954b",
+      "taskId": "mt_24735f2d50ecf0845783d49af18e5a22",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748137620727.png",
+      "sha256": "23b837215a639be709c9bfccfde1b45f3b01405294a6cffa812c21c6266828bd",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Correct ONLY the walking leg phase of this SAME left-facing B-view overhead indigo-coat pixel game sprite. The leading shoe at far SCREEN LEFT must move back under the coat; the other shoe must pass forward toward SCREEN LEFT, changing which leg leads. Opposite arm swing changes subtly. Keep strict side profile with nose pointing screen LEFT, same head, face, coat, brass chest tag, body scale, center and common foot baseline. No turn to front, no diagonal camera, and absolutely NO crown, hat, jewelry, bag or new object. Uniform #FF00FF magenta background around one full body, no floor, shadow or words.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748023207873.png",
+      "output": "assets/platform/sprites/hero-step-left-r-v6.png"
+    },
+    "hero-step-up-r-v6": {
+      "requestId": "6c8b721e-09a1-4dcb-8e10-2ee09e12d847",
+      "taskId": "mt_f0752481c84ef4e68e759f6c8a710946",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748145072457.png",
+      "sha256": "6849f0733e05561efd049124f06590f7e644b1b38a7ad80cd465f17f9e9d4869",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Correct ONLY the opposite walking leg phase of this SAME back-facing B-view overhead indigo-coat pixel game sprite. The shoe now projecting to LOWER LEFT must step backward under coat while the OTHER shoe at LOWER RIGHT advances; reverse the supporting leg and arm swing. Back of head and coat remain EXACTLY facing viewer, NO face, no torso turn, no new clothing. Keep same x center, silhouette height, pixel-painted style and common foot baseline, one full-body figure. Uniform pure #FF00FF magenta background with no floor, shadow, words or extra object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748036849651.png",
+      "output": "assets/platform/sprites/hero-step-up-r-v6.png"
+    },
+    "home-worktable-v4": {
+      "requestId": "be925fd4-6f61-40bb-99bc-be6c9d2e0f43",
+      "taskId": "mt_15a2697c5e1426aef16a246d9a708501",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759473735705.png",
+      "sha256": "95a731edbf1a3ffe97255151a850702d4bd8a70b3fe9d7295b94cd9c3a53ab83",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "PROJECTION CORRECTION ONLY for this independent pixel RPG low walnut table. Retain its color, material, brass corner protectors, pixel-cluster detail, broad tabletop, tiny dark front fascia, short legs, centered 512x512 placement and pure uniform #FF00FF magenta background. Redraw the tabletop as an EXACT ORTHOGRAPHIC RECTANGLE seen steeply from above: its upper and lower edges are perfectly horizontal and EQUAL LENGTH; its left and right edges are straight, parallel and vertical on the image. Four tabletop corners are square 90-degree corners. The front edge must NOT be wider than the back edge. No trapezoid, perspective convergence, foreshortening, isometric diamond, diagonal sides or angled three-quarter camera. Keep the tabletop about x96..416 and y126..315, then a short constant-height front fascia and tiny parallel legs below. One table only, no objects, floor, wall, text or cast shadow.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789742538170884.png",
+      "output": "assets/platform/modules/home-worktable-v4.png"
+    },
+    "service-console-v4": {
+      "requestId": "36008b33-0f75-4f3c-9710-956fc693b387",
+      "taskId": "mt_28a5d5dacd17f74288c4335c3ea1add7",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759481472570.png",
+      "sha256": "afedda92a0a3ad5a9ab432f5c736d9a13aacc620c5bef8d5d8412407e6dc6dfe",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "MATERIAL CHANGE ONLY from this corrected orthographic low table. Keep EXACTLY the same 512x512 placement, rectangular tabletop geometry, equal-length parallel horizontal upper and lower edges, straight parallel vertical left/right sides, square corners, tiny front fascia and short legs. Replace walnut with worn muted graphite metal. On the flat tabletop, embed one SMALL cyan waveform display and two shallow brass-edged card slots; all details lie in the horizontal top plane and obey its straight nonconverging alignment. This is a low freestanding memory-service worktable, not a standing kiosk. Strict steep overhead B-view orthographic pixel RPG art, no trapezoid, widened near edge, isometric angle, perspective, upright screen, writing, floor, wall or extra object. Outside the silhouette pure uniform #FF00FF magenta.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759473735705.png",
+      "output": "assets/platform/modules/service-console-v4.png"
+    },
+    "home-worktable-v5": {
+      "requestId": "e40e71a0-028a-469e-899b-6bed8bf73dd2",
+      "taskId": "mt_e75cc9a515d7dc963e1fd0b5ea92b826",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "sha256": "ca5d0177e54f4e90701e0db4eccee1b7e2ecd8d5af80f8da9876a3b075d93a4b",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Single freestanding pixel-art walnut table for a steep overhead orthographic 2D RPG. Draw the tabletop as an AXIS-ALIGNED RECTANGLE: its left edge remains at x96 from y125 through y315, its right edge remains at x416 from y125 through y315; the upper and lower edges are straight horizontal lines of the exact SAME 320-pixel length. Four 90-degree corners, no diagonal or tapered outer contour. Show worn dark walnut grain and four tiny dull brass corner guards within that rectangle. Add only a 12-pixel-tall straight dark front fascia below y315, then two short parallel legs down to y400. Crisp handcrafted pixel clusters and restrained warm light, no smooth gradients. This is a 2D orthographic game asset, not an illustration with a camera lens. Absolutely no trapezoid, nearer edge widening, perspective, isometric angle, diagonal sides, floor, room, other object, lettering or shadow. Outside object pure uniform magenta RGB #FF00FF for transparent preparation.",
+      "output": "assets/platform/modules/home-worktable-v5.png"
+    },
+    "service-console-v5": {
+      "requestId": "a7c05022-10b0-4432-b2a4-f5a2672f64eb",
+      "taskId": "mt_19834596b00355c7418f6f680af2a84a",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759543350592.png",
+      "sha256": "f5ec75da7df5db67f4c643cea47836508d96675eb459ace5e850cf154b3b1f5d",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Retain the reference table EXACT 2D axis-aligned rectangular silhouette and equal 320-pixel upper/lower tabletop edge lengths. Preserve straight vertical sides at x96 and x416, square 90-degree corners, the same low front fascia and short legs; do not taper or widen the front edge. Change only the walnut surface into muted worn graphite metal. Add one small recessed cyan waveform panel and two tiny shallow brass card slots INSIDE the flat horizontal tabletop, aligned to its parallel edges. Handcrafted mature pixel RPG clusters, steep overhead orthographic view. No perspective, isometric angle, trapezoid, diagonal outline, upright screen, extra furniture, floor, writing or cast shadow. Background outside one complete table is pure uniform magenta RGB #FF00FF.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "output": "assets/platform/modules/service-console-v5.png"
+    },
+    "door-front-atlas-v3": {
+      "requestId": "a546b374-c030-4143-aaac-8ed91bdbc45d",
+      "taskId": "mt_f5c6a67c6a7420ad351f779d92ad7fab",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789790276175445.png",
+      "sha256": "c5e6b411b4ae9946ee496b8d45a2a17cd305756e888fe1bb10f7b28df57ea256",
+      "actualSize": [
+        768,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "STRUCTURE AND CAMERA LOCK. Preserve this approved two-cell orthographic pixel RPG doorway atlas exactly: two equal 384x512 cells, same frame silhouette, threshold anchor, lintel height, jamb width and open-leaf 90-degree pose. Left cell remains CLOSED; right cell remains OPEN with a completely empty transparent passage and the narrow leaf parked at the right jamb. Change only material and story identity to a restrained near-future residential memory building: muted blue-gray plastered metal frame, charcoal walnut door, small worn brass latch and one tiny inset desaturated cyan glass square on each leaf. Keep mature crisp pixel-painted clusters and upper-left practical light. Pure uniform #FF00FF magenta outside both complete doorway silhouettes and through the open passage. No wall panel, floor, room, person, writing, UI, perspective convergence, isometric angle, extra object or third state.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789663466520233.png",
+      "output": "assets/platform/modules/door-front-atlas-v3.png"
+    },
+    "door-side-passage-v3": {
+      "requestId": "9f921c28-fcb1-45af-bb42-187f62538ed7",
+      "taskId": "mt_e46eb8160ad05b0879afd6d8907b0f34",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789790288876606.png",
+      "sha256": "2d195eeee00e25d20abce8bbb4e364831d68d43fc264a934cb59bf6827659cb5",
+      "actualSize": [
+        768,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "STRUCTURE AND CAMERA LOCK. Preserve this approved orthographic TOP PLAN side-wall passage: one narrow vertical walkable threshold bridge centered on the 768x512 canvas, fixed short wall endcaps at top and bottom, equal parallel sides, and an open door leaf lying flush along the wall direction rather than facing the viewer. Keep its exact overhead camera, proportions, placement and complete silhouette. Recolor only to the same near-future memory building: muted blue-gray threshold tiles, charcoal walnut open leaf, warm-gray wall caps, tiny worn brass hardware, restrained crisp pixel clusters. The passage center remains visibly walkable. Pure uniform #FF00FF magenta outside the complete module. No frontal upright door, room, large wall panel, person, writing, UI, isometric diagonal, vanishing point or extra object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789669466495198.png",
+      "output": "assets/platform/modules/door-side-passage-v3.png"
+    },
+    "door-side-face-v4": {
+      "requestId": "af0d100f-1876-43d8-8b3a-125a798f3e04",
+      "taskId": "mt_b3499af58f19975f3d393526620a44f3",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789790902196941.png",
+      "sha256": "555722b25ccc84bdece96f970e4925086415124e91d308c7d1ae9c2f493a4974",
+      "actualSize": [
+        512,
+        768
+      ],
+      "status": "succeeded",
+      "prompt": "STRUCTURE AND CAMERA LOCK. Preserve the reference as one complete orientation-specific SIDE-WALL door facade for the same steep B-view orthographic pixel RPG camera: tall narrow rectangular frame, straight parallel sides, visible lintel and threshold, restrained thin side thickness and hardware, centered at the exact same scale and placement. Keep this as a side-wall facade asset; do not rotate it into a top-wall doorway and do not add a room. Change only material and story identity to the near-future memory building: muted blue-gray plastered metal frame, charcoal walnut recessed door surface, small worn brass latch and one tiny desaturated cyan inset. Mature crisp pixel clusters and upper-left practical light. Pure uniform #FF00FF magenta outside the complete silhouette, including all four corners. No green wood, clock, sign, words, UI, floor panel, person, perspective convergence, isometric diagonal, extra door or scenery.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789670745940147.png",
+      "output": "assets/platform/modules/door-side-face-v4.png"
+    },
+    "door-side-leaf-v5": {
+      "requestId": "34b90d9e-4631-4ec3-84f0-a0477aede013",
+      "taskId": "mt_e950fb034eeb52ab7e6402b34d7230c4",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789792513566871.png",
+      "sha256": "0a40142557c0a87ec62d52e5e6198208e19b494da0f1deac5e823970a210f94b",
+      "actualSize": [
+        512,
+        768
+      ],
+      "status": "succeeded",
+      "prompt": "ASSET ROLE CORRECTION. Create exactly ONE MOVABLE DOOR LEAF / SLAB for an already existing side-wall doorway in a steep B-view orthographic pixel RPG. Preserve the reference door slab proportions, straight parallel sides, hinge side, small latch and mature crisp pixel-painted detail. REMOVE the entire fixed architectural surround: absolutely no outer jambs, no lintel, no threshold, no wall cap, no masonry, no doorway recess and no floor. The silhouette must be only a dark charcoal walnut rectangular wooden slab with a very thin integral edge rail, a small worn brass handle near the left edge, and one tiny muted cyan memory-status inset. Center it at the same scale on pure uniform #FF00FF magenta outside the slab. No room, text, sign, UI, perspective convergence, isometric diagonal, second panel or scenery. This asset will rotate open beside a separate doorway, so any fixed door frame makes the result invalid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/1368312864/1789670745940147.png",
+      "output": "assets/platform/modules/door-side-leaf-v5.png"
+    },
+    "ambient-home-props-v1": {
+      "requestId": "c9d45737-b0f7-4699-9f89-22e636ef6045",
+      "taskId": "mt_b05ce8908d9fae9e1db56a5b6a99f189",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795501319612.png",
+      "sha256": "3b1913255cd7f9fce01b2a415b6ec422bdb4c4f78bab60ff75dcbfd7b6bfbedd",
+      "actualSize": [
+        960,
+        960
+      ],
+      "status": "succeeded",
+      "prompt": "Exactly a 3 column x 3 row ATLAS of nine independent lived-in near-future apartment props, equal 320x320 cells, one centered object per cell. Use steep B-view orthographic overhead projection: broad TOP surfaces, extremely short front faces, parallel edges, no vanishing point, no 45-degree isometric angle. Mature restrained pixel-painted game art with medium crisp clusters, worn graphite, desaturated teal, cloth gray and tiny practical cyan or amber indicators. Row 1: pair of worn indoor slippers with one tiny identity tab; loosely coiled dark fiber charging cable with a brass magnetic plug; folded thermal blanket with stitched circuit-thread edge. Row 2: low tray holding two translucent memory cartridges; small open repair case with two simple tools; reusable food container beside a small top-view cup. Row 3: low circular cleaning-drone charging dock; soft fabric grocery tote with ordinary packaged food; compact waist-high air recycler with one tiny cyan status slit and a small hardy plant. These are ordinary domestic traces, not quest objects, weapons, giant furniture, icons or product renders. Uniform pure magenta RGB #FF00FF outside every object, including all cell corners. No cell grid, floor, cast shadow, wall, figure, readable text, letters, numbers, UI, white background or checkerboard.",
+      "output": "assets/platform/props/ambient-home-props-v1.png"
+    },
+    "home-ground-lived-v1": {
+      "requestId": "723f2f39-d173-451d-bf96-bf549ef29254",
+      "taskId": "mt_65661a1d4d800603bc3711f03131de7d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795537450555.png",
+      "sha256": "390fe80905f33c1a18d80e5bab50946038edf6b55f4dcf2aca0a89ec095cec1c",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Edit this exact admitted orthographic apartment floor plate into a lived-in near-future FLOOR SCENE PLATE. Preserve the entire 768x1024 tile geometry, tile scale, parallel seams, no perspective convergence, color balance and all-edge floor coverage. Add only a restrained set of ordinary domestic traces physically resting on the floor: a loose dark charging cable near the upper-left edge, a pair of worn slippers near the lower-left edge, a low tray with two translucent memory cartridges close to the upper-right edge, a flat stitched utility mat near the lower-right edge, and several repaired seams, scuffs and small practical cyan/amber floor indicators. Keep a broad clear vertical walking route through the center from top to bottom. The raised objects must use the same steep B-view orthographic projection as the floor, with broad tops and very short faces; small contact shadows only. Make the room feel used and modest rather than decorated, with visible utilities and maintenance history suggesting a near future. No walls, doors, tables, rugs, key quest props, people, writing, readable symbols, UI, neon billboards, isometric camera or photorealism.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744388992600.png",
+      "output": "assets/platform/modules/home-ground-lived-v1.png"
+    },
+    "home-ground-lived-v2": {
+      "requestId": "79064999-5c82-4bd0-833c-2473317f65a1",
+      "taskId": "mt_8473f1c9112ce4df69b73aaf64a54cf2",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795609952810.png",
+      "sha256": "585624518909f4cf6b5e16721177426a5b67f9351572e581ad6567b3c29adcfd",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Make a MINIMAL EDIT to this exact accepted 768x1024 apartment floor image. Preserve the source pixels, tile size, tile count, seams, wear, lighting, color, sharpness and top-down projection everywhere except the few additions listed here. Add small ordinary near-future domestic traces at realistic human scale: (1) a thin coiled charging cable at upper-left, total footprint no larger than 4 floor tiles wide; (2) two worn slippers at lower-left, each slipper about 1 tile wide and 2 tiles long, the pair no wider than 3 tiles; (3) a low tray with two memory cartridges at upper-right, total footprint no larger than 3 by 3 tiles; (4) a thin stitched utility mat at lower-right, no larger than 4 by 5 tiles; (5) three tiny embedded cyan or amber maintenance indicators, each smaller than one tile. All additions lie flat or almost flat on the floor, use strict steep orthographic top view with parallel edges, and have only tiny contact shadows. Keep the central 8-tile-wide path completely clear. Do not enlarge or redraw the source tiles. No walls, doors, tables, rugs, people, key quest props, legible text, UI, neon billboards, isometric view, cinematic perspective or glossy product photography.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744388992600.png",
+      "output": "assets/platform/modules/home-ground-lived-v2.png"
+    },
+    "ambient-home-furniture-v1": {
+      "requestId": "da2ec450-3ac9-475e-9496-c350376d9839",
+      "taskId": "mt_c7b8ebc3615f2d20df2838c70a3a8ffe",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795713869728.png",
+      "sha256": "6ae399a4f0d1ecdd085e17ec23b2fc9dd81ed62b94e0f39c48885ef6419fcea8",
+      "actualSize": [
+        1024,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Exactly a 2 column x 2 row ATLAS of four independent ordinary near-future apartment FURNITURE pieces, equal 512x512 cells, one centered complete piece per cell. Strict steep B-view orthographic overhead projection matching a 2D exploration RPG: broad TOP surfaces, only very short front faces, parallel edges, no convergence, no 45-degree isometric camera. Mature restrained pixel-painted game art, worn graphite, desaturated teal, warm gray fabric, old brass fasteners and tiny practical cyan status lights. Top left: narrow low sleeping bench with rumpled gray bedding and one folded thermal blanket. Top right: low modular storage cabinet with broad top, two closed sliding drawers and a small charging strip. Bottom left: compact repair-and-laundry cart with a shallow tool tray and folded work cloth. Bottom right: low single-seat reading chair with worn fabric and one slim side charging dock. These are modest used furniture, not luxury cyberpunk props, not key quest devices, no people. Uniform pure magenta RGB #FF00FF outside every silhouette and through open gaps. No cell grid, floor, wall, room, cast shadow, readable text, labels, icons, UI, white background or checkerboard.",
+      "output": "assets/platform/props/ambient-home-furniture-v1.png"
+    },
+    "home-ground-furnished-v1": {
+      "requestId": "0d8d4963-46c2-4279-88ca-2cb02f5751cd",
+      "taskId": "mt_6ab4d5b61e34915d73658f791dcb0c25",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795738368214.png",
+      "sha256": "be195b250fcc9b8a0634806c858aa4a9b9621848a8c18b05a040553c97d65024",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Turn this exact accepted apartment floor plate into a complete lived-in near-future SCENE GROUND PLATE while preserving its 768x1024 tile geometry, tile scale, parallel seams, color, lighting and fixed orthographic camera. Add the following at realistic adult scale and only in these source-pixel zones: a narrow low sleeping bench with rumpled gray bedding at x45-195 y470-650; a low modular storage cabinet with two closed drawers and tiny cyan charging strip at x610-735 y465-640; a small repair-and-laundry cart at x40-165 y850-990; a low reading chair with slim charging dock at x600-730 y850-990. Add a few small lived-in items attached to or beside those furniture pieces: folded cloth, one cup, a short cable and worn slippers, all proportionate to a person roughly 120 source pixels tall. Keep x250-520 fully open as the main vertical walking path, keep y260-440 clear for two existing key tables, and keep the center free of decoration. Furniture uses the same steep B-view orthographic projection: broad tops, very short faces, parallel edges, no convergence. Restrained mature pixel-painted graphite, desaturated teal, warm gray cloth and old brass, with tiny practical cyan indicators; small contact shadows only. No walls, doors, key quest devices, people, readable text, UI, neon signs, isometric camera, cinematic perspective or glossy product photography.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744388992600.png",
+      "output": "assets/platform/modules/home-ground-furnished-v1.png"
+    },
+    "ambient-home-furniture-v2": {
+      "requestId": "ad768e53-185b-418a-bd51-147ecc05aa5b",
+      "taskId": "mt_2f31194ee04f064e3f3182413378d222",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795829477948.png",
+      "sha256": "208d5575023922c60844f277601f7c67198ef630ebf251033e14fce5a910b15a",
+      "actualSize": [
+        1024,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Use this accepted independent table only as the exact B-view orthographic camera and pixel-art projection standard. Create an exact 2 column x 2 row ATLAS, four equal 512x512 cells, one complete modest near-future apartment furniture piece per cell. Every piece must be seen from the SAME steep near-top-down camera as the reference: rectangular top plane horizontal to the canvas, straight parallel left/right edges, only a SHORT front face and short feet visible below; absolutely no diagonal isometric rotation. Top-left: narrow low sleeping bench oriented vertically in its cell, muted gray bedding and one folded blanket. Top-right: low modular storage cabinet with a broad rectangular top, two closed front drawers and tiny cyan charging strip. Bottom-left: compact repair-and-laundry cart with a shallow top tray and folded cloth. Bottom-right: low reading chair facing down screen, seat and arm tops visible, with a slim side charging dock. Mature restrained pixel-painted graphite, desaturated teal, gray cloth and old brass. Uniform pure magenta #FF00FF outside silhouettes and in open gaps. No white field, cell lines, floor, wall, cast shadow, people, readable text, UI, isometric angle or perspective convergence.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "output": "assets/platform/props/ambient-home-furniture-v2.png"
+    },
+    "home-ground-furnished-v2": {
+      "requestId": "dc92e2a2-1aec-4e14-9889-aaf999f5d4d2",
+      "taskId": "mt_c7007721b7d9b98a3e999be2671a1229",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795839647765.png",
+      "sha256": "18cd85706263d0a8101767719f1a7e4749df7e36ce34b92c7bc4a3344cfdca1d",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Make a MINIMAL EDIT to this exact accepted 768x1024 apartment floor. Preserve the source floor pixels and tile geometry everywhere except four compact furniture clusters. A standing adult in this source scale is exactly 120 pixels tall; use that as an absolute ruler. Add: (1) a narrow sleeping bench at x45-125 y450-680, exactly 80 pixels wide and 230 pixels long; (2) a low storage cabinet at x640-730 y490-580, exactly 90 by 90 pixels; (3) a compact repair cart at x55-145 y870-970, exactly 90 by 100 pixels; (4) a low reading chair at x640-730 y870-960, exactly 90 by 90 pixels. A single shoe is no more than 12 by 28 pixels, a cup no more than 12 pixels across, a folded cloth no more than 35 by 25 pixels, and a cable no more than 60 pixels total footprint. Place these small items only on or immediately beside the four furniture clusters. Keep x230-540 completely clear as the main path and y270-440 clear for existing key tables. Same steep orthographic top view as the floor, broad tops, short faces, parallel edges; no diagonal isometric rotation. Restrained worn graphite, desaturated teal, gray cloth, brass and tiny cyan indicators. No walls, doors, people, key devices, readable text, UI, neon signs, perspective or photoreal product staging. Do not enlarge the furniture beyond the exact pixel boxes.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744388992600.png",
+      "output": "assets/platform/modules/home-ground-furnished-v2.png"
+    },
+    "home-ground-furnished-v3": {
+      "requestId": "e6b37536-b5ae-49b2-9763-c75993ec5cae",
+      "taskId": "mt_ab5cf3b3d83e3dc84a6a7a14c5738d5a",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795926909653.png",
+      "sha256": "8bee59c991c759047b472c25726eb76e3782d1cf4adeeca6547aa80d9ef4ebd8",
+      "actualSize": [
+        768,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "CORRECT ONLY THE FURNITURE PROJECTION AND COUNT in this same floor scene. Keep the floor tiles, color, wear, lighting and 768x1024 canvas unchanged. Delete the incorrect extra furniture and rebuild exactly four compact clusters, all aligned to the floor grid with ZERO diagonal rotation: every furniture left/right edge is perfectly vertical on canvas, every front/back edge perfectly horizontal, and every front face points straight toward the BOTTOM of the canvas. Use steep B-view orthographic game projection: broad top surface plus only a very short front face, parallel edges, no vanishing point. Exactly: one narrow sleeping bench along the left wall, vertical footprint about 80x230 pixels; one low storage cabinet near the right wall, horizontal footprint about 90x70 pixels; one compact repair cart at lower-left, footprint about 90x100 pixels; one low reading chair at lower-right, footprint about 90x90 pixels, facing straight down, not turned. A standing adult is 120 pixels tall. Keep the main center path x230-540 clear and upper table zone y270-440 clear. Shoes max 12x28 pixels each, cup max 12 pixels. No second chair, no sideways bed, no diagonal object, no isometric angle, no wall, door, people, text, UI or new floor pattern.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795839647765.png",
+      "output": "assets/platform/modules/home-ground-furnished-v3.png"
+    },
+    "ambient-service-furniture-v1": {
+      "requestId": "c675ba5f-50cd-43d3-8b4b-04d7dfb5a96d",
+      "taskId": "mt_c12eb4adb8b3329ad4734999bd6d6e0c",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789796842139553.png",
+      "sha256": "8162af0725e45d90d74e27fb8aaa405777e5eab32656974f2ac37b5ab76969ff",
+      "actualSize": [
+        1024,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Exact 2 column x 2 row ATLAS, four equal 512x512 cells, one complete ordinary near-future public memory-service FURNITURE piece per cell. Strict B-view orthographic pixel RPG camera: every piece is axis-aligned to the canvas, broad top surface visible, only a very short front face below it, left/right edges parallel, front/back edges parallel, zero diagonal rotation, no vanishing point. A standing adult in this asset family is the same visual height as about 40 percent of one cell; furniture is proportionate to that adult. Top-left: low archive cabinet with broad graphite top, two closed document drawers and one tiny cyan status slit. Top-right: straight two-seat waiting bench facing toward bottom of screen, muted teal fabric, short back and simple brass feet. Bottom-left: compact document recycling cart with shallow top intake, closed lower bin and small wheels. Bottom-right: low staff supply cabinet with folded cloth and one reusable cup resting on its top surface. Mature restrained pixel-painted graphite, desaturated teal, gray fabric and worn brass. Uniform pure magenta RGB #FF00FF outside every silhouette and through open gaps. No cell grid, floor, wall, room, cast shadow, people, readable text, UI, white background, 45-degree isometric angle, product photo or cinematic perspective.",
+      "output": "assets/platform/props/ambient-service-furniture-v1.png"
+    },
+    "ambient-service-props-v1": {
+      "requestId": "913e66ac-b3c7-48e8-abea-e5813afe0118",
+      "taskId": "mt_64b58b53c1542d2ca0c0abce22b9366d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789796854812583.png",
+      "sha256": "bef683cd6392b08655550ee4a83b0aed9e80ba6303dea62b7bd93159999b89b6",
+      "actualSize": [
+        960,
+        960
+      ],
+      "status": "succeeded",
+      "prompt": "Exact 3 column x 3 row ATLAS of ordinary NON-KEY traces from a near-future public memory service office, equal 320x320 cells, one centered object per cell. Same strict B-view orthographic pixel RPG projection in all cells: broad tops, extremely short faces, parallel edges, no diagonal isometric angle. Row 1: small stack of blank queue slips; reusable staff cup seen from above; loose short data cable coil. Row 2: used stamp ribbon cartridge; folded cleaning cloth; low tray of spare blank memory sleeves. Row 3: small circular cleaning-drone dock; soft staff tote; compact lost-and-found umbrella bundle. Restrained matte graphite, desaturated teal, gray cloth and tiny practical cyan or amber accents. Uniform pure magenta RGB #FF00FF outside every object and in all cell corners. No readable words, letters, numbers, icons, people, floor, wall, cast shadow, cell grid, white field, checkerboard, key clue, interactive terminal, product photo or perspective convergence.",
+      "output": "assets/platform/props/ambient-service-props-v1.png"
+    },
+    "service-archive-cabinet-v2": {
+      "requestId": "bf9c1dc1-bf83-4bf6-9485-f89527974013",
+      "taskId": "mt_ecb9e394865ac2c5c6c9aa781d2cd879",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797827578590.png",
+      "sha256": "282f81573944bd4a93a443a0074059327a7d5a7ceb0e2fe0e5bdb3f38b5bbff7",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "CAMERA AND GEOMETRY LOCK. Use the reference only as the exact accepted steep B-view orthographic projection. Create ONE low public archive cabinet whose visible TOP is an axis-aligned rectangle from about x90 to x422 and y145 to y315: top and bottom edges exactly equal length, left and right edges vertical and parallel, four 90-degree corners. Show two shallow closed document trays and a tiny cyan status slit inset flat into this TOP surface. Add only a 16-pixel-tall straight front fascia below the rectangle and two very short feet; no tall front elevation and no visible vertical drawer doors. Restrained graphite, worn brass and mature crisp pixel clusters. Pure uniform #FF00FF outside the complete object. Absolutely no trapezoid, diagonal side, 45-degree isometric view, receding edge, product-front camera, floor, wall, text, shadow or other object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "output": "assets/platform/props/service-archive-cabinet-v2.png"
+    },
+    "service-waiting-bench-v2": {
+      "requestId": "c1466b19-4a62-453f-ad71-013ad6de1592",
+      "taskId": "mt_28c8641a088ffecc961db295a43664cb",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797838367218.png",
+      "sha256": "193bbfa7e407171e455ef41d53d455a2095d82084f9ef776bfa3b2be6763d0e4",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "CAMERA AND GEOMETRY LOCK. Use the reference only as the exact accepted steep B-view orthographic projection. Create ONE straight two-person waiting bench aligned horizontally. Its seat TOP is an axis-aligned rectangle from about x58 to x454 and y180 to y318: upper and lower edges exactly equal length, left and right edges vertical and parallel, four 90-degree corners. A thin straight back cushion strip may sit along y145 to y180, still rectangular and parallel; add only a 14-pixel short front fascia below y318 and four tiny feet. Muted desaturated teal fabric, worn brass feet, mature crisp pixel clusters. Pure uniform #FF00FF outside the complete object. No tall frontal backrest, trapezoid, diagonal side, visible receding depth, 45-degree isometric view, perspective, floor, wall, text, cast shadow or other object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "output": "assets/platform/props/service-waiting-bench-v2.png"
+    },
+    "service-supply-cabinet-v2": {
+      "requestId": "14ffe444-1c4f-445f-850c-db96129591e6",
+      "taskId": "mt_37b546581a07d5ca57635b1383ee00e4",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797849713616.png",
+      "sha256": "aed99d16924ae8cf9a13616d859d6ab363e2dfcff8dfa0ba2c80565940dd2310",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "CAMERA AND GEOMETRY LOCK. Use the reference only as the exact accepted steep B-view orthographic projection. Create ONE low staff supply cabinet. Its broad TOP is an axis-aligned rectangle from about x96 to x416 and y145 to y315: upper/lower edges exactly equal, left/right edges vertical and parallel, square corners. Place one small folded gray cloth and one reusable cup seen from directly above wholly inside the top surface. Add only a 16-pixel straight front fascia and two short feet below; no tall front elevation and no large visible cabinet doors. Worn walnut, graphite trim, tiny dull brass hardware, mature crisp pixel clusters. Pure uniform #FF00FF outside the complete object. No trapezoid, diagonal outline, receding edge, isometric or frontal product view, floor, wall, readable text, shadow or other furniture.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759535183920.png",
+      "output": "assets/platform/props/service-supply-cabinet-v2.png"
+    },
+    "service-archive-cabinet-v3": {
+      "requestId": "d56ced5b-d56d-48f6-b57a-3ca58863f688",
+      "taskId": "mt_037f69630e3b7f4c663a8ef43a8aec40",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797900736466.png",
+      "sha256": "e5e804d1a39ced1381aadef2d6931b575a445e635b1e0acb2323f606c1b509f6",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY; PRESERVE THE REFERENCE CAMERA AND OUTER GEOMETRY EXACTLY. Keep the same axis-aligned rectangular top plane, equal top and bottom edge lengths, parallel vertical sides, square corners, short straight front fascia, short legs, center position and steep orthographic B-view. Remove the cloth and cup. Recolor the top to worn graphite and place two shallow CLOSED document trays plus one tiny cyan status slit FLAT INSIDE the top surface, all aligned to its horizontal and vertical edges. Do not expose a tall cabinet front, drawer doors or interior. Pure uniform #FF00FF outside. No trapezoid, convergence, diagonal rotation, isometric view, frontal product camera, floor, wall, words, shadow or additional object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797849713616.png",
+      "output": "assets/platform/props/service-archive-cabinet-v3.png"
+    },
+    "service-waiting-bench-v3": {
+      "requestId": "60070026-b9b1-42b6-b528-2a432bc97716",
+      "taskId": "mt_de146e3b4c3350eb9f41a9ad214d31d5",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797907952112.png",
+      "sha256": "5aa9dff84931844e2f877d76eb0c9090a0b573650dc5ca90ec47bf2016823e26",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY; PRESERVE THE REFERENCE CAMERA AND RECTANGULAR PROJECTION. Convert the reference into ONE low two-person waiting bench while keeping an axis-aligned rectangular seat top with equal upper/lower edge lengths, parallel vertical sides and square corners in the same steep orthographic B-view. Make the seat wider horizontally, muted teal fabric, with one very narrow rectangular back cushion strip along the upper edge, parallel to the seat; keep only a short straight front fascia and four tiny feet. Most of the visible object must be the TOP seat surface, not a frontal backrest. Pure uniform #FF00FF outside. No trapezoid, receding sides, diagonal rotation, isometric view, frontal furniture camera, tall back, floor, wall, words, shadow or second object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797849713616.png",
+      "output": "assets/platform/props/service-waiting-bench-v3.png"
+    },
+    "service-waiting-seat-v4": {
+      "requestId": "62410233-cd70-46f0-aed3-07f9f1e1784e",
+      "taskId": "mt_4bcf3022643dccef6ee3824d87ba110a",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797954552477.png",
+      "sha256": "091c1fe6120f4dc9280b0a27f2bdfa8a3bef04b7fe11c2a63d1233632d4faa9a",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "SURFACE EDIT ONLY; PRESERVE THE REFERENCE OUTER SILHOUETTE AND CAMERA EXACTLY. Keep the same axis-aligned rectangular top plane, exactly equal upper and lower edge lengths, parallel vertical sides, square corners, center position, short straight front fascia and short legs. Remove the cloth and cup. Change only the rectangular top material into one flat muted-teal upholstered waiting-seat cushion with a thin inset seam parallel to all four edges. This is a low backless public waiting seat viewed in the same steep orthographic B-view. Pure uniform #FF00FF outside. Do not widen, taper, rotate, add a backrest or change the reference geometry. No trapezoid, receding sides, diagonal rotation, isometric view, frontal furniture camera, floor, wall, words, shadow or second object.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797849713616.png",
+      "output": "assets/platform/props/service-waiting-seat-v4.png"
+    },
+    "service-memory-chair-v1": {
+      "requestId": "5de8c758-cb8d-4a78-bcb5-e33cac94a5b2",
+      "taskId": "mt_3c7b0fd398103f818cd7427d3e103337",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799715949734.png",
+      "sha256": "f07c188e78a5d047622b8d0c5cf91456531efdfb99e198e29e57561cd546c8d9",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Extract ONLY the BOTTOM-RIGHT single armchair from the reference atlas and preserve its exact approved 45-degree oblique orthographic camera, seat/back/arm proportions, parallel edge families, foreshortening, pixel cluster density and complete centered silhouette. Redesign it as one used near-future MEMORY INTAKE CHAIR for an ordinary public service office: charcoal graphite frame instead of wood, worn dark teal conductive seat, slim brass contact rail along each arm, one small cyan status node, and one short dark fiber cable with brass plug tucked beside the rear foot. Keep it clearly an armchair, not a throne, dentist chair, hospital recliner or luxury gaming chair. Restrained practical cyberpunk hardware, no bright neon flood. One chair only on pure uniform #FF00FF magenta. No atlas grid, floor, wall, person, readable text, UI, cast shadow, perspective convergence or changed camera.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789795829477948.png",
+      "output": "assets/platform/props/service-memory-chair-v1.png"
+    },
+    "service-maintenance-console-v3": {
+      "requestId": "86064f5b-2265-4716-823b-a70e4fd05e30",
+      "taskId": "mt_72598e0653a2dfdc722c60162a818c2f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799723456861.png",
+      "sha256": "8e12c004cb6f00a3eea232d1d6b490a84a9210778a790275db4588a6f8d46ce9",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY; preserve the reference exact steep orthographic B-view, axis-aligned rectangular top plane, equal opposite edges, short fascia, short legs, center placement and silhouette. Replace the wooden low cabinet with a worn graphite SERVICE MAINTENANCE CONSOLE: matte metal top, inset copper trace channels, a small stack of blank translucent memory sleeves, one compact diagnostic probe and one plain reusable metal cup, all viewed from directly above and fully resting on the top surface. Add only two dim cyan status dots. Practical lived-in cyberpunk infrastructure, not a laboratory altar. Pure uniform #FF00FF outside. No wood, cloth pile, readable text, floating hologram, large neon glow, person, floor, wall, extra furniture, perspective or camera change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797849713616.png",
+      "output": "assets/platform/props/service-maintenance-console-v3.png"
+    },
+    "service-memory-archive-v4": {
+      "requestId": "b77d7d64-3bee-4447-b29e-8303dfda32c4",
+      "taskId": "mt_8db4294dc3ce9dd1d0ca13741e0e7298",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799735695071.png",
+      "sha256": "dd577848ae10f8d15b72db6b87afc7c08dc02e2ad97aea4c2a33c0f385c17bca",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY; preserve the reference exact axis-aligned steep orthographic B-view, rectangular top plane, equal opposite edges, short front fascia, short legs, placement and silhouette. Turn this low cabinet into a public MEMORY ARCHIVE BUFFER: dark graphite and worn brass instead of plain gray, two shallow transparent cartridge bays inset flat into the top, each holding several small pale cyan memory wafers, with one dim amber queue light and one narrow cyan data slit. Practical used infrastructure, restrained pixel-painted cyberpunk detail. Pure uniform #FF00FF outside. No wood, tall front cabinet, hospital furniture, readable text, hologram, person, floor, wall, extra object, diagonal rotation, perspective or camera change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789797900736466.png",
+      "output": "assets/platform/props/service-memory-archive-v4.png"
+    },
+    "service-memory-archive-v5": {
+      "requestId": "72c285b7-19d9-4cd5-a680-8c416bf80704",
+      "taskId": "mt_a7748f78501582d48be7eddc7d2fd446",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799787321878.png",
+      "sha256": "3c4eb96d92d96f3b0d6d2e92c38856729aaf264a6ecabc71774787cbab7f696b",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "CLEANUP ONLY. Preserve the exact same orthographic camera, silhouette, graphite/brass materials, two cyan memory wafer bays, amber queue light, status slit, pixel cluster density and placement. Remove every letter, number, pseudo-word and glyph below or inside both bays. Replace all such markings with only three tiny abstract indicator dots and one short horizontal bar, with no symbols. Pure uniform #FF00FF outside. No other visual change, no text, no extra object, no perspective or camera change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799735695071.png",
+      "output": "assets/platform/props/service-memory-archive-v5.png"
+    },
+    "service-maintenance-console-v4": {
+      "requestId": "ff43b933-3085-4cf1-80fa-5dc3394532b2",
+      "taskId": "mt_41dd5131f5e2042120c295e75d4b2535",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799794986621.png",
+      "sha256": "9b571a8ff52fa63a828a7d7354ebef0c1dbb626e030cce9beb571d9fa2e29dc3",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "IDENTITY EDIT ONLY. Preserve the reference exact orthographic camera, axis-aligned top plane, equal opposite edges, short fascia and legs, worn graphite/brass pixel-art material, crisp pixel cluster density, center placement and silhouette. Replace the two memory bays and every glyph with a practical service-maintenance top: one inset dark repair mat, a small stack of blank translucent memory sleeves, one compact blocky diagnostic probe, one simple metal cup viewed from above, and two tiny cyan status dots. All objects rest fully on the top plane and use the same pixel-painted style. Pure uniform #FF00FF outside. Absolutely no letters, numbers, pseudo-text, white photographic paper, smooth product render, floating hologram, hospital styling, perspective or camera change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799735695071.png",
+      "output": "assets/platform/props/service-maintenance-console-v4.png"
+    },
+    "service-memory-chair-v2": {
+      "requestId": "f4b07de6-e385-4020-9310-a06726a86c64",
+      "taskId": "mt_588aef2b347ab24c1341e3c6e7e8bf4d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789800275371572.png",
+      "sha256": "427c8f041f7aba05d3fd3359bb6ec2f5d5536df15c44acda1207d07856277d32",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "ORIENTATION CHANGE ONLY. Rotate this exact same memory intake chair around its vertical axis so the OPEN SEAT FACES SCREEN UPPER-RIGHT and the back of the chair sits toward SCREEN LOWER-LEFT. Preserve the same steep 45-degree oblique orthographic camera, chair identity, graphite frame, worn teal conductive cushions, brass arm contacts, cyan status node, short fiber cable, complete scale, pixel cluster density and light direction. Both spatial edge families remain parallel with no convergence. Center one complete chair on pure #FF00FF magenta. Do not mirror text because there is none; no second chair, person, floor, wall, cast shadow, perspective, product-photo camera or other design change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789799715949734.png",
+      "output": "assets/platform/props/service-memory-chair-v2.png"
+    },
+    "service-console-v6": {
+      "requestId": "81996814-803a-4222-80b2-2e09dad135d0",
+      "taskId": "mt_9dad57926d18ad04b0e85e3b19b54840",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789800786932949.png",
+      "sha256": "c5720d0ffc9d350c43407d5e534cc4b3c1714e7a8a86f5f898eae0ba3cb8cd1e",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "MATERIAL AND DEVICE IDENTITY EDIT ONLY. Preserve this exact accepted steep orthographic axis-aligned console silhouette, broad rectangular top, equal opposite edges, short front fascia, short legs, centered placement, scale and pixel cluster density. Replace the pale gray institutional metal with dark worn graphite panels, aged brass edge rails and small desaturated teal insets matching a practical public memory-transfer office. Keep one recessed cyan memory waveform display, enlarge it only slightly, and replace the two plain slots with four small blank translucent memory wafer sockets arranged symmetrically on the tabletop. Add one thin dark fiber cable exiting the rear-left underside and ending beside the left rear foot. Everything remains physically inset into or attached to the console. Restrained used near-future infrastructure, no hospital styling, no white laboratory surface, no readable text, no letters, no hologram, no extra furniture, no perspective or camera change. Pure uniform #FF00FF magenta outside the complete console.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789759543350592.png",
+      "output": "assets/platform/modules/service-console-v6.png"
+    },
+    "large-concourse-ground-v1": {
+      "requestId": "2d6e0d81-7918-4c17-9bf2-6b8debf15b07",
+      "taskId": "mt_d4f99f97e31aad5263ed01d6fd8492d5",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789801952867531.png",
+      "sha256": "52355efd2e35713fd4187380bcd2a4e71feaad5466918d8d1aacb640c56fa3c2",
+      "actualSize": [
+        1024,
+        1024
+      ],
+      "status": "succeeded",
+      "prompt": "Create ONLY a very large square public MEMORY EXCHANGE CONCOURSE FLOOR PLATE by extending this accepted orthographic memory-service floor. Preserve the same steep top-down orthographic camera, small tile world scale, parallel seams, mature pixel-painted wear, desaturated blue-green ceramic, restrained amber scuffs and cool cyan reflected light. The 1024x1024 image is edge-to-edge flat walkable floor with about 30 to 34 small tile columns and rows, no perspective convergence. Use floor material and embedded inlay only to suggest five connected zones: a quiet south arrival apron, a broad central crossing around an empty rectangular router footprint, a west access bay, an east maintenance bay, and a north observation approach. Add a few thin worn brass floor rails and dim cyan service nodes that remain flat in the floor; keep two wide crossing routes completely clear. Every pixel is horizontal floor. Absolutely no walls, baseboards, doors, counters, furniture, chairs, people, papers, raised objects, readable text, symbols, UI, vignette or photorealism.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789744440682437.png",
+      "output": "assets/platform/modules/large-concourse-ground-v1.png"
+    },
+    "large-router-island-v1": {
+      "requestId": "1979380b-ad98-4ddd-9810-ec2f4bcddcc3",
+      "taskId": "mt_26d9d31dd28df81333b0c2634f5482ca",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789801970191103.png",
+      "sha256": "b377612c3887d75a1571de312cfdc2f5218da0284d1d2472fff5d4ccc7539a9d",
+      "actualSize": [
+        768,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "CAMERA AND GEOMETRY LOCK. Preserve the reference steep orthographic pixel-game camera, dark graphite, aged brass, cyan memory waveform language and short front-face proportion. Create ONE large freestanding public MEMORY ROUTER ISLAND, a long axis-aligned rectangular device centered on a 768x512 canvas. Its broad top runs horizontally from about x95 to x673 and y128 to y326; top and bottom edges are exactly equal, left and right edges parallel, with square corners, zero taper and no perspective. Add a recessed central cyan branching waveform, four pairs of blank translucent memory wafer sockets, two narrow brass service rails, and small sealed maintenance plates. Below the top show only a short dark front fascia and four short feet. Used civic infrastructure, not a reception desk or hospital bed. One complete device on pure uniform #FF00FF magenta, including between feet. No upright monitor, chairs, person, readable text, letters, hologram, floor, wall, cast shadow, trapezoid, isometric angle or camera change.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789800786932949.png",
+      "output": "assets/platform/modules/large-router-island-v1.png"
+    },
+    "large-router-island-v2": {
+      "requestId": "b085f36a-3ea4-425e-9fee-ae7e975558ea",
+      "taskId": "mt_27a6573f8427b95ecdce56977e41aa47",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789802050947537.png",
+      "sha256": "e251f5d4bdf815b024fd72f0ebaf6326740b7abcb663dd80522299d89215d7ef",
+      "actualSize": [
+        768,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "GEOMETRY CORRECTION ONLY. The current top is an invalid trapezoid whose near lower edge is wider than its far upper edge. Redraw this exact same memory router as a strict orthographic axis-aligned rectangle: the visible TOP outer border must have left edge at x96 from y108 to y322, right edge at x672 from y108 to y322, upper edge x96 to x672 at y108, and lower edge x96 to x672 at y322. All four corners are 90 degrees; upper and lower edges exactly equal; sides vertical and parallel; zero taper, convergence or diagonal outer outline. Keep the same graphite, brass rails, central cyan waveform, blank wafer sockets, short front fascia and short feet. Do not change device identity, pixel style, light direction or add anything. Pure uniform #FF00FF magenta outside and between feet. No text, floor, wall, shadow, person, hologram, perspective or isometric angle.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789801970191103.png",
+      "output": "assets/platform/modules/large-router-island-v2.png"
+    },
+    "large-concourse-detail-atlas-v1": {
+      "requestId": "0811bad0-15f7-4ace-b9f4-11594fd9394d",
+      "taskId": "mt_69974ca83b1087376d6bf400ff67d3ff",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789802876047730.png",
+      "sha256": "228614ce093e53709fb6c9ffbf10596fe46be761a8b2da15ae7cc8fa2627e629",
+      "actualSize": [
+        960,
+        960
+      ],
+      "status": "succeeded",
+      "prompt": "Create an EXACT 3 COLUMN x 3 ROW ATLAS of nine isolated near-future public MEMORY EXCHANGE CONCOURSE support objects. Equal 320x320 cells; one complete object centered well inside every cell; no divider lines. Preserve the reference mature pixel-painted graphite, aged brass, desaturated teal and restrained cyan language. All objects use the SAME steep B-view orthographic game projection: broad top surfaces, extremely short front faces, parallel opposite edges, no convergence. Absolute scale ruler: a standing adult sprite is about 105 pixels tall; small loose objects occupy 36-70 pixels, furniture modules occupy 95-150 pixels. Row 1: a low tray holding three blank translucent memory wafers; a short coiled dark fiber data cable; a compact sealed diagnostic kit opened flat with no labels. Row 2: a low rolling cartridge cart with broad rectangular top and short wheels; a short square transfer pedestal with four inset wafer sockets; a pair of low queue guide nodes connected by one slack dark belt. Row 3: a circular floor cleaning dock viewed mostly from above; a sealed graphite service crate with brass corners; a compact low air-service module with broad vented top and extremely short front face. Every object is practical used civic infrastructure, axis-aligned except the naturally curved cable and dock. Background outside each object and in every cell corner is pure uniform RGB #FF00FF. No floor, walls, people, letters, numbers, pseudo-text, logos, holograms, cell borders, cast shadows extending across cells, glossy product-photo camera, frontal elevation, isometric angle or trapezoid perspective.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789800786932949.png",
+      "output": "assets/platform/props/large-concourse-detail-atlas-v1.png"
+    }
+  }
+}

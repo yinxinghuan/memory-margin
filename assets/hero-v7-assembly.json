@@ -1,0 +1,332 @@
+{
+  "version": 2,
+  "status": "accepted",
+  "cell": [
+    256,
+    256
+  ],
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "sourceService": "AlterU Media Service",
+  "partialLimbReflectionAllowed": false,
+  "frames": [
+    {
+      "row": 0,
+      "column": 0,
+      "direction": "down",
+      "platformJob": "hero-step-down-l-v5",
+      "requestId": "754858c4-6456-4635-baa6-f1b1313eb97c",
+      "taskId": "mt_860e6ac3744c92eb07b79a57e9fa8158",
+      "sourceSha256": "e227b72e25e4636d2f9e2a2233ea1602ef46a440b6ce63b2417406af7b592d81",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        75,
+        38,
+        181,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "direction": "down",
+      "platformJob": "hero-stand-down-v5",
+      "requestId": "2a770db7-a748-4297-aff7-5899b1850e1b",
+      "taskId": "mt_72f8306b64393c8bac1c9ac0699c44bc",
+      "sourceSha256": "2340e3d09e5dfa874d1269ef3222feb97e7de13b8740ceefd853ae2a907ed0f6",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        81,
+        38,
+        176,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "direction": "down",
+      "platformJob": "hero-down-opposite-v8b",
+      "requestId": "1962d11b-2249-4062-9ebe-a78b0ecf682b",
+      "taskId": "mt_56c8a009545421efa6b0c92d3653a8b1",
+      "sourceSha256": "98a68046eae56a294b1a7a96b9775d97b4f388bfc0b36d4152896c8b911a19d3",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        72,
+        38,
+        186,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "direction": "left",
+      "platformJob": "hero-step-left-l-v5",
+      "requestId": "15f29323-e07b-4949-b050-f12354209f68",
+      "taskId": "mt_1b89f3acc2b8b041505fafa098b93f11",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        84,
+        38,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "direction": "left",
+      "platformJob": "hero-stand-left-v5",
+      "requestId": "08e0716e-9c52-46fe-ae0e-aa29092240a0",
+      "taskId": "mt_789b789d9b5c4ed59af5a9668a210fa6",
+      "sourceSha256": "ff2c538dc5324ddd99b740eb151534a63cdfdc9eaa2dfa1086577b234396761e",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        96,
+        38,
+        166,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "direction": "left",
+      "platformJob": "hero-side-pass-v9b",
+      "requestId": "8146243f-63e3-4d24-8b2c-cf4ebb7f8320",
+      "taskId": "mt_220925e2a1a449afc4e3043d48f7c7db",
+      "sourceSha256": "2617ce8805ca8a06b7311f558c84026497761d988fce8e951140533f92797c97",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        74,
+        38,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "direction": "right",
+      "platformJob": "hero-step-left-l-v5",
+      "requestId": "15f29323-e07b-4949-b050-f12354209f68",
+      "taskId": "mt_1b89f3acc2b8b041505fafa098b93f11",
+      "sourceSha256": "69d0022e1a44d66fd85711d577211d12708fe38a299b9bdedbbdfb522f55b39a",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        74,
+        38,
+        172,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": true
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "direction": "right",
+      "platformJob": "hero-stand-left-v5",
+      "requestId": "08e0716e-9c52-46fe-ae0e-aa29092240a0",
+      "taskId": "mt_789b789d9b5c4ed59af5a9668a210fa6",
+      "sourceSha256": "ff2c538dc5324ddd99b740eb151534a63cdfdc9eaa2dfa1086577b234396761e",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        90,
+        38,
+        160,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": true
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "direction": "right",
+      "platformJob": "hero-side-pass-v9b",
+      "requestId": "8146243f-63e3-4d24-8b2c-cf4ebb7f8320",
+      "taskId": "mt_220925e2a1a449afc4e3043d48f7c7db",
+      "sourceSha256": "2617ce8805ca8a06b7311f558c84026497761d988fce8e951140533f92797c97",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        74,
+        38,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": true
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "direction": "up",
+      "platformJob": "hero-step-up-l-v5",
+      "requestId": "9cf401d2-33df-4ebd-b59a-be57a8300032",
+      "taskId": "mt_367acfc1911ca68d795670c39bc01ad6",
+      "sourceSha256": "8fd4ee75133af34bae95cc246f3c96399a792fd0586e8c8799a0cd7ebd10cb14",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        80,
+        38,
+        178,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "direction": "up",
+      "platformJob": "hero-stand-up-v5",
+      "requestId": "c85a5e01-ecee-4882-843b-a2835f90d528",
+      "taskId": "mt_bb8b19b285a8d7f8cc41438cce34d241",
+      "sourceSha256": "75cb050ccbdecbbbe0ed6cc5711cdcbff8a3301bd63664d4a41b4d355c96b5c9",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        79,
+        38,
+        179,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "direction": "up",
+      "platformJob": "hero-up-opposite-v8b",
+      "requestId": "bea9a661-498f-448b-8f19-fd348a9d6493",
+      "taskId": "mt_a2b1e82c31fdb04686ba5f59008c12cf",
+      "sourceSha256": "8373778f511a48fabca6dc77b62af023e404cf3b8b4be5878329f2f2988c692f",
+      "operations": [
+        "chroma-key",
+        "uniform-scale",
+        "foot-align"
+      ],
+      "bbox": [
+        71,
+        38,
+        182,
+        233
+      ],
+      "headX": 128,
+      "footY": 233,
+      "visibleHeight": 195,
+      "mirroredFullFrame": false
+    }
+  ],
+  "sheet": {
+    "path": "assets/processed/hero-walk-v7.png",
+    "sha256": "03bacc80468c6defc8bfb9610480de6834515e4d192cf17736c9aff5c8926171"
+  },
+  "visualAcceptance": {
+    "viewports": [
+      "390x844",
+      "320x568"
+    ],
+    "directions": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "framesPerDirection": 4,
+    "evidence": [
+      "_qa/hero-v7/390x844-four-direction-contact.png",
+      "_qa/hero-v7/320x568-four-direction-contact.png"
+    ],
+    "result": "accepted",
+    "notes": "Complete-body frames preserve identity, foot baseline and direction in continuous runtime movement; no partial limb synthesis."
+  }
+}

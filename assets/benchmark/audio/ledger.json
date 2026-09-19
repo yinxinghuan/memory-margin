@@ -1,0 +1,65 @@
+{
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "service": "AlterU Media Service",
+  "musicPolicy": "One restrained platform-generated ambient track starts after the first user gesture and loops quietly beneath deterministic UI cues and the signature sound.",
+  "musicCandidates": [
+    {
+      "id": "memory-margin-ambient-a",
+      "requestId": "79d45e68-eaa6-4ad2-ab4c-fff15922c48d",
+      "taskId": "mt_118fa4021a524879b065fd22690df2ea",
+      "durationSeconds": 48,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "71786067a7d748ff8292ceedac86eb7d96304a897bb9da57717cb11a5fd2044f",
+      "integratedLufs": -18.90,
+      "truePeakDb": -1.46,
+      "status": "rejected",
+      "reason": "The release gain and 11.8 LU range are too prominent for dialogue-led exploration."
+    },
+    {
+      "id": "memory-margin-ambient-b",
+      "requestId": "edae565e-fa5f-4584-b0ae-1c765ed1c2ec",
+      "taskId": "mt_e7704dc58daf7edf95b2bd5b5b40d8f1",
+      "durationSeconds": 60,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "6648ea066cd40efe90027ed87d25f42b101673728409c4209e7d1b58eb191fc3",
+      "integratedLufs": -24.56,
+      "truePeakDb": -11.27,
+      "first500msDb": -91.72,
+      "last500msDb": -91.61,
+      "status": "accepted",
+      "runtimePath": "public/audio/memory-margin-ambient.mp3",
+      "reason": "Low level, restrained dynamic range and matching quiet boundaries suit repeated dialogue-led exploration."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "memory-fracture-a",
+      "requestId": "42965894-830b-4239-8397-43cf5f494c80",
+      "taskId": "mt_7cd9cf05a7c2f4435842672c92438670",
+      "durationSeconds": 3,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "8aedc6a24668692e9a80d945c4d5975e2ff48539985e1035a7ed0de502bdf725",
+      "integratedLufs": -34.02,
+      "truePeakDb": -16.71,
+      "status": "rejected",
+      "reason": "Dense near-continuous texture leaves too little silence for the restrained presentation."
+    },
+    {
+      "id": "memory-fracture-b",
+      "requestId": "56ae7301-1ece-497e-bb05-794b265ee26f",
+      "taskId": "mt_f737765807efb38e5e12a91879f14a51",
+      "durationSeconds": 3,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "650dbc029647bedb92570e0f3170805a4bcff6b7aeaa576e9064a4436d28db20",
+      "integratedLufs": -25.43,
+      "truePeakDb": -5.23,
+      "status": "accepted",
+      "runtimePath": "public/audio/memory-fracture.mp3",
+      "reason": "Three sparse crystalline events decay into silence and remain below the release peak ceiling."
+    }
+  ]
+}

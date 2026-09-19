@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "source": "scripts/export-world.ts + src/art.ts + src/architecture.tsx",
+  "adultReference": "hero-standing",
+  "adultHeightTolerance": 0.12,
+  "adults": [
+    "neighbor",
+    "caretaker",
+    "clerk"
+  ],
+  "actors": [
+    {
+      "id": "hero-standing",
+      "path": "public/art/hero.png",
+      "cell": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "displayWorld": [
+        60,
+        60
+      ]
+    },
+    {
+      "id": "neighbor",
+      "path": "public/art/neighbor-stand-v5.png",
+      "displayWorld": [
+        60,
+        60
+      ]
+    },
+    {
+      "id": "caretaker",
+      "path": "public/art/caretaker-stand-v5.png",
+      "displayWorld": [
+        60,
+        60
+      ]
+    },
+    {
+      "id": "clerk",
+      "path": "public/art/clerk-stand-v5.png",
+      "displayWorld": [
+        60,
+        60
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "home-north-5",
+      "path": "public/art/modules/home-wall-v5.png",
+      "sourceCrop": [
+        0,
+        38.95652173913044,
+        303.30434782608694,
+        178.08695652173913
+      ],
+      "displayWorld": [
+        109,
+        64
+      ]
+    },
+    {
+      "id": "home-north-6",
+      "path": "public/art/modules/home-wall-v5.png",
+      "sourceCrop": [
+        442.4347826086956,
+        38.95652173913042,
+        325.5652173913044,
+        178.08695652173915
+      ],
+      "displayWorld": [
+        117,
+        64
+      ]
+    },
+    {
+      "id": "home-side-8",
+      "path": "public/art/modules/home-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        1536
+      ],
+      "displayWorld": [
+        18,
+        464
+      ],
+      "scaleGroup": "home-west-wall"
+    },
+    {
+      "id": "home-side-9",
+      "path": "public/art/modules/home-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        1536
+      ],
+      "displayWorld": [
+        18,
+        464
+      ],
+      "scaleGroup": "home-east-wall"
+    },
+    {
+      "id": "home-south-10",
+      "path": "public/art/modules/wall-north.png",
+      "sourceCrop": [
+        0,
+        50.086956521739125,
+        768,
+        155.82608695652175
+      ],
+      "displayWorld": [
+        276,
+        56
+      ],
+      "horizontalOverhangWorld": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "hall-north-1",
+      "path": "public/art/modules/hall-wall-v4.png",
+      "sourceCrop": [
+        0,
+        38.95652173913044,
+        768,
+        178.08695652173913
+      ],
+      "displayWorld": [
+        276,
+        64
+      ]
+    },
+    {
+      "id": "hall-side-2",
+      "path": "public/art/modules/hall-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        476.68965517241384
+      ],
+      "displayWorld": [
+        18,
+        144
+      ],
+      "scaleGroup": "hall-west-wall"
+    },
+    {
+      "id": "hall-side-3",
+      "path": "public/art/modules/hall-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        642.2068965517242,
+        59.58620689655173,
+        893.7931034482759
+      ],
+      "displayWorld": [
+        18,
+        270
+      ],
+      "scaleGroup": "hall-west-wall"
+    },
+    {
+      "id": "hall-side-4",
+      "path": "public/art/modules/hall-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        1165.2413793103449
+      ],
+      "displayWorld": [
+        18,
+        352
+      ],
+      "scaleGroup": "hall-east-wall"
+    },
+    {
+      "id": "hall-side-5",
+      "path": "public/art/modules/hall-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        1330.7586206896553,
+        59.58620689655173,
+        205.24137931034485
+      ],
+      "displayWorld": [
+        18,
+        62
+      ],
+      "scaleGroup": "hall-east-wall"
+    },
+    {
+      "id": "hall-south-8",
+      "path": "public/art/modules/wall-north.png",
+      "sourceCrop": [
+        0,
+        50.086956521739125,
+        768,
+        155.82608695652175
+      ],
+      "displayWorld": [
+        276,
+        56
+      ],
+      "horizontalOverhangWorld": [
+        18,
+        18
+      ]
+    },
+    {
+      "id": "service-north-3",
+      "path": "public/art/modules/service-wall-v4.png",
+      "sourceCrop": [
+        0,
+        38.95652173913044,
+        768,
+        178.08695652173913
+      ],
+      "displayWorld": [
+        276,
+        64
+      ]
+    },
+    {
+      "id": "service-side-4",
+      "path": "public/art/modules/service-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        1536
+      ],
+      "displayWorld": [
+        18,
+        464
+      ],
+      "scaleGroup": "service-west-wall"
+    },
+    {
+      "id": "service-side-5",
+      "path": "public/art/modules/service-side-wall-v7.png",
+      "sourceCrop": [
+        98.20689655172413,
+        0,
+        59.58620689655173,
+        1536
+      ],
+      "displayWorld": [
+        18,
+        464
+      ],
+      "scaleGroup": "service-east-wall"
+    },
+    {
+      "id": "service-south-6",
+      "path": "public/art/modules/wall-north.png",
+      "sourceCrop": [
+        128,
+        0,
+        512,
+        256
+      ],
+      "displayWorld": [
+        112,
+        56
+      ],
+      "horizontalOverhangWorld": [
+        18,
+        0
+      ]
+    },
+    {
+      "id": "service-south-7",
+      "path": "public/art/modules/wall-north.png",
+      "sourceCrop": [
+        105.14285714285717,
+        0,
+        557.7142857142857,
+        256
+      ],
+      "displayWorld": [
+        122,
+        56
+      ],
+      "horizontalOverhangWorld": [
+        0,
+        18
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "home-table-0",
+      "path": "public/art/modules/home-worktable-v5.png",
+      "sourceCrop": [
+        72,
+        72,
+        368,
+        372
+      ],
+      "displayWorld": [
+        48,
+        48
+      ],
+      "visibleWidthToAdultRange": [
+        0.95,
+        1.2
+      ]
+    },
+    {
+      "id": "home-table-1",
+      "path": "public/art/modules/home-worktable-v5.png",
+      "sourceCrop": [
+        72,
+        72,
+        368,
+        372
+      ],
+      "displayWorld": [
+        46,
+        46
+      ],
+      "visibleWidthToAdultRange": [
+        0.95,
+        1.2
+      ]
+    },
+    {
+      "id": "service-table-0",
+      "path": "public/art/modules/service-console-v6.png",
+      "sourceCrop": [
+        72,
+        72,
+        368,
+        372
+      ],
+      "displayWorld": [
+        50,
+        50
+      ],
+      "visibleWidthToAdultRange": [
+        0.95,
+        1.2
+      ]
+    },
+    {
+      "id": "service-table-1",
+      "path": "public/art/modules/service-console-v6.png",
+      "sourceCrop": [
+        72,
+        72,
+        368,
+        372
+      ],
+      "displayWorld": [
+        50,
+        50
+      ],
+      "visibleWidthToAdultRange": [
+        0.95,
+        1.2
+      ]
+    },
+    {
+      "id": "home-voice-box",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "displayWorld": [
+        42,
+        42
+      ]
+    },
+    {
+      "id": "home-receipt",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        320,
+        0,
+        320,
+        320
+      ],
+      "displayWorld": [
+        38,
+        38
+      ]
+    },
+    {
+      "id": "home-breakfast-card",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        640,
+        0,
+        320,
+        320
+      ],
+      "displayWorld": [
+        27,
+        27
+      ]
+    },
+    {
+      "id": "hall-seal",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        0,
+        320,
+        320,
+        320
+      ],
+      "displayWorld": [
+        24,
+        24
+      ]
+    },
+    {
+      "id": "hall-hall-notice",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "displayWorld": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "service-ledger",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        640,
+        320,
+        320,
+        320
+      ],
+      "displayWorld": [
+        38,
+        38
+      ]
+    },
+    {
+      "id": "service-terms-card",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        0,
+        640,
+        320,
+        320
+      ],
+      "displayWorld": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "service-choice-desk",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        320,
+        640,
+        320,
+        320
+      ],
+      "displayWorld": [
+        44,
+        44
+      ]
+    },
+    {
+      "id": "service-preview-screen",
+      "path": "public/art/objects.png",
+      "sourceCrop": [
+        640,
+        640,
+        320,
+        320
+      ],
+      "displayWorld": [
+        27,
+        27
+      ]
+    }
+  ]
+}

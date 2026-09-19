@@ -1,18 +1,19 @@
 {
   "name": "memory-margin-story-lab",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5212",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1 --port 5213 --strictPort",
     "test": "node --import tsx --test _qa/*.test.ts",
-    "assets": "node --import tsx scripts/export-world.ts"
+    "assets": "node --import tsx scripts/build-large-scene-pack.ts && node --import tsx scripts/export-world.ts",
+    "validate:progressive-room": "node --import tsx scripts/export-progressive-room-contract.ts && node ../.agents/skills/build-spatial-story-game/scripts/validate-progressive-room.mjs assets/benchmark/generated-room/progressive-room-contract.json"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "description": "Memory Margin — spatial story skill trial",
+  "description": "Memory Margin — a near-future spatial narrative RPG",
   "devDependencies": {
     "@canvasengine/compiler": "2.2.0",
     "@resvg/resvg-js": "2.6.2",

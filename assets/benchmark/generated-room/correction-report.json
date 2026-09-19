@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "room": "memory-authenticity-audit",
+  "mode": "parallel-low-device-correction",
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "startedAt": "2026-09-19T08:11:10.427Z",
+  "endedAt": "2026-09-19T08:11:24.770Z",
+  "wallClockMs": 14343,
+  "concurrency": 2,
+  "results": [
+    {
+      "id": "audit-comparison-console-v2",
+      "status": "succeeded",
+      "requestId": "ea3ced4e-63e4-483a-9024-4cd573281335",
+      "taskId": "mt_8b5f913cd1ffdf39b4f2b5d05ad24d11",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805478897178.png",
+      "output": "assets/benchmark/generated-room/audit-comparison-console-v2.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 5887,
+      "generationMs": 8604,
+      "downloadMs": 5736,
+      "totalMs": 14340,
+      "sha256": "aaa9fc16ab64e72e21b37fde609fe18b5230324817cee0bfcdd27e10a9c2a3c5",
+      "prompt": "NEW COMPLETE OBJECT using this accepted low circular scanner only as the exact steep top-down B-view camera, short-body proportion, pixel density, graphite/brass/teal material and light reference. Create ONE low DUAL MEMORY COMPARATOR, a wide rounded-rectangle floor device with a broad top occupying at least 88 percent of its visible height, no legs and only a thin dark lower rim. On the top are two circular recessed wafer wells, two short abstract cyan waveform strips, and one small central amber physical toggle. A standing adult is about 105 source pixels tall; footprint about 145 by 85 pixels, visible body height no more than 24 pixels. All straight edges parallel, zero convergence or near-side enlargement. Center one complete new device on uniform pure RGB #FF00FF. No reuse of scanner rings, no table, legs, upright screen, text, glyphs, person, floor, wall, hologram, cast shadow, product photo or perspective."
+    },
+    {
+      "id": "audit-sealed-buffer-v2",
+      "status": "succeeded",
+      "requestId": "f01b8f40-5628-43ae-b0bb-8edac9fce82e",
+      "taskId": "mt_7ce78dde57e17f40daee26ef799dfd95",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805477511675.png",
+      "output": "assets/benchmark/generated-room/audit-sealed-buffer-v2.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 4939,
+      "generationMs": 7511,
+      "downloadMs": 4605,
+      "totalMs": 12116,
+      "sha256": "7a104eba5fec912377083b6ea28f9f07b1cbb4773b2f6eb2ed798d0d01000531",
+      "prompt": "NEW COMPLETE OBJECT using this accepted low circular scanner only as the exact steep top-down B-view camera, low-body proportion, pixel density, graphite/brass/teal material and light reference. Create ONE low SEALED MEMORY EVIDENCE BUFFER, a compact rounded-square floor capsule with a broad top occupying at least 88 percent of visible height, no legs and only a thin lower rim. The top contains two inset translucent wafer cassettes beneath a dark protective glass strip and one tiny amber tamper seal with no mark. A standing adult is about 105 source pixels tall; footprint about 100 by 82 pixels, body height no more than 22 pixels. Parallel edges, zero convergence, no near-side enlargement. Center one complete new device on uniform pure RGB #FF00FF. No scanner rings, upright cabinet, drawers, legs, text, glyphs, person, floor, wall, hologram, cast shadow, product-photo camera or perspective."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "audit-resonance-scanner": {
+    "source": "assets/benchmark/generated-room/audit-resonance-scanner.png",
+    "sourceSha256": "f806a4c1fc8849f2b71ec12ff4a9b7174ec3d04d8b5b6ddb9722095af556a98e",
+    "output": "assets/benchmark/generated-room/processed/audit-resonance-scanner.png",
+    "sha256": "db2fdef8e5e260251121d5736325c599990a9425b548714c337f461dd5449590",
+    "algorithm": "magenta-chroma-all-v3",
+    "transparentPixels": 151973,
+    "totalPixels": 262144
+  },
+  "audit-comparison-console-v2": {
+    "source": "assets/benchmark/generated-room/audit-comparison-console-v2.png",
+    "sourceSha256": "aaa9fc16ab64e72e21b37fde609fe18b5230324817cee0bfcdd27e10a9c2a3c5",
+    "output": "assets/benchmark/generated-room/processed/audit-comparison-console-v2.png",
+    "sha256": "b28b2be75a0de6699ee62771d94cd1988fd0b2dde32d7dbf9bd1520ad44ac0e8",
+    "algorithm": "magenta-chroma-all-v3",
+    "transparentPixels": 158577,
+    "totalPixels": 262144
+  },
+  "audit-sealed-buffer": {
+    "source": "assets/benchmark/generated-room/audit-sealed-buffer.png",
+    "sourceSha256": "59779747e770dddc3165441e05e3f25a1e570f55d0f3248a5c3950fe2ac9fb1a",
+    "output": "assets/benchmark/generated-room/processed/audit-sealed-buffer.png",
+    "sha256": "98e8f7eed57d2101299f54504786f230a8aef2911b5c0f70f6b1e5d3ec311398",
+    "algorithm": "magenta-chroma-all-v3",
+    "transparentPixels": 155631,
+    "totalPixels": 262144
+  },
+  "audit-sealed-buffer-v2": {
+    "source": "assets/benchmark/generated-room/audit-sealed-buffer-v2.png",
+    "sourceSha256": "7a104eba5fec912377083b6ea28f9f07b1cbb4773b2f6eb2ed798d0d01000531",
+    "output": "assets/benchmark/generated-room/processed/audit-sealed-buffer-v2.png",
+    "sha256": "d9641aa3408d93ed2cdd330126a99c4db59a5c7a35dc62b6d51ed8c178013109",
+    "algorithm": "magenta-chroma-all-v3",
+    "transparentPixels": 160049,
+    "totalPixels": 262144
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "scene": "large-review",
+  "generatorJob": "large-concourse-detail-atlas-v1",
+  "generatedAtlas": "./art/large-concourse-detail-atlas-v1.png",
+  "fallbackAtlas": "./art/ambient-home-props.png",
+  "catalog": [
+    {"id":"wafer-tray","cell":[0,0],"roles":["wafer","trace"],"kind":"trace","status":"accepted"},
+    {"id":"fiber-cable","cell":[1,0],"roles":["cable","trace"],"kind":"trace","status":"accepted"},
+    {"id":"diagnostic-kit","cell":[2,0],"roles":["repair","trace"],"kind":"trace","status":"accepted"},
+    {"id":"cartridge-cart","cell":[0,1],"roles":["storage","mobile"],"kind":"furniture","status":"accepted"},
+    {"id":"transfer-pedestal","cell":[1,1],"roles":["transfer","anchor"],"kind":"furniture","status":"accepted"},
+    {"id":"queue-guide","cell":[2,1],"roles":["queue"],"kind":"furniture","status":"rejected","reason":"disconnected footprint needs a polygon collision contract"},
+    {"id":"cleaning-dock","cell":[0,2],"roles":["cleaning","utility"],"kind":"furniture","status":"accepted"},
+    {"id":"service-crate","cell":[1,2],"roles":["storage","utility"],"kind":"furniture","status":"accepted"},
+    {"id":"air-service","cell":[2,2],"roles":["air","utility"],"kind":"furniture","status":"accepted"}
+  ],
+  "fallbackCatalog": [
+    {"id":"fallback-wafer-tray","cell":[0,1],"roles":["wafer","trace"],"kind":"trace"},
+    {"id":"fallback-fiber-cable","cell":[1,0],"roles":["cable","trace"],"kind":"trace"},
+    {"id":"fallback-diagnostic-kit","cell":[1,1],"roles":["repair","trace","mobile","storage","transfer"],"kind":"trace"},
+    {"id":"fallback-cleaning-dock","cell":[0,2],"roles":["cleaning","utility"],"kind":"furniture"},
+    {"id":"fallback-air-service","cell":[2,2],"roles":["air","utility"],"kind":"furniture"}
+  ],
+  "slots": [
+    {"id":"access-tray-a","zone":"access","role":"wafer","rect":{"x":112,"y":176,"w":28,"h":28}},
+    {"id":"access-cable-a","zone":"access","role":"cable","rect":{"x":121,"y":263,"w":34,"h":34}},
+    {"id":"access-cart","zone":"access","role":"mobile","rect":{"x":222,"y":205,"w":58,"h":58},"obstacle":{"x":228,"y":230,"w":46,"h":24}},
+    {"id":"router-tray","zone":"router","role":"wafer","rect":{"x":271,"y":360,"w":28,"h":28}},
+    {"id":"router-pedestal","zone":"router","role":"transfer","rect":{"x":469,"y":392,"w":50,"h":50},"obstacle":{"x":476,"y":414,"w":36,"h":22}},
+    {"id":"maintenance-kit","zone":"maintenance","role":"repair","rect":{"x":610,"y":260,"w":31,"h":31}},
+    {"id":"maintenance-cable","zone":"maintenance","role":"cable","rect":{"x":609,"y":382,"w":34,"h":34}},
+    {"id":"maintenance-dock","zone":"maintenance","role":"cleaning","rect":{"x":662,"y":399,"w":44,"h":44},"obstacle":{"x":669,"y":418,"w":30,"h":18}},
+    {"id":"observation-crate","zone":"observation","role":"storage","rect":{"x":518,"y":91,"w":48,"h":48},"obstacle":{"x":524,"y":111,"w":36,"h":22}},
+    {"id":"observation-air","zone":"observation","role":"air","rect":{"x":588,"y":91,"w":50,"h":50},"obstacle":{"x":594,"y":112,"w":38,"h":22}},
+    {"id":"arrival-cable-left","zone":"arrival","role":"cable","rect":{"x":318,"y":619,"w":34,"h":34}},
+    {"id":"arrival-cable-right","zone":"arrival","role":"cable","rect":{"x":416,"y":619,"w":34,"h":34}}
+  ]
+}

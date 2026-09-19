@@ -1,7 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {initialHead,migrateHead,resolveAction,type Head} from '../src/journey'
-import {entities,type EntityId} from '../src/world'
+import {objective} from '../src/story'
+import {entities,entityNear,type EntityId} from '../src/world'
 
 function step(head:Head,entity:EntityId,action:string){
  const result=resolveAction(head,{id:crypto.randomUUID(),version:head.version,scene:head.scene,entity,action,position:entities[entity].approach})
@@ -24,6 +25,16 @@ function evidenceRoute(){
  return head
 }
 
+test('visible interaction range and authoritative action range share one predicate',()=>{
+ const entity=entities['voice-box']
+ const visibleEdge={x:entity.approach.x+32,y:entity.approach.y}
+ assert.equal(entityNear(entity,visibleEdge),true)
+ assert.equal(resolveAction(initialHead('zh'),{id:crypto.randomUUID(),version:0,scene:'home',entity:'voice-box',action:'listen-voice',position:visibleEdge}).accepted,true)
+ const outside={x:entity.approach.x+34,y:entity.approach.y}
+ assert.equal(entityNear(entity,outside),false)
+ assert.throws(()=>resolveAction(initialHead('zh'),{id:crypto.randomUUID(),version:0,scene:'home',entity:'voice-box',action:'listen-voice',position:outside}),/MOVE_CLOSER/)
+})
+
 test('new arrival learns the missing-memory rule through sources before deciding',()=>{
  let head=initialHead('zh')
  const premature=resolveAction(head,{id:crypto.randomUUID(),version:0,scene:'home',entity:'receipt',action:'read-receipt',position:entities.receipt.approach})
@@ -41,6 +52,10 @@ test('new arrival learns the missing-memory rule through sources before deciding
  const ending=step(head,'voice-box','revisit-voice')
  assert.match(ending.text,/面馆/)
  assert.equal(ending.head.save.facts.voiceRevisited,true)
+ assert.match(objective(ending.head.save),/今早/)
+ const morning=step(ending.head,'voice-box','try-save-morning')
+ assert.equal(morning.head.save.facts.morningHandled,true)
+ assert.equal(morning.head.save.facts.morningStored,false)
 })
 
 test('lending retains the gap, survives return route, and prevents the other choice',()=>{
@@ -52,7 +67,10 @@ test('lending retains the gap, survives return route, and prevents the other cho
  assert.equal(other.head.version,head.version)
  head=step(head,'service-exit','service-to-hall').head
  head=step(head,'home-return','to-home').head
- assert.match(step(head,'voice-box','revisit-voice').text,/借用中/)
+ head=step(head,'voice-box','revisit-voice').head
+ assert.match(head.save.blocks.at(-1)?.text??'',/借用中/)
+ head=step(head,'voice-box','save-morning').head
+ assert.equal(head.save.facts.morningStored,true)
 })
 
 function toPreview(choice:'choose-keep'|'choose-lend'){
@@ -98,5 +116,6 @@ test('a saved first-arc journey gains new facts without losing its earlier choic
  assert.equal(migrated.save.facts.kept,true)
  assert.equal(migrated.save.facts.previewLogRead,false)
  assert.equal(migrated.save.facts.previewStopped,false)
+ assert.equal(migrated.save.facts.morningHandled,false)
  assert.equal(migrateHead(migrated),migrated)
 })

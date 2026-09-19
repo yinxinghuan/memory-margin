@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "mode": "parallel-independent-assets",
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "referenceJob": "service-console-v6",
+  "startedAt": "2026-09-19T07:54:09.306Z",
+  "endedAt": "2026-09-19T07:54:21.695Z",
+  "wallClockMs": 12388,
+  "concurrency": 3,
+  "results": [
+    {
+      "id": "memory-exchange-bench",
+      "status": "succeeded",
+      "requestId": "9afabd2e-d51f-47cc-beac-2b3f185487de",
+      "taskId": "mt_2769f666be9ad4fa741625638767435e",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789804454880666.png",
+      "output": "assets/benchmark/memory-exchange-bench.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 3077,
+      "generationMs": 8062,
+      "downloadMs": 4324,
+      "totalMs": 12386,
+      "sha256": "815bb721c302896a2d069e3139dafb7b2350919c2110a15167ed90776070f92f",
+      "prompt": "NEW OBJECT GENERATION. Use the reference only for mature pixel-painted material, restrained graphite/brass/teal palette, cyan practical indicators, steep B-view orthographic camera and world scale. Create ONE complete two-person PUBLIC MEMORY EXCHANGE WAITING BENCH, a genuinely new silhouette: slim dark graphite frame, two separate worn teal conductive seat cushions, low shared back rail, one narrow brass charging rail between the seats, and a short fiber cable coiled beside the rear foot. Turn the bench 45 degrees on the floor while keeping strict orthographic projection: both spatial edge families parallel, no convergence, no near-side enlargement. Broad seat surfaces and extremely short front faces. A standing adult at this scale would be about 105 pixels tall; bench total visible width about 190 pixels and seat height about 45 pixels. Center one full object on pure uniform RGB #FF00FF. No reuse of the reference console silhouette, no person, floor, wall, text, logo, hologram, cast shadow, product photo or perspective."
+    },
+    {
+      "id": "memory-quarantine-locker",
+      "status": "succeeded",
+      "requestId": "367f3174-9a07-4348-9034-f29d2952fa4f",
+      "taskId": "mt_33ee9fcbe3c31b2eb73c897e1062a054",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789804456308637.png",
+      "output": "assets/benchmark/memory-quarantine-locker.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 2439,
+      "generationMs": 7402,
+      "downloadMs": 4813,
+      "totalMs": 12214,
+      "sha256": "a7f6e1bdbb0a91262e659d6dfdc004a387e9d2511f1ae7d47a86b671929cd8c4",
+      "prompt": "NEW OBJECT GENERATION. Use the reference only for its mature pixel-painted graphite, aged brass, desaturated teal and restrained cyan visual language plus the same steep B-view orthographic game camera. Create ONE complete freestanding MEMORY QUARANTINE LOCKER, a new compact cabinet about chest-high to an adult: rectangular axis-aligned top plane with equal opposite edges, short visible front face, two sealed dark doors, three small blank translucent wafer windows inset into the top, one amber isolation indicator and one narrow cyan status slit. A standing adult at this scale is about 105 pixels tall; this locker appears about 85 pixels tall and 110 pixels wide. Keep all horizontal and vertical edge families parallel with zero convergence. Center one complete object on pure uniform RGB #FF00FF. No console, desk, chair, person, floor, wall, readable text, glyphs, hologram, dramatic glow, cast shadow, product photography or trapezoid perspective."
+    },
+    {
+      "id": "memory-maintenance-drone",
+      "status": "succeeded",
+      "requestId": "72be1d76-4f27-43d5-9785-c1a5a2dab4ed",
+      "taskId": "mt_acb5afef05aa7cd52050df741b1c254f",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789804457699557.png",
+      "output": "assets/benchmark/memory-maintenance-drone.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 2193,
+      "generationMs": 8724,
+      "downloadMs": 3549,
+      "totalMs": 12273,
+      "sha256": "cab32ff308463e354d0b3c7d65a4cb0f11da05d614bdfb56d99c02ab83670702",
+      "prompt": "NEW OBJECT GENERATION. Use the reference only for mature crisp pixel-painted detail, worn graphite/brass/teal materials, tiny cyan indicators, upper-left light and the same steep B-view orthographic game projection. Create ONE complete LOW MOBILE MEMORY-MAINTENANCE DRONE, a new rounded rectangular floor robot with a broad top service hatch, two small recessed tool bays, four tiny covered wheels, one folded diagnostic arm lying flat against the top, and a short trailing dark fiber lead. It is practical used civic equipment, not cute or anthropomorphic. A standing adult is about 105 pixels tall; drone footprint about 95 by 70 pixels and body height only 25 pixels. Show mostly top surface and an extremely short front face, parallel edges, no near-side enlargement. Center one complete object on pure uniform RGB #FF00FF. No reuse of the console silhouette, no eyes, face, person, floor, wall, text, logo, hologram, cast shadow, product photo, isometric exaggeration or perspective convergence."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+import assert from 'node:assert/strict'
+import {chromium} from 'playwright'
+import {resolve} from 'node:path'
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'})
+try{for(const [width,height] of [[390,844],[320,568]]){const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:1}),page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(String(error)));await page.goto('http://127.0.0.1:5212/?generated_room=1&lang=zh',{waitUntil:'networkidle'});await page.addStyleTag({content:'#alteru-guest-banner{display:none!important}'});await page.locator('.mm-loading').waitFor({state:'detached'});assert.equal(await page.locator('[data-audit-piece]').count(),4);assert.equal(await page.locator('#rpg canvas').count(),1);assert.doesNotMatch(await page.locator('body').innerText(),/碰撞|空间规则|后台|384×512|用户房间生成测速/);assert.deepEqual(errors,[]);await page.screenshot({path:resolve(`_qa/platform-layout-generated-audit-room-${width}x${height}.png`),fullPage:true});await context.close()}}finally{await browser.close()}

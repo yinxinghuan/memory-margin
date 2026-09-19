@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "sceneId": "generated-audit-room",
+  "shell": {
+    "enterable": true,
+    "spawn": {
+      "x": 187,
+      "y": 420
+    },
+    "exits": [
+      {
+        "id": "south-door",
+        "anchor": {
+          "x": 192,
+          "y": 480
+        }
+      }
+    ],
+    "slots": [
+      {
+        "id": "source-scanner",
+        "footprint": {
+          "x": 88,
+          "y": 177,
+          "w": 56,
+          "h": 22
+        }
+      },
+      {
+        "id": "target-scanner",
+        "footprint": {
+          "x": 240,
+          "y": 177,
+          "w": 56,
+          "h": 22
+        }
+      },
+      {
+        "id": "comparison-console",
+        "footprint": {
+          "x": 151,
+          "y": 300,
+          "w": 82,
+          "h": 25
+        }
+      },
+      {
+        "id": "sealed-buffer",
+        "footprint": {
+          "x": 258,
+          "y": 382,
+          "w": 46,
+          "h": 20
+        }
+      }
+    ],
+    "playerCopy": {
+      "status": {
+        "zh": "世界正在加载",
+        "en": "The world is forming"
+      },
+      "hint": {
+        "zh": "你可以先四处看看",
+        "en": "You can look around now"
+      }
+    }
+  },
+  "complete": {
+    "spawn": {
+      "x": 187,
+      "y": 420
+    },
+    "exits": [
+      {
+        "id": "south-door",
+        "anchor": {
+          "x": 192,
+          "y": 480
+        }
+      }
+    ],
+    "slots": [
+      {
+        "id": "source-scanner",
+        "footprint": {
+          "x": 88,
+          "y": 177,
+          "w": 56,
+          "h": 22
+        }
+      },
+      {
+        "id": "target-scanner",
+        "footprint": {
+          "x": 240,
+          "y": 177,
+          "w": 56,
+          "h": 22
+        }
+      },
+      {
+        "id": "comparison-console",
+        "footprint": {
+          "x": 151,
+          "y": 300,
+          "w": 82,
+          "h": 25
+        }
+      },
+      {
+        "id": "sealed-buffer",
+        "footprint": {
+          "x": 258,
+          "y": 382,
+          "w": 46,
+          "h": 20
+        }
+      }
+    ]
+  }
+}

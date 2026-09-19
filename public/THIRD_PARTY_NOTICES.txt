@@ -1,8 +1,8 @@
-Memory Margin — independent spatial story workflow trial
+Memory Margin — near-future spatial story RPG
 
 Framework: RPG-JS by Samuel Ronce, https://github.com/RSamaium/RPG-JS
 Versions fixed by package-lock.json. RPG-JS source is MIT licensed.
-Trial scene and character graphics are authored procedurally in scripts/export-world.ts.
+Original scene, character, poster and audio assets were produced through the AlterU Media Service and assembled for this project; their task provenance is recorded under assets/.
 Internal frozen story core provenance: src/vendor/story/ENGINE_SOURCE.json.
 
 
@@ -2292,4 +2292,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

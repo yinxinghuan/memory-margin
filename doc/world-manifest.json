@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "coordinateAnchor": "top-left",
   "world": {
     "width": 384,
     "height": 512,
@@ -11,13 +12,201 @@
   },
   "assets": [
     {
-      "id": "home",
-      "path": "public/art/home.png",
-      "imageWidth": 384,
+      "id": "home-ground-v4",
+      "path": "public/art/modules/home-ground-v4.png",
+      "imageWidth": 768,
+      "imageHeight": 1024,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "hall-ground-v3",
+      "path": "public/art/modules/hall-ground-v3.png",
+      "imageWidth": 768,
+      "imageHeight": 1024,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "service-ground-v3",
+      "path": "public/art/modules/service-ground-v3.png",
+      "imageWidth": 768,
+      "imageHeight": 1024,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "home-wall-v5",
+      "path": "public/art/modules/home-wall-v5.png",
+      "imageWidth": 768,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "hall-wall-v4",
+      "path": "public/art/modules/hall-wall-v4.png",
+      "imageWidth": 768,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "service-wall-v4",
+      "path": "public/art/modules/service-wall-v4.png",
+      "imageWidth": 768,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "wall-north",
+      "path": "public/art/modules/wall-north.png",
+      "imageWidth": 768,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "home-side-wall-v7",
+      "path": "public/art/modules/home-side-wall-v7.png",
+      "imageWidth": 256,
+      "imageHeight": 1536,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "hall-side-wall-v7",
+      "path": "public/art/modules/hall-side-wall-v7.png",
+      "imageWidth": 256,
+      "imageHeight": 1536,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "service-side-wall-v7",
+      "path": "public/art/modules/service-side-wall-v7.png",
+      "imageWidth": 256,
+      "imageHeight": 1536,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "rug",
+      "path": "public/art/modules/rug.png",
+      "imageWidth": 512,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "home-worktable-v5",
+      "path": "public/art/modules/home-worktable-v5.png",
+      "imageWidth": 512,
       "imageHeight": 512,
       "crops": [
         {
           "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "service-console-v6",
+      "path": "public/art/modules/service-console-v6.png",
+      "imageWidth": 512,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "door-front-atlas-v3",
+      "path": "public/art/modules/door-front-atlas-v3.png",
+      "imageWidth": 768,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 384,
+          "h": 512
+        },
+        {
+          "x": 384,
           "y": 0,
           "w": 384,
           "h": 512
@@ -25,110 +214,260 @@
       ]
     },
     {
-      "id": "hall",
-      "path": "public/art/hall.png",
-      "imageWidth": 384,
+      "id": "door-side-passage-v3",
+      "path": "public/art/modules/door-side-passage-v3.png",
+      "imageWidth": 768,
       "imageHeight": 512,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 384,
+          "w": 768,
           "h": 512
         }
       ]
     },
     {
-      "id": "service",
-      "path": "public/art/service.png",
-      "imageWidth": 384,
-      "imageHeight": 512,
+      "id": "door-side-leaf-v5",
+      "path": "public/art/modules/door-side-leaf-v5.png",
+      "imageWidth": 512,
+      "imageHeight": 768,
+      "crops": [
+        {
+          "x": 78,
+          "y": 66,
+          "w": 350,
+          "h": 634
+        }
+      ]
+    },
+    {
+      "id": "cast",
+      "path": "public/art/cast.png",
+      "imageWidth": 1024,
+      "imageHeight": 1024,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 384,
+          "w": 512,
           "h": 512
+        },
+        {
+          "x": 512,
+          "y": 0,
+          "w": 512,
+          "h": 512
+        },
+        {
+          "x": 0,
+          "y": 512,
+          "w": 512,
+          "h": 512
+        },
+        {
+          "x": 512,
+          "y": 512,
+          "w": 512,
+          "h": 512
+        }
+      ]
+    },
+    {
+      "id": "neighbor-stand-v5",
+      "path": "public/art/neighbor-stand-v5.png",
+      "imageWidth": 256,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "caretaker-stand-v5",
+      "path": "public/art/caretaker-stand-v5.png",
+      "imageWidth": 256,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "clerk-stand-v5",
+      "path": "public/art/clerk-stand-v5.png",
+      "imageWidth": 256,
+      "imageHeight": 256,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 256,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "path": "public/art/objects.png",
+      "imageWidth": 960,
+      "imageHeight": 960,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 320,
+          "y": 0,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 640,
+          "y": 0,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 0,
+          "y": 320,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 320,
+          "y": 320,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 640,
+          "y": 320,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 0,
+          "y": 640,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 320,
+          "y": 640,
+          "w": 320,
+          "h": 320
+        },
+        {
+          "x": 640,
+          "y": 640,
+          "w": 320,
+          "h": 320
         }
       ]
     },
     {
       "id": "hero",
       "path": "public/art/hero.png",
-      "imageWidth": 96,
-      "imageHeight": 128,
+      "imageWidth": 768,
+      "imageHeight": 1024,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 32,
-          "h": 32
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 32,
+          "x": 256,
           "y": 0,
-          "w": 32,
-          "h": 32
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 64,
+          "x": 512,
           "y": 0,
-          "w": 32,
-          "h": 32
+          "w": 256,
+          "h": 256
         },
         {
           "x": 0,
-          "y": 32,
-          "w": 32,
-          "h": 32
+          "y": 256,
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 32,
-          "y": 32,
-          "w": 32,
-          "h": 32
+          "x": 256,
+          "y": 256,
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 64,
-          "y": 32,
-          "w": 32,
-          "h": 32
-        },
-        {
-          "x": 0,
-          "y": 64,
-          "w": 32,
-          "h": 32
-        },
-        {
-          "x": 32,
-          "y": 64,
-          "w": 32,
-          "h": 32
-        },
-        {
-          "x": 64,
-          "y": 64,
-          "w": 32,
-          "h": 32
+          "x": 512,
+          "y": 256,
+          "w": 256,
+          "h": 256
         },
         {
           "x": 0,
-          "y": 96,
-          "w": 32,
-          "h": 32
+          "y": 512,
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 32,
-          "y": 96,
-          "w": 32,
-          "h": 32
+          "x": 256,
+          "y": 512,
+          "w": 256,
+          "h": 256
         },
         {
-          "x": 64,
-          "y": 96,
-          "w": 32,
-          "h": 32
+          "x": 512,
+          "y": 512,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "x": 0,
+          "y": 768,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "x": 256,
+          "y": 768,
+          "w": 256,
+          "h": 256
+        },
+        {
+          "x": 512,
+          "y": 768,
+          "w": 256,
+          "h": 256
+        }
+      ]
+    },
+    {
+      "id": "door-leaf-v2",
+      "path": "public/art/modules/door-leaf-v2.png",
+      "imageWidth": 512,
+      "imageHeight": 512,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 512,
+          "h": 512
         }
       ]
     }
@@ -136,7 +475,86 @@
   "scenes": [
     {
       "id": "home",
-      "background": "home",
+      "background": "home-ground-v4",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "rug",
+          "x": 70,
+          "y": 333,
+          "w": 106,
+          "h": 53
+        },
+        {
+          "kind": "rug",
+          "x": 217,
+          "y": 336,
+          "w": 91,
+          "h": 46
+        },
+        {
+          "kind": "desk-wood",
+          "x": 94,
+          "y": 176,
+          "w": 48,
+          "h": 48
+        },
+        {
+          "kind": "desk-wood",
+          "x": 240,
+          "y": 176,
+          "w": 46,
+          "h": 46
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 109,
+          "h": 64
+        },
+        {
+          "kind": "north-wall",
+          "x": 213,
+          "y": 0,
+          "w": 117,
+          "h": 64
+        },
+        {
+          "kind": "north-door",
+          "x": 163,
+          "y": 0,
+          "w": 50,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 276,
+          "h": 66
+        }
+      ],
       "walkRegion": {
         "x": 54,
         "y": 64,
@@ -149,21 +567,40 @@
       },
       "obstacles": [
         {
-          "x": 90,
-          "y": 190,
-          "w": 56,
-          "h": 30
+          "x": 94,
+          "y": 176,
+          "w": 48,
+          "h": 48
         },
         {
-          "x": 239,
-          "y": 198,
+          "x": 240,
+          "y": 176,
+          "w": 46,
+          "h": 46
+        },
+        {
+          "x": 70,
+          "y": 246,
           "w": 38,
-          "h": 22
+          "h": 67
+        },
+        {
+          "x": 272,
+          "y": 251,
+          "w": 42,
+          "h": 26
+        },
+        {
+          "x": 272,
+          "y": 342,
+          "w": 31,
+          "h": 31
         }
       ],
       "targets": [
         {
           "id": "voice-box",
+          "kind": "memory",
           "approach": {
             "x": 118,
             "y": 248
@@ -177,6 +614,7 @@
         },
         {
           "id": "receipt",
+          "kind": "record",
           "approach": {
             "x": 260,
             "y": 251
@@ -190,6 +628,7 @@
         },
         {
           "id": "breakfast-card",
+          "kind": "record",
           "approach": {
             "x": 113,
             "y": 352
@@ -203,10 +642,22 @@
         },
         {
           "id": "home-door",
+          "kind": "door",
           "approach": {
-            "x": 187,
-            "y": 115
+            "x": 184,
+            "y": 68
           },
+          "threshold": {
+            "x": 184,
+            "y": 64
+          },
+          "activation": {
+            "x": 163,
+            "y": 64,
+            "w": 50,
+            "h": 52
+          },
+          "side": "N",
           "states": [
             "static"
           ],
@@ -218,7 +669,72 @@
     },
     {
       "id": "hall",
-      "background": "hall",
+      "background": "hall-ground-v3",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 276,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 144
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 194,
+          "w": 18,
+          "h": 270
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 352
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 402,
+          "w": 18,
+          "h": 62
+        },
+        {
+          "kind": "side-door",
+          "x": 18,
+          "y": 144,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "side-door",
+          "x": 312,
+          "y": 352,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 276,
+          "h": 66
+        }
+      ],
       "walkRegion": {
         "x": 54,
         "y": 64,
@@ -246,10 +762,22 @@
       "targets": [
         {
           "id": "home-return",
+          "kind": "door",
           "approach": {
-            "x": 82,
-            "y": 169
+            "x": 60,
+            "y": 160
           },
+          "threshold": {
+            "x": 54,
+            "y": 160
+          },
+          "activation": {
+            "x": 54,
+            "y": 144,
+            "w": 48,
+            "h": 50
+          },
+          "side": "W",
           "states": [
             "static"
           ],
@@ -259,6 +787,7 @@
         },
         {
           "id": "neighbor",
+          "kind": "person",
           "approach": {
             "x": 133,
             "y": 256
@@ -272,6 +801,7 @@
         },
         {
           "id": "caretaker",
+          "kind": "person",
           "approach": {
             "x": 244,
             "y": 279
@@ -285,6 +815,7 @@
         },
         {
           "id": "seal",
+          "kind": "seal",
           "approach": {
             "x": 257,
             "y": 204
@@ -298,6 +829,7 @@
         },
         {
           "id": "hall-notice",
+          "kind": "record",
           "approach": {
             "x": 113,
             "y": 149
@@ -311,10 +843,22 @@
         },
         {
           "id": "service-door",
+          "kind": "door",
           "approach": {
-            "x": 290,
-            "y": 376
+            "x": 316,
+            "y": 368
           },
+          "threshold": {
+            "x": 321,
+            "y": 368
+          },
+          "activation": {
+            "x": 282,
+            "y": 352,
+            "w": 48,
+            "h": 50
+          },
+          "side": "E",
           "states": [
             "static"
           ],
@@ -326,7 +870,72 @@
     },
     {
       "id": "service",
-      "background": "service",
+      "background": "service-ground-v3",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "desk-service",
+          "x": 97,
+          "y": 222,
+          "w": 50,
+          "h": 50
+        },
+        {
+          "kind": "desk-service",
+          "x": 258,
+          "y": 223,
+          "w": 50,
+          "h": 50
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 276,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 112,
+          "h": 66
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 208,
+          "y": 398,
+          "w": 122,
+          "h": 66
+        },
+        {
+          "kind": "south-door",
+          "x": 166,
+          "y": 398,
+          "w": 42,
+          "h": 66
+        }
+      ],
       "walkRegion": {
         "x": 54,
         "y": 64,
@@ -340,29 +949,48 @@
       "obstacles": [
         {
           "x": 177,
-          "y": 193,
+          "y": 105,
           "w": 22,
-          "h": 25
+          "h": 20
         },
         {
-          "x": 88,
-          "y": 246,
+          "x": 97,
+          "y": 222,
           "w": 50,
-          "h": 29
+          "h": 50
         },
         {
-          "x": 251,
-          "y": 246,
-          "w": 58,
-          "h": 35
+          "x": 258,
+          "y": 223,
+          "w": 50,
+          "h": 50
+        },
+        {
+          "x": 82,
+          "y": 183,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 74,
+          "y": 267,
+          "w": 31,
+          "h": 20
+        },
+        {
+          "x": 276,
+          "y": 295,
+          "w": 37,
+          "h": 24
         }
       ],
       "targets": [
         {
           "id": "clerk",
+          "kind": "person",
           "approach": {
             "x": 178,
-            "y": 242
+            "y": 153
           },
           "states": [
             "static"
@@ -373,6 +1001,7 @@
         },
         {
           "id": "ledger",
+          "kind": "record",
           "approach": {
             "x": 117,
             "y": 291
@@ -386,6 +1015,7 @@
         },
         {
           "id": "terms-card",
+          "kind": "record",
           "approach": {
             "x": 274,
             "y": 174
@@ -399,6 +1029,7 @@
         },
         {
           "id": "choice-desk",
+          "kind": "desk",
           "approach": {
             "x": 252,
             "y": 302
@@ -412,6 +1043,7 @@
         },
         {
           "id": "preview-screen",
+          "kind": "desk",
           "approach": {
             "x": 281,
             "y": 365
@@ -425,10 +1057,22 @@
         },
         {
           "id": "service-exit",
+          "kind": "door",
           "approach": {
-            "x": 185,
-            "y": 397
+            "x": 184,
+            "y": 436
           },
+          "threshold": {
+            "x": 184,
+            "y": 436
+          },
+          "activation": {
+            "x": 166,
+            "y": 404,
+            "w": 42,
+            "h": 50
+          },
+          "side": "S",
           "states": [
             "static"
           ],
@@ -445,9 +1089,10 @@
       "from": "home",
       "to": "hall",
       "arrival": {
-        "x": 90,
-        "y": 190
-      }
+        "x": 60,
+        "y": 160
+      },
+      "target": "home-return"
     },
     {
       "id": "to-home",
@@ -455,26 +1100,29 @@
       "to": "home",
       "arrival": {
         "x": 184,
-        "y": 130
-      }
+        "y": 68
+      },
+      "target": "home-door"
     },
     {
       "id": "to-service",
       "from": "hall",
       "to": "service",
       "arrival": {
-        "x": 187,
-        "y": 380
-      }
+        "x": 184,
+        "y": 436
+      },
+      "target": "service-exit"
     },
     {
       "id": "service-to-hall",
       "from": "service",
       "to": "hall",
       "arrival": {
-        "x": 286,
-        "y": 349
-      }
+        "x": 316,
+        "y": 368
+      },
+      "target": "service-door"
     }
   ]
 }

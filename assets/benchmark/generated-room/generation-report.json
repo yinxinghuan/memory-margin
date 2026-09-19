@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "room": "memory-authenticity-audit",
+  "mode": "parallel-new-room-assets",
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "startedAt": "2026-09-19T08:08:54.173Z",
+  "endedAt": "2026-09-19T08:09:14.815Z",
+  "wallClockMs": 20642,
+  "concurrency": 4,
+  "results": [
+    {
+      "id": "audit-room-floor",
+      "status": "failed",
+      "requestId": "cccaac21-7f50-44b4-b4b9-e2bf01571844",
+      "totalMs": 19837,
+      "error": {
+        "code": "PROVIDER_REJECTED",
+        "message": "RuntimeError: CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)`",
+        "retryable": false
+      },
+      "prompt": "NEW ROOM FLOOR GENERATION. Create ONLY the floor plate for a MEMORY AUTHENTICITY AUDIT ROOM by editing this accepted orthographic floor. Preserve the exact 768x1024 edge-to-edge floor geometry, tile scale, parallel seams, steep top-down camera and mature pixel-painted wear. Shift the material toward dark desaturated petrol-blue ceramic with restrained old brass repair seams. Embed two flat circular comparison rings in the floor, one at source coordinates around x250 y420 and one around x520 y420, linked by a thin flat brass trace to a central rectangular analysis footprint around x300-470 y600-720. Add sparse pale cyan residue marks and three tiny amber warning nodes, all completely flush with the floor. Keep a clear vertical route x315-455 from bottom to top and clear side routes around both rings. Every pixel remains horizontal walkable floor. No walls, baseboards, doors, furniture, raised scanner, cabinet, people, text, symbols, UI, vignette, perspective convergence or photorealism."
+    },
+    {
+      "id": "audit-resonance-scanner",
+      "status": "succeeded",
+      "requestId": "da2eef8e-05c3-4441-b774-c2e1e1c434c3",
+      "taskId": "mt_1096e618826308085fcb12aff52f0121",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805340532739.png",
+      "output": "assets/benchmark/generated-room/audit-resonance-scanner.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 9950,
+      "generationMs": 14566,
+      "downloadMs": 5260,
+      "totalMs": 19826,
+      "sha256": "f806a4c1fc8849f2b71ec12ff4a9b7174ec3d04d8b5b6ddb9722095af556a98e",
+      "prompt": "NEW COMPLETE OBJECT. Use the reference only for mature pixel-painted graphite/brass/teal material, restrained cyan indicators, light direction and steep B-view orthographic camera. Create ONE low MEMORY RESONANCE SCANNER: a circular floor platform with a broad visible top disk, two concentric aged-brass sensor rings, four small inset cyan sampling pads and one short dark cable ending beside it. It scans the residual signature of one memory wafer. A standing adult in this world is about 105 source pixels tall; scanner footprint about 125 pixels across and body height no more than 18 pixels. Camera looks mostly down; no perspective convergence. Center the complete new object on uniform pure RGB #FF00FF. No console silhouette, chair, tall legs, person, floor, wall, text, logo, hologram, cast shadow or product-photo camera."
+    },
+    {
+      "id": "audit-comparison-console",
+      "status": "succeeded",
+      "requestId": "f8207c22-acc4-435d-a696-ef2f49ab7449",
+      "taskId": "mt_22fd309a114d76467a9660248d99af92",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805344727854.png",
+      "output": "assets/benchmark/generated-room/audit-comparison-console.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 11941,
+      "generationMs": 15782,
+      "downloadMs": 4844,
+      "totalMs": 20626,
+      "sha256": "ea6a88f0649dc0ed1b7bc9cfe57870f9ee07b7d2712850e71fa07d25770780d4",
+      "prompt": "NEW COMPLETE OBJECT. Use the reference only for its accepted steep B-view orthographic camera, pixel density and worn graphite/brass/teal material. Create ONE new low MEMORY AUTHENTICITY COMPARISON CONSOLE with a wide axis-aligned rectangular top, equal opposite edges and extremely short front fascia. The top contains two recessed blank wafer wells on left and right, two abstract cyan waveform strips with no glyphs, and a central amber physical verdict lever. Four very short feet. A standing adult is about 105 source pixels tall; console width about 150 pixels, top depth about 75 pixels, total body height about 48 pixels. All edge families parallel, zero taper. Center one complete object on uniform pure RGB #FF00FF. No readable text, letters, numbers, hologram, person, floor, wall, chair, tall legs, product-photo camera, trapezoid or perspective convergence."
+    },
+    {
+      "id": "audit-sealed-buffer",
+      "status": "succeeded",
+      "requestId": "e71c8562-860f-47e6-afb2-de03e6116ba4",
+      "taskId": "mt_279ce84476d13322d4bfee944e847c70",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789805341992880.png",
+      "output": "assets/benchmark/generated-room/audit-sealed-buffer.png",
+      "size": [
+        512,
+        512
+      ],
+      "serviceTimingMs": 7578,
+      "generationMs": 13240,
+      "downloadMs": 3638,
+      "totalMs": 16877,
+      "sha256": "59779747e770dddc3165441e05e3f25a1e570f55d0f3248a5c3950fe2ac9fb1a",
+      "prompt": "NEW COMPLETE OBJECT. Use the reference only for mature pixel-painted graphite, aged brass, desaturated teal, tiny cyan details, light direction and steep B-view orthographic camera. Create ONE low SEALED MEMORY EVIDENCE BUFFER, a compact rectangular floor chest with broad top surface, equal opposite edges, a very short front band, two inset translucent wafer cassettes under the top glass and one small amber tamper seal without letters. A standing adult is about 105 source pixels tall; object footprint about 105 by 75 pixels and total visible height about 42 pixels. Strict axis-aligned orthographic geometry, no near-edge enlargement. Center the complete new object on uniform pure RGB #FF00FF. No upright cabinet, doors, text, glyphs, person, floor, wall, legs, hologram, cast shadow, product photography, trapezoid or perspective convergence."
+    }
+  ]
+}

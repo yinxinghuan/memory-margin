@@ -1,0 +1,436 @@
+{
+  "hero-walk-v3": {
+    "source": "assets/platform/sprites/hero-walk-v3.png",
+    "sourceSha256": "d9279c97a60b00ec8fe1c56f8beea911d40d3704a017c9448eafaa3a7cae2b04",
+    "sourceRequestId": "f2d3acb1-19d6-42c4-83a3-6a989f4cefbf",
+    "output": "assets/processed/hero-walk-v3.png",
+    "sha256": "f0f40a0fda7847f69694213b0896f3f7058aeb63f3aea7eb08f92901f680b64c",
+    "algorithm": "edge-connected-white-alpha-v1+source-frame-mirror-v1",
+    "transparentPixels": 671589,
+    "totalPixels": 786432,
+    "grid": [
+      3,
+      4
+    ]
+  },
+  "cast-stand": {
+    "source": "assets/platform/sprites/cast-stand.png",
+    "sourceSha256": "acfe6511a08203893a607d295450cfc507ee3ca74b02296b37c77fd3ee86692a",
+    "sourceRequestId": "ee9f7489-1584-4606-9d05-266cf6b46a28",
+    "output": "assets/processed/cast-stand.png",
+    "sha256": "a0f55abbf5a6283a070aefd1b337ffed10510373d2a4e7bcd0f53f867b8f060c",
+    "algorithm": "edge-connected-checker-alpha-v1",
+    "transparentPixels": 567988,
+    "totalPixels": 786432,
+    "grid": [
+      4,
+      1
+    ]
+  },
+  "objects": {
+    "source": "assets/platform/props/objects.png",
+    "sourceSha256": "617958d02c9823b96c8e7da7f66b7bbfcf51737e2d2ccdf447b4d3a6f579fb72",
+    "sourceRequestId": "adf2edf2-bfa8-411f-80bd-043eea633f91",
+    "output": "assets/processed/objects.png",
+    "sha256": "cbfcf729fbe759a0446066bf34d7575fdc10620b287e84a7bf9b9074eaf52e9d",
+    "algorithm": "edge-connected-pale-alpha-v1",
+    "transparentPixels": 594423,
+    "totalPixels": 921600,
+    "grid": [
+      3,
+      3
+    ]
+  },
+  "home-worktable-v3": {
+    "source": "assets/platform/modules/home-worktable-v3.png",
+    "sourceSha256": "d3502102663aee3863e17f2326c4fabf0341e1c889dddd797a4fc38e2e606bdc",
+    "sourceRequestId": "41305e37-e78f-4a50-b8cb-468da059b543",
+    "output": "assets/processed/home-worktable-v3.png",
+    "sha256": "0113a45fcea012b06786b0a8d1c34abcd941854952121f048276b6955652610e",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 190593,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "rug": {
+    "source": "assets/platform/modules/rug.png",
+    "sourceSha256": "cf08ed7cdd2d1f46c1d1fcfc35b4413525ef6bb44c75e287e51f36227bb8320c",
+    "sourceRequestId": "84fd3742-adbc-4429-8bf8-68e892643beb",
+    "output": "assets/processed/rug.png",
+    "sha256": "81ecfe7d884119dd58e0242f9b1379c91b7d07f977459e346ab78e5479821e52",
+    "algorithm": "edge-connected-white-alpha-v1",
+    "transparentPixels": 4920,
+    "totalPixels": 131072,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-console-v3": {
+    "source": "assets/platform/modules/service-console-v3.png",
+    "sourceSha256": "965d9a311b0202390dbd5d721f45aa2cb88cc1779fc725aa27831044c8c7f2a2",
+    "sourceRequestId": "f629d231-ce6f-4c1b-9747-93021438f8d4",
+    "output": "assets/processed/service-console-v3.png",
+    "sha256": "0eb2f309a73425cc0f5312c8eac691eee0ccc8584c5b81109cbc511f8efadaf7",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 191089,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "neighbor-stand-v4": {
+    "source": "assets/platform/sprites/neighbor-stand-v4.png",
+    "sourceSha256": "7141633e11e66d1cd95ce4ea471dc8c1a554f9d57b3a8d922439c2d7bc3fdf8b",
+    "sourceRequestId": "e2f90d74-d76c-4397-a615-346f7b5563c1",
+    "output": "assets/processed/neighbor-stand-v4.png",
+    "sha256": "cb69570f826fe0785d58dde7c5a3198b1735d6ab9c6ef3241aa2180182cc92e7",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 212046,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "caretaker-stand-v4": {
+    "source": "assets/platform/sprites/caretaker-stand-v4.png",
+    "sourceSha256": "0f67c4041a8545bb9b9c73b797fe87cc0a91e850e57096035519a6684ff90e0f",
+    "sourceRequestId": "78c0c72d-970f-4acb-a54b-132c729d958a",
+    "output": "assets/processed/caretaker-stand-v4.png",
+    "sha256": "bcf9f6662060f10e3b608b4829e37d54799f16b5dc9f0cf1e2faf3a83e9a91c0",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 203481,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "clerk-stand-v4": {
+    "source": "assets/platform/sprites/clerk-stand-v4.png",
+    "sourceSha256": "1e50ddfeb460c48a4e3a12a33d574a2ac9d74d1dce56f37e4fe60a09058796cd",
+    "sourceRequestId": "a7d4cdae-060c-4fc0-876a-1289ff099689",
+    "output": "assets/processed/clerk-stand-v4.png",
+    "sha256": "b71206398ee9efccc4666ad74865bcfadf7896ff756e7c6069580013bb8c171c",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 207883,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "door-leaf-v2": {
+    "source": "assets/platform/modules/door-leaf-v2.png",
+    "sourceSha256": "865919d2be9dce474439f108e09a107e34d9d33afba5115cb8b0fb4a1a76a028",
+    "sourceRequestId": "297c8438-6e69-4c0f-b977-2f101ec56dd8",
+    "output": "assets/processed/door-leaf-v2.png",
+    "sha256": "836f9fcef81fbd0e6b347a3833d77567c92d394a95c42a6d31ee079db2dfa7e0",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 169065,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "world-props-v2": {
+    "source": "assets/platform/props/world-props-v2.png",
+    "sourceSha256": "8c43907e945adb208c3764f0b44beac2c11982fe93272692f9164df13fc7b00f",
+    "sourceRequestId": "b29be554-bb8d-473c-aa44-42c3fcecac82",
+    "output": "assets/processed/world-props-v2.png",
+    "sha256": "9287dd993c7c5762b1ff8afaf9b47ef5ce84c001c40cefb2cacc159595c3803a",
+    "algorithm": "magenta-chroma-all-v2+atlas-grid-edge-v1",
+    "transparentPixels": 640323,
+    "totalPixels": 921600,
+    "grid": [
+      3,
+      3
+    ]
+  },
+  "home-worktable-v5": {
+    "source": "assets/platform/modules/home-worktable-v5.png",
+    "sourceSha256": "ca5d0177e54f4e90701e0db4eccee1b7e2ecd8d5af80f8da9876a3b075d93a4b",
+    "sourceRequestId": "e40e71a0-028a-469e-899b-6bed8bf73dd2",
+    "output": "assets/processed/home-worktable-v5.png",
+    "sha256": "18b47ae2914be547749e5b9333028e076122702548258bd43933b6d47f5608a5",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 153814,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-console-v5": {
+    "source": "assets/platform/modules/service-console-v5.png",
+    "sourceSha256": "f5ec75da7df5db67f4c643cea47836508d96675eb459ace5e850cf154b3b1f5d",
+    "sourceRequestId": "a7c05022-10b0-4432-b2a4-f5a2672f64eb",
+    "output": "assets/processed/service-console-v5.png",
+    "sha256": "c0f3a3f0560bbeba9583ecd4082224082d2e55c9acddbb1df2564a9e7110a6a9",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 154474,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "door-side-passage-v3": {
+    "source": "assets/platform/modules/door-side-passage-v3.png",
+    "sourceSha256": "2d195eeee00e25d20abce8bbb4e364831d68d43fc264a934cb59bf6827659cb5",
+    "sourceRequestId": "9f921c28-fcb1-45af-bb42-187f62538ed7",
+    "output": "assets/processed/door-side-passage-v3.png",
+    "sha256": "8a35f2a1a03cf28fa3560d677db275e2680baf06748a5848b0f03dc3bc7848ba",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 340495,
+    "totalPixels": 393216,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "door-front-atlas-v3": {
+    "source": "assets/platform/modules/door-front-atlas-v3.png",
+    "sourceSha256": "c5e6b411b4ae9946ee496b8d45a2a17cd305756e888fe1bb10f7b28df57ea256",
+    "sourceRequestId": "a546b374-c030-4143-aaac-8ed91bdbc45d",
+    "output": "assets/processed/door-front-atlas-v3.png",
+    "sha256": "c0fac1ab82a9ed01c589a0f4efd2fcaac2216800f7568073e508139688dc2c0a",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 224637,
+    "totalPixels": 393216,
+    "grid": [
+      2,
+      1
+    ]
+  },
+  "door-side-face-v4": {
+    "source": "assets/platform/modules/door-side-face-v4.png",
+    "sourceSha256": "555722b25ccc84bdece96f970e4925086415124e91d308c7d1ae9c2f493a4974",
+    "sourceRequestId": "af0d100f-1876-43d8-8b3a-125a798f3e04",
+    "output": "assets/processed/door-side-face-v4.png",
+    "sha256": "473a35624a68e9bd3498909587b5dd45afbf151a272f73df32fd9f4526ccfa5c",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 157376,
+    "totalPixels": 393216,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "door-side-leaf-v5": {
+    "source": "assets/platform/modules/door-side-leaf-v5.png",
+    "sourceSha256": "0a40142557c0a87ec62d52e5e6198208e19b494da0f1deac5e823970a210f94b",
+    "sourceRequestId": "34b90d9e-4631-4ec3-84f0-a0477aede013",
+    "output": "assets/processed/door-side-leaf-v5.png",
+    "sha256": "00e97e21f78bfccc474bedffc12f0a48d5f8568dcb67626642296e3242776758",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 169424,
+    "totalPixels": 393216,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "ambient-home-props-v1": {
+    "source": "assets/platform/props/ambient-home-props-v1.png",
+    "sourceSha256": "3b1913255cd7f9fce01b2a415b6ec422bdb4c4f78bab60ff75dcbfd7b6bfbedd",
+    "sourceRequestId": "c9d45737-b0f7-4699-9f89-22e636ef6045",
+    "output": "assets/processed/ambient-home-props-v1.png",
+    "sha256": "bc24948b28495768ac5a704f37a79d543fccc98593e8ba1576d9c9c373e29867",
+    "algorithm": "edge-connected-magenta-white-alpha-v2",
+    "transparentPixels": 628136,
+    "totalPixels": 921600,
+    "grid": [
+      3,
+      3
+    ]
+  },
+  "ambient-home-furniture-v2": {
+    "source": "assets/platform/props/ambient-home-furniture-v2.png",
+    "sourceSha256": "208d5575023922c60844f277601f7c67198ef630ebf251033e14fce5a910b15a",
+    "sourceRequestId": "ad768e53-185b-418a-bd51-147ecc05aa5b",
+    "output": "assets/processed/ambient-home-furniture-v2.png",
+    "sha256": "65fa3c2982eab0da0ba5800608a6f4fb1110031035decaa8f54538b32a2863ac",
+    "algorithm": "magenta-chroma-all-v2+atlas-grid-edge-v1",
+    "transparentPixels": 719202,
+    "totalPixels": 1048576,
+    "grid": [
+      2,
+      2
+    ]
+  },
+  "ambient-service-furniture-v1": {
+    "source": "assets/platform/props/ambient-service-furniture-v1.png",
+    "sourceSha256": "8162af0725e45d90d74e27fb8aaa405777e5eab32656974f2ac37b5ab76969ff",
+    "sourceRequestId": "c675ba5f-50cd-43d3-8b4b-04d7dfb5a96d",
+    "output": "assets/processed/ambient-service-furniture-v1.png",
+    "sha256": "ee37482818cb7cd5e8127dcb960fa04ba3cbfba974528c749e7dc2ba6276e75e",
+    "algorithm": "edge-connected-magenta-white-alpha-v2",
+    "transparentPixels": 695411,
+    "totalPixels": 1048576,
+    "grid": [
+      2,
+      2
+    ]
+  },
+  "service-supply-cabinet-v2": {
+    "source": "assets/platform/props/service-supply-cabinet-v2.png",
+    "sourceSha256": "aed99d16924ae8cf9a13616d859d6ab363e2dfcff8dfa0ba2c80565940dd2310",
+    "sourceRequestId": "14ffe444-1c4f-445f-850c-db96129591e6",
+    "output": "assets/processed/service-supply-cabinet-v2.png",
+    "sha256": "6d271577722fc190d23a0d0712938ff4bbf098f12359a5f116825483c758bfe3",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 143600,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-archive-cabinet-v3": {
+    "source": "assets/platform/props/service-archive-cabinet-v3.png",
+    "sourceSha256": "e5e804d1a39ced1381aadef2d6931b575a445e635b1e0acb2323f606c1b509f6",
+    "sourceRequestId": "d56ced5b-d56d-48f6-b57a-3ca58863f688",
+    "output": "assets/processed/service-archive-cabinet-v3.png",
+    "sha256": "7d45e3c3f0af82406055573ed59a86f1beb73878e622c07e64f80fdef2dddfa0",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 144027,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-waiting-seat-v4": {
+    "source": "assets/platform/props/service-waiting-seat-v4.png",
+    "sourceSha256": "091c1fe6120f4dc9280b0a27f2bdfa8a3bef04b7fe11c2a63d1233632d4faa9a",
+    "sourceRequestId": "62410233-cd70-46f0-aed3-07f9f1e1784e",
+    "output": "assets/processed/service-waiting-seat-v4.png",
+    "sha256": "d870ac6ffa5a83c49ab4ec8d0dc57dd9585be2437ddcc21aa21dd0a6641e44b8",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 141966,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-memory-chair-v1": {
+    "source": "assets/platform/props/service-memory-chair-v1.png",
+    "sourceSha256": "f07c188e78a5d047622b8d0c5cf91456531efdfb99e198e29e57561cd546c8d9",
+    "sourceRequestId": "5de8c758-cb8d-4a78-bcb5-e33cac94a5b2",
+    "output": "assets/processed/service-memory-chair-v1.png",
+    "sha256": "0531df38d7bd01208020e482ef2c996b96e9c1ec23f1bd3cac9a461fd9b23652",
+    "algorithm": "magenta-chroma-all-v2+dark-magenta-fringe-v1",
+    "transparentPixels": 185429,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-memory-archive-v5": {
+    "source": "assets/platform/props/service-memory-archive-v5.png",
+    "sourceSha256": "3c4eb96d92d96f3b0d6d2e92c38856729aaf264a6ecabc71774787cbab7f696b",
+    "sourceRequestId": "72c285b7-19d9-4cd5-a680-8c416bf80704",
+    "output": "assets/processed/service-memory-archive-v5.png",
+    "sha256": "042395c371c2dd54f621a8b33ed0e6feb3a20e3229d35bc320316c3b63953545",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 142258,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-maintenance-console-v4": {
+    "source": "assets/platform/props/service-maintenance-console-v4.png",
+    "sourceSha256": "9b571a8ff52fa63a828a7d7354ebef0c1dbb626e030cce9beb571d9fa2e29dc3",
+    "sourceRequestId": "ff43b933-3085-4cf1-80fa-5dc3394532b2",
+    "output": "assets/processed/service-maintenance-console-v4.png",
+    "sha256": "c270ce49ce390b53ea6c55208a00398924ff494b89db3c9db345f5208f6efcb8",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 142073,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-memory-chair-v2": {
+    "source": "assets/platform/props/service-memory-chair-v2.png",
+    "sourceSha256": "427c8f041f7aba05d3fd3359bb6ec2f5d5536df15c44acda1207d07856277d32",
+    "sourceRequestId": "f4b07de6-e385-4020-9310-a06726a86c64",
+    "output": "assets/processed/service-memory-chair-v2.png",
+    "sha256": "1a966c23e7d1b79823c70f94d052902450da8f1a4d2563bbba48d1039c42490e",
+    "algorithm": "magenta-chroma-all-v2+dark-magenta-fringe-v1",
+    "transparentPixels": 206108,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "service-console-v6": {
+    "source": "assets/platform/modules/service-console-v6.png",
+    "sourceSha256": "c5720d0ffc9d350c43407d5e534cc4b3c1714e7a8a86f5f898eae0ba3cb8cd1e",
+    "sourceRequestId": "81996814-803a-4222-80b2-2e09dad135d0",
+    "output": "assets/processed/service-console-v6.png",
+    "sha256": "b7129dbe502f58e91ecc528126eca7710a973f77d737b8d3bab7f767ffd18c21",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 150380,
+    "totalPixels": 262144,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "large-router-island-v1": {
+    "source": "assets/platform/modules/large-router-island-v1.png",
+    "sourceSha256": "b377612c3887d75a1571de312cfdc2f5218da0284d1d2472fff5d4ccc7539a9d",
+    "sourceRequestId": "1979380b-ad98-4ddd-9810-ec2f4bcddcc3",
+    "output": "assets/processed/large-router-island-v1.png",
+    "sha256": "4f3f895895cb57a0ac619884eab9510c7d4be5673aac71ebe53a9aafee236a2b",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 218343,
+    "totalPixels": 393216,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "large-router-island-v2": {
+    "source": "assets/platform/modules/large-router-island-v2.png",
+    "sourceSha256": "e251f5d4bdf815b024fd72f0ebaf6326740b7abcb663dd80522299d89215d7ef",
+    "sourceRequestId": "b085f36a-3ea4-425e-9fee-ae7e975558ea",
+    "output": "assets/processed/large-router-island-v2.png",
+    "sha256": "3923c416100b3572620ce448c9448eeb969601e704f948f544209ac7fd8dcb91",
+    "algorithm": "magenta-chroma-all-v2",
+    "transparentPixels": 205422,
+    "totalPixels": 393216,
+    "grid": [
+      1,
+      1
+    ]
+  },
+  "large-concourse-detail-atlas-v1": {
+    "source": "assets/platform/props/large-concourse-detail-atlas-v1.png",
+    "sourceSha256": "228614ce093e53709fb6c9ffbf10596fe46be761a8b2da15ae7cc8fa2627e629",
+    "sourceRequestId": "0811bad0-15f7-4ace-b9f4-11594fd9394d",
+    "output": "assets/processed/large-concourse-detail-atlas-v1.png",
+    "sha256": "5f9dec5f7103e56c66b44d2813e06b99f4788bb28e2d0a4cb01c2bf2e987d3cb",
+    "algorithm": "magenta-chroma-all-v2+atlas-grid-edge-v1",
+    "transparentPixels": 637262,
+    "totalPixels": 921600,
+    "grid": [
+      3,
+      3
+    ]
+  }
+}

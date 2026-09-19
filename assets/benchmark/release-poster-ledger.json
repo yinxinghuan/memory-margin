@@ -1,0 +1,30 @@
+{
+  "sessionId": "b198e25d-5781-48c3-930a-143ed23a92b4",
+  "updatedAt": "2026-09-19T16:45:02.475Z",
+  "jobs": {
+    "poster-a": {
+      "requestId": "23827ec3-9c0b-4929-bdfd-aea00620e45b",
+      "status": "succeeded",
+      "output": "assets/platform/release/poster-a.png",
+      "prompt": "Square key art for a mature pixel-painted near-future 2D exploration RPG about digital immortality and scarce memory storage. A newly uploaded ordinary young adult in a worn deep-indigo coat stands in a quiet orthographic digital apartment; a cyan voice waveform above a small wooden memory box ends in a clean missing gap. Warm lived-in floor and furniture below, restrained dark green terminal infrastructure and subtle magenta data void beyond, uneasy but intimate, coherent premium pixel art, no perspective convergence, no UI, no logos. Keep the bottom 20 percent low-detail and clear for platform controls. At the top safe area, render the exact clear uppercase title MEMORY MARGIN and no other words.",
+      "taskId": "mt_5666f85550d443cbf7ca6dae99601529",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789836288453055.png",
+      "sha256": "4d3e5de403b2aa9061ffbe507b35e21c2a4e907f49c0569cb271b2eed5bf0f80",
+      "admission": "rejected",
+      "admissionReason": "Readable, but the centered portrait dominates the memory gap at thumbnail size."
+    },
+    "poster-b": {
+      "requestId": "20ba6829-82a2-49d7-89fa-75608be2ae4e",
+      "status": "succeeded",
+      "output": "assets/platform/release/poster-b.png",
+      "prompt": "Square key art for a mature pixel-painted near-future 2D exploration RPG about digital immortality and scarce memory storage. A newly uploaded ordinary young adult in a worn deep-indigo coat stands in a quiet orthographic digital apartment; a cyan voice waveform above a small wooden memory box ends in a clean missing gap. Warm lived-in floor and furniture below, restrained dark green terminal infrastructure and subtle magenta data void beyond, uneasy but intimate, coherent premium pixel art, no perspective convergence, no UI, no logos. Keep the bottom 20 percent low-detail and clear for platform controls. Stronger silhouette and clearer missing-waveform focal point at thumbnail size. At the top safe area, render the exact clear uppercase title MEMORY MARGIN and no other words.",
+      "taskId": "mt_2f8e59ddcae10deb5b55dba1ca88ffd0",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789836298593010.png",
+      "sha256": "2ae4ae1f5c44b8f48acc85589f07780871c8e236b1067d54454618a718e5a9dc",
+      "admission": "accepted",
+      "admissionReason": "Title, protagonist silhouette and broken waveform remain readable at 1024 and 160 pixels.",
+      "runtimePath": "public/poster.png"
+    }
+  },
+  "selected": "poster-b"
+}
