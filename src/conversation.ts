@@ -4,6 +4,14 @@ import {t} from './story'
 
 export type ConversationTopic={id:string;label:string;reply:string}
 
+export function conversationPages(text:string,locale:StorySave['locale']){
+ const limit=locale==='zh'?64:180,tokens=locale==='zh'?Array.from(text):text.match(/\S+\s*|\s+/gu)??[]
+ const pages:string[]=[];let page=''
+ for(const token of tokens){if(page&&page.length+token.length>limit){pages.push(page);page=''}page+=token}
+ if(page)pages.push(page)
+ return pages.length?pages:['']
+}
+
 const known=(save:StorySave,id:EntityId)=>id==='neighbor'?Boolean(save.facts.neighborMet):id==='caretaker'?Boolean(save.facts.caretakerMet):id==='clerk'?Boolean(save.facts.clerkMet):false
 
 export function conversationName(id:EntityId,save:StorySave){

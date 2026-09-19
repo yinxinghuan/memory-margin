@@ -1282,6 +1282,118 @@
       "prompt": "Create an EXACT 3 COLUMN x 3 ROW ATLAS of nine isolated near-future public MEMORY EXCHANGE CONCOURSE support objects. Equal 320x320 cells; one complete object centered well inside every cell; no divider lines. Preserve the reference mature pixel-painted graphite, aged brass, desaturated teal and restrained cyan language. All objects use the SAME steep B-view orthographic game projection: broad top surfaces, extremely short front faces, parallel opposite edges, no convergence. Absolute scale ruler: a standing adult sprite is about 105 pixels tall; small loose objects occupy 36-70 pixels, furniture modules occupy 95-150 pixels. Row 1: a low tray holding three blank translucent memory wafers; a short coiled dark fiber data cable; a compact sealed diagnostic kit opened flat with no labels. Row 2: a low rolling cartridge cart with broad rectangular top and short wheels; a short square transfer pedestal with four inset wafer sockets; a pair of low queue guide nodes connected by one slack dark belt. Row 3: a circular floor cleaning dock viewed mostly from above; a sealed graphite service crate with brass corners; a compact low air-service module with broad vented top and extremely short front face. Every object is practical used civic infrastructure, axis-aligned except the naturally curved cable and dock. Background outside each object and in every cell corner is pure uniform RGB #FF00FF. No floor, walls, people, letters, numbers, pseudo-text, logos, holograms, cell borders, cast shadows extending across cells, glossy product-photo camera, frontal elevation, isometric angle or trapezoid perspective.",
       "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789800786932949.png",
       "output": "assets/platform/props/large-concourse-detail-atlas-v1.png"
+    },
+    "neighbor-stand-left-v6": {
+      "requestId": "af5378f1-7ad1-47f5-b39b-212b7fb5fd40",
+      "taskId": "mt_83eb83be066648785d1d80708fcc3fc2",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858565791719.png",
+      "sha256": "61a64b84bdd226b5433fc57198ba0075d63bfda2192a016d2536e34813718385",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME neighbor Anhe to face SCREEN LEFT in the approved steep overhead B-view pixel RPG camera. Preserve her low small hair knot, faded aubergine cardigan, dark shirt, charcoal trousers, adult proportions, pixel cluster density, full-body scale, x center and shoe baseline. Strict left profile with crown dominant and only a tiny face sliver; arms at rest, feet together. Do not change identity, outfit, camera, scale or pose into a frontal portrait. One full body only on uniform pure #FF00FF magenta; no floor, shadow, writing or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748106581353.png",
+      "output": "assets/platform/sprites/neighbor-stand-left-v6.png"
+    },
+    "neighbor-stand-up-v6": {
+      "requestId": "6e3de781-053d-4637-af39-a68e4efdd725",
+      "taskId": "mt_d5ea2e9eb9d68f2cfdfa27544a2f927d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858572751566.png",
+      "sha256": "f45fbca0c9963f42713a363108d7e708f9a054510959e16dbf04f6d347302193",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME neighbor Anhe to face STRAIGHT UP, away from viewer, in the approved steep overhead B-view pixel RPG camera. Preserve low small hair knot, aubergine cardigan, charcoal trousers, adult proportions, crisp pixel density, x center and shoe baseline. Back of head and cardigan visible, absolutely no face or eyes. Arms at rest, feet together. One full body only on uniform pure #FF00FF magenta; no floor, shadow, writing or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748106581353.png",
+      "output": "assets/platform/sprites/neighbor-stand-up-v6.png"
+    },
+    "caretaker-stand-left-v6": {
+      "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+      "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858580255581.png",
+      "sha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME caretaker Luo to face SCREEN LEFT in the approved steep overhead B-view pixel RPG camera. Preserve his gray-streaked short hair, weathered skin, charcoal utility jacket with muted brass shoulder tab, broad adult proportions, pixel cluster density, full-body scale, x center and shoe baseline. Strict left profile, crown dominant and face only a small sliver. Neutral standing pose. No identity, outfit, camera or scale changes. One full body on uniform pure #FF00FF magenta; no floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748113706437.png",
+      "output": "assets/platform/sprites/caretaker-stand-left-v6.png"
+    },
+    "caretaker-stand-up-v6": {
+      "requestId": "1c31bbdf-63eb-4f30-a08c-95235314eba9",
+      "taskId": "mt_c2ce5caf997435b04b2d76301af06bd6",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858586007826.png",
+      "sha256": "a87694a44d0e9993862eab257e7781d1aab06ac16ae4d107b1b16773e0d51018",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME caretaker Luo to face STRAIGHT UP, away from viewer, in the approved steep overhead B-view pixel RPG camera. Preserve gray-streaked hair, charcoal utility jacket with brass shoulder tab, broad adult proportions, crisp pixel density, full-body scale, x center and shoe baseline. Back of head and jacket visible, absolutely no face or eyes. Neutral standing pose. One full body on uniform pure #FF00FF magenta; no floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748113706437.png",
+      "output": "assets/platform/sprites/caretaker-stand-up-v6.png"
+    },
+    "clerk-stand-left-v6": {
+      "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+      "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858592175124.png",
+      "sha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME clerk Qiaomi to face SCREEN LEFT in the approved steep overhead B-view pixel RPG camera. Preserve neat dark bob, muted blue-green work jacket and tiny brass name tab, adult proportions, pixel cluster density, full-body scale, x center and shoe baseline. Strict left profile with crown dominant and only a tiny face sliver. Neutral standing pose. No identity, outfit, camera or scale changes. One full body on uniform pure #FF00FF magenta; no counter, floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748119519352.png",
+      "output": "assets/platform/sprites/clerk-stand-left-v6.png"
+    },
+    "clerk-stand-up-v6": {
+      "requestId": "4d3155bf-ef2b-48df-ae6c-ac9654ccd40a",
+      "taskId": "mt_24224e0be32971786996ac89611fc3c4",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858597358287.png",
+      "sha256": "e7581d8bfedd5f86a5cb6f55ad06473bd833daaba766882b95c1785a63c117d5",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Rotate this EXACT SAME clerk Qiaomi to face STRAIGHT UP, away from viewer, in the approved steep overhead B-view pixel RPG camera. Preserve dark bob, blue-green work jacket and brass name tab, adult proportions, crisp pixel density, full-body scale, x center and shoe baseline. Back of head and jacket visible, absolutely no face or eyes. Neutral standing pose. One full body on uniform pure #FF00FF magenta; no counter, floor, shadow, words or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789748119519352.png",
+      "output": "assets/platform/sprites/clerk-stand-up-v6.png"
+    },
+    "neighbor-step-left-a-v6": {
+      "requestId": "3233b56a-bcb5-4fa5-9428-0351bc2e175d",
+      "taskId": "mt_ff3072cde4af5f05690e6b2146321b7d",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858603627319.png",
+      "sha256": "6301ff7ea39c9d1803561ac93ff125de1fafd5aa006bf411cfa7790e65262009",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME left-facing neighbor Anhe by one small natural walking half-step toward SCREEN LEFT. Preserve strict left profile, low hair knot, aubergine cardigan, body scale, pixel density, x center and common shoe baseline. The leading foot extends about 14 pixels left while the other trails; opposite arm swings subtly. No diagonal turn, frontal face, changed outfit or added object. One complete full body on uniform pure #FF00FF magenta; no floor, shadow, text or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858565791719.png",
+      "output": "assets/platform/sprites/neighbor-step-left-a-v6.png"
+    },
+    "neighbor-step-left-b-v6": {
+      "requestId": "a40b1f70-622e-44af-82df-874e7e280d63",
+      "taskId": "mt_52fd42be62518f748ab231f732f1b931",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858609886056.png",
+      "sha256": "8805f6958ff7b42d7f47f4612c685bad77cec360245c890b82790c7b0a6d71fd",
+      "actualSize": [
+        512,
+        512
+      ],
+      "status": "succeeded",
+      "prompt": "Animate THIS EXACT SAME left-facing neighbor Anhe in the opposite natural walking half-step toward SCREEN LEFT. Preserve strict left profile, low hair knot, aubergine cardigan, adult scale, pixel density, x center and common shoe baseline. Reverse which complete leg leads and change the opposite arm swing subtly. No diagonal turn, frontal face, changed outfit or added object. One complete full body on uniform pure #FF00FF magenta; no floor, shadow, text or grid.",
+      "referenceUrl": "https://cdn.aiwaves.tech/prod/telegram/avatar/3375865887/1789858565791719.png",
+      "output": "assets/platform/sprites/neighbor-step-left-b-v6.png"
     }
   }
 }

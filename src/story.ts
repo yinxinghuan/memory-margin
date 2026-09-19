@@ -4,6 +4,11 @@ import {resolveDomainAction,applyDomainResolution} from './vendor/story/engine/d
 
 export type {StorySave,Locale}
 export const t=(locale:Locale,zh:string,en:string)=>locale==='zh'?zh:en
+export function openingNarration(locale:Locale){return [
+ t(locale,'昨夜，你完成了意识上传。今天，是你作为数字生命醒来的第一天。','Last night, your consciousness upload completed. Today is your first day as a digital life.'),
+ t(locale,'系统只给新转生者一个长期记忆位，其余经历会先进入临时缓存，之后可能被清空或借出。','The system gives new arrivals one long-term memory slot. Everything else enters temporary holding and may later be cleared or lent.'),
+ t(locale,'桌上的语音盒亮着“你留下的第一段”。那段声音属于你，结尾却不见了。','The voice box on the table reads “Your first saved moment.” The voice is yours, but its ending is missing.'),
+]}
 const requirement=(id:string,equals:boolean,locale:Locale,zh:string,en:string):DomainRequirement=>({type:'fact',id,equals,reason:t(locale,zh,en)})
 const set=(id:string):DomainEffect=>({type:'fact',id,value:true})
 const rule=(id:string,requirements:DomainRequirement[],effects:DomainEffect[],text:string):DomainActionRule=>({id,intent:id,match:[id],matchMode:'exact',requirements,effects,successText:text,successChoices:[],dangerPolicy:'suppress'})
@@ -17,7 +22,7 @@ export function cartridge(locale:Locale):StoryCartridge{
   theme:{outer:'#0b1822',surface:'#263b43',paper:'#e8ebe3',ink:'#e8ebe3',muted:'#a9bdc1',accent:'#69c4c5',danger:'#ed8f85',gold:'#e2ad68',material:'apartment'},
   audioTheme:{material:'apartment',bpm:70,rootHz:110,scale:[0,3,7],levels:{music:0,ambient:0,sfx:0,master:0},tension:[]},
   statDefinitions:[],drawerLabels:{party:tx('已见的人','People met'),map:tx('地点','Places'),inventory:tx('随身物','Items'),log:tx('档案','Records')},
-  opening:{location:tx('转生居所','Arrival Room'),time:'06:42',objective:tx('听听桌上的语音盒。','Play the voice box on the table.'),imagePrompt:'',blocks:[{id:'arrival',kind:'narration',text:tx('你在一间像家、却还没有你的气味的房间醒来。门外有人推着早餐车经过。桌上的语音盒亮了一下，显示“你留下的第一段”。','You wake in a room that looks like home but does not smell like yours yet. A breakfast cart passes outside. The voice box on the table lights up: “Your first saved moment.”')}],choices:[]},
+  opening:{location:tx('转生居所','Arrival Room'),time:'06:42',objective:tx('听听桌上的语音盒。','Play the voice box on the table.'),imagePrompt:'',blocks:openingNarration(locale).map((text,index)=>({id:`arrival-${index+1}`,kind:'narration' as const,text})),choices:[]},
   initialFacts:{voiceHeard:false,receiptRead:false,breakfastRead:false,neighborMet:false,caretakerMet:false,sealRead:false,hallNoticeRead:false,clerkMet:false,ledgerRead:false,termsRead:false,compared:false,kept:false,lent:false,decisionSeen:false,voiceRevisited:false,morningHandled:false,morningStored:false,neighborPreview:false,previewLogRead:false,clerkPreviewAsked:false,caretakerPreviewAsked:false,previewStopped:false,previewTraced:false,neighborDebriefed:false},
   characters:[],initialPartyMemberIds:[],initialInventory:[],initialMap:[{id:'home',label:tx('转生居所','Arrival Room'),current:true,visited:true},{id:'hall',label:tx('公共走廊','Shared Hall'),connectedTo:'home',current:false,visited:false},{id:'service',label:tx('记忆服务点','Memory Service'),connectedTo:'hall',current:false,visited:false}],demoTurns:[],domainRules:{rules:[
    rule('listen-voice',[no('voiceHeard','你已听过这段声音。','You have heard this voice.')],[set('voiceHeard')],tx('语音里，你自己说：“等我转生，我们去吃那家……”声音在店名之前断了。进度条留下整齐的一小段空白。桌上还有一张迁入回执。','You hear your own voice: “After the transfer, let’s eat at that…” It stops before the place name. A neat blank remains in the progress bar. There is an arrival receipt on the desk.')),

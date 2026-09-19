@@ -1,0 +1,813 @@
+{
+  "version": 1,
+  "status": "accepted",
+  "sourceService": "AlterU Media Service",
+  "cell": [
+    256,
+    256
+  ],
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "partialLimbReflectionAllowed": false,
+  "characters": [
+    {
+      "person": "neighbor",
+      "sheet": {
+        "path": "assets/processed/neighbor-motion-v6.png",
+        "publicPath": "public/art/neighbor-motion-v6.png",
+        "sha256": "aad9fdc20c28b1c46f65cc8e917c05fc0fd1e67c7f13aec99cfc762df694c731"
+      },
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "direction": "down",
+          "platformJob": "neighbor-stand-v5",
+          "requestId": "7bf945e1-fc44-43dd-bfbe-72420682128a",
+          "taskId": "mt_3993d619f188b0e1ae0eadec77dc3ce4",
+          "sourceSha256": "244a149207756835ede6a4aa0ac2df6a380ee38438de97a7ec2cf3a39e0f5758",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            33,
+            172,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "direction": "down",
+          "platformJob": "neighbor-stand-v5",
+          "requestId": "7bf945e1-fc44-43dd-bfbe-72420682128a",
+          "taskId": "mt_3993d619f188b0e1ae0eadec77dc3ce4",
+          "sourceSha256": "244a149207756835ede6a4aa0ac2df6a380ee38438de97a7ec2cf3a39e0f5758",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            33,
+            172,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "direction": "down",
+          "platformJob": "neighbor-stand-v5",
+          "requestId": "7bf945e1-fc44-43dd-bfbe-72420682128a",
+          "taskId": "mt_3993d619f188b0e1ae0eadec77dc3ce4",
+          "sourceSha256": "244a149207756835ede6a4aa0ac2df6a380ee38438de97a7ec2cf3a39e0f5758",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            33,
+            172,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "direction": "left",
+          "platformJob": "neighbor-step-left-a-v6",
+          "requestId": "3233b56a-bcb5-4fa5-9428-0351bc2e175d",
+          "taskId": "mt_ff3072cde4af5f05690e6b2146321b7d",
+          "sourceSha256": "6301ff7ea39c9d1803561ac93ff125de1fafd5aa006bf411cfa7790e65262009",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            78,
+            33,
+            175,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "direction": "left",
+          "platformJob": "neighbor-stand-left-v6",
+          "requestId": "af5378f1-7ad1-47f5-b39b-212b7fb5fd40",
+          "taskId": "mt_83eb83be066648785d1d80708fcc3fc2",
+          "sourceSha256": "61a64b84bdd226b5433fc57198ba0075d63bfda2192a016d2536e34813718385",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            33,
+            163,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "direction": "left",
+          "platformJob": "neighbor-step-left-b-v6",
+          "requestId": "a40b1f70-622e-44af-82df-874e7e280d63",
+          "taskId": "mt_52fd42be62518f748ab231f732f1b931",
+          "sourceSha256": "8805f6958ff7b42d7f47f4612c685bad77cec360245c890b82790c7b0a6d71fd",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            76,
+            33,
+            177,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "direction": "right",
+          "platformJob": "neighbor-step-left-a-v6",
+          "requestId": "3233b56a-bcb5-4fa5-9428-0351bc2e175d",
+          "taskId": "mt_ff3072cde4af5f05690e6b2146321b7d",
+          "sourceSha256": "6301ff7ea39c9d1803561ac93ff125de1fafd5aa006bf411cfa7790e65262009",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            82,
+            33,
+            179,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "direction": "right",
+          "platformJob": "neighbor-stand-left-v6",
+          "requestId": "af5378f1-7ad1-47f5-b39b-212b7fb5fd40",
+          "taskId": "mt_83eb83be066648785d1d80708fcc3fc2",
+          "sourceSha256": "61a64b84bdd226b5433fc57198ba0075d63bfda2192a016d2536e34813718385",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            94,
+            33,
+            163,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "direction": "right",
+          "platformJob": "neighbor-step-left-b-v6",
+          "requestId": "a40b1f70-622e-44af-82df-874e7e280d63",
+          "taskId": "mt_52fd42be62518f748ab231f732f1b931",
+          "sourceSha256": "8805f6958ff7b42d7f47f4612c685bad77cec360245c890b82790c7b0a6d71fd",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            78,
+            33,
+            179,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "direction": "up",
+          "platformJob": "neighbor-stand-up-v6",
+          "requestId": "6e3de781-053d-4637-af39-a68e4efdd725",
+          "taskId": "mt_d5ea2e9eb9d68f2cfdfa27544a2f927d",
+          "sourceSha256": "f45fbca0c9963f42713a363108d7e708f9a054510959e16dbf04f6d347302193",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            85,
+            33,
+            171,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "direction": "up",
+          "platformJob": "neighbor-stand-up-v6",
+          "requestId": "6e3de781-053d-4637-af39-a68e4efdd725",
+          "taskId": "mt_d5ea2e9eb9d68f2cfdfa27544a2f927d",
+          "sourceSha256": "f45fbca0c9963f42713a363108d7e708f9a054510959e16dbf04f6d347302193",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            85,
+            33,
+            171,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "direction": "up",
+          "platformJob": "neighbor-stand-up-v6",
+          "requestId": "6e3de781-053d-4637-af39-a68e4efdd725",
+          "taskId": "mt_d5ea2e9eb9d68f2cfdfa27544a2f927d",
+          "sourceSha256": "f45fbca0c9963f42713a363108d7e708f9a054510959e16dbf04f6d347302193",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            85,
+            33,
+            171,
+            233
+          ],
+          "mirroredFullFrame": false
+        }
+      ]
+    },
+    {
+      "person": "caretaker",
+      "sheet": {
+        "path": "assets/processed/caretaker-motion-v6.png",
+        "publicPath": "public/art/caretaker-motion-v6.png",
+        "sha256": "10c1d231d32b7b5e3688ff15a39ce6d03a1da9414e421a7b6e6af6a3da7ce345"
+      },
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "direction": "down",
+          "platformJob": "caretaker-stand-v5",
+          "requestId": "976ed16a-a8f9-4f11-ac0e-47f20736f184",
+          "taskId": "mt_074584027d8712be423f65decd465924",
+          "sourceSha256": "31451052f82343171581907c014f1559465de2fcf042a5ed26455bf614cef109",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            79,
+            39,
+            178,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "direction": "down",
+          "platformJob": "caretaker-stand-v5",
+          "requestId": "976ed16a-a8f9-4f11-ac0e-47f20736f184",
+          "taskId": "mt_074584027d8712be423f65decd465924",
+          "sourceSha256": "31451052f82343171581907c014f1559465de2fcf042a5ed26455bf614cef109",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            79,
+            39,
+            178,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "direction": "down",
+          "platformJob": "caretaker-stand-v5",
+          "requestId": "976ed16a-a8f9-4f11-ac0e-47f20736f184",
+          "taskId": "mt_074584027d8712be423f65decd465924",
+          "sourceSha256": "31451052f82343171581907c014f1559465de2fcf042a5ed26455bf614cef109",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            79,
+            39,
+            178,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "direction": "left",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            39,
+            164,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "direction": "left",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            39,
+            164,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "direction": "left",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            39,
+            164,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "direction": "right",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            92,
+            39,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "direction": "right",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            92,
+            39,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "direction": "right",
+          "platformJob": "caretaker-stand-left-v6",
+          "requestId": "0f7caaf3-bd18-4f5b-beb4-615a021a5a56",
+          "taskId": "mt_3c2385c64378c578bbc0104e240a3399",
+          "sourceSha256": "4faf0390aa2e5d632bf5111324379a132ce9e39a1c229b77298d59b2cbd87724",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            92,
+            39,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "direction": "up",
+          "platformJob": "caretaker-stand-up-v6",
+          "requestId": "1c31bbdf-63eb-4f30-a08c-95235314eba9",
+          "taskId": "mt_c2ce5caf997435b04b2d76301af06bd6",
+          "sourceSha256": "a87694a44d0e9993862eab257e7781d1aab06ac16ae4d107b1b16773e0d51018",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            70,
+            39,
+            184,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "direction": "up",
+          "platformJob": "caretaker-stand-up-v6",
+          "requestId": "1c31bbdf-63eb-4f30-a08c-95235314eba9",
+          "taskId": "mt_c2ce5caf997435b04b2d76301af06bd6",
+          "sourceSha256": "a87694a44d0e9993862eab257e7781d1aab06ac16ae4d107b1b16773e0d51018",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            70,
+            39,
+            184,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "direction": "up",
+          "platformJob": "caretaker-stand-up-v6",
+          "requestId": "1c31bbdf-63eb-4f30-a08c-95235314eba9",
+          "taskId": "mt_c2ce5caf997435b04b2d76301af06bd6",
+          "sourceSha256": "a87694a44d0e9993862eab257e7781d1aab06ac16ae4d107b1b16773e0d51018",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            70,
+            39,
+            184,
+            233
+          ],
+          "mirroredFullFrame": false
+        }
+      ]
+    },
+    {
+      "person": "clerk",
+      "sheet": {
+        "path": "assets/processed/clerk-motion-v6.png",
+        "publicPath": "public/art/clerk-motion-v6.png",
+        "sha256": "e679d1b69d84ef778ec80d8b2d9c64e714e21c2593f5f7eed50f241f5af6c1e3"
+      },
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "direction": "down",
+          "platformJob": "clerk-stand-v5",
+          "requestId": "3483a247-6d24-42de-80c6-b5648d3929ae",
+          "taskId": "mt_04046cf5c8144c900cdaf141ac7c8b8a",
+          "sourceSha256": "7f9f4912652a342ad07e98d564ca1db01a91c805926555b46a3c251473706ed9",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            82,
+            42,
+            176,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "direction": "down",
+          "platformJob": "clerk-stand-v5",
+          "requestId": "3483a247-6d24-42de-80c6-b5648d3929ae",
+          "taskId": "mt_04046cf5c8144c900cdaf141ac7c8b8a",
+          "sourceSha256": "7f9f4912652a342ad07e98d564ca1db01a91c805926555b46a3c251473706ed9",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            82,
+            42,
+            176,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "direction": "down",
+          "platformJob": "clerk-stand-v5",
+          "requestId": "3483a247-6d24-42de-80c6-b5648d3929ae",
+          "taskId": "mt_04046cf5c8144c900cdaf141ac7c8b8a",
+          "sourceSha256": "7f9f4912652a342ad07e98d564ca1db01a91c805926555b46a3c251473706ed9",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            82,
+            42,
+            176,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "direction": "left",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            42,
+            166,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "direction": "left",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            42,
+            166,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "direction": "left",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            94,
+            42,
+            166,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "direction": "right",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            90,
+            42,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "direction": "right",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            90,
+            42,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "direction": "right",
+          "platformJob": "clerk-stand-left-v6",
+          "requestId": "8f838a33-c923-4e10-936f-b9dacfa54712",
+          "taskId": "mt_1cc4cf9de004f7f02309686bf15ded90",
+          "sourceSha256": "cbc85e1e8b93c28b4c743eab35d375e6b55d4150be716b361b933eea58a7e918",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align",
+            "mirror-full-frame"
+          ],
+          "bbox": [
+            90,
+            42,
+            162,
+            233
+          ],
+          "mirroredFullFrame": true
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "direction": "up",
+          "platformJob": "clerk-stand-up-v6",
+          "requestId": "4d3155bf-ef2b-48df-ae6c-ac9654ccd40a",
+          "taskId": "mt_24224e0be32971786996ac89611fc3c4",
+          "sourceSha256": "e7581d8bfedd5f86a5cb6f55ad06473bd833daaba766882b95c1785a63c117d5",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            42,
+            173,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "direction": "up",
+          "platformJob": "clerk-stand-up-v6",
+          "requestId": "4d3155bf-ef2b-48df-ae6c-ac9654ccd40a",
+          "taskId": "mt_24224e0be32971786996ac89611fc3c4",
+          "sourceSha256": "e7581d8bfedd5f86a5cb6f55ad06473bd833daaba766882b95c1785a63c117d5",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            42,
+            173,
+            233
+          ],
+          "mirroredFullFrame": false
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "direction": "up",
+          "platformJob": "clerk-stand-up-v6",
+          "requestId": "4d3155bf-ef2b-48df-ae6c-ac9654ccd40a",
+          "taskId": "mt_24224e0be32971786996ac89611fc3c4",
+          "sourceSha256": "e7581d8bfedd5f86a5cb6f55ad06473bd833daaba766882b95c1785a63c117d5",
+          "operations": [
+            "chroma-key",
+            "uniform-scale",
+            "foot-align"
+          ],
+          "bbox": [
+            83,
+            42,
+            173,
+            233
+          ],
+          "mirroredFullFrame": false
+        }
+      ]
+    }
+  ]
+}
