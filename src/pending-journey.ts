@@ -19,6 +19,7 @@ export class PendingJourney{
  private quarantine(key:string,raw:string){this.storage.setItem('memory-margin-quarantine:'+crypto.randomUUID(),raw);if(this.storage.getItem(key)===raw)this.storage.removeItem(key)}
  put(action:Action){const key=prefix+action.id,raw=JSON.stringify(action),old=this.storage.getItem(key);if(old!==null&&old!==raw)throw new Error('PENDING_ID_CONFLICT');this.storage.setItem(key,raw)}
  acknowledge(action:Action){const key=prefix+action.id;if(this.storage.getItem(key)===JSON.stringify(action))this.storage.removeItem(key)}
+ clear(){for(const key of Array.from({length:this.storage.length},(_,i)=>this.storage.key(i)))if(key&&(key===legacy||key.startsWith(prefix)))this.storage.removeItem(key)}
  list():Action[]{
   const old=this.storage.getItem(legacy)
   if(old!==null){let action:Action|undefined;try{action=parse(old)}catch{this.quarantine(legacy,old)}if(action){this.put(action);if(this.storage.getItem(legacy)===old)this.storage.removeItem(legacy)}}

@@ -3,6 +3,7 @@ import {chromium} from 'playwright'
 import {resolve} from 'node:path'
 
 const root=resolve('_qa')
+const qaUrl=process.env.QA_URL??'http://127.0.0.1:5212/'
 
 async function waitPrimary(page,target,verb){
  await page.waitForFunction(([wantedTarget,wantedVerb])=>{
@@ -19,7 +20,7 @@ async function approach(page,label,verb='查看'){
 async function capture(browser,width,height){
  const suffix=`${width}x${height}`
  const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1})
- await page.goto('http://127.0.0.1:5212/?qa=terminal-theme-v1',{waitUntil:'networkidle'})
+ await page.goto(`${qaUrl}?qa=terminal-theme-v1`,{waitUntil:'networkidle'})
  await page.addStyleTag({content:'#alteru-guest-banner{display:none!important}'})
  await page.locator('.mm-loading').waitFor({state:'detached'})
  assert.equal(await page.locator('[data-spatial-ui-theme="05-terminal"]').count(),1)
@@ -50,8 +51,9 @@ async function capture(browser,width,height){
 
  await page.getByRole('button',{name:'关闭放大资料'}).click()
  await page.getByRole('button',{name:'回到地图'}).click()
- await page.getByRole('button',{name:'档案',exact:true}).click()
- await page.locator('.mm-records').waitFor()
+ await page.getByRole('button',{name:'背包',exact:true}).click()
+ await page.locator('.mm-backpack').waitFor()
+ await page.getByRole('button',{name:'线索',exact:true}).click()
  await page.screenshot({path:resolve(root,`platform-layout-terminal-records-${suffix}.png`),fullPage:true})
  await page.close()
 }

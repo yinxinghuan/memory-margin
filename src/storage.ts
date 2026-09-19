@@ -18,5 +18,6 @@ export class JourneyStore{
   }catch(error){try{tx.abort()}catch{};throw error}
  }
  async checkpoint(scene:Scene,version:number,position:Point){const tx=this.db.transaction('heads','readwrite'),done=finished(tx);void done.catch(()=>{});try{const store=tx.objectStore('heads'),head=await req(store.get('active')) as Head;if(head.scene!==scene||head.version!==version)throw new Error('STALE_POSITION');if(!walkable(world,scene,position))throw new Error('INVALID_POSITION');store.put({...head,position:{...position}},'active');await done}catch(error){try{tx.abort()}catch{};throw error}}
+ async restart(locale:Locale){const tx=this.db.transaction(['heads','actions'],'readwrite'),done=finished(tx);const head=initialHead(locale);tx.objectStore('heads').put(head,'active');tx.objectStore('actions').clear();await done;return head}
  close(){this.db.close()}
 }

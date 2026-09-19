@@ -15,7 +15,7 @@ npm run dev
 
 本地入口为 `http://127.0.0.1:5212/`；非剧情的大场景评审入口为 `?large_scene=1`，新房间高保真入口为 `?generated_room=1`，静态碰撞骨架入口为 `?generated_room=1&room_phase=shell`，真实平台任务逐槽位恢复入口为 `?generated_room=1&room_phase=live&reset_room_media=1`。
 
-`npm run build` 生成 `dist/`；`npm test` 验证剧情、往返、四向门、互动、比例、氛围、大场景、生成房间与存档迁移。发布检查还会在真实浏览器验证两种手机尺寸、首次操作启动环境音乐、静音切换、发布素材响应和外部访客栏。最终交接包为 `deliverables/build-spatial-story-game-v1.39-handoff.zip`，配套报告为 `deliverables/skill-package-check-v1.39.json`。隔离接收方已经验证包自包含、真实媒体恢复、附近交互、寻路和脚点坐标；完整高保真冷启动仍须在每个新项目执行主角、方向门、整房与声画门禁。
+`npm run build` 生成 `dist/`；`npm test` 验证剧情、往返、四向门、互动、比例、氛围、大场景、生成房间与存档迁移。发布检查还会在真实浏览器验证两种手机尺寸、首次操作启动环境音乐、静音切换、发布素材响应和外部访客栏。最终交接包为 `deliverables/build-spatial-story-game-v1.40-handoff.zip`，配套报告为 `deliverables/skill-package-check-v1.40.json`。隔离接收方已经验证包自包含、真实媒体恢复、附近交互、寻路和脚点坐标；完整高保真冷启动仍须在每个新项目执行主角、方向门、整房与声画门禁。
 
 ## 来源
 

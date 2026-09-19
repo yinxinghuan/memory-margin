@@ -3,6 +3,7 @@ import {chromium} from 'playwright'
 import {resolve} from 'node:path'
 
 const root=resolve('_qa')
+const qaUrl=process.env.QA_URL||'http://127.0.0.1:5212/'
 
 async function waitPrimary(page,target,verb){
  await page.waitForFunction(([wantedTarget,wantedVerb])=>{
@@ -14,13 +15,24 @@ async function waitPrimary(page,target,verb){
 async function capture(browser,width,height){
  const suffix=`${width}x${height}`
  const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1})
- await page.goto('http://127.0.0.1:5212/?qa=interaction-v2',{waitUntil:'networkidle'})
+ await page.goto(`${qaUrl}?qa=interaction-v2`,{waitUntil:'networkidle'})
  await page.addStyleTag({content:'#alteru-guest-banner{display:none!important}'})
  await page.locator('.mm-loading').waitFor({state:'detached'})
+ assert.equal(await page.locator('.mm-header .mm-sound').count(),1,'sound belongs in the top-right utility cluster')
+ assert.equal(await page.locator('.mm-controls .mm-sound').count(),0,'sound must not compete with bottom movement and action controls')
+ const controlsGap=await page.locator('.mm-controls').evaluate(node=>parseFloat(getComputedStyle(node).columnGap))
+ assert.ok(controlsGap>=14,'movement and primary action need enough separation for two touch targets')
+ assert.equal(await page.locator('.mm-primary').evaluate(node=>getComputedStyle(node).textAlign),'right','action copy should stay away from the joystick-side thumb')
+ const idleBackground=await page.locator('.mm-primary').evaluate(node=>getComputedStyle(node).backgroundColor)
 
  await page.getByRole('button',{name:'语音盒',exact:true}).click()
  await waitPrimary(page,'语音盒','查看')
  assert.equal(await page.locator('.mm-interaction-layer').count(),0,'approach must not open interaction content')
+ assert.equal(await page.locator('.mm-primary').getAttribute('data-actionable'),'true')
+ await page.waitForFunction(()=>getComputedStyle(document.querySelector('.mm-primary')).backgroundColor!=='rgba(0, 0, 0, 0)')
+ const readyBackground=await page.locator('.mm-primary').evaluate(node=>getComputedStyle(node).backgroundColor)
+ assert.notEqual(readyBackground,idleBackground,'approaching an interactable must switch the action from outline to solid fill')
+ assert.notEqual(readyBackground,'rgba(0, 0, 0, 0)','ready action must use a solid fill')
  await page.screenshot({path:resolve(root,`platform-layout-interaction-near-${suffix}.png`),fullPage:true})
 
  await page.locator('.mm-primary').click()
