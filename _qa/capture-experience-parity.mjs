@@ -31,6 +31,19 @@ async function run(width,height){
  const neighborSprite=page.locator('.mm-person-sprite[data-entity="neighbor"]');const beforePatrol=await neighborSprite.boundingBox();await page.waitForTimeout(3700);const afterPatrol=await neighborSprite.boundingBox();assert.ok(beforePatrol&&afterPatrol&&Math.abs(afterPatrol.x-beforePatrol.x)>1,'neighbor should patrol while the player is far away');await page.screenshot({path:resolve(root,`platform-layout-npc-patrol-${width}x${height}.png`),fullPage:true})
  await page.getByRole('button',{name:'等电梯的邻居',exact:true}).click();await waitPrimary(page,'等电梯的邻居','交谈');await page.waitForFunction(()=>document.querySelector('.mm-person-sprite[data-entity="neighbor"]')?.getAttribute('data-attending')==='true');assert.equal(await page.locator('.mm-primary').getAttribute('data-actionable'),'true');await page.waitForTimeout(220);assert.notEqual(await page.locator('.mm-primary').evaluate(node=>getComputedStyle(node).backgroundColor),'rgba(0, 0, 0, 0)');await page.screenshot({path:resolve(root,`platform-layout-npc-facing-player-${width}x${height}.png`),fullPage:true});await page.locator('.mm-primary').click();await page.locator('.mm-interaction-layer').waitFor();await checkNpcViewport(page,width,height,'first-meeting','.mm-actions button');await page.locator('.mm-actions button').filter({hasText:'跟她说话'}).click();await page.locator('.mm-loading').waitFor({state:'visible'});await page.locator('.mm-loading').waitFor({state:'detached'});await page.locator('.mm-conversation').waitFor();assert.ok(await page.locator('.mm-conversation-topics button').count()>=2)
  await checkNpcViewport(page,width,height,'choices','.mm-conversation-topics button');
+ assert.equal(await page.locator('.mm-dialog-portrait').evaluate(node=>getComputedStyle(node).backgroundSize),'200% 200%');
+ const previousTopics=await page.locator('.mm-conversation-topics').innerText();
+ const scrollBefore=await page.locator('.mm-dialog-body').evaluate(node=>node.scrollTop);
+ await page.getByRole('button',{name:'放大人物头像'}).click();
+ await page.locator('.mm-portrait-viewer[open]').waitFor();
+ await page.screenshot({path:resolve(root,`platform-layout-npc-portrait-zoom-${width}x${height}.png`),fullPage:true});
+ await page.getByRole('button',{name:'关闭人物大图'}).click();
+ await page.locator('.mm-portrait-viewer').waitFor({state:'detached'});
+ assert.equal(await page.locator('.mm-conversation-topics').innerText(),previousTopics);
+ assert.equal(await page.locator('.mm-dialog-body').evaluate(node=>node.scrollTop),scrollBefore);
+ await page.getByRole('button',{name:'放大人物头像'}).click();await page.keyboard.press('Escape');
+ await page.locator('.mm-portrait-viewer').waitFor({state:'detached'});
+
  const firstTopic=page.locator('.mm-conversation-topics button').first(),playerLine=await firstTopic.innerText();await firstTopic.click();await page.locator('.mm-conversation[data-phase="waiting"]').waitFor();assert.match(await page.locator('.mm-conversation-turn--player').innerText(),new RegExp(playerLine));assert.equal(await page.locator('.mm-conversation-options').count(),0);assert.equal(await page.locator('.mm-closeup').count(),0);assert.equal(await page.locator('.mm-message').count(),0);await page.waitForTimeout(200);await page.screenshot({path:resolve(root,`platform-layout-conversation-player-${width}x${height}.png`),fullPage:true})
  await page.locator('.mm-conversation-turn--npc').waitFor();assert.match(await page.locator('.mm-conversation-turn--npc').innerText(),/安禾/);assert.equal(await page.locator('.mm-conversation-options').count(),0);await page.waitForTimeout(200);await page.screenshot({path:resolve(root,`platform-layout-conversation-reply-${width}x${height}.png`),fullPage:true})
  while(await page.locator('.mm-conversation-continue').count())await page.locator('.mm-conversation-continue').click()
