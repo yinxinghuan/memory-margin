@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "releaseTarget": "playable",
+  "gameProfile": {
+    "sessionShape": "chapter",
+    "expectedMinutes": 25,
+    "crossSessionContinuity": true,
+    "crossDevice": false,
+    "directMovement": true,
+    "physicalNpc": true,
+    "conversation": true,
+    "inventory": true,
+    "compareBranches": false,
+    "sharedDevice": false,
+    "creativeSilence": false
+  },
+  "modes": {
+    "journeys": "single",
+    "persistence": "local-session",
+    "conversation": "authored"
+  },
+  "capabilities": {
+    "opening": {"state": "implemented", "evidence": ["_qa/platform-layout-opening-guidance-390x844.png"]},
+    "exploration": {"state": "implemented", "evidence": ["_qa/release/platform-layout-idle-390x844.png"]},
+    "loadingRecovery": {"state": "implemented", "evidence": ["_qa/memory-margin.test.ts"]},
+    "audioLayers": {"state": "implemented", "evidence": ["_qa/capture-release.mjs"]},
+    "persistence": {"state": "implemented", "evidence": ["_qa/memory-margin.test.ts"]},
+    "closure": {"state": "implemented", "evidence": ["src/main.tsx"]},
+    "npcWorldLife": {"state": "implemented", "evidence": ["_qa/platform-layout-npc-patrol-390x844.png", "_qa/platform-layout-npc-facing-player-390x844.png"]},
+    "stagedConversation": {"state": "implemented", "evidence": ["_qa/platform-layout-conversation-player-390x844.png", "_qa/platform-layout-conversation-reply-390x844.png"]},
+    "conversationHistory": {"state": "planned", "evidence": []},
+    "inventoryVisuals": {"state": "planned", "evidence": []},
+    "distanceFootsteps": {"state": "planned", "evidence": []}
+  },
+  "decisions": {
+    "journeys": "The current first chapter keeps one authoritative journey; branch comparison is not promised by this playable release.",
+    "persistence": "Progress resumes inside the current deployment session; cross-device play is not promised.",
+    "conversation": "Authored replies preserve character intent and investigation boundaries; generated dialogue is not required for this story."
+  }
+}

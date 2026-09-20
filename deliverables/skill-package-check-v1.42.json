@@ -1,0 +1,273 @@
+{
+  "archive": "deliverables/build-spatial-story-game-v1.42-handoff.zip",
+  "independentTemporaryDirectory": true,
+  "syntheticDiagnosticImages": true,
+  "optimizedPythonGuards": true,
+  "results": [
+    {
+      "id": "independent-12-frame-cream-interior",
+      "passed": true
+    },
+    {
+      "id": "independent-hero-gate-pass",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "hero-partial-limb-reflection-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: partial limb synthesis is forbidden\n"
+    },
+    {
+      "id": "source-overwrite",
+      "passed": true,
+      "exit": 1,
+      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
+    },
+    {
+      "id": "uneven-grid",
+      "passed": true,
+      "exit": 1,
+      "error": "l.height%4==0, 'Expected an evenly divided 3 by 4 sheet')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Expected an evenly divided 3 by 4 sheet\n"
+    },
+    {
+      "id": "empty-frames",
+      "passed": true,
+      "exit": 1,
+      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
+    },
+    {
+      "id": "anchor-outside-cell",
+      "passed": true,
+      "exit": 1,
+      "error": "nd 0<args.foot_y<fh, 'Foot anchor must be inside each cell')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Foot anchor must be inside each cell\n"
+    },
+    {
+      "id": "subject-does-not-fit",
+      "passed": true,
+      "exit": 1,
+      "error": " subject does not fit anchor ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: subject does not fit anchor ((35, 25, 61, 76))\n"
+    },
+    {
+      "id": "failed-check-preserves-previous-output",
+      "passed": true,
+      "exit": 1,
+      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
+    },
+    {
+      "id": "report-overwrites-source",
+      "passed": true,
+      "exit": 1,
+      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-ri2za2mk/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
+    },
+    {
+      "id": "independent-room",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "explicit-foot-anchor",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "invalid-coordinate-anchor",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: coordinateAnchor must be top-left or foot"
+    },
+    {
+      "id": "thin-wall-cannot-be-jumped",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: room/button: unreachable target"
+    },
+    {
+      "id": "rounded-target-cannot-cross-wall",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: room/button: unreachable target"
+    },
+    {
+      "id": "missing-state",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: room/button: missing rendered state"
+    },
+    {
+      "id": "door-threshold-arrival-contract",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "door-threshold-outside-activation",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: room/door-n: approach outside door activation"
+    },
+    {
+      "id": "door-arrival-outside-activation",
+      "passed": true,
+      "exit": 1,
+      "error": "World validation failed: return: arrival outside destination door activation"
+    },
+    {
+      "id": "independent-distance-motion",
+      "passed": true,
+      "exit": 0,
+      "output": " custom strides and slow input have matching poses at matching distances (1.08875ms)\n✔ irregular frames consume corners continuously and do not mutate the caller route (0.192083ms)\n✔ arrival does not overshoot and zero budget never moves (0.111334ms)\n✔ wall contact cannot advance gait; wall sliding uses actual travel (0.082834ms)\n✔ one-unit sweep detects thin barriers despite a large frame delta (0.069791ms)\n✔ pose cycle is owned by the selector and invalid calibration fails explicitly (0.206834ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 8.86225\n",
+      "error": ""
+    },
+    {
+      "id": "independent-runtime-geometry-and-scope",
+      "passed": true,
+      "exit": 0,
+      "output": "{\"passed\":true,\"checks\":[\"off-grid route around thin wall\",\"distance consumption\",\"sealed wall rejects\",\"unknown scene rejects\",\"nonfinite position rejects\",\"URL namespace\",\"local source namespace\",\"invalid production namespace rejects\"]}\n",
+      "error": ""
+    },
+    {
+      "id": "independent-wall-door-assembly",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "independent-two-stage-interaction",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "independent-grid-pathfinder",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "independent-self-contained-media-client",
+      "passed": true,
+      "tokens": [
+        "submitImageMedia",
+        "generateImageMedia",
+        "getMediaTask",
+        "waitForMediaTask",
+        "createMediaRequestId",
+        "MediaServiceError",
+        "reference_urls",
+        "request_id",
+        "session_id",
+        "retryable"
+      ]
+    },
+    {
+      "id": "independent-six-theme-catalog",
+      "passed": true,
+      "themeIds": [
+        "01-cinema",
+        "02-notebook",
+        "03-pixel",
+        "04-index",
+        "05-terminal",
+        "06-blueprint"
+      ]
+    },
+    {
+      "id": "independent-reference-experience-parity",
+      "passed": true,
+      "tokens": [
+        "地图 / 背包 / 菜单",
+        "YOU ARE HERE",
+        "新旅程开场",
+        "安全半径内巡游",
+        "朝向玩家",
+        "画面、碰撞体、接近点、热点和权威行动距离",
+        "玩家发言 → 等待回应 → NPC 回应 → 阅读停顿 → 下一组选项",
+        "中文约 `64` 字",
+        "参考层级声明",
+        "一次性剧情行动耗尽后"
+      ]
+    },
+    {
+      "id": "independent-experience-capability-profile",
+      "passed": true,
+      "exit": 0,
+      "output": "{\"passed\":true,\"releaseTarget\":\"high-fidelity\",\"sessionShape\":\"chapter\",\"journeys\":\"single\",\"persistence\":\"local-session\",\"conversation\":\"authored\",\"capabilities\":11}\n",
+      "error": ""
+    },
+    {
+      "id": "experience-profile-cross-device-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: crossDevice requires account-cloud persistence\n"
+    },
+    {
+      "id": "experience-profile-high-fidelity-omission-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: conversationHistory: high-fidelity release requires implemented (long or cross-session conversation)\nFAIL: inventoryVisuals: high-fidelity release requires implemented (inventory exists)\nFAIL: distanceFootsteps: high-fidelity release requires implemented (direct movement needs movement-grounded sound)\n"
+    },
+    {
+      "id": "independent-experience-capability-modules",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "independent-projected-art-pass",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    },
+    {
+      "id": "independent-projected-art-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: npc: adult visible height differs from hero by more than 12%\nFAIL: wall: wall source stretched; crop or redesign instead\n"
+    },
+    {
+      "id": "independent-fragmented-wall-scale-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: segment-b: wall texture scale differs from segment-a in group same-wall\n"
+    },
+    {
+      "id": "independent-stretched-prop-and-scale-reject",
+      "passed": true,
+      "exit": 1,
+      "error": "FAIL: segment-b: wall texture scale differs from segment-a in group same-wall\nFAIL: table: prop source stretched; preserve its projection\nFAIL: table: visible width / hero height 2.24 outside [1.1, 1.3]\n"
+    },
+    {
+      "id": "independent-progressive-room-contract",
+      "passed": true,
+      "exit": 0,
+      "output": "{\"passed\":true,\"sceneId\":\"example-room\",\"slots\":2,\"exits\":1}\n",
+      "error": ""
+    },
+    {
+      "id": "progressive-room-footprint-drift-reject",
+      "passed": true,
+      "exit": 1,
+      "output": "",
+      "error": "FAIL: slot primary-device changes footprint between shell and complete\n"
+    },
+    {
+      "id": "progressive-room-internal-copy-reject",
+      "passed": true,
+      "exit": 1,
+      "output": "",
+      "error": "FAIL: player copy exposes implementation detail: 碰撞与后台任务已生效\n"
+    },
+    {
+      "id": "independent-progressive-media-runtime",
+      "passed": true,
+      "exit": 0,
+      "error": ""
+    }
+  ],
+  "passed": true
+}

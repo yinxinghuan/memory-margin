@@ -31,6 +31,7 @@ React 18、TypeScript、Vite 8；RPG-JS 5 beta / CanvasEngine 负责真实角色
 - `assets/projection-audit.json`：从真实显示参数整理的人物、墙面、家具与小物件投影比例清单，交给技能包 `audit-projected-art.py` 检查。
 - `assets/platform/`、`assets/processed/`、`public/art/`、`public/map/`：原始候选、准入处理图、正式运行文件和 Tiled 地图。
 - `doc/world-manifest.json`：从实际 `world` 导出的场景/目标/转场/素材清单，供技能校验器检查。
+- `doc/experience-capabilities.json`：按共享技能 v1.42 声明当前产品画像、单/多旅程、持久化、对白策略和各体验层证据。当前版本如实标记为 `playable`，对话历史、背包图像与距离脚步仍为 planned；升级为 high-fidelity 时校验器会阻断这些缺口。
 - `_qa/memory-margin.test.ts` / `_qa/experience-parity.test.ts` / `_qa/npc-motion.test.ts`：保留/借出、停止/追查预览的权威路径、错误动作不消耗版本、旧档事实兼容、每名已介绍 NPC 的持续话题、对话分页，以及 NPC 巡游边界、停顿与面向玩家。
 - `worker/index.js`：AlterU 自托管静态发布适配器，只提供健康检查并明确标记 `frontend-only`；不接收剧情状态、不创建数据库。
 

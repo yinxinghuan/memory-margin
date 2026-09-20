@@ -71,3 +71,9 @@
 - 对话时序：`_qa/platform-layout-conversation-player-*`、`platform-layout-conversation-reply-*`、`platform-layout-repeatable-conversation-*`
 
 “comprehension unverified” 仍然保留：自动化可以验证路径与状态顺序，不能代替新玩家复述世界观、首个目标和互动方法。
+
+## 技能级能力判定
+
+本项目现在使用 `doc/experience-capabilities.json` 明确声明产品画像和能力状态。当前发布目标如实标记为 `playable`：开场、探索、NPC 生活、分阶段对话、恢复和章节结果已实现；对话历史、背包图像识别和距离脚步仍为 `planned`。把目标提升为 `high-fidelity` 时，新校验器会阻断这三个缺口，避免接收方仅凭“游戏能通关”把它们静默省略。
+
+单旅程、本地 session 恢复和作者对白是本作明确选择，不再被一概视为低质量；若未来画像要求分支比较、多人共用设备、跨设备继续或生成对白，校验器会条件触发多旅程、账号云存档和生成边界/回退能力。
