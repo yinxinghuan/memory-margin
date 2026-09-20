@@ -26,6 +26,7 @@
 .mm-objective--complete{width:calc(100% - 38px);justify-content:space-between;text-align:left;color:#e8ebe3;border-top:0;border-right:0;border-bottom:0;cursor:pointer}
 .mm-objective--complete svg{width:17px;height:17px;color:#69c4c5}
 .mm-result-lead{font-size:17px;line-height:1.65;margin:0 0 19px}
+.mm-result-signal{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;margin:0 0 18px;padding:12px 13px;border:1px dashed #50936f;background:#081a13}.mm-result-signal>span{color:#a0cbaa;font:700 10px/1.3 ui-monospace,"SFMono-Regular",Menlo,"PingFang SC",monospace;letter-spacing:.1em}.mm-result-signal>strong{grid-row:1/3;grid-column:2;color:#91efac;font:750 18px/1 ui-monospace,"SFMono-Regular",Menlo,monospace}.mm-result-signal>div{display:flex;align-items:center;gap:4px;height:18px}.mm-result-signal i{display:block;width:4px;height:8px;background:#69b686}.mm-result-signal i:nth-child(2),.mm-result-signal i:nth-child(5){height:16px}.mm-result-signal i:nth-child(3){height:12px}.mm-result[data-outcome="traced"] .mm-result-signal i:last-child{background:#e2ad68}
 .mm-result-entries{display:grid;gap:1px;background:#5d7474;border:1px solid #5d7474}
 .mm-result-entries section{background:#243b44;padding:14px}
 .mm-result-entries small{font-size:11px;letter-spacing:.12em;color:#e2ad68;font-weight:700}
@@ -193,6 +194,24 @@
 .mm-opening>button{width:100%;min-height:50px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:#91efac;color:#062015;border:1px solid #d4f0d5;font-weight:750}
 .mm-opening>button svg{width:18px;height:18px}
 @media(max-height:620px){.mm-opening-layer{padding:8px}.mm-opening{max-height:90dvh;padding:14px}.mm-opening-story{gap:7px}.mm-opening-story p{font-size:14px;line-height:1.45}.mm-opening aside{margin:10px 0}}
+
+/* Backpack records reuse the approved cast and object atlases, so every row is
+   recognizable before its text is read. */
+.mm-backpack-entry{display:grid!important;grid-template-columns:58px minmax(0,1fr);align-items:center;gap:12px;padding:8px!important}
+.mm-backpack-entry>span{min-width:0}
+.mm-backpack-thumb{display:block;width:58px;height:58px;border:1px solid #50936f;background-color:#071811;background-repeat:no-repeat;image-rendering:pixelated}
+.mm-backpack-thumb[data-kind="person"]{background-size:200% 200%}
+.mm-backpack-thumb[data-kind="object"]{background-size:300% 300%}
+
+/* Persisted conversation remains optional to open and never competes with the
+   current reply beat. */
+.mm-conversation-history{border:1px dashed #315d48;background:#081a13}
+.mm-conversation-history summary{min-height:44px;display:flex;align-items:center;justify-content:space-between;padding:8px 11px;color:#a0cbaa;cursor:pointer}
+.mm-conversation-history summary span{display:grid;place-items:center;min-width:22px;height:22px;border:1px solid #50936f;color:#91efac;font-size:10px}
+.mm-conversation-history>div{display:grid;gap:7px;padding:0 10px 10px}
+.mm-conversation-history p{margin:0;padding:8px 10px;border-left:2px solid #69b686;background:#10291e;font-size:13px;line-height:1.55}
+.mm-conversation-history p[data-speaker="player"]{margin-left:22px;border-left:0;border-right:2px solid #315d48;text-align:right}
+.mm-conversation-history p strong{display:block;margin-bottom:3px;color:#91efac;font:700 9px/1.3 ui-monospace,"SFMono-Regular",Menlo,"PingFang SC",monospace;letter-spacing:.08em}
 
 /* A conversation unfolds as a sequence: the player's line, a reply beat, the
    NPC's response, then the next decision. This keeps dialogue readable on a

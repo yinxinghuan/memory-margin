@@ -3,7 +3,7 @@ import {chromium} from 'playwright'
 import {mkdir,writeFile} from 'node:fs/promises'
 import {resolve} from 'node:path'
 
-const base='http://127.0.0.1:5213/'
+const base=process.env.QA_URL||'http://127.0.0.1:5213/'
 const root=resolve('_qa/release')
 await mkdir(root,{recursive:true})
 const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'})
@@ -24,10 +24,12 @@ try{
   assert.equal(await page.title(),'记忆余量 · Memory Margin')
   assert.equal(await page.locator('body').evaluate(node=>node.scrollWidth),width)
   await page.screenshot({path:resolve(root,`platform-layout-idle-${width}x${height}.png`),fullPage:true})
-  await page.keyboard.down('ArrowUp');await page.waitForTimeout(180);await page.keyboard.up('ArrowUp');await page.waitForTimeout(500)
+  if(await page.getByRole('button',{name:'开始探索'}).count())await page.getByRole('button',{name:'开始探索'}).click()
+  await page.keyboard.down('ArrowUp');await page.waitForTimeout(500);await page.keyboard.up('ArrowUp');await page.waitForTimeout(500)
   const audioPlays=await page.evaluate(()=>window.__releaseAudioPlays)
   assert.ok(audioPlays.some(url=>url.endsWith('/audio/memory-margin-ambient.mp3')),'first gesture should start the ambient track')
-  for(const path of ['audio/memory-margin-ambient.mp3','audio/memory-fracture.mp3','poster.png']){
+  assert.ok(audioPlays.some(url=>url.includes('/audio/memory-footstep-')),'actual travel should trigger a distance-based footstep')
+  for(const path of ['audio/memory-margin-ambient.mp3','audio/memory-fracture.mp3','audio/memory-footstep-left.mp3','audio/memory-footstep-right.mp3','poster.png']){
    const response=await page.request.get(new URL(path,base).href)
    assert.equal(response.status(),200,`${path} should be published`)
    assert.ok((await response.body()).length>1000,`${path} should be non-empty`)

@@ -1,9 +1,12 @@
 export type Cue='approach'|'tap'|'read'|'fracture'|'warning'|'choice'|'reveal'|'complete'|'blocked'
+import {advanceFootsteps,emptyFootstepState} from './distance-footsteps'
 
 let audio:AudioContext|undefined
 let lastApproach=0
 let fracture:HTMLAudioElement|undefined
 let ambient:HTMLAudioElement|undefined
+let footstepState=emptyFootstepState()
+const footsteps:{left?:HTMLAudioElement;right?:HTMLAudioElement}={}
 
 function ensureAmbient(){
  ambient??=new Audio(`${import.meta.env.BASE_URL}audio/memory-margin-ambient.mp3`)
@@ -29,6 +32,17 @@ function playFracture(){
  fracture.currentTime=0
  void fracture.play().catch(()=>{})
 }
+
+function playFootstep(foot:'left'|'right'){
+ const sample=footsteps[foot]??new Audio(`${import.meta.env.BASE_URL}audio/memory-footstep-${foot}.mp3`)
+ footsteps[foot]=sample;sample.volume=.34;sample.currentTime=0;void sample.play().catch(()=>{})
+}
+
+export function advanceFootstepAudio(actualDistance:number,muted:boolean){
+ footstepState=advanceFootsteps(footstepState,actualDistance,24,foot=>{if(!muted&&typeof window!=='undefined')playFootstep(foot)})
+}
+
+export function resetFootstepAudio(){footstepState=emptyFootstepState()}
 
 function tone(ctx:AudioContext,frequency:number,start:number,duration:number,gain:number,type:OscillatorType){
  const oscillator=ctx.createOscillator(),envelope=ctx.createGain()
@@ -70,4 +84,5 @@ export function setSoundMuted(muted:boolean){
  if(!muted)return
  if(fracture){fracture.pause();fracture.currentTime=0}
  ambient?.pause()
+ for(const sample of Object.values(footsteps)){sample?.pause();if(sample)sample.currentTime=0}
 }

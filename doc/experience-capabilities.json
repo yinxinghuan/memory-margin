@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "releaseTarget": "playable",
+  "releaseTarget": "high-fidelity",
   "gameProfile": {
     "sessionShape": "chapter",
     "expectedMinutes": 25,
@@ -20,17 +20,82 @@
     "conversation": "authored"
   },
   "capabilities": {
-    "opening": {"state": "implemented", "evidence": ["_qa/platform-layout-opening-guidance-390x844.png"]},
-    "exploration": {"state": "implemented", "evidence": ["_qa/release/platform-layout-idle-390x844.png"]},
-    "loadingRecovery": {"state": "implemented", "evidence": ["_qa/memory-margin.test.ts"]},
-    "audioLayers": {"state": "implemented", "evidence": ["_qa/capture-release.mjs"]},
-    "persistence": {"state": "implemented", "evidence": ["_qa/memory-margin.test.ts"]},
-    "closure": {"state": "implemented", "evidence": ["src/main.tsx"]},
-    "npcWorldLife": {"state": "implemented", "evidence": ["_qa/platform-layout-npc-patrol-390x844.png", "_qa/platform-layout-npc-facing-player-390x844.png"]},
-    "stagedConversation": {"state": "implemented", "evidence": ["_qa/platform-layout-conversation-player-390x844.png", "_qa/platform-layout-conversation-reply-390x844.png"]},
-    "conversationHistory": {"state": "planned", "evidence": []},
-    "inventoryVisuals": {"state": "planned", "evidence": []},
-    "distanceFootsteps": {"state": "planned", "evidence": []}
+    "opening": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/platform-layout-opening-guidance-390x844.png"
+      ]
+    },
+    "exploration": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/release/platform-layout-idle-390x844.png"
+      ]
+    },
+    "loadingRecovery": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/memory-margin.test.ts",
+        "src/main.tsx"
+      ]
+    },
+    "audioLayers": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/capture-release.mjs"
+      ]
+    },
+    "persistence": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/memory-margin.test.ts"
+      ]
+    },
+    "closure": {
+      "state": "implemented",
+      "evidence": [
+        "src/main.tsx",
+        "_qa/experience-parity.test.ts"
+      ]
+    },
+    "npcWorldLife": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/platform-layout-npc-patrol-390x844.png",
+        "_qa/platform-layout-npc-facing-player-390x844.png"
+      ]
+    },
+    "stagedConversation": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/platform-layout-conversation-player-390x844.png",
+        "_qa/platform-layout-conversation-reply-390x844.png"
+      ]
+    },
+    "conversationHistory": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/high-fidelity-capabilities.test.ts",
+        "_qa/platform-layout-conversation-history-390x844.png",
+        "_qa/platform-layout-conversation-history-320x568.png"
+      ]
+    },
+    "inventoryVisuals": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/platform-layout-backpack-items-390x844.png",
+        "_qa/platform-layout-backpack-clues-320x568.png",
+        "_qa/platform-layout-backpack-people-390x844.png"
+      ]
+    },
+    "distanceFootsteps": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/high-fidelity-capabilities.test.ts",
+        "_qa/capture-release.mjs",
+        "assets/benchmark/audio/ledger.json"
+      ]
+    }
   },
   "decisions": {
     "journeys": "The current first chapter keeps one authoritative journey; branch comparison is not promised by this playable release.",

@@ -15,7 +15,7 @@ npm run dev
 
 本地入口为 `http://127.0.0.1:5212/`；非剧情的大场景评审入口为 `?large_scene=1`，新房间高保真入口为 `?generated_room=1`，静态碰撞骨架入口为 `?generated_room=1&room_phase=shell`，真实平台任务逐槽位恢复入口为 `?generated_room=1&room_phase=live&reset_room_media=1`。
 
-`npm run build` 生成 `dist/`；`npm test` 验证剧情、往返、四向门、互动、比例、氛围、大场景、生成房间、NPC 巡游/面向玩家、对话分页与存档迁移。发布检查还会在真实浏览器验证两种手机尺寸、新旅程开场、分阶段对话、首次操作启动环境音乐、静音切换、发布素材响应和外部访客栏。最终交接包为 `deliverables/build-spatial-story-game-v1.42-handoff.zip`，配套报告为 `deliverables/skill-package-check-v1.42.json`。v1.42 新增体验能力档案、条件校验器以及对话历史、多旅程目录、距离脚步三个存储无关内核；接收方必须先选择产品模式，不能让关键能力因 agent 遗漏而静默退化。
+`npm run build` 生成 `dist/`；`npm test` 验证剧情、往返、四向门、互动、比例、氛围、大场景、生成房间、NPC 巡游/面向玩家、对话分页、持久交谈历史、距离脚步与存档迁移。发布检查还会在真实浏览器验证两种手机尺寸、新旅程开场、背包物品/线索/人物图像、分阶段对话与历史恢复、实际移动脚步、环境音乐、静音切换、发布素材响应和外部访客栏。最终交接包为 `deliverables/build-spatial-story-game-v1.43-handoff.zip`，配套报告为 `deliverables/skill-package-check-v1.43.json`。v1.43 经过《记忆余量》从 playable 到 high-fidelity 的真实升级回写，明确当前回复不得在历史区重复、背包缩略图必须与场景身份一致、碰墙/暂停/静音不得制造脚步；接收方仍须先选择产品模式，不能让关键能力因 agent 遗漏而静默退化。
 
 ## 来源
 

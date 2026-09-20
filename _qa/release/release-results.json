@@ -1,11 +1,12 @@
 {
-  "capturedAt": "2026-09-19T16:53:16.697Z",
+  "capturedAt": "2026-09-20T04:17:21.260Z",
   "results": [
     {
       "width": 390,
       "height": 844,
       "audioPlays": [
-        "http://127.0.0.1:5213/audio/memory-margin-ambient.mp3"
+        "http://127.0.0.1:5217/audio/memory-margin-ambient.mp3",
+        "http://127.0.0.1:5217/audio/memory-footstep-left.mp3"
       ],
       "errors": [],
       "scrollWidth": 390
@@ -14,7 +15,8 @@
       "width": 320,
       "height": 568,
       "audioPlays": [
-        "http://127.0.0.1:5213/audio/memory-margin-ambient.mp3"
+        "http://127.0.0.1:5217/audio/memory-margin-ambient.mp3",
+        "http://127.0.0.1:5217/audio/memory-footstep-left.mp3"
       ],
       "errors": [],
       "scrollWidth": 320

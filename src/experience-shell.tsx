@@ -6,6 +6,12 @@ import {t,objective} from './story'
 
 export type RecordEntry={id:string;title:string;source:string;known:boolean;body:string}
 export type ShellTab='goal'|'items'|'clues'|'people'
+const atlas=(name:string)=>`${import.meta.env.BASE_URL}art/${name}`
+const recordCell:Record<string,string>={receipt:'50% 0%',seal:'0% 50%',ledger:'100% 50%',breakfast:'100% 0%','hall-notice':'50% 50%',terms:'0% 100%',preview:'100% 100%','arrival-receipt':'50% 0%'}
+function BackpackThumb({kind,id}:{kind:'person'|'object';id:string}){
+ const personPosition:Record<string,string>={neighbor:'100% 0%',caretaker:'0% 100%',clerk:'100% 100%'}
+ return <i className="mm-backpack-thumb" data-kind={kind} style={{backgroundImage:`url(${atlas(kind==='person'?'cast.png':'objects.png')})`,backgroundPosition:kind==='person'?personPosition[id]??'0% 0%':recordCell[id]??'0% 0%'}} aria-hidden="true"/>
+}
 
 const positions:Record<Scene,[number,number]>={home:[18,64],hall:[50,36],service:[82,64]}
 const links:[Scene,Scene][]=[['home','hall'],['hall','service']]
@@ -41,9 +47,9 @@ export function MemoryBackpack({save,records,tab,setTab,onRead}:{save:StorySave;
  const tabs:[ShellTab,string][]=[['goal',copy('目标','Goal')],['items',copy('物品','Items')],['clues',copy('线索','Clues')],['people',copy('人物','People')]]
  return <div className="mm-backpack"><nav>{tabs.map(([id,label])=><button key={id} aria-pressed={tab===id} onClick={()=>setTab(id)}>{label}</button>)}</nav>
   {tab==='goal'&&<section className="mm-backpack-goal"><small>{copy('当前目标','CURRENT OBJECTIVE')}</small><p>{objective(save)}</p><div><span>{save.inventory.reduce((n,item)=>n+item.count,0)} {copy('件物品','items')}</span><span>{records.filter(row=>row.known).length} {copy('条线索','clues')}</span><span>{people.length} {copy('位人物','people')}</span></div></section>}
-  {tab==='items'&&(save.inventory.length?<ul className="mm-backpack-list">{save.inventory.map(item=><li key={item.id}><strong>{item.label}{item.count>1&&` × ${item.count}`}</strong><p>{item.detail}</p></li>)}</ul>:<p className="mm-empty">{copy('还没有随身物品。','You are not carrying anything yet.')}</p>)}
-  {tab==='clues'&&(records.some(row=>row.known)?<ul className="mm-backpack-list">{records.filter(row=>row.known).map(row=><li key={row.id}><button onClick={()=>onRead(row.id)}><span><strong>{row.title}</strong><small>{row.source}</small></span></button></li>)}</ul>:<p className="mm-empty">{copy('亲自发现的线索会记在这里。','Clues you discover will be kept here.')}</p>)}
-  {tab==='people'&&(people.length?<ul className="mm-backpack-list">{people.map(person=><li key={person.id}><strong>{person.name}</strong><small>{person.role}</small><p>{person.detail}</p></li>)}</ul>:<p className="mm-empty">{copy('遇见并交谈后，人物会记在这里。','People appear here after you meet and talk.')}</p>)}
+  {tab==='items'&&(save.inventory.length?<ul className="mm-backpack-list">{save.inventory.map(item=><li key={item.id} className="mm-backpack-entry"><BackpackThumb kind="object" id={item.id}/><span><strong>{item.label}{item.count>1&&` × ${item.count}`}</strong><p>{item.detail}</p></span></li>)}</ul>:<p className="mm-empty">{copy('还没有随身物品。','You are not carrying anything yet.')}</p>)}
+  {tab==='clues'&&(records.some(row=>row.known)?<ul className="mm-backpack-list">{records.filter(row=>row.known).map(row=><li key={row.id}><button className="mm-backpack-entry" onClick={()=>onRead(row.id)}><BackpackThumb kind="object" id={row.id}/><span><strong>{row.title}</strong><small>{row.source}</small></span></button></li>)}</ul>:<p className="mm-empty">{copy('亲自发现的线索会记在这里。','Clues you discover will be kept here.')}</p>)}
+  {tab==='people'&&(people.length?<ul className="mm-backpack-list">{people.map(person=><li key={person.id} className="mm-backpack-entry"><BackpackThumb kind="person" id={person.id}/><span><strong>{person.name}</strong><small>{person.role}</small><p>{person.detail}</p></span></li>)}</ul>:<p className="mm-empty">{copy('遇见并交谈后，人物会记在这里。','People appear here after you meet and talk.')}</p>)}
  </div>
 }
 

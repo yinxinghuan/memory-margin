@@ -4,6 +4,7 @@ import {initialHead,migrateHead,resolveAction,type Head,type Action,type Result}
 import {type Locale} from './story'
 import {world,type Scene} from './world'
 import {walkable,type Point} from './spatial/world'
+import {appendConversationTurn} from './conversation-history'
 const req=<T>(r:IDBRequest<T>)=>new Promise<T>((resolve,reject)=>{r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})
 const finished=(tx:IDBTransaction)=>new Promise<void>((resolve,reject)=>{tx.oncomplete=()=>resolve();tx.onabort=()=>reject(tx.error??new Error('STORAGE_ABORTED'));tx.onerror=()=>reject(tx.error)})
 export class JourneyStore{
@@ -18,6 +19,17 @@ export class JourneyStore{
   }catch(error){try{tx.abort()}catch{};throw error}
  }
  async checkpoint(scene:Scene,version:number,position:Point){const tx=this.db.transaction('heads','readwrite'),done=finished(tx);void done.catch(()=>{});try{const store=tx.objectStore('heads'),head=await req(store.get('active')) as Head;if(head.scene!==scene||head.version!==version)throw new Error('STALE_POSITION');if(!walkable(world,scene,position))throw new Error('INVALID_POSITION');store.put({...head,position:{...position}},'active');await done}catch(error){try{tx.abort()}catch{};throw error}}
+ async appendConversationExchange(version:number,characterId:string,playerText:string,characterText:string,exchangeId:string){
+  const tx=this.db.transaction('heads','readwrite'),done=finished(tx);void done.catch(()=>{})
+  try{
+   const store=tx.objectStore('heads'),head=migrateHead(await req(store.get('active')) as Head)
+   if(head.version!==version)throw new Error('STALE_CONVERSATION')
+   const createdAt=Date.now()
+   let conversationHistory=appendConversationTurn(head.conversationHistory,{id:`${exchangeId}:player`,characterId,speaker:'player',text:playerText,createdAt})
+   conversationHistory=appendConversationTurn(conversationHistory,{id:`${exchangeId}:character`,characterId,speaker:'character',text:characterText,createdAt:createdAt+1})
+   const next={...head,conversationHistory};store.put(next,'active');await done;return next
+  }catch(error){try{tx.abort()}catch{};throw error}
+ }
  async restart(locale:Locale){const tx=this.db.transaction(['heads','actions'],'readwrite'),done=finished(tx);const head=initialHead(locale);tx.objectStore('heads').put(head,'active');tx.objectStore('actions').clear();await done;return head}
  close(){this.db.close()}
 }

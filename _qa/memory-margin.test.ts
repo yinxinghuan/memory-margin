@@ -119,3 +119,11 @@ test('a saved first-arc journey gains new facts without losing its earlier choic
  assert.equal(migrated.save.facts.morningHandled,false)
  assert.equal(migrateHead(migrated),migrated)
 })
+
+test('older journeys gain an empty conversation history without changing story progress',()=>{
+ const head=initialHead('zh')
+ const old={version:head.version,scene:head.scene,position:head.position,save:head.save} as Head
+ const migrated=migrateHead(old)
+ assert.deepEqual(migrated.conversationHistory,{version:1,turns:[]})
+ assert.equal(migrated.save,head.save)
+})

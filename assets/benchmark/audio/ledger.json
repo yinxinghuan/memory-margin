@@ -11,7 +11,7 @@
       "sampleRateHz": 44100,
       "channels": 2,
       "sha256": "71786067a7d748ff8292ceedac86eb7d96304a897bb9da57717cb11a5fd2044f",
-      "integratedLufs": -18.90,
+      "integratedLufs": -18.9,
       "truePeakDb": -1.46,
       "status": "rejected",
       "reason": "The release gain and 11.8 LU range are too prominent for dialogue-led exploration."
@@ -60,6 +60,37 @@
       "status": "accepted",
       "runtimePath": "public/audio/memory-fracture.mp3",
       "reason": "Three sparse crystalline events decay into silence and remain below the release peak ceiling."
+    }
+  ],
+  "footstepPolicy": "Two quiet platform-generated one-shot samples alternate only after collision-resolved travel crosses a 24-world-unit stride; blocked or idle input is silent.",
+  "footstepCandidates": [
+    {
+      "id": "memory-footstep-a",
+      "requestId": "28931e2e-4182-4a92-af4c-f64e23795867",
+      "taskId": "mt_1d159530a066afcef6ddda39c358f1e6",
+      "durationSeconds": 1,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "3b8adf2d5f23df540a83b5f4f9e9283a606c4526265cd18f73c93f535bddef22",
+      "meanDb": -44.9,
+      "peakDb": -18.5,
+      "status": "accepted",
+      "runtimePath": "public/audio/memory-footstep-left.mp3",
+      "reason": "Short broadband shoe contact with a quiet tail; conservative peak remains beneath dialogue and ambience."
+    },
+    {
+      "id": "memory-footstep-b",
+      "requestId": "e2171df9-86dd-420e-b51d-1ef32b22cc80",
+      "taskId": "mt_435f4496d36ff7cd96548c5266658d28",
+      "durationSeconds": 1,
+      "sampleRateHz": 44100,
+      "channels": 2,
+      "sha256": "fc1ffcf6ed3c2258a5ed718b546e961bcce00ae3ce0685da2b47ffd9bddc71d0",
+      "meanDb": -42.8,
+      "peakDb": -16.0,
+      "status": "accepted",
+      "runtimePath": "public/audio/memory-footstep-right.mp3",
+      "reason": "A distinct lighter contact provides natural alternation without adding tonal or musical content."
     }
   ]
 }

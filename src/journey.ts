@@ -1,13 +1,18 @@
 import {initialStory,applyAction,migrateStorySave,type StorySave,type Locale,t} from './story'
 import {entities,entityNear,portals,type EntityId,type Scene,world} from './world'
 import {walkable,type Point} from './spatial/world'
+import {emptyConversationHistory,type ConversationHistory} from './conversation-history'
 
-export type Head={version:number;scene:Scene;position:Point;save:StorySave}
+export type Head={version:number;scene:Scene;position:Point;save:StorySave;conversationHistory:ConversationHistory}
 export type Action={id:string;version:number;scene:Scene;entity:EntityId;action:string;position:Point}
 export type Result={head:Head;text:string;accepted:boolean}
 
-export function initialHead(locale:Locale):Head{return {version:0,scene:'home',position:{...world.scenes.home.spawn},save:initialStory(locale)}}
-export function migrateHead(head:Head):Head{const save=migrateStorySave(head.save);return save===head.save?head:{...head,save}}
+export function initialHead(locale:Locale):Head{return {version:0,scene:'home',position:{...world.scenes.home.spawn},save:initialStory(locale),conversationHistory:emptyConversationHistory()}}
+export function migrateHead(head:Head):Head{
+ const save=migrateStorySave(head.save),history=(head as Partial<Head>).conversationHistory
+ if(save===head.save&&history?.version===1&&Array.isArray(history.turns))return head
+ return {...head,save,conversationHistory:history?.version===1&&Array.isArray(history.turns)?history:emptyConversationHistory()}
+}
 export function resolveAction(head:Head,request:Action):Result{
  head=migrateHead(head)
  if(!/^[\w-]{16,80}$/.test(request.id))throw new Error('INVALID_ACTION_ID')
@@ -18,7 +23,7 @@ export function resolveAction(head:Head,request:Action):Result{
  const result=applyAction(head.save,request.action)
  if(!result.accepted)return {head,text:result.text,accepted:false}
  const destination=portals[request.action]
- return {head:{version:head.version+1,scene:destination?.scene??head.scene,position:destination?{...destination.position}:{...request.position},save:result.save},text:result.text,accepted:true}
+ return {head:{version:head.version+1,scene:destination?.scene??head.scene,position:destination?{...destination.position}:{...request.position},save:result.save,conversationHistory:head.conversationHistory},text:result.text,accepted:true}
 }
 
 // Free text, if added later, may propose only a prepared action; it cannot execute or create a new object.

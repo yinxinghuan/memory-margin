@@ -7,7 +7,7 @@ import {advanceRoute,moveWithCollision,createDistancePoseSelector} from './dista
 import {walkable,findPath,type World,type Point} from './world'
 
 export type Space={position:()=>Point;scene:()=>string;renderedScene:()=>string|null;move:(x:number,y:number)=>void;walkTo:(target:Point,arrive?:()=>void)=>boolean;pause:(v:boolean)=>void;restore:(scene:string,position:Point)=>Promise<void>}
-export type SpaceOptions={world:World;host:HTMLElement;scene:string;position:Point;speed:number;stride:number;poses:string[];sheet:any;onPosition:(p:Point)=>void;onDestination:(p:Point|null)=>void;onReady:(space:Space)=>void;onError:(error:unknown)=>void}
+export type SpaceOptions={world:World;host:HTMLElement;scene:string;position:Point;speed:number;stride:number;poses:string[];sheet:any;onPosition:(p:Point)=>void;onTravel?:(actualDistance:number)=>void;onDestination:(p:Point|null)=>void;onReady:(space:Space)=>void;onError:(error:unknown)=>void}
 
 // RPG-JS adapter only: the caller owns story, UI, persistence, art and input bindings.
 export function createRpgSpace(options:SpaceOptions){
@@ -39,7 +39,7 @@ void wait(scene).then(()=>{project();options.onReady(runtime)}).catch(options.on
    const clear=(p:Point)=>walkable(world,scene,p)
    if(!x&&!y&&route.length){const r=advanceRoute(pos,route,options.speed*dt,clear);pos=r.position;distance=r.distance;x=r.direction.x;y=r.direction.y;route.splice(0,r.consumed);finished=r.arrived;if(r.blocked)cancel()}
    else if(x||y){const r=moveWithCollision(pos,{x:x*options.speed*dt,y:y*options.speed*dt},clear);x=r.position.x-pos.x;y=r.position.y-pos.y;pos=r.position;distance=r.distance}
-   if(distance>1e-7){stride=(stride+distance)%options.stride;const pose=poseAt(stride);if(player.animationName()!==pose)player.animationName.set(pose);player.direction.set(Math.abs(x)>Math.abs(y)?(x>0?Direction.Right:Direction.Left):(y>0?Direction.Down:Direction.Up));void player.teleport(pos);player.syncChanges();options.onPosition(pos)}else stand()
+   if(distance>1e-7){stride=(stride+distance)%options.stride;const pose=poseAt(stride);if(player.animationName()!==pose)player.animationName.set(pose);player.direction.set(Math.abs(x)>Math.abs(y)?(x>0?Direction.Right:Direction.Left):(y>0?Direction.Down:Direction.Up));void player.teleport(pos);player.syncChanges();options.onTravel?.(distance);options.onPosition(pos)}else stand()
    if(finished){const callback=arrive;arrive=undefined;options.onDestination(null);stand();callback?.()}
   }
   project();requestAnimationFrame(tick)
