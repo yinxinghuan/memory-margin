@@ -54,7 +54,8 @@
     "closure": {
       "state": "implemented",
       "evidence": [
-        "src/main.tsx",
+        "_qa/platform-layout-chapter-closure-390x844.png",
+        "_qa/platform-layout-chapter-closure-320x568.png",
         "_qa/experience-parity.test.ts"
       ]
     },
