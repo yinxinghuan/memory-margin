@@ -19,14 +19,14 @@ export class JourneyStore{
   }catch(error){try{tx.abort()}catch{};throw error}
  }
  async checkpoint(scene:Scene,version:number,position:Point){const tx=this.db.transaction('heads','readwrite'),done=finished(tx);void done.catch(()=>{});try{const store=tx.objectStore('heads'),head=await req(store.get('active')) as Head;if(head.scene!==scene||head.version!==version)throw new Error('STALE_POSITION');if(!walkable(world,scene,position))throw new Error('INVALID_POSITION');store.put({...head,position:{...position}},'active');await done}catch(error){try{tx.abort()}catch{};throw error}}
- async appendConversationExchange(version:number,characterId:string,playerText:string,characterText:string,exchangeId:string){
+ async appendConversationExchange(version:number,characterId:string,playerText:string,characterText:string,exchangeId:string,topicKey?:string){
   const tx=this.db.transaction('heads','readwrite'),done=finished(tx);void done.catch(()=>{})
   try{
    const store=tx.objectStore('heads'),head=migrateHead(await req(store.get('active')) as Head)
    if(head.version!==version)throw new Error('STALE_CONVERSATION')
    const createdAt=Date.now()
    let conversationHistory=appendConversationTurn(head.conversationHistory,{id:`${exchangeId}:player`,characterId,speaker:'player',text:playerText,createdAt})
-   conversationHistory=appendConversationTurn(conversationHistory,{id:`${exchangeId}:character`,characterId,speaker:'character',text:characterText,createdAt:createdAt+1})
+   conversationHistory=appendConversationTurn(conversationHistory,{id:`${exchangeId}:character`,characterId,speaker:'character',text:characterText,createdAt:createdAt+1,topicKey})
    const next={...head,conversationHistory};store.put(next,'active');await done;return next
   }catch(error){try{tx.abort()}catch{};throw error}
  }

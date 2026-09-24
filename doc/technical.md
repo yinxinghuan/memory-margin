@@ -55,3 +55,7 @@
 - 新墙门：architecture、door-wall-art 元数据、投影审计；先 bake，再 crop，再 build。原图与裁切输出分目录，重复裁切不得改变坐标。
 - 调整 UI：experience-shell/main/style；沿用语义主题，新增数据来自已揭示权威事实。
 - 新后端/多旅程/跨设备能力：另立需求和恢复合同，不能把当前浏览器存档宣称为云端能力。
+
+
+## 连续话题更新（2026-09-24）
+使用 src/conversation-flow.ts 对完整已提交问答做话题完成投影，稳定 topicKey 与回应一起保存；作者追问依赖 after，utility 不消耗。新增历史不再静默截断，界面分页与模型上下文窗口分开。存储适配、测试和边界见 conversation-lifecycle-20260924.md。

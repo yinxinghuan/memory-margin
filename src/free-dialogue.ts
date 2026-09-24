@@ -4,7 +4,7 @@ import {conversationName,conversationTopics} from './conversation'
 import {characterConversation} from './conversation-history'
 
 export function dialogueMessages(head:Head,id:EntityId,input:string){
- const topics=conversationTopics(id,head.save)
+ const topics=conversationTopics(id,head.save,head.conversationHistory)
  if(!topics.length)throw new Error('INTRODUCTION_REQUIRED')
  const text=input.trim()
  if(!text||text.length>500)throw new Error('INVALID_MESSAGE')
