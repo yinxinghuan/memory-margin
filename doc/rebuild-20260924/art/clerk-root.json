@@ -1,0 +1,38 @@
+{
+  "id": "clerk-root",
+  "requestId": "c50a4c5e-106a-4251-88a5-0ba929aec973",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One complete full-body memory service clerk aged 45, deep brown skin, close short natural hair, muted blue-teal tailored work jacket and straight charcoal trousers, sensible dark shoes, tiny amber rectangular badge without letters. Upright precise posture, reserved experienced adult face, not a nurse or fantasy costume. Mature adult proportions about 5.5 heads tall, bold readable pixel clusters. Elevated ORTHOGRAPHIC RPG camera looking down 50 degrees, zero sideways yaw. Facing south toward viewer, see crown of head and shoulder tops, both feet parallel, arms relaxed. Pure solid #FF00FF background, entire body centered with margins, no ground, cast shadow, letters or sprite sheet.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_0a8cc0b27db6ce919426ffd6c6a73856",
+    "request_id": "c50a4c5e-106a-4251-88a5-0ba929aec973",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212512827,
+    "updated_at": 1790212542272,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212541329-a9p4iicvwk4.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212541329-a9p4iicvwk4.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29328
+  },
+  "elapsedMs": 30247,
+  "sha256": "ab50a0f6d71d4b4bda82db498255afaf35577328682b838e70e1078df630b252",
+  "visualQA": "pending"
+}

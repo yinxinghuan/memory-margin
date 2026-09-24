@@ -1,0 +1,45 @@
+{
+  "id": "caretaker-up-b",
+  "requestId": "5ea03414-c0c7-4a1b-8dfe-1f8d24433c96",
+  "mode": "edit",
+  "parent": "caretaker-root",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212510238-mg9rjsq0akp.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Keep exactly the reference identity, outfit, age, silhouette and restrained pixel density. One complete full-body sprite, elevated orthographic RPG view down 50 degrees, see crown and shoulder tops, no sideways camera yaw. About 5.5 heads tall, complete body centered with margins. Pure solid #FF00FF background, no ground, no shadow, no text. Facing away from viewer NORTH. Back of head and jacket only. Shoe on SCREEN LEFT extends to bottom of image, trailing lifted heel; SCREEN RIGHT shoe is higher toward top, advancing. SCREEN RIGHT hand lower, left hand higher. Walking contact B.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_946761df0c8abf5ff409d188ef3bd85e",
+    "request_id": "5ea03414-c0c7-4a1b-8dfe-1f8d24433c96",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212918934,
+    "updated_at": 1790212948565,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212948223-elgei7di1sc.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212948223-elgei7di1sc.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29490
+  },
+  "elapsedMs": 30425,
+  "sha256": "d81c8c3cb7b92c2e0de04e29833f697aafeee99a21d89cb9d4e42fd2ff9a1097",
+  "visualQA": {
+    "status": "rejected",
+    "reason": "Repeats the contact phase of up-a; opposite support leg is not clear.",
+    "replacement": "caretaker-up-b-v2"
+  }
+}

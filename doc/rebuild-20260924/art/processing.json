@@ -1,0 +1,71 @@
+[
+  {
+    "id": "home-floor",
+    "requestId": "a29dfab2-10dd-4205-bca1-a8b6b1d86a93",
+    "sourceSHA": "f9aa87785cfdcd42dea1a0c4bdc11a4c237dc5dc6fc4a82d69d624e09957f224",
+    "output": "public/art/rebuild-20260924/home-floor.png",
+    "sha256": "6f5beff3f872767e30b4930945eb8d01f44520c99f121080b8b67eb38efa030a",
+    "original": [
+      1024,
+      1024
+    ],
+    "bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "processed": [
+      1024,
+      1024
+    ],
+    "processing": "decode only",
+    "visualQA": "candidate; room validation pending"
+  },
+  {
+    "id": "voice-console",
+    "requestId": "53c0479b-c785-438d-8723-c5e146afc371",
+    "sourceSHA": "34c57eda498c220d9b3ecf75c70cfec2109acd965a386efdf4ab84638867fb50",
+    "output": "public/art/rebuild-20260924/voice-console.png",
+    "sha256": "8510030b781528c8625242d4b61778bfe5eb0d705a85ab98ceebfa53239072a1",
+    "original": [
+      1024,
+      1024
+    ],
+    "bounds": [
+      134,
+      252,
+      891,
+      757
+    ],
+    "processed": [
+      757,
+      505
+    ],
+    "processing": "RGB magenta key and tight crop",
+    "visualQA": "candidate; room validation pending"
+  },
+  {
+    "id": "hero-root",
+    "requestId": "1bca6f0d-f913-4d81-87a1-db75d9342184",
+    "sourceSHA": "b14d51e5a639b832ebc17031b2670331483f441cb50866835ad2673452fcccd2",
+    "output": "public/art/rebuild-20260924/hero-root.png",
+    "sha256": "d2efd6ce92b9abae143d41e84f03c6ef27c37dbb17b6cad56769b9202123cec5",
+    "original": [
+      1024,
+      1024
+    ],
+    "bounds": [
+      292,
+      40,
+      707,
+      965
+    ],
+    "processed": [
+      415,
+      925
+    ],
+    "processing": "RGB magenta key and tight crop",
+    "visualQA": "candidate; room validation pending"
+  }
+]

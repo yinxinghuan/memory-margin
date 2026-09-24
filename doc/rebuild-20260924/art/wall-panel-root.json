@@ -1,0 +1,43 @@
+{
+  "id": "wall-panel-root",
+  "requestId": "d330637e-28c2-4051-a44a-54fe55ec97d1",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One straight horizontal module of a thick interior wall for a near-future residential memory district. Axis-aligned elevated ORTHOGRAPHIC view looking down 50 degrees, zero horizontal yaw. Wide rectangular wall face about 800 pixels across and 210 pixels tall, with its physically thick TOP cap visible as an 800 by 65 pixel rectangular horizontal strip above it. All long horizontal edges equal and parallel, no trapezoids, no vanishing point. Flat cropped ends suitable for repeating side by side, no posts. Face of worn blue-gray enamel plates, restrained dark seams, lower graphite service skirting, a narrow cyan maintenance light at one end and tiny warm amber status lamps. Mature inhabited digital city, not hospital, not fantasy. No floor, room, door, opening, furniture, writing, lettering, cast ground shadow or surrounding frame. One complete wall module centered on pure solid #FF00FF background.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_242cdc2a578342daf249775c4407732c",
+    "request_id": "d330637e-28c2-4051-a44a-54fe55ec97d1",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790214368278,
+    "updated_at": 1790214402918,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790214402571-9rigbx0art.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790214402571-9rigbx0art.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34522
+  },
+  "elapsedMs": 35531,
+  "sha256": "b223e5599d59bc78567002d4959c7cc240226a1a285e4caf54fb26dc6e9cba9c",
+  "visualQA": {
+    "status": "runtime-review",
+    "observation": "Separate rectangular wall module with visible top cap and face. Candidate only; seams, repeat/crop, thickness and corner assembly require the actual renderer.",
+    "runtimeIntegrated": true,
+    "review": "doc/rebuild-20260924/wall-door-assembly-review.md"
+  }
+}

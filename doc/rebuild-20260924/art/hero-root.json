@@ -1,0 +1,38 @@
+{
+  "id": "hero-root",
+  "requestId": "1bca6f0d-f913-4d81-87a1-db75d9342184",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One full-body ordinary newly uploaded adult aged 30, short charcoal hair, muted ochre cropped utility jacket over dark teal shirt, straight graphite trousers, simple dark shoes, no bag, no handheld objects. Quiet determination, mature adult proportions about 5 heads tall, not child or chibi. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Facing south toward viewer, see crown of head and tops of shoulders, naturally standing with both feet parallel and arms relaxed. Entire body, clean silhouette, centered, occupies 78 percent of height. Pure solid #FF00FF background, no ground plane, no shadow. Single pose, no sprite sheet.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_4f3e457b1680179e767d38024efe4a05",
+    "request_id": "1bca6f0d-f913-4d81-87a1-db75d9342184",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790187976813,
+    "updated_at": 1790188012719,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 35365
+  },
+  "elapsedMs": 37343,
+  "sha256": "b14d51e5a639b832ebc17031b2670331483f441cb50866835ad2673452fcccd2",
+  "visualQA": "pending"
+}

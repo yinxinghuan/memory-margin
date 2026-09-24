@@ -1,0 +1,41 @@
+{
+  "id": "hero-down-b",
+  "requestId": "be4a861a-5156-4911-9ec5-48c2cee123d7",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing south toward viewer. Walk contact B: anatomical RIGHT foot forward toward bottom of image with sole planted, LEFT foot trailing with heel lifted. LEFT arm forward, RIGHT arm back. Opposite support leg from contact A. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_58d67bd8ac15d9dd23858d02b25f24b4",
+    "request_id": "be4a861a-5156-4911-9ec5-48c2cee123d7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188217870,
+    "updated_at": 1790188253440,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188253090-1w411nxtl2z.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188253090-1w411nxtl2z.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 35454
+  },
+  "elapsedMs": 36325,
+  "sha256": "30fb8999a17cc9b2110efd8533475c1d7f371c9620e9ea00e9a2652af4647e81",
+  "visualQA": "rejected: support leg / arm pose repeats contact A; not admitted to runtime"
+}

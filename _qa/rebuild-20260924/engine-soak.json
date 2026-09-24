@@ -1,0 +1,157 @@
+{
+  "environment": "Desktop headless Chrome; not iPhone/AlterU performance evidence",
+  "duration": 60,
+  "errors": [],
+  "windows": [
+    {
+      "start": 0,
+      "p50": 16.69999999999891,
+      "p95": 16.799999999999272,
+      "over50ms": 0,
+      "total": 898
+    },
+    {
+      "start": 15000,
+      "p50": 16.700000000000728,
+      "p95": 16.700000000000728,
+      "over50ms": 0,
+      "total": 900
+    },
+    {
+      "start": 30000,
+      "p50": 16.69999999999709,
+      "p95": 16.799999999995634,
+      "over50ms": 0,
+      "total": 901
+    },
+    {
+      "start": 45000,
+      "p50": 16.69999999999709,
+      "p95": 16.799999999995634,
+      "over50ms": 0,
+      "total": 900
+    }
+  ],
+  "samples": [
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 158634849,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 216019914,
+      "position": {
+        "x": 61,
+        "y": 233
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 127610148,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 131535029,
+      "position": {
+        "x": 61,
+        "y": 233
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 107575972,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 162628168,
+      "position": {
+        "x": 61,
+        "y": 233
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 98358400,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 154365186,
+      "position": {
+        "x": 61,
+        "y": 232
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 115146722,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 168684864,
+      "position": {
+        "x": 61,
+        "y": 233
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 105341008,
+      "position": {
+        "x": 54,
+        "y": 438
+      }
+    },
+    {
+      "nodes": 225,
+      "masks": 1,
+      "events": 17,
+      "heap": 153293528,
+      "position": {
+        "x": 61,
+        "y": 233
+      }
+    }
+  ]
+}

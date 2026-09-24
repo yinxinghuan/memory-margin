@@ -39,7 +39,7 @@ function playFootstep(foot:'left'|'right'){
 }
 
 export function advanceFootstepAudio(actualDistance:number,muted:boolean){
- footstepState=advanceFootsteps(footstepState,actualDistance,24,foot=>{if(!muted&&typeof window!=='undefined')playFootstep(foot)})
+ footstepState=advanceFootsteps(footstepState,actualDistance,28,foot=>{if(!muted&&typeof window!=='undefined')playFootstep(foot)})
 }
 
 export function resetFootstepAudio(){footstepState=emptyFootstepState()}

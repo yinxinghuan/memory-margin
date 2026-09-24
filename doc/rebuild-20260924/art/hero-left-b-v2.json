@@ -1,0 +1,41 @@
+{
+  "id": "hero-left-b-v2",
+  "requestId": "265f66cf-7638-4c21-bc2a-4bd1b513a95d",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing WEST (nose points SCREEN LEFT), exact side profile. The camera-near shoulder arm is clearly visible on the outside of the torso: that near arm MUST swing BACK toward SCREEN RIGHT with its hand behind the hip. The camera-near thigh extends BACK toward SCREEN RIGHT and ends in a lifted heel. The FAR leg crosses in front toward SCREEN LEFT, planted, visibly partially behind the near thigh at the hip. The far hand reaches LEFT ahead of abdomen. This near arm and near leg arrangement is mandatory: near hand on RIGHT of torso, not LEFT. Compact natural walking stride. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_f0ab0d9b53ecdc4ae73c03ff0c890df8",
+    "request_id": "265f66cf-7638-4c21-bc2a-4bd1b513a95d",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188551999,
+    "updated_at": 1790188584933,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188584586-ia10aqzgl38.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188584586-ia10aqzgl38.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32823
+  },
+  "elapsedMs": 33703,
+  "sha256": "4d24e2e22a7507aef01786b2f34497dbac15ac0a3169bb40ec44ac1272c556c6",
+  "visualQA": "contact-sheet geometry improved; whole roster and continuous motion acceptance pending"
+}

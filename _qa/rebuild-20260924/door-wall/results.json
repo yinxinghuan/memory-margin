@@ -1,0 +1,352 @@
+{
+  "errors": [],
+  "input": "actual pointer hotspot click + keyboard activation",
+  "evidence": [
+    {
+      "door": "home-door",
+      "next": "hall",
+      "room": "hall",
+      "events": 15,
+      "domActors": 0,
+      "domScenery": 0,
+      "reveal": [
+        {
+          "x": 60,
+          "y": 136,
+          "global": {
+            "x": 60,
+            "y": 136
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 60,
+          "y": 136,
+          "global": {
+            "x": 60,
+            "y": 136
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 60,
+          "y": 136,
+          "global": {
+            "x": 60,
+            "y": 136
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "canvas": 1
+    },
+    {
+      "door": "service-door",
+      "next": "service",
+      "room": "service",
+      "events": 17,
+      "domActors": 0,
+      "domScenery": 0,
+      "reveal": [
+        {
+          "x": 184,
+          "y": 412,
+          "global": {
+            "x": 184,
+            "y": 412
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 184,
+          "y": 412,
+          "global": {
+            "x": 184,
+            "y": 412
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 184,
+          "y": 412,
+          "global": {
+            "x": 184,
+            "y": 412
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "canvas": 1,
+      "wallDebug": [
+        {
+          "label": "http://127.0.0.1:5213/art/rpg-layers/service-front-0.png",
+          "mask": true,
+          "maskVisible": true,
+          "options": false,
+          "position": {
+            "x": 184,
+            "y": 412
+          }
+        },
+        {
+          "label": "http://127.0.0.1:5213/art/rpg-layers/service-front-1.png",
+          "mask": true,
+          "maskVisible": true,
+          "options": false,
+          "position": {
+            "x": 184,
+            "y": 412
+          }
+        },
+        {
+          "label": "http://127.0.0.1:5213/art/rpg-layers/service-front-2.png",
+          "mask": true,
+          "maskVisible": true,
+          "options": false,
+          "position": {
+            "x": 184,
+            "y": 412
+          }
+        }
+      ]
+    },
+    {
+      "door": "service-exit",
+      "next": "hall",
+      "room": "hall",
+      "events": 15,
+      "domActors": 0,
+      "domScenery": 0,
+      "reveal": [
+        {
+          "x": 316,
+          "y": 344,
+          "global": {
+            "x": 316,
+            "y": 344
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 316,
+          "y": 344,
+          "global": {
+            "x": 316,
+            "y": 344
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "x": 316,
+          "y": 344,
+          "global": {
+            "x": 316,
+            "y": 344
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "canvas": 1
+    },
+    {
+      "door": "home-return",
+      "next": "home",
+      "room": "home",
+      "events": 17,
+      "domActors": 0,
+      "domScenery": 0,
+      "reveal": [
+        {
+          "x": 184,
+          "y": 44,
+          "global": {
+            "x": 184,
+            "y": 44
+          },
+          "bounds": {
+            "minX": 0,
+            "minY": 0,
+            "maxX": 0,
+            "maxY": 0,
+            "matrix": {
+              "array": null,
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "d": 1,
+              "tx": 0,
+              "ty": 0
+            }
+          },
+          "parentScale": {
+            "x": 1,
+            "y": 1
+          }
+        }
+      ],
+      "canvas": 1
+    }
+  ]
+}

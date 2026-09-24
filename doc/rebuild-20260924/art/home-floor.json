@@ -1,0 +1,38 @@
+{
+  "id": "home-floor",
+  "requestId": "a29dfab2-10dd-4205-bca1-a8b6b1d86a93",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. Seamless flat TOP DOWN orthographic floor texture only, edge to edge. Equal scale everywhere, parallel straight seams. Square muted gray-green modular floor tiles, restrained worn grout, small industrial access joints, subtle lived-in scuffs, almost uniform lighting. No wall, furniture, object, border, symbols, perspective taper, cast shadow or lighting gradient. Suitable for a near-future digital residence, subtle cyberpunk not hospital.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_95b14e17a8c3960067767bd8bb634d6a",
+    "request_id": "a29dfab2-10dd-4205-bca1-a8b6b1d86a93",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188015657,
+    "updated_at": 1790188053156,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188052718-3ui1ejcs92k.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188052718-3ui1ejcs92k.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 37385
+  },
+  "elapsedMs": 38268,
+  "sha256": "f9aa87785cfdcd42dea1a0c4bdc11a4c237dc5dc6fc4a82d69d624e09957f224",
+  "visualQA": "pending"
+}

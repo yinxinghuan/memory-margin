@@ -470,12 +470,40 @@
           "h": 512
         }
       ]
+    },
+    {
+      "id": "home-floor-rebuild-20260924",
+      "path": "public/art/rebuild-20260924/home-floor.png",
+      "imageWidth": 1024,
+      "imageHeight": 1024,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "voice-console-rebuild-20260924",
+      "path": "public/art/rebuild-20260924/voice-console.png",
+      "imageWidth": 757,
+      "imageHeight": 505,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 757,
+          "h": 505
+        }
+      ]
     }
   ],
   "scenes": [
     {
       "id": "home",
-      "background": "home-ground-v4",
+      "background": "home-floor-rebuild-20260924",
       "architecture": [
         {
           "kind": "floor",
@@ -568,9 +596,9 @@
       "obstacles": [
         {
           "x": 94,
-          "y": 176,
+          "y": 208,
           "w": 48,
-          "h": 48
+          "h": 16
         },
         {
           "x": 240,

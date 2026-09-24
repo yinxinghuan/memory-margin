@@ -1,0 +1,41 @@
+{
+  "id": "clerk-right-stand",
+  "requestId": "901ac849-8f95-4573-b9ff-3f37af3b0d48",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212541329-a9p4iicvwk4.webp"
+  ],
+  "parent": "clerk-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing EAST toward screen RIGHT. Exactly the same clerk and uniform as reference, preserve the badge on its anatomical side; do not mirror it to the other side. Standing still, both feet together and arms relaxed. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_50b2d08a41e6a211741a8be2451a0712",
+    "request_id": "901ac849-8f95-4573-b9ff-3f37af3b0d48",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212800198,
+    "updated_at": 1790212829586,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212828772-8eogrlv2fc6.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212828772-8eogrlv2fc6.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29277
+  },
+  "elapsedMs": 30457,
+  "sha256": "f77b573e8b0740c0f1c04e64a233eff8f10a07f88f08ec6a731e8a5770b79277",
+  "visualQA": "pending"
+}

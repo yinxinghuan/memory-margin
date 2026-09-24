@@ -13,7 +13,7 @@ export const furniture={
 } satisfies Record<string,Rect>
 
 export const entities:Record<EntityId,Entity>={
- 'voice-box':{id:'voice-box',scene:'home',label:['语音盒','Voice box'],approach:{x:118,y:248},visual:{x:90,y:175,w:56,h:42},obstacle:furniture.voiceTable,kind:'memory',actions:['listen-voice','revisit-voice','try-save-morning','save-morning']},
+ 'voice-box':{id:'voice-box',scene:'home',label:['语音盒','Voice box'],approach:{x:118,y:248},visual:{x:90,y:175,w:56,h:42},obstacle:{x:furniture.voiceTable.x,y:furniture.voiceTable.y+32,w:furniture.voiceTable.w,h:16},kind:'memory',actions:['listen-voice','revisit-voice','try-save-morning','save-morning']},
  receipt:{id:'receipt',scene:'home',label:['迁入回执','Arrival receipt'],approach:{x:260,y:251},visual:{x:239,y:175,w:38,h:40},obstacle:furniture.receiptTable,kind:'record',actions:['read-receipt']},
  'breakfast-card':{id:'breakfast-card',scene:'home',label:['早餐便条','Breakfast note'],approach:{x:113,y:352},visual:{x:76,y:328,w:34,h:27},kind:'record',actions:['read-breakfast']},
  'home-door':{id:'home-door',scene:'home',label:['去公共走廊','To the hall'],approach:{x:184,y:68},threshold:{x:184,y:64},side:'N',visual:{x:163,y:0,w:50,h:76},activation:{x:163,y:64,w:50,h:52},kind:'door',actions:['to-hall']},

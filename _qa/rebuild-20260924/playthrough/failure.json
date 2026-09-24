@@ -1,0 +1,102 @@
+{
+  "actions": [
+    {
+      "entity": "voice-box",
+      "action": "listen-voice",
+      "version": 1,
+      "scene": "home"
+    },
+    {
+      "entity": "receipt",
+      "action": "read-receipt",
+      "version": 2,
+      "scene": "home"
+    },
+    {
+      "entity": "home-door",
+      "action": "to-hall",
+      "version": 3,
+      "scene": "hall"
+    },
+    {
+      "entity": "neighbor",
+      "action": "talk-neighbor",
+      "version": 4,
+      "scene": "hall"
+    },
+    {
+      "entity": "caretaker",
+      "action": "talk-caretaker",
+      "version": 5,
+      "scene": "hall"
+    },
+    {
+      "entity": "seal",
+      "action": "read-seal",
+      "version": 6,
+      "scene": "hall"
+    },
+    {
+      "entity": "service-door",
+      "action": "to-service",
+      "version": 7,
+      "scene": "service"
+    },
+    {
+      "entity": "clerk",
+      "action": "talk-clerk",
+      "version": 8,
+      "scene": "service"
+    },
+    {
+      "entity": "ledger",
+      "action": "read-ledger",
+      "version": 9,
+      "scene": "service"
+    },
+    {
+      "entity": "choice-desk",
+      "action": "compare-records",
+      "version": 10,
+      "scene": "service"
+    },
+    {
+      "entity": "choice-desk",
+      "action": "choose-lend",
+      "version": 11,
+      "scene": "service"
+    },
+    {
+      "entity": "service-exit",
+      "action": "service-to-hall",
+      "version": 12,
+      "scene": "hall"
+    },
+    {
+      "entity": "home-return",
+      "action": "to-home",
+      "version": 13,
+      "scene": "home"
+    },
+    {
+      "entity": "voice-box",
+      "action": "revisit-voice",
+      "version": 14,
+      "scene": "home"
+    },
+    {
+      "entity": "voice-box",
+      "action": "save-morning",
+      "version": 15,
+      "scene": "home"
+    },
+    {
+      "entity": "home-door",
+      "action": "to-hall",
+      "version": 16,
+      "scene": "hall"
+    }
+  ],
+  "error": "TimeoutError: page.waitForFunction: Timeout 18000ms exceeded.",
+  "errors": []
+}

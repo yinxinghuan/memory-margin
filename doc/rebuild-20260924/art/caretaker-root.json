@@ -1,0 +1,38 @@
+{
+  "id": "caretaker-root",
+  "requestId": "3237d300-7e45-492b-9de9-de5c18aeb9a8",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One complete full-body maintenance attendant aged 58, weathered light olive skin, close-cropped salt-and-pepper hair and short gray beard, charcoal utility jacket with a small muted teal shoulder panel, dark brown straight trousers, worn work boots. Broad slightly stocky silhouette, visibly older mature face, ordinary worker not soldier, no hat or handheld objects. Mature adult proportions about 5.5 heads tall, bold readable pixel clusters. Elevated ORTHOGRAPHIC RPG camera looking down 50 degrees, zero sideways yaw. Facing south toward viewer, see crown of head and shoulder tops, both feet parallel, arms relaxed. Pure solid #FF00FF background, entire body centered with margins, no ground, cast shadow, letters or sprite sheet.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_1f614e3b4922e534ab0a3c871c62238b",
+    "request_id": "3237d300-7e45-492b-9de9-de5c18aeb9a8",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212481486,
+    "updated_at": 1790212510672,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212510238-mg9rjsq0akp.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212510238-mg9rjsq0akp.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29041
+  },
+  "elapsedMs": 29956,
+  "sha256": "2fa49a6204e7ca065fda2786f8cf6f2bc5824e742b4520cbb584ecef4096dc44",
+  "visualQA": "pending"
+}

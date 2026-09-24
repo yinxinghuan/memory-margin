@@ -1,0 +1,41 @@
+{
+  "id": "door-front-root",
+  "requestId": "a39de4f9-1ed9-4506-9b73-2884e116ef5e",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One independent metal panel with small door hardware. Geometry first: its visible main face is a 420 pixels wide by 540 pixels tall RECTANGLE; its OWN narrow top thickness is visible as a 420 by 24 pixel rectangle, directly above and flush with that face. No separate lintel, header, frame or border around the object. It is the leaf of an ordinary apartment door, in worn graphite teal metal with a single thin brass inset line and a small amber key socket. Elevated orthographic camera looking downward 50 degrees, zero horizontal yaw. This is a tall vertical real-world slab foreshortened by the elevated camera. All vertical edges parallel. The real circular plate behind the small horizontal lever appears as a shallow horizontal ellipse because of the downward view; see top surfaces of the lever and hinge barrels. Small lever at LEFT, hinge barrels RIGHT, hardware much smaller than a person's hand. No wall, room, floor, threshold, fixed doorframe, extra beam, cast shadow, text or perspective vanishing point. One complete leaf, generous margins, pure solid #FF00FF background.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_8d7366035db169e31a6e9c6b283af4eb",
+    "request_id": "a39de4f9-1ed9-4506-9b73-2884e116ef5e",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790214298091,
+    "updated_at": 1790214332101,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790214331645-01p995qnkkks.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790214331645-01p995qnkkks.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33829
+  },
+  "elapsedMs": 35257,
+  "sha256": "dfc1d1f5700dd7bafda77391140cc9f806a2363c4e32d20731722d309b2de7ef",
+  "visualQA": {
+    "status": "rejected",
+    "reason": "Visible front silhouette narrows toward the bottom (top approximately 580 px, bottom 510 px); handle plate remains nearly circular. Does not meet axis-aligned elevated orthographic contract. No integration or geometry correction."
+  }
+}

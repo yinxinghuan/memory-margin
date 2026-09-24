@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-09-23T18:25:34.258Z",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "audioPlays": [
+        "http://127.0.0.1:5213/audio/memory-margin-ambient.mp3",
+        "http://127.0.0.1:5213/audio/memory-footstep-left.mp3"
+      ],
+      "errors": [],
+      "scrollWidth": 390
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "audioPlays": [
+        "http://127.0.0.1:5213/audio/memory-margin-ambient.mp3",
+        "http://127.0.0.1:5213/audio/memory-footstep-left.mp3"
+      ],
+      "errors": [],
+      "scrollWidth": 320
+    },
+    {
+      "externalGuestScript": true,
+      "banner": 1,
+      "errors": []
+    }
+  ]
+}

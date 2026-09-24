@@ -1,0 +1,43 @@
+{
+  "id": "door-front-root-v2",
+  "requestId": "5f09b564-878f-4a90-b362-03ce0a2be1d6",
+  "prompt": "Pixel art sprite for a top-down 2D RPG. Draw a flat rectangular blue-green steel panel with perfectly parallel vertical sides and equal top and bottom width. Its projected silhouette is 480 wide and 540 high, plus a narrow 30 high rectangular top thickness. Camera high above looking downward, orthographic projection, no perspective convergence anywhere. The full-width top surface is visibly viewed from above. Add only a tiny brass horizontal lever on the left and two small hinges on the right. The lever circular mounting plate is seen from above as a WIDE FLAT ELLIPSE, not a circle. This is an isolated door leaf with no frame, no top beam and no surrounding architectural parts. Sparse panel seams and one tiny amber access light, restrained worn petrol teal finish, chunky pixel clusters, dark outline, warm upper-left light. No perspective trapezoid, no narrowing at the bottom, no ground, no cast shadow, no writing. Solid magenta #FF00FF background. Whole object centered with empty margin.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_1d5f4b4b66865ee83fb2aa1fd414b934",
+    "request_id": "5f09b564-878f-4a90-b362-03ce0a2be1d6",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790255567120,
+    "updated_at": 1790255605689,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790255605403-w5awxe9zoy.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790255605403-w5awxe9zoy.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 38357
+  },
+  "elapsedMs": 39382,
+  "sha256": "174299adb0e420a0bd603d587c8a9e1430c5e9af6c87a88b63308825f5c5dbd9",
+  "visualQA": {
+    "status": "runtime-review",
+    "observation": "Parallel main edges, own thin top plane and visibly oval handle plate. Natural tight-crop ratio 462/744; no distortion applied. Comparing with hero and frame in renderer is required.",
+    "runtimeIntegrated": true,
+    "review": "doc/rebuild-20260924/wall-door-assembly-review.md"
+  }
+}

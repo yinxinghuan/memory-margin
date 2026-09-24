@@ -1,0 +1,41 @@
+{
+  "id": "hero-left-a",
+  "requestId": "8e081d9f-ba65-4eb2-9a4b-736d6f6b2091",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing WEST, exact left-facing profile. Walking contact A: camera-near leg extended forward toward LEFT, far leg extended backward toward RIGHT, near arm back and far arm forward. Compact normal walking stride, not running. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_986474be9a2de2583cd24328da959547",
+    "request_id": "8e081d9f-ba65-4eb2-9a4b-736d6f6b2091",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188290062,
+    "updated_at": 1790188324765,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188324403-6rvgph98jjk.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188324403-6rvgph98jjk.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34592
+  },
+  "elapsedMs": 35994,
+  "sha256": "b41faba70b432b7e9e13561ea878c821b7172a9858f169562fb084de840e6e09",
+  "visualQA": "pending"
+}

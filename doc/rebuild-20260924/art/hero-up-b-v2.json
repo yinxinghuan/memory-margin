@@ -1,0 +1,41 @@
+{
+  "id": "hero-up-b-v2",
+  "requestId": "1dd80210-9947-4f9d-aec5-187d9be98d47",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing NORTH away from viewer. ONLY rear of head and jacket, NO face. The boot on SCREEN LEFT is LOWEST in the image, trailing toward bottom with its sole heel lifted and visible. Boot on SCREEN RIGHT is HIGHER toward top, stepping forward away from viewer. Left-screen arm swings toward top, right-screen arm trails toward bottom with hand lower. Do NOT put the right-screen boot at the bottom. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_9efc6a2edb34c1feb13ea9f06bb03876",
+    "request_id": "1dd80210-9947-4f9d-aec5-187d9be98d47",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188587080,
+    "updated_at": 1790188621911,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188621586-mhdcwuzn9l7.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188621586-mhdcwuzn9l7.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34727
+  },
+  "elapsedMs": 35569,
+  "sha256": "622f304c08c3aa93d5b1957499a3de1b02d7786c2c1563dafca28dc7c331dc4c",
+  "visualQA": "contact-sheet geometry improved; whole roster and continuous motion acceptance pending"
+}

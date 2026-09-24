@@ -17,7 +17,7 @@
   "modes": {
     "journeys": "single",
     "persistence": "local-session",
-    "conversation": "authored"
+    "conversation": "hybrid"
   },
   "capabilities": {
     "opening": {
@@ -29,7 +29,7 @@
     "exploration": {
       "state": "implemented",
       "evidence": [
-        "_qa/release/platform-layout-idle-390x844.png"
+        "_qa/rebuild-20260924/door-wall-final/results.json"
       ]
     },
     "loadingRecovery": {
@@ -54,9 +54,8 @@
     "closure": {
       "state": "implemented",
       "evidence": [
-        "_qa/platform-layout-chapter-closure-390x844.png",
-        "_qa/platform-layout-chapter-closure-320x568.png",
-        "_qa/experience-parity.test.ts"
+        "_qa/rebuild-20260924/shell/results.json",
+        "_qa/memory-margin.test.ts"
       ]
     },
     "npcWorldLife": {
@@ -69,8 +68,7 @@
     "stagedConversation": {
       "state": "implemented",
       "evidence": [
-        "_qa/platform-layout-conversation-player-390x844.png",
-        "_qa/platform-layout-conversation-reply-390x844.png"
+        "_qa/rebuild-20260924/dialogue/results.json"
       ]
     },
     "conversationHistory": {
@@ -84,9 +82,8 @@
     "inventoryVisuals": {
       "state": "implemented",
       "evidence": [
-        "_qa/platform-layout-backpack-items-390x844.png",
-        "_qa/platform-layout-backpack-clues-320x568.png",
-        "_qa/platform-layout-backpack-people-390x844.png"
+        "_qa/rebuild-20260924/shell/platform-layout-bag-people-320x568.png",
+        "_qa/rebuild-20260924/shell/platform-layout-bag-clues-390x844.png"
       ]
     },
     "distanceFootsteps": {
@@ -96,11 +93,38 @@
         "_qa/capture-release.mjs",
         "assets/benchmark/audio/ledger.json"
       ]
+    },
+    "generatedConversationBoundary": {
+      "state": "implemented",
+      "evidence": [
+        "src/free-dialogue.ts",
+        "_qa/rebuild-contracts.test.ts"
+      ]
+    },
+    "generatedConversationFallback": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/verify-rebuild-dialogue.mjs"
+      ]
     }
   },
   "decisions": {
     "journeys": "The current first chapter keeps one authoritative journey; branch comparison is not promised by this playable release.",
     "persistence": "Progress resumes inside the current deployment session; cross-device play is not promised.",
-    "conversation": "Authored replies preserve character intent and investigation boundaries; generated dialogue is not required for this story."
+    "conversation": "Authored actions own plot progression; introduced NPCs also support real platform free dialogue. Model text never changes story facts. Failures preserve the draft and allow retry or authored topics; no fabricated offline model response."
+  },
+  "reviewStatus": {
+    "status": "release-candidate",
+    "notPublished": true,
+    "verified": [
+      "two 23-action UI playthroughs with actual engine movement and reload recovery",
+      "390x844 and 320x568 shell and dialogue",
+      "48 independent packaged mechanical checks"
+    ],
+    "remaining": [
+      "iPhone AlterU performance and native keyboard",
+      "independent colleague-agent game creation and visual acceptance",
+      "complete per-NPC motion signoff beyond the active patrol profiles"
+    ]
   }
 }

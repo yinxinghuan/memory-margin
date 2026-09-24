@@ -1,0 +1,41 @@
+{
+  "id": "hero-down-b-v3",
+  "requestId": "68125ae1-c60f-4695-be10-42444e9e2008",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. FRONT WALK CONTACT, facing south toward viewer. LOCK THE IMAGE GEOMETRY: head centered around x=512 y=160; body centered x=512. The shoe on the LEFT HALF OF THE IMAGE must touch y=910 around x=420. This is the forward PLANTED leg, drawn long below the jacket. The shoe on the RIGHT HALF must stop around x=595 y=770: this leg bends backward at the knee and is SHORTER IN THE IMAGE. Thus the LEFT shoe must be at least 100 pixels LOWER than the RIGHT shoe. The RIGHT-screen hand is around x=670 y=520 and swings forward toward viewer, LEFT-screen hand near x=350 y=420 swings backward. These are layout coordinates ONLY, do not draw any text, numbers or guides. Do NOT put the right shoe lower. Keep complete character in frame. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_f7b7a3c24ab71cc6489fced7a1c0c9e9",
+    "request_id": "68125ae1-c60f-4695-be10-42444e9e2008",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188669339,
+    "updated_at": 1790188703668,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188703335-wvt0nludmd.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188703335-wvt0nludmd.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34213
+  },
+  "elapsedMs": 35484,
+  "sha256": "c98196ce64a5ff2a32bd2e2d6ed91b8852d6f72ef017e4b6f39c720a63049541",
+  "visualQA": "contact-sheet geometry improved; whole roster and continuous motion acceptance pending"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "hero-left-stand",
+  "requestId": "4913d50f-a679-4925-8622-72147cfcbc10",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing WEST, exact left-facing profile. Relaxed standing, both shoes close together flat on floor, arms down. No stride. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_d144ad0b9ce0b4b16b34625ff5e2e9fb",
+    "request_id": "4913d50f-a679-4925-8622-72147cfcbc10",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188255632,
+    "updated_at": 1790188287904,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188287559-j48gkiti9op.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188287559-j48gkiti9op.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32159
+  },
+  "elapsedMs": 33008,
+  "sha256": "83f5cddd7beb061fcd4a5ecb838b7a0f638dec66e6f2460abea1b06a32e77793",
+  "visualQA": "pending"
+}

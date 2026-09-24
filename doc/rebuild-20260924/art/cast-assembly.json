@@ -1,0 +1,497 @@
+[
+  {
+    "id": "neighbor",
+    "visibleHeight": 216,
+    "foot": 243,
+    "profile": "horizontal patrol",
+    "frames": [
+      {
+        "row": 0,
+        "col": 0,
+        "source": "neighbor-root",
+        "requestId": "6809d869-2196-419c-bb85-e1a2301e8f41",
+        "mirrored": false,
+        "bounds": [
+          85,
+          27,
+          172,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "source": "neighbor-root",
+        "requestId": "6809d869-2196-419c-bb85-e1a2301e8f41",
+        "mirrored": false,
+        "bounds": [
+          85,
+          27,
+          172,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "source": "neighbor-root",
+        "requestId": "6809d869-2196-419c-bb85-e1a2301e8f41",
+        "mirrored": false,
+        "bounds": [
+          85,
+          27,
+          172,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "source": "neighbor-left-a-v2",
+        "requestId": "7d1bf1e2-6ee4-4b93-bd88-902960431742",
+        "mirrored": false,
+        "bounds": [
+          84,
+          27,
+          171,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "source": "neighbor-left-stand",
+        "requestId": "9f5cfeb4-7015-4070-be69-74bfd0fa7212",
+        "mirrored": false,
+        "bounds": [
+          104,
+          27,
+          152,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "source": "neighbor-left-b-v2",
+        "requestId": "1d6a4ae0-d01e-4bfc-9376-ba16e3247a36",
+        "mirrored": false,
+        "bounds": [
+          90,
+          27,
+          170,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "source": "neighbor-left-a-v2",
+        "requestId": "7d1bf1e2-6ee4-4b93-bd88-902960431742",
+        "mirrored": true,
+        "bounds": [
+          86,
+          27,
+          173,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "source": "neighbor-left-stand",
+        "requestId": "9f5cfeb4-7015-4070-be69-74bfd0fa7212",
+        "mirrored": true,
+        "bounds": [
+          104,
+          27,
+          152,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "source": "neighbor-left-b-v2",
+        "requestId": "1d6a4ae0-d01e-4bfc-9376-ba16e3247a36",
+        "mirrored": true,
+        "bounds": [
+          86,
+          27,
+          166,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "source": "neighbor-up-stand",
+        "requestId": "962feb4c-bf80-4106-abb5-3c7830fe22c4",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          173,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "source": "neighbor-up-stand",
+        "requestId": "962feb4c-bf80-4106-abb5-3c7830fe22c4",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          173,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "source": "neighbor-up-stand",
+        "requestId": "962feb4c-bf80-4106-abb5-3c7830fe22c4",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          173,
+          243
+        ]
+      }
+    ],
+    "status": "candidate; in-engine review required"
+  },
+  {
+    "id": "caretaker",
+    "visibleHeight": 216,
+    "foot": 243,
+    "profile": "vertical patrol",
+    "frames": [
+      {
+        "row": 0,
+        "col": 0,
+        "source": "caretaker-down-a",
+        "requestId": "096b78e7-98aa-489d-99b2-1f27502644d4",
+        "mirrored": false,
+        "bounds": [
+          76,
+          27,
+          184,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "source": "caretaker-root",
+        "requestId": "3237d300-7e45-492b-9de9-de5c18aeb9a8",
+        "mirrored": false,
+        "bounds": [
+          74,
+          27,
+          182,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "source": "caretaker-down-b",
+        "requestId": "3e9bffad-539b-467c-ae89-47aea7573f59",
+        "mirrored": false,
+        "bounds": [
+          77,
+          27,
+          177,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": false,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": false,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": false,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": true,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": true,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "source": "caretaker-left-stand",
+        "requestId": "9646408f-0218-4b64-bce0-8c82897cd26d",
+        "mirrored": true,
+        "bounds": [
+          102,
+          27,
+          153,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "source": "caretaker-up-a",
+        "requestId": "02688545-3983-49c1-90bc-1466a86eaa6a",
+        "mirrored": false,
+        "bounds": [
+          80,
+          27,
+          176,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "source": "caretaker-up-stand",
+        "requestId": "a423c885-e7eb-442e-878a-a55feb0ebfcc",
+        "mirrored": false,
+        "bounds": [
+          74,
+          27,
+          182,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "source": "caretaker-up-b-v2",
+        "requestId": "5ba4f4c1-b225-4c8a-bf15-60989741be30",
+        "mirrored": false,
+        "bounds": [
+          81,
+          27,
+          180,
+          243
+        ]
+      }
+    ],
+    "status": "candidate; in-engine review required"
+  },
+  {
+    "id": "clerk",
+    "visibleHeight": 216,
+    "foot": 243,
+    "profile": "stationary; facing only",
+    "frames": [
+      {
+        "row": 0,
+        "col": 0,
+        "source": "clerk-root",
+        "requestId": "c50a4c5e-106a-4251-88a5-0ba929aec973",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          174,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "source": "clerk-root",
+        "requestId": "c50a4c5e-106a-4251-88a5-0ba929aec973",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          174,
+          243
+        ]
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "source": "clerk-root",
+        "requestId": "c50a4c5e-106a-4251-88a5-0ba929aec973",
+        "mirrored": false,
+        "bounds": [
+          82,
+          27,
+          174,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "source": "clerk-left-stand",
+        "requestId": "70402c69-9653-4bb3-b747-84398e509352",
+        "mirrored": false,
+        "bounds": [
+          104,
+          27,
+          155,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "source": "clerk-left-stand",
+        "requestId": "70402c69-9653-4bb3-b747-84398e509352",
+        "mirrored": false,
+        "bounds": [
+          104,
+          27,
+          155,
+          243
+        ]
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "source": "clerk-left-stand",
+        "requestId": "70402c69-9653-4bb3-b747-84398e509352",
+        "mirrored": false,
+        "bounds": [
+          104,
+          27,
+          155,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "source": "clerk-right-stand",
+        "requestId": "901ac849-8f95-4573-b9ff-3f37af3b0d48",
+        "mirrored": false,
+        "bounds": [
+          97,
+          27,
+          160,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "source": "clerk-right-stand",
+        "requestId": "901ac849-8f95-4573-b9ff-3f37af3b0d48",
+        "mirrored": false,
+        "bounds": [
+          97,
+          27,
+          160,
+          243
+        ]
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "source": "clerk-right-stand",
+        "requestId": "901ac849-8f95-4573-b9ff-3f37af3b0d48",
+        "mirrored": false,
+        "bounds": [
+          97,
+          27,
+          160,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "source": "clerk-up-stand",
+        "requestId": "554a529c-95de-4775-b25b-77d627db7218",
+        "mirrored": false,
+        "bounds": [
+          84,
+          27,
+          171,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "source": "clerk-up-stand",
+        "requestId": "554a529c-95de-4775-b25b-77d627db7218",
+        "mirrored": false,
+        "bounds": [
+          84,
+          27,
+          171,
+          243
+        ]
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "source": "clerk-up-stand",
+        "requestId": "554a529c-95de-4775-b25b-77d627db7218",
+        "mirrored": false,
+        "bounds": [
+          84,
+          27,
+          171,
+          243
+        ]
+      }
+    ],
+    "status": "candidate; in-engine review required"
+  }
+]

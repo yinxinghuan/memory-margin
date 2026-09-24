@@ -1,0 +1,38 @@
+{
+  "id": "neighbor-root",
+  "requestId": "6809d869-2196-419c-bb85-e1a2301e8f41",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One complete full-body woman aged 38, medium brown skin, short dark curly hair, practical plum cropped jacket over pale gray shirt, straight dark slate trousers, flat ankle boots. Calm but alert ordinary resident, not a nurse, no uniform or costume. Mature adult proportions about 5.5 heads tall, clear substantial silhouette and bold readable pixel clusters. Elevated ORTHOGRAPHIC RPG camera looking down 50 degrees, zero sideways yaw. Facing south toward viewer, see crown of head and shoulder tops, both feet parallel, arms relaxed. Pure solid #FF00FF background, entire body centered with margins, no ground, cast shadow, letters or sprite sheet.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_e95d3290e8029817fade00976170eb88",
+    "request_id": "6809d869-2196-419c-bb85-e1a2301e8f41",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212448076,
+    "updated_at": 1790212479123,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212478796-g5ht5tcdko.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212478796-g5ht5tcdko.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30662
+  },
+  "elapsedMs": 32140,
+  "sha256": "9477fd63ce2e6b9aff65f5bd83fbb4b76c89387f0e7133c77a2d568c1b2faa8e",
+  "visualQA": "pending"
+}

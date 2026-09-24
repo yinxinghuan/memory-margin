@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "service": "alteru-media-service",
+  "version": "0.5.0",
+  "gpt_image_configured": true,
+  "timeout_signal_supported": true,
+  "metrics_collection": true,
+  "metrics_query": "protected"
+}

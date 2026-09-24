@@ -1,0 +1,22 @@
+{
+  "base": "http://127.0.0.1:5213/",
+  "input": "normal pointer input; no force click or save seeding; not native iPhone",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "errors": [],
+      "joystickMovesAndStops": true,
+      "headerPanels": true,
+      "release": "memory-skill-validation-20260924-r1"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "errors": [],
+      "joystickMovesAndStops": true,
+      "headerPanels": true,
+      "release": "memory-skill-validation-20260924-r1"
+    }
+  ]
+}

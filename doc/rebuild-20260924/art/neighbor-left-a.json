@@ -1,0 +1,45 @@
+{
+  "id": "neighbor-left-a",
+  "requestId": "7d9dafb1-124d-4d32-9f3b-62aae8a6acde",
+  "mode": "edit",
+  "parent": "neighbor-root",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212478796-g5ht5tcdko.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Keep exactly the reference identity, outfit, age, silhouette and restrained pixel density. One complete full-body sprite, elevated orthographic RPG view down 50 degrees, see crown and shoulder tops, no sideways camera yaw. About 5.5 heads tall, complete body centered with margins. Pure solid #FF00FF background, no ground, no shadow, no text. Facing screen LEFT. Near leg forward toward LEFT, far leg back toward RIGHT. Camera-near arm must swing BACK toward RIGHT, hand behind hip. Far arm forward toward LEFT. Compact walking contact A.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_5d65cba9c9e2dd9b9586d63c2b02ea38",
+    "request_id": "7d9dafb1-124d-4d32-9f3b-62aae8a6acde",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212849270,
+    "updated_at": 1790212878346,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212878011-zc6814uwvkg.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212878011-zc6814uwvkg.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 28961
+  },
+  "elapsedMs": 29875,
+  "sha256": "acaf5b65716e1e83de29bb6b0b7540478ed6290d926456768791dc9f594097dc",
+  "visualQA": {
+    "status": "rejected",
+    "reason": "Side walk turns toward the viewer instead of retaining the standing profile.",
+    "replacement": "neighbor-left-a-v2"
+  }
+}

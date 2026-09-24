@@ -1,0 +1,359 @@
+{
+  "status": "review-not-final-delivery",
+  "archive": "build-spatial-story-game-20260924-memory-review.zip",
+  "sha256": "e21de15424887d0301bc90425c5fbd1ba973cd98a412079266b6da9b7ef0bf25",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "eeea0ce4da5ef3bc6a82232a523c5de5ad2ffdc8fa9b6aa347fde5b92e192d3e"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "98cdc74ecf5b82e27d23e1a810383327b4d79fa993776370922e3b349e109b11"
+    },
+    {
+      "path": "assets/actor-pose-plan.json",
+      "sha256": "6ebf723905ea16f6bd2fb67d996182f41702d47f91a3b84af216983c86997a26"
+    },
+    {
+      "path": "assets/alteru-media-service.ts",
+      "sha256": "a8d33883e56109d5036211ad235adcd738b24d776ad59c098542eceff819ba44"
+    },
+    {
+      "path": "assets/backpack-profile.example.json",
+      "sha256": "4f1522f1afa0b0d65fbd3bfa2573c5c195d7d4db6db3235ec9ce3144c88a8c91"
+    },
+    {
+      "path": "assets/conversation-history.ts",
+      "sha256": "d5646a16856795c8e5135f1d0127d2975a0ccdd24c4e40629d84b9f9ddd1ef9e"
+    },
+    {
+      "path": "assets/distance-footsteps.ts",
+      "sha256": "f4da25ed79ac7b3321e7e0ff873c40f65ff5c9672107604e93e8eadf36254884"
+    },
+    {
+      "path": "assets/distance-motion.ts",
+      "sha256": "9b1e731764b0693294c2fb068fb2b3c2bffa3a3f9ff5402f96685df96c8d4710"
+    },
+    {
+      "path": "assets/experience-capability-profile.json",
+      "sha256": "220eebe3ab548bd5bf91fc616fd3a42ee88cde5d9b06a92247fa5ba1e5036080"
+    },
+    {
+      "path": "assets/grid-pathfinder.mjs",
+      "sha256": "3fb92848cd40e6ef3f58caabaac713839862b0619397adf0dbc5590ccd9570fd"
+    },
+    {
+      "path": "assets/interaction-contract/side-door.png",
+      "sha256": "53213a7a056b98b39965428f93c35d3ae223b5e5e9ef059cf958ce6e3851ac60"
+    },
+    {
+      "path": "assets/interaction-contract/stage-near.png",
+      "sha256": "221e3bad06c2bcd14a93965e88dc1e144b2489ba61b909306e3e4a5ab2067398"
+    },
+    {
+      "path": "assets/interaction-contract/stage-open.png",
+      "sha256": "bcd79f4adbf199b148b13049de044040c9f6e593fa0624bf88f3f923cf46d27c"
+    },
+    {
+      "path": "assets/journey-directory.ts",
+      "sha256": "6948c4d8caefe748704cb370589dfd6b8f2d11ce135fc37651a50a34f3769593"
+    },
+    {
+      "path": "assets/nearby-interaction.mjs",
+      "sha256": "1e5d87c527f17de0044612c718b82c95d6c3a3457345bd5a96865ea3471e12b8"
+    },
+    {
+      "path": "assets/orthographic-b/actor.png",
+      "sha256": "7e70f17d07eb2384e253635fd32be641c5986b260828ac0167659b61b9db3842"
+    },
+    {
+      "path": "assets/orthographic-b/assembled-doorway.png",
+      "sha256": "784a9a4a436ee465c003462d9c365adbf263d4b9df233014ace2ebde75b2ea32"
+    },
+    {
+      "path": "assets/orthographic-b/assembled-street.png",
+      "sha256": "ba0b892c36f3a339bdeb96560a794173dfc6e36dc4945037ac64bc2b9c309126"
+    },
+    {
+      "path": "assets/orthographic-b/props.png",
+      "sha256": "9c8878fc26ace493e8b8a9b289056df28c692290a61d8fb1cf5013992fef4cd3"
+    },
+    {
+      "path": "assets/orthographic-b/scene.png",
+      "sha256": "37a4a0a6d1b6e33eae5a794f214973c291e47f9ce8e8e2e78a66707f03174359"
+    },
+    {
+      "path": "assets/progressive-media-runtime.mjs",
+      "sha256": "b33d49c7637a7c4c1758421879b55e4affdb8e7a3559c3be172278673c49f06a"
+    },
+    {
+      "path": "assets/progressive-room-contract.json",
+      "sha256": "ebd47e63c66526cd8dea711aee86ec0e6356bbb53a36ad7a6ae375596add6a7d"
+    },
+    {
+      "path": "assets/route-between.ts",
+      "sha256": "d58b221b2c015b19d06164769f9d275524b3f3f1bf57dca3669343d2abd93183"
+    },
+    {
+      "path": "assets/rpg-space.ts",
+      "sha256": "b004af594e54032e0046c3d5e30ae925130d48e97b938e6040b3d25cd85d673c"
+    },
+    {
+      "path": "assets/scene-visual-contract.json",
+      "sha256": "17b1cbdeaa8ca73d1cdefe6d35bc72796f9feee876940dfc6464e2df6eb6c711"
+    },
+    {
+      "path": "assets/spatial-attachment.ts",
+      "sha256": "b52c1ea11c6780906bff38489724253091bf821f94ce5f87c030f3609076cd15"
+    },
+    {
+      "path": "assets/spatial-binding.ts",
+      "sha256": "2cb74b363630124ee8e68d7881c04953406adbe39c5badd6c049b36d42437963"
+    },
+    {
+      "path": "assets/storage-scope.ts",
+      "sha256": "59fe94f2ab97152b8450fc61227a31b08e5d81eb47501c97f4ee98e357564329"
+    },
+    {
+      "path": "assets/ui-theme-tokens.css",
+      "sha256": "1ca6a9f71adf59648799cee8e75a0b6e44ee7e129454ffa75492e7afb2802bcc"
+    },
+    {
+      "path": "assets/wall-assembly.mjs",
+      "sha256": "42de78952c621230cc3cabf88e073bf331c824831afdcf48c0e3caa1fff5ea96"
+    },
+    {
+      "path": "assets/world.ts",
+      "sha256": "f223794f32d608b3da584be7d7e170370dc0134310c888710f1e7ebc6be08aef"
+    },
+    {
+      "path": "references/acceptance.md",
+      "sha256": "712cb57a45ee223e896c5aecf2d9562cf9737e8c1d7d12c56d13dd6f8f9e8bff"
+    },
+    {
+      "path": "references/actor-pose-production.md",
+      "sha256": "0d34e7ad9acec305afe2c30e14d8eb3bc781dd7b31e2d0ae2519cd32f9244e06"
+    },
+    {
+      "path": "references/art-admission-gate.md",
+      "sha256": "b82439a4c60d569b016fbd099bd2c6f9a77f7a457ed67878dfd48612e4c42197"
+    },
+    {
+      "path": "references/art-and-space.md",
+      "sha256": "55fa575bb9c3ad0eac6e1b50fbd865b9a8ef7c52256047f5faa8cd5bc2a7c30d"
+    },
+    {
+      "path": "references/art-production.md",
+      "sha256": "0dfddf7c21dbb23d6463e510147a1d90f6988744a8a2c685138437d3c4be01dc"
+    },
+    {
+      "path": "references/audience-and-art-context.md",
+      "sha256": "567624b9d330dff3424ffa9b22b1d82b3e03fdbae8362f0fa9b944d9060b1dc7"
+    },
+    {
+      "path": "references/branch-consequences.md",
+      "sha256": "749296bfb334676d97d0e634b25cda4aa5673817de0bfdc8d69172aaa739890d"
+    },
+    {
+      "path": "references/chapter-closure.md",
+      "sha256": "b165b428440840ad0312721471d0e0274a311cdcda5964fc407ad3d5dd15d2b4"
+    },
+    {
+      "path": "references/continuous-investigation.md",
+      "sha256": "5b827f6f59e687db56f39142621ba1987014e75a8ff8064a46c1c6eb67846847"
+    },
+    {
+      "path": "references/depth-rendering.md",
+      "sha256": "b7ee24e4ba03c4112903dba9b1b7637b5f6cefa96c0d7ac35d20fb5346a9527a"
+    },
+    {
+      "path": "references/environment-density.md",
+      "sha256": "f67632a7bff21a0b7e9b174d73d341f3f70f3e5811cf127b1718d185f2238929"
+    },
+    {
+      "path": "references/evidence.md",
+      "sha256": "995d8e3e836fe23f54dee01a03ea2b12f7bb7610a4c5d19af8baeda315d7d957"
+    },
+    {
+      "path": "references/experience-capability-profile.md",
+      "sha256": "a0f20c9108fb64a26ff5e407f21e3f15e039b6cd5b71fb0801b0fd27eec16586"
+    },
+    {
+      "path": "references/exploration-interaction.md",
+      "sha256": "f976174e3fddbcaeb9dc63dd27ade6562a13998e2e931fd40112285da1bc8c22"
+    },
+    {
+      "path": "references/final-visual-gate.md",
+      "sha256": "1a792ad5070e2c7f44d747bda963178830aabd728b7016885634af5051254933"
+    },
+    {
+      "path": "references/furniture-orientation-mix.md",
+      "sha256": "d535f59b9564e8ebe82ab92d42ea40e352b790d4ec0b0c055e681cf4f41ebe7f"
+    },
+    {
+      "path": "references/independent-art-trial.md",
+      "sha256": "a4c19880607fafde8de99cff0887f34c2003692e511b28a14c90b40d81b36aa8"
+    },
+    {
+      "path": "references/independent-assembly.md",
+      "sha256": "2d547d03e09a60e9e3132417a834afe535eb36cfa6d6bd00ab9cf8032da3fd29"
+    },
+    {
+      "path": "references/large-scene-layout.md",
+      "sha256": "e559f87615a3f391b45e1b246f3cbcee08567dd75a5804fc6e7f5cd4930c9edf"
+    },
+    {
+      "path": "references/manifest.md",
+      "sha256": "860c2e1a0984b7b969b6ae06d298c9a7ce454b62cc727c33b26c667c64d998cc"
+    },
+    {
+      "path": "references/mediated-characters.md",
+      "sha256": "6c936adb0235de610845c27a20db4cb36579f3aecc48199897139b232467d2ca"
+    },
+    {
+      "path": "references/mobile-motion.md",
+      "sha256": "84ecb6eda543e4fe57f39a43590f132ef2a0f88fec6b3880972a69c43f67a457"
+    },
+    {
+      "path": "references/modular-orthographic-scene.md",
+      "sha256": "5f81e11815e461731184f79285bf441f5fa591af8aae6b73ceef4dee1426b583"
+    },
+    {
+      "path": "references/native-door-admission.md",
+      "sha256": "ed9996ce1fc4bcdc83b7a1da6e907f936e8e54fcff34a01d73e5796a9e8b2321"
+    },
+    {
+      "path": "references/physical-characters.md",
+      "sha256": "85cbdefcd283917585d4dd5abff9cf06d252e3540412e1e81bd3199d94ffbe69"
+    },
+    {
+      "path": "references/platform-gpt-art-trial.md",
+      "sha256": "bae9ee75cc5f9a5b4d84876a1115294f362aceeb78f27c67e50cd831288d1cb7"
+    },
+    {
+      "path": "references/production-evidence.md",
+      "sha256": "3142dd899466601ab5a2ad33a46ea0a3a996e05a793c86dc9e4d20cbcdfb0119"
+    },
+    {
+      "path": "references/progressive-room-delivery.md",
+      "sha256": "b7b03710091ad257ed3a1380647ae978acee31f74493b4c8b17015ecfec8fc40"
+    },
+    {
+      "path": "references/protagonist-asset-gate.md",
+      "sha256": "9aea181a4d2210bec4ccbbada1fe1081846a80c629d0990aac9a34e80b58f21b"
+    },
+    {
+      "path": "references/quickstart.md",
+      "sha256": "ab2f17f60354ff4ccd58653308a041ae0a3eb6ffd150f1da77b76d48ccd50f64"
+    },
+    {
+      "path": "references/reference-experience-parity.md",
+      "sha256": "0688dde1e61bb13be7160b76d958148bcfb58f2993f8a8704f5f6c94b22e702c"
+    },
+    {
+      "path": "references/release-completeness.md",
+      "sha256": "69f4c9a038d0c7aa8fa3846539048ec64a7470c27e227af7785655983c78d1c2"
+    },
+    {
+      "path": "references/room-envelope-gate.md",
+      "sha256": "b0cbdd24f9fd4e2bff07737abe9c742779f3b0449432269c474d7c2458b504b5"
+    },
+    {
+      "path": "references/runtime.md",
+      "sha256": "53301f05923befd56286b4fa452a58237b441315a4c575f4bf082f2f992fbd88"
+    },
+    {
+      "path": "references/story-binding.md",
+      "sha256": "1962ae05bf8e08b70e9e0eba566a43fbf2bf142f0d84caccc0f2a7621b237f7e"
+    },
+    {
+      "path": "references/themed-backpack.md",
+      "sha256": "e9f0c63f911d0735dc45f5b8d0ead89cd9cab1ad59b64af7b247bb3bab8da6b7"
+    },
+    {
+      "path": "references/ui-theme-catalog.md",
+      "sha256": "04704581f574c8d1b1350ae57b6006f1ae333ea9c284a4f0b95c3104bd08d466"
+    },
+    {
+      "path": "references/viewport-and-closeups.md",
+      "sha256": "7bfa8fdb50f02dcf099a0d4d5719bb4fa3c32bb519fefb16437415765cc95d40"
+    },
+    {
+      "path": "references/wall-door-assembly.md",
+      "sha256": "92f0064034bfb72cf6120be249ce2cfcf4e87164ff477bf2be9625321077e062"
+    },
+    {
+      "path": "scripts/audit-actor-roster.py",
+      "sha256": "fa27d722353716d5b70fea52255bdf05800bbf07cf191ccf907b1ed73ce5bda5"
+    },
+    {
+      "path": "scripts/audit-hero-sheet.py",
+      "sha256": "4de249bd32447b94c6c061740bce1afa98c5ca8b91296b398684206a347ed75d"
+    },
+    {
+      "path": "scripts/audit-projected-art.py",
+      "sha256": "056dbab22e53bb534c4d46217e70441b736670ab9ccf49fa50a6091bbfcdb359"
+    },
+    {
+      "path": "scripts/build-art-review.py",
+      "sha256": "6c2c60874d4dc9e32cbb801ea0b3d7b9afa09eeb43de2b432697f52669971b78"
+    },
+    {
+      "path": "scripts/check-art-candidates.py",
+      "sha256": "7f9374e26451c8314e8c67f2d654650e53f665782d37147912d07b63054ff342"
+    },
+    {
+      "path": "scripts/inspect-assets.py",
+      "sha256": "5665758964df82172bf137c48331d77558b36c0bdc989c904c21172bc726b69c"
+    },
+    {
+      "path": "scripts/prepare-actor-cutout.py",
+      "sha256": "80d581c47dab4a6cb84f2915580d60a1633f7d133f365495edd699d7fac44b14"
+    },
+    {
+      "path": "scripts/validate-actor-pose-plan.mjs",
+      "sha256": "c2887a68863fe5ed1681fe31c0ccaac51ce1d3f5d0be0c9528b24eb51bd2eb70"
+    },
+    {
+      "path": "scripts/validate-experience-profile.mjs",
+      "sha256": "a3935d151ec94f61c219979dd47cf2a8a91cce09c5230264ba5253d7e87201aa"
+    },
+    {
+      "path": "scripts/validate-progressive-room.mjs",
+      "sha256": "cef25a30b94ff7056318e6a58afae1b0b86b71d74fce19fb48e420ea35701ddf"
+    },
+    {
+      "path": "scripts/validate-rpg-map.mjs",
+      "sha256": "0ea84fa399e21dea2ae1ad505396ed8d34db8bb88f37836f679247df89434bb0"
+    },
+    {
+      "path": "scripts/validate-scene-visual-contract.mjs",
+      "sha256": "ea952639633086c54107030f758458efb757b11203d902b2137c7a99a05b6b8f"
+    },
+    {
+      "path": "scripts/validate-world.mjs",
+      "sha256": "2231f64dd2eba2a6f6b6eadd02e021e25cfc0ea6fb7d4324565d852907bfc59e"
+    },
+    {
+      "path": "scripts/verify-media-client.mjs",
+      "sha256": "27d42f52b080ee26589febed7d57ae7696f473acd98ec1f6415c1856786b30ee"
+    },
+    {
+      "path": "scripts/verify-motion.mjs",
+      "sha256": "a1989a0dda443c683e6eb442eba0bd8d8c90766d2a2b369da31c57a2de233c55"
+    },
+    {
+      "path": "scripts/verify-package.py",
+      "sha256": "375c2c74eb7cb482962999bead623ef905d6cb749d190f3b0ced0363684184e7"
+    },
+    {
+      "path": "scripts/verify-space.mjs",
+      "sha256": "4d3df578bfcc52eceed07faaa889ff4ce122e0cce1426c56eb4ba0f962fa8fc5"
+    },
+    {
+      "path": "scripts/verify-story-binding.mjs",
+      "sha256": "dc54af387bbdcc0a8c1d94bc2c582a55d56738da9abb68b3623869c0c3ed1b64"
+    }
+  ]
+}

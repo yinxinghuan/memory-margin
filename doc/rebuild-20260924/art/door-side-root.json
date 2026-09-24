@@ -1,0 +1,43 @@
+{
+  "id": "door-side-root",
+  "requestId": "51379597-a7b7-4f7e-bf3f-bb558a92168b",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One independent thin apartment door leaf, opened partway on its vertical hinge; no doorway or doorframe. Elevated ORTHOGRAPHIC RPG camera looking down 50 degrees. In the image the slab is a PARALLELOGRAM: left upper corner (320,250), right upper corner (620,380), left lower corner (320,690), right lower corner (620,820). Its vertical edges are equal and parallel, and its upper and lower edges are parallel; absolutely no convergence. Show its own thin 18px top edge and slim hinge-edge thickness. These coordinates describe projected shape, NEVER print them. Worn graphite teal metal, one fine brass inset line, tiny amber access socket, subtle short-panel seams. Small dark lever on left free edge, hinges at RIGHT edge. No lintel, wall, arch, separate fixed frame, threshold, floor, ground shadow or scene. Isolated full object with generous margins, pure solid #FF00FF background.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_44f812ed4cc055616f844268b55657ff",
+    "request_id": "51379597-a7b7-4f7e-bf3f-bb558a92168b",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790214334581,
+    "updated_at": 1790214365721,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790214365355-zw8s095a2le.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790214365355-zw8s095a2le.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30973
+  },
+  "elapsedMs": 31837,
+  "sha256": "d7b4b46cc57bacab07b03c820551663596a2151aebcb1d401d4051b272598207",
+  "visualQA": {
+    "status": "runtime-review",
+    "observation": "Parallel slanted top/bottom edges, vertical sides and visible slab thickness. Candidate only; hinge connection, natural scale, collision and near/far layering still require the actual renderer.",
+    "runtimeIntegrated": true,
+    "review": "doc/rebuild-20260924/wall-door-assembly-review.md"
+  }
+}

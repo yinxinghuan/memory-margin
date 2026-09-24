@@ -1,0 +1,41 @@
+{
+  "id": "hero-left-b",
+  "requestId": "c863b73c-e766-4b7b-9e03-4c95f406a4c7",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing WEST, exact left-facing profile. Walking contact B: camera-near leg extends backward toward RIGHT, FAR leg forward toward LEFT. Near arm forward and far arm back. Clearly swap near and far support legs, compact natural walking stride. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_d7bf9dcf645027f2972b27235866dba1",
+    "request_id": "c863b73c-e766-4b7b-9e03-4c95f406a4c7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188327413,
+    "updated_at": 1790188361884,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188361331-lpv53kvu42.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188361331-lpv53kvu42.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33539
+  },
+  "elapsedMs": 35170,
+  "sha256": "8c43ca2e55f875f3ad251d3ebf221071e87333063df70ffb4a60380bbdf86c1f",
+  "visualQA": "rejected: support leg / arm pose repeats contact A; not admitted to runtime"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "neighbor-left-b-v2",
+  "requestId": "1d6a4ae0-d01e-4bfc-9376-ba16e3247a36",
+  "mode": "edit",
+  "parent": "neighbor-left-stand",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212734738-0bwiykx4yceb.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Keep exactly the reference identity, outfit, age, silhouette and restrained pixel density. One complete full-body sprite, elevated orthographic RPG view down 50 degrees, see crown and shoulder tops, no sideways camera yaw. About 5.5 heads tall, complete body centered with margins. Pure solid #FF00FF background, no ground, no shadow, no text. Keep the EXACT WEST-facing side-profile camera from reference: nose points left, only one eye visible; do not turn face or chest toward viewer. Walking contact B: camera-near leg BACK toward RIGHT, far leg FORWARD toward LEFT planted. Near arm FORWARD toward LEFT with hand ahead of belly, far arm BACK toward RIGHT. Swap support leg and arm from contact A.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_26897400592a178425572d3c55d6950d",
+    "request_id": "1d6a4ae0-d01e-4bfc-9376-ba16e3247a36",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790213064162,
+    "updated_at": 1790213095025,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790213094720-ccbyj0wqpo5.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790213094720-ccbyj0wqpo5.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30678
+  },
+  "elapsedMs": 32046,
+  "sha256": "04cf9448d0ce6e04741705c47bad77adfd7e79187a5f92e0b08d7d5242e77730",
+  "visualQA": "pending"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "caretaker-portrait",
+  "requestId": "b1fec522-ff31-457e-a98e-612500568404",
+  "mode": "edit",
+  "parent": "caretaker-root",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212510238-mg9rjsq0akp.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Create a close-up chest-up dialogue portrait of this SAME character. Preserve visible age, face, hair and clothing. Calm natural expression, slightly turned toward viewer. Restrained detailed pixel-art portrait, dark petrol neutral backdrop, no text, no frame. This is a portrait, not a map sprite.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_e5bfcf1139841b9dd8e347d849feba33",
+    "request_id": "b1fec522-ff31-457e-a98e-612500568404",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212776776,
+    "updated_at": 1790212814364,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212813383-mnf01nudft9.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212813383-mnf01nudft9.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 37472
+  },
+  "elapsedMs": 38455,
+  "sha256": "c780e338a3fb3860d28f50fc5d3f8d7534f4988fcb802beea9b2a551ebef4b56",
+  "visualQA": "pending"
+}

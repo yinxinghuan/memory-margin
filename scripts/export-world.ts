@@ -1,4 +1,5 @@
-import {copyFileSync,existsSync,mkdirSync,writeFileSync} from 'node:fs'
+import {projectionWalls} from './rebuild-architecture-projection'
+import {copyFileSync,existsSync,mkdirSync,readFileSync,writeFileSync} from 'node:fs'
 import {Resvg} from '@resvg/resvg-js'
 import {world,entities,portals,type Scene} from '../src/world'
 import {architectureInstances,sideWallSource,wall} from '../src/architecture'
@@ -39,7 +40,7 @@ const scenes=Object.entries(world.scenes).map(([id,s])=>{
  const b=s.interior,obstacles=[{x:0,y:0,w:384,h:b.y},{x:0,y:b.y+b.h,w:384,h:512-b.y-b.h},{x:0,y:0,w:b.x,h:512},{x:b.x+b.w,y:0,w:384-b.x-b.w,h:512},...s.obstacles]
  const objects=obstacles.map((o,i)=>`<object id="${i+1}" x="${o.x}" y="${o.y}" width="${o.w}" height="${o.h}"><properties><property name="collision" type="bool" value="true"/></properties></object>`).join('')
  writeFileSync(`public/map/${id}.tmx`,`<?xml version="1.0"?><map version="1.10" orientation="orthogonal" renderorder="right-down" width="12" height="16" tilewidth="32" tileheight="32" infinite="0"><tileset firstgid="1" source="floor.tsx"/><layer id="1" name="floor" width="12" height="16"><data encoding="csv">${Array(192).fill(1).join(',')}</data></layer><objectgroup id="2" name="collision">${objects}</objectgroup></map>`)
- return {id,background:id==='home'?'home-ground-v4':id==='hall'?'hall-ground-v3':'service-ground-v3',architecture:architectureInstances(id as Scene),walkRegion:s.interior,spawn:s.spawn,obstacles:s.obstacles,targets:Object.values(entities).filter(e=>e.scene===id).map(e=>({id:e.id,kind:e.kind,approach:e.approach,threshold:e.threshold,activation:e.activation,side:e.side,states:['static'],renderedStates:['static']}))}
+ return {id,background:id==='home'?'home-floor-rebuild-20260924':id==='hall'?'hall-ground-v3':'service-ground-v3',architecture:architectureInstances(id as Scene),walkRegion:s.interior,spawn:s.spawn,obstacles:s.obstacles,targets:Object.values(entities).filter(e=>e.scene===id).map(e=>({id:e.id,kind:e.kind,approach:e.approach,threshold:e.threshold,activation:e.activation,side:e.side,states:['static'],renderedStates:['static']}))}
 })
 {
  const s=largeReviewWorld.scenes['large-review'],b=s.interior,w=largeReviewWorld.width,h=largeReviewWorld.height
@@ -55,6 +56,8 @@ const scenes=Object.entries(world.scenes).map(([id,s])=>{
 }
 const assets=[...modules.map(([id,w,h])=>({id,path:`public/art/modules/${id}.png`,imageWidth:w,imageHeight:h,crops:[{x:0,y:0,w,h}]})),{id:'rug',path:'public/art/modules/rug.png',imageWidth:512,imageHeight:256,crops:[{x:0,y:0,w:512,h:256}]},...(['home-worktable-v5','service-console-v6'] as const).map(id=>({id,path:`public/art/modules/${id}.png`,imageWidth:512,imageHeight:512,crops:[{x:0,y:0,w:512,h:512}]})),{id:'door-front-atlas-v3',path:'public/art/modules/door-front-atlas-v3.png',imageWidth:768,imageHeight:512,crops:[{x:0,y:0,w:384,h:512},{x:384,y:0,w:384,h:512}]},{id:'door-side-passage-v3',path:'public/art/modules/door-side-passage-v3.png',imageWidth:768,imageHeight:512,crops:[{x:0,y:0,w:768,h:512}]},{id:'door-side-leaf-v5',path:'public/art/modules/door-side-leaf-v5.png',imageWidth:512,imageHeight:768,crops:[{x:78,y:66,w:350,h:634}]},{id:'cast',path:'public/art/cast.png',imageWidth:1024,imageHeight:1024,crops:[{x:0,y:0,w:512,h:512},{x:512,y:0,w:512,h:512},{x:0,y:512,w:512,h:512},{x:512,y:512,w:512,h:512}]},...(['neighbor-stand-v5','caretaker-stand-v5','clerk-stand-v5'] as const).map(id=>({id,path:`public/art/${id}.png`,imageWidth:256,imageHeight:256,crops:[{x:0,y:0,w:256,h:256}]})),{id:'objects',path:'public/art/objects.png',imageWidth:960,imageHeight:960,crops:Array.from({length:9},(_,i)=>({x:i%3*320,y:Math.floor(i/3)*320,w:320,h:320}))},{id:'hero',path:'public/art/hero.png',imageWidth:768,imageHeight:1024,crops:Array.from({length:12},(_,i)=>({x:i%3*256,y:Math.floor(i/3)*256,w:256,h:256}))}]
 assets.push({id:'door-leaf-v2',path:'public/art/modules/door-leaf-v2.png',imageWidth:512,imageHeight:512,crops:[{x:0,y:0,w:512,h:512}]})
+const rebuildAssets=JSON.parse(readFileSync('doc/rebuild-20260924/art/processing.json','utf8')) as Array<{id:string;output:string;processed:[number,number]}>
+for(const asset of rebuildAssets.filter(a=>a.id!=='hero-root'))assets.push({id:`${asset.id}-rebuild-20260924`,path:asset.output,imageWidth:asset.processed[0],imageHeight:asset.processed[1],crops:[{x:0,y:0,w:asset.processed[0],h:asset.processed[1]}]})
 const manifest={version:1,coordinateAnchor:'top-left' as const,world:{width:384,height:512,step:world.step},actor:{width:world.actor.w,height:world.actor.h},assets,scenes,portals:Object.entries(portals).map(([id,p])=>({id,from:p.from,to:p.scene,arrival:p.position,target:p.target}))}
 writeFileSync('doc/world-manifest.json',JSON.stringify(manifest,null,2)+'\n')
 const sceneIds=['home','hall','service'] as const
@@ -63,28 +66,18 @@ const sliceCrop=(sourceWidth:number,sourceHeight:number,displayWidth:number,disp
  const w=displayWidth/scale,h=displayHeight/scale
  return [(sourceWidth-w)/2,(sourceHeight-h)/2,w,h]
 }
-const projectionWalls=sceneIds.flatMap(scene=>{
- const interior=world.scenes[scene].interior
- return architectureInstances(scene).flatMap((p,index)=>{
-  if(p.kind==='north-wall'){
-   const sw=p.w/interior.w*768,cropH=sw*p.h/p.w
-   return [{id:`${scene}-north-${index}`,path:`public/art/modules/${scene}-wall-v${scene==='home'?5:4}.png`,sourceCrop:[(p.x-interior.x)/interior.w*768,(256-cropH)/2,sw,cropH],displayWorld:[p.w,p.h]}]
-  }
-  if(p.kind==='side-wall'){
-   const outerBottom=interior.y+interior.h+wall.thickness,scale=outerBottom/(sideWallSource.bottom-sideWallSource.top),sourceWidth=p.w/scale
-   return [{id:`${scene}-side-${index}`,path:`public/art/modules/${scene}-side-wall-v7.png`,sourceCrop:[(sideWallSource.width-sourceWidth)/2,sideWallSource.top+p.y/scale,sourceWidth,p.h/scale],displayWorld:[p.w,p.h],scaleGroup:`${scene}-${p.x<interior.x?'west':'east'}-wall`}]
-  }
-  if(p.kind==='foreground-wall')return [{id:`${scene}-south-${index}`,path:'public/art/modules/wall-north.png',sourceCrop:sliceCrop(768,256,p.w,p.h-wall.thickness),displayWorld:[p.w,p.h-wall.thickness],horizontalOverhangWorld:[p.x===interior.x?wall.side:0,p.x+p.w===interior.x+interior.w?wall.side:0]}]
-  return []
- })
-})
 const projectionProps=[
  ...sceneIds.flatMap(scene=>architectureInstances(scene).filter(p=>p.kind==='desk-wood'||p.kind==='desk-service').map((p,index)=>({id:`${scene}-table-${index}`,path:`public/art/modules/${p.kind==='desk-service'?'service-console-v6':'home-worktable-v5'}.png`,sourceCrop:[72,72,368,372],displayWorld:[p.w,p.h],visibleWidthToAdultRange:[.95,1.2]}))),
  ...Object.values(entities).filter(e=>worldPropCell[e.id]).map(e=>({id:`${e.scene}-${e.id}`,path:'public/art/objects.png',sourceCrop:[worldPropCell[e.id]![0]*320,worldPropCell[e.id]![1]*320,320,320],displayWorld:[Math.min(e.visual.w,e.visual.h),Math.min(e.visual.w,e.visual.h)]})),
 ]
+const newConsole=rebuildAssets.find(a=>a.id==='voice-console')!
+const oldConsoleIndex=projectionProps.findIndex(p=>p.id==='home-table-0')
+if(oldConsoleIndex>=0)projectionProps[oldConsoleIndex]={...projectionProps[oldConsoleIndex],path:newConsole.output,sourceCrop:[0,0,...newConsole.processed],displayWorld:[48,32]}
+const oldBoxIndex=projectionProps.findIndex(p=>p.id==='home-voice-box')
+if(oldBoxIndex>=0)projectionProps.splice(oldBoxIndex,1)
 const projection={version:1,source:'scripts/export-world.ts + src/art.ts + src/architecture.tsx',adultReference:'hero-standing',adultHeightTolerance:.12,adults:['neighbor','caretaker','clerk'],actors:[
- {id:'hero-standing',path:'public/art/hero.png',cell:[256,0,256,256],displayWorld:[actorCellWorld,actorCellWorld]},
- ...(['neighbor','caretaker','clerk'] as const).map(id=>({id,path:`public/art/${id}-stand-v5.png`,displayWorld:[actorCellWorld,actorCellWorld]})),
+ {id:'hero-standing',path:'public/art/rebuild-20260924/hero-sheet.png',cell:[256,0,256,256],displayWorld:[actorCellWorld,actorCellWorld]},
+ ...(['neighbor','caretaker','clerk'] as const).map(id=>({id,path:`public/art/rebuild-20260924/${id}-sheet.png`,cell:[256,0,256,256],displayWorld:[actorCellWorld,actorCellWorld]})),
 ],walls:projectionWalls,props:projectionProps}
 writeFileSync('assets/projection-audit.json',JSON.stringify(projection,null,2)+'\n')
 console.log('Exported modular wall, floor, door and furniture assets with the runtime world manifest')

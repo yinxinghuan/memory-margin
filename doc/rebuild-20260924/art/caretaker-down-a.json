@@ -1,0 +1,41 @@
+{
+  "id": "caretaker-down-a",
+  "requestId": "096b78e7-98aa-489d-99b2-1f27502644d4",
+  "mode": "edit",
+  "parent": "caretaker-root",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212510238-mg9rjsq0akp.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Keep exactly the reference identity, outfit, age, silhouette and restrained pixel density. One complete full-body sprite, elevated orthographic RPG view down 50 degrees, see crown and shoulder tops, no sideways camera yaw. About 5.5 heads tall, complete body centered with margins. Pure solid #FF00FF background, no ground, no shadow, no text. Facing viewer SOUTH. Shoe on SCREEN RIGHT must be lowest in image, forward planted. SCREEN LEFT shoe is at least 100 pixels higher, trailing with bent knee. Left-screen hand swings forward lower, right-screen hand back higher. Walking contact A.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_6b84df9441874a50089b3172b2b708b4",
+    "request_id": "096b78e7-98aa-489d-99b2-1f27502644d4",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212918989,
+    "updated_at": 1790212949005,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212948326-wmeylsk1o3j.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212948326-wmeylsk1o3j.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29906
+  },
+  "elapsedMs": 31002,
+  "sha256": "cff703366e9f7d0b9264c57c1ac3c7a52334fdfcb5e64e08204e703880969ca0",
+  "visualQA": "pending"
+}

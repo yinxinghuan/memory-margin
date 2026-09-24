@@ -1,0 +1,18 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "requestCount": 1,
+    "locale": "fr-FR => en",
+    "mockedTransport": true
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "errors": [],
+    "requestCount": 1,
+    "locale": "fr-FR => en",
+    "mockedTransport": true
+  }
+]

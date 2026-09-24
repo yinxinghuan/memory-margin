@@ -1,0 +1,41 @@
+{
+  "id": "hero-up-stand",
+  "requestId": "65b91756-4ad5-4ed2-8631-f93e0d51ba1e",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790188012236-5265memz0i6.webp"
+  ],
+  "parent": "hero-root",
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "The reference establishes this SAME adult character, hair, face, jacket, trousers, shoes, proportions and pixel density. Draw ONE complete full-body pose, not a sheet. Facing NORTH away from viewer. Only back of head, back of jacket and backs of legs visible. Relaxed standing, both shoes close together flat on floor, arms down. No visible eyes or face. Preserve elevated orthographic RPG camera looking down 50 degrees, see crown of head and shoulder tops. Keep mature roughly five-head proportions and both feet visible. Do not reuse the standing leg pose for walking. Restrained crisp 16-bit pixel clusters, dark outlines. Entire body centered with margins on pure solid #FF00FF. No shadow, no ground, no text.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_8546ec856618c62aac0a70e8e3e5cdda",
+    "request_id": "65b91756-4ad5-4ed2-8631-f93e0d51ba1e",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188364161,
+    "updated_at": 1790188397432,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188397072-nyxcj0syanb.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188397072-nyxcj0syanb.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33154
+  },
+  "elapsedMs": 34037,
+  "sha256": "535377622b18af538183912447a2594f131bbc27270521c897c8239dce0cd598",
+  "visualQA": "pending"
+}

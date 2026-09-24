@@ -1,0 +1,41 @@
+{
+  "id": "clerk-up-stand",
+  "requestId": "554a529c-95de-4775-b25b-77d627db7218",
+  "mode": "edit",
+  "parent": "clerk-root",
+  "referenceUrls": [
+    "https://images.aiwaves.tech/uploads/1790212541329-a9p4iicvwk4.webp"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "prompt": "Keep exactly the reference identity, outfit, age, silhouette and restrained pixel density. One complete full-body sprite, elevated orthographic RPG view down 50 degrees, see crown and shoulder tops, no sideways camera yaw. About 5.5 heads tall, complete body centered with margins. Pure solid #FF00FF background, no ground, no shadow, no text. Standing still facing NORTH away from viewer. Back of head and jacket only, absolutely no face. Both feet together.",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_ca67a8bccf1dc88c357fbb4d14c8a3d4",
+    "request_id": "554a529c-95de-4775-b25b-77d627db7218",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790212816909,
+    "updated_at": 1790212846918,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790212846517-mzmria70vj.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790212846517-mzmria70vj.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29879
+  },
+  "elapsedMs": 30743,
+  "sha256": "18682760d42ee3b1367de9cda2fdb0203759e0afd30eea327e8da917c9241431",
+  "visualQA": "pending"
+}

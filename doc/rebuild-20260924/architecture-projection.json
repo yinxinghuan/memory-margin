@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "walls": [
+    {
+      "id": "home-north-wall-5",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        169.79945799457994,
+        64
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "home-north-wall-6",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        169.79945799457994,
+        64
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "home-north-door-7",
+      "path": "public/art/rebuild-20260924/door-front-root-v2.png",
+      "sourceCrop": [
+        0,
+        0,
+        462,
+        744
+      ],
+      "displayWorld": [
+        36.63709677419355,
+        59
+      ],
+      "assembly": "leaf centered inside separate jambs"
+    },
+    {
+      "id": "home-side-wall-8",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "home-side-cap"
+    },
+    {
+      "id": "home-side-wall-9",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "home-side-cap"
+    },
+    {
+      "id": "home-foreground-wall-10",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        175.10569105691056,
+        66
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "hall-north-wall-1",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        169.79945799457994,
+        64
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "hall-side-wall-2",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "hall-side-cap"
+    },
+    {
+      "id": "hall-side-wall-3",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "hall-side-cap"
+    },
+    {
+      "id": "hall-side-wall-4",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "hall-side-cap"
+    },
+    {
+      "id": "hall-side-wall-5",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "hall-side-cap"
+    },
+    {
+      "id": "hall-side-door-6",
+      "path": "public/art/rebuild-20260924/door-side-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        387,
+        930
+      ],
+      "displayWorld": [
+        29.129032258064516,
+        70
+      ],
+      "assembly": "east-facing leaf only; west leaf opens outside this room"
+    },
+    {
+      "id": "hall-side-door-7",
+      "path": "public/art/rebuild-20260924/door-side-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        387,
+        930
+      ],
+      "displayWorld": [
+        29.129032258064516,
+        70
+      ],
+      "assembly": "east-facing leaf only; west leaf opens outside this room"
+    },
+    {
+      "id": "hall-foreground-wall-8",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        175.10569105691056,
+        66
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "service-north-wall-3",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        169.79945799457994,
+        64
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "service-side-wall-4",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "service-side-cap"
+    },
+    {
+      "id": "service-side-wall-5",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        95
+      ],
+      "displayWorld": [
+        185.49473684210525,
+        18
+      ],
+      "assembly": "top cap repeated then rotated 90 degrees; dimensions before rotation",
+      "scaleGroup": "service-side-cap"
+    },
+    {
+      "id": "service-foreground-wall-6",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        175.10569105691056,
+        66
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "service-foreground-wall-7",
+      "path": "public/art/rebuild-20260924/wall-panel-root.png",
+      "sourceCrop": [
+        0,
+        0,
+        979,
+        369
+      ],
+      "displayWorld": [
+        175.10569105691056,
+        66
+      ],
+      "assembly": "whole tile repeated then clipped to segment; displayWorld is one tile"
+    },
+    {
+      "id": "service-south-door-8",
+      "path": "public/art/rebuild-20260924/door-front-root-v2.png",
+      "sourceCrop": [
+        0,
+        0,
+        462,
+        744
+      ],
+      "displayWorld": [
+        37.87903225806452,
+        61
+      ],
+      "assembly": "leaf centered inside separate jambs"
+    }
+  ]
+}

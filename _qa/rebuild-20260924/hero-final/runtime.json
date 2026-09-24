@@ -1,0 +1,348 @@
+{
+  "errors": [],
+  "frames": [
+    {
+      "direction": "down",
+      "frame": 0,
+      "pose": "step-center",
+      "x": 195,
+      "y": 554.90625
+    },
+    {
+      "direction": "down",
+      "frame": 1,
+      "pose": "step-right",
+      "x": 195,
+      "y": 571.96875
+    },
+    {
+      "direction": "down",
+      "frame": 2,
+      "pose": "step-center",
+      "x": 195,
+      "y": 579.3845825195312
+    },
+    {
+      "direction": "down",
+      "frame": 3,
+      "pose": "step-left",
+      "x": 195,
+      "y": 584.65625
+    },
+    {
+      "direction": "down",
+      "frame": 4,
+      "pose": "step-center",
+      "x": 195,
+      "y": 599.28125
+    },
+    {
+      "direction": "down",
+      "frame": 5,
+      "pose": "step-right",
+      "x": 195,
+      "y": 613.90625
+    },
+    {
+      "direction": "down",
+      "frame": 6,
+      "pose": "step-center",
+      "x": 195,
+      "y": 629.75
+    },
+    {
+      "direction": "down",
+      "frame": 7,
+      "pose": "step-left",
+      "x": 195,
+      "y": 644.375
+    },
+    {
+      "direction": "down",
+      "frame": 8,
+      "pose": "step-center",
+      "x": 195,
+      "y": 659
+    },
+    {
+      "direction": "down",
+      "frame": 9,
+      "pose": "step-right",
+      "x": 195,
+      "y": 676.0625
+    },
+    {
+      "direction": "down",
+      "frame": 10,
+      "pose": "stand",
+      "x": 195,
+      "y": 678.5
+    },
+    {
+      "direction": "down",
+      "frame": 11,
+      "pose": "stand",
+      "x": 195,
+      "y": 678.5
+    },
+    {
+      "direction": "left",
+      "frame": 0,
+      "pose": "step-left",
+      "x": 215.109375,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 1,
+      "pose": "step-center",
+      "x": 200.484375,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 2,
+      "pose": "step-right",
+      "x": 194.53980255126953,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 3,
+      "pose": "step-center",
+      "x": 194.91542053222656,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 4,
+      "pose": "step-left",
+      "x": 194.51250076293945,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 5,
+      "pose": "step-center",
+      "x": 194.86813163757324,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 6,
+      "pose": "step-right",
+      "x": 195.23375606536865,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 7,
+      "pose": "step-center",
+      "x": 185.859375,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 8,
+      "pose": "step-left",
+      "x": 170.015625,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 9,
+      "pose": "step-center",
+      "x": 155.390625,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 10,
+      "pose": "step-center",
+      "x": 140.765625,
+      "y": 323.34375
+    },
+    {
+      "direction": "left",
+      "frame": 11,
+      "pose": "step-right",
+      "x": 127.359375,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 0,
+      "pose": "step-left",
+      "x": 132.234375,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 1,
+      "pose": "step-center",
+      "x": 146.859375,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 2,
+      "pose": "step-right",
+      "x": 161.484375,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 3,
+      "pose": "step-center",
+      "x": 177.328125,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 4,
+      "pose": "step-left",
+      "x": 191.953125,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 5,
+      "pose": "step-center",
+      "x": 194.8035373687744,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 6,
+      "pose": "step-right",
+      "x": 194.44790649414062,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 7,
+      "pose": "step-center",
+      "x": 195.30103302001953,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 8,
+      "pose": "step-left",
+      "x": 194.92541122436523,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 9,
+      "pose": "step-left",
+      "x": 194.5697784423828,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 10,
+      "pose": "step-center",
+      "x": 204.140625,
+      "y": 323.34375
+    },
+    {
+      "direction": "right",
+      "frame": 11,
+      "pose": "step-right",
+      "x": 218.765625,
+      "y": 323.34375
+    },
+    {
+      "direction": "up",
+      "frame": 0,
+      "pose": "step-left",
+      "x": 195,
+      "y": 437.90625
+    },
+    {
+      "direction": "up",
+      "frame": 1,
+      "pose": "step-center",
+      "x": 195,
+      "y": 423.28125
+    },
+    {
+      "direction": "up",
+      "frame": 2,
+      "pose": "step-right",
+      "x": 195,
+      "y": 406.21875
+    },
+    {
+      "direction": "up",
+      "frame": 3,
+      "pose": "step-center",
+      "x": 195,
+      "y": 391.59375
+    },
+    {
+      "direction": "up",
+      "frame": 4,
+      "pose": "step-left",
+      "x": 195,
+      "y": 376.96875
+    },
+    {
+      "direction": "up",
+      "frame": 5,
+      "pose": "step-center",
+      "x": 195,
+      "y": 361.125
+    },
+    {
+      "direction": "up",
+      "frame": 6,
+      "pose": "step-right",
+      "x": 195,
+      "y": 346.5
+    },
+    {
+      "direction": "up",
+      "frame": 7,
+      "pose": "step-center",
+      "x": 195,
+      "y": 331.875
+    },
+    {
+      "direction": "up",
+      "frame": 8,
+      "pose": "step-left",
+      "x": 195,
+      "y": 317.25
+    },
+    {
+      "direction": "up",
+      "frame": 9,
+      "pose": "step-center",
+      "x": 195,
+      "y": 298.96875
+    },
+    {
+      "direction": "up",
+      "frame": 10,
+      "pose": "step-right",
+      "x": 195,
+      "y": 281.90625
+    },
+    {
+      "direction": "up",
+      "frame": 11,
+      "pose": "step-center",
+      "x": 195,
+      "y": 267.28125
+    }
+  ],
+  "candidateOnly": false,
+  "viewport": [
+    390,
+    844
+  ],
+  "framesPerDirection": 12,
+  "source": "art/rebuild-20260924/hero-sheet.png"
+}

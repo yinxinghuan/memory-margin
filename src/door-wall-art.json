@@ -1,0 +1,44 @@
+[
+  {
+    "id": "door-side-root",
+    "width": 387,
+    "height": 930,
+    "bounds": [
+      320,
+      42,
+      707,
+      972
+    ],
+    "sourceSHA": "d7b4b46cc57bacab07b03c820551663596a2151aebcb1d401d4051b272598207",
+    "output": "public/art/rebuild-20260924/door-side-root.png",
+    "processing": "magenta key, tight crop; no geometric deformation"
+  },
+  {
+    "id": "wall-panel-root",
+    "width": 979,
+    "height": 369,
+    "bounds": [
+      23,
+      316,
+      1002,
+      685
+    ],
+    "sourceSHA": "b223e5599d59bc78567002d4959c7cc240226a1a285e4caf54fb26dc6e9cba9c",
+    "output": "public/art/rebuild-20260924/wall-panel-root.png",
+    "processing": "magenta key, tight crop; no geometric deformation"
+  },
+  {
+    "id": "door-front-root-v2",
+    "width": 462,
+    "height": 744,
+    "bounds": [
+      285,
+      140,
+      747,
+      884
+    ],
+    "sourceSHA": "174299adb0e420a0bd603d587c8a9e1430c5e9af6c87a88b63308825f5c5dbd9",
+    "output": "public/art/rebuild-20260924/door-front-root-v2.png",
+    "processing": "magenta key, tight crop; no geometric deformation"
+  }
+]

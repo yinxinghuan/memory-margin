@@ -28,7 +28,7 @@ export class NpcResidentMotion{
   const amount=Math.sign(remaining)*Math.min(Math.abs(remaining),this.spec.speed*dt),next={...state.position,[axis]:state.position[axis]+amount}
   if(!walkable(next)){this.sign*=-1;this.rest=this.spec.restSeconds;state.moving=false;state.frame=1;this.stride=0;return state}
   state.position=next;state.moving=Math.abs(amount)>1e-6;state.facing=axis==='x'?(this.sign>0?'right':'left'):(this.sign>0?'down':'up')
-  this.stride+=Math.abs(amount);state.frame=(Math.floor(this.stride/5)%2===0?0:2)
+  this.stride+=Math.abs(amount);state.frame=([0,1,2,1] as const)[Math.floor(this.stride/7)%4]
   if(Math.abs(remaining)<=Math.abs(amount)+.001){this.sign*=-1;this.rest=this.spec.restSeconds;state.moving=false;state.frame=1;this.stride=0}
   return state
  }

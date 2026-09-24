@@ -1,0 +1,269 @@
+{
+  "status": "candidate, motion review required",
+  "frames": [
+    {
+      "row": 0,
+      "col": 0,
+      "source": "hero-down-a",
+      "requestId": "fe41b181-6ac5-4177-bacf-ab05c457b620",
+      "parent": "hero-root",
+      "sourceBounds": [
+        286,
+        42,
+        710,
+        971
+      ],
+      "outputBounds": [
+        78,
+        27,
+        177,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "source": "hero-root",
+      "requestId": "1bca6f0d-f913-4d81-87a1-db75d9342184",
+      "parent": null,
+      "sourceBounds": [
+        292,
+        40,
+        707,
+        965
+      ],
+      "outputBounds": [
+        80,
+        27,
+        177,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "source": "hero-down-b-v3",
+      "requestId": "68125ae1-c60f-4695-be10-42444e9e2008",
+      "parent": "hero-root",
+      "sourceBounds": [
+        307,
+        39,
+        716,
+        990
+      ],
+      "outputBounds": [
+        84,
+        27,
+        177,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "source": "hero-left-a",
+      "requestId": "8e081d9f-ba65-4eb2-9a4b-736d6f6b2091",
+      "parent": "hero-root",
+      "sourceBounds": [
+        299,
+        54,
+        721,
+        914
+      ],
+      "outputBounds": [
+        78,
+        27,
+        184,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "source": "hero-left-stand",
+      "requestId": "4913d50f-a679-4925-8622-72147cfcbc10",
+      "parent": "hero-root",
+      "sourceBounds": [
+        402,
+        56,
+        613,
+        948
+      ],
+      "outputBounds": [
+        103,
+        27,
+        154,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "source": "hero-left-b-v2",
+      "requestId": "265f66cf-7638-4c21-bc2a-4bd1b513a95d",
+      "parent": "hero-root",
+      "sourceBounds": [
+        303,
+        56,
+        708,
+        955
+      ],
+      "outputBounds": [
+        80,
+        27,
+        177,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "source": "hero-left-a",
+      "requestId": "8e081d9f-ba65-4eb2-9a4b-736d6f6b2091",
+      "parent": "hero-root",
+      "sourceBounds": [
+        299,
+        54,
+        721,
+        914
+      ],
+      "outputBounds": [
+        72,
+        27,
+        178,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": true
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "source": "hero-left-stand",
+      "requestId": "4913d50f-a679-4925-8622-72147cfcbc10",
+      "parent": "hero-root",
+      "sourceBounds": [
+        402,
+        56,
+        613,
+        948
+      ],
+      "outputBounds": [
+        102,
+        27,
+        153,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": true
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "source": "hero-left-b-v2",
+      "requestId": "265f66cf-7638-4c21-bc2a-4bd1b513a95d",
+      "parent": "hero-root",
+      "sourceBounds": [
+        303,
+        56,
+        708,
+        955
+      ],
+      "outputBounds": [
+        79,
+        27,
+        176,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": true
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "source": "hero-up-a",
+      "requestId": "5de55dc7-0b5f-42ae-adf9-a20b9591bbf1",
+      "parent": "hero-root",
+      "sourceBounds": [
+        309,
+        60,
+        697,
+        934
+      ],
+      "outputBounds": [
+        80,
+        27,
+        176,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "source": "hero-up-stand",
+      "requestId": "65b91756-4ad5-4ed2-8631-f93e0d51ba1e",
+      "parent": "hero-root",
+      "sourceBounds": [
+        303,
+        42,
+        698,
+        912
+      ],
+      "outputBounds": [
+        79,
+        27,
+        177,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "source": "hero-up-b-v2",
+      "requestId": "1dd80210-9947-4f9d-aec5-187d9be98d47",
+      "parent": "hero-root",
+      "sourceBounds": [
+        306,
+        49,
+        701,
+        950
+      ],
+      "outputBounds": [
+        84,
+        27,
+        179,
+        243
+      ],
+      "foot": 243,
+      "visibleHeight": 216,
+      "wholeFrameMirrored": false
+    }
+  ]
+}

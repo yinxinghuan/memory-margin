@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import {readFile} from 'node:fs/promises'
 import {applyAction,initialStory} from '../src/story'
-import {conversationPages,conversationTopics,freeConversationReply} from '../src/conversation'
+import {conversationPages,conversationTopics} from '../src/conversation'
 import {mapRoute} from '../src/experience-shell'
 
 test('every introduced physical person keeps repeatable state-aware conversation topics',()=>{
@@ -12,7 +12,6 @@ test('every introduced physical person keeps repeatable state-aware conversation
   const topics=conversationTopics(entity,save)
   assert.ok(topics.length>=2,`${entity} should remain conversational after introduction`)
   assert.ok(topics.every(topic=>topic.label&&topic.reply))
-  assert.ok(freeConversationReply(entity,save,'我有点担心').length>10)
  }
  save={...save,facts:{...save.facts,previewLogRead:true}}
  assert.ok(conversationTopics('caretaker',save).some(topic=>topic.id==='six-seconds'))

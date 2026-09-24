@@ -1,0 +1,38 @@
+{
+  "id": "voice-console",
+  "requestId": "53c0479b-c785-438d-8723-c5e146afc371",
+  "prompt": "Restrained chunky 16-bit pixel art, crisp clustered pixels, dark graphite outlines, muted petrol teal and warm amber accents, consistent soft upper-left light. Not photorealistic, no text, no watermark. One low personal memory playback console, two short sturdy supports, graphite casing with worn brass corners, a narrow cyan waveform display recessed in the top surface and a single amber memory cartridge physically resting in its dock. Human-scale bedside device, wide and low, not a giant server. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical in the image. Rectangular top plane, no trapezoid, no vanishing point. One complete object, dark outline, no floor, wall or cast shadow. Pure solid #FF00FF background, centered with generous margins. No labels or letters.",
+  "mode": "text",
+  "referenceUrls": [],
+  "model": "gpt-image-2.5-sunburst",
+  "quality": "high",
+  "background": "opaque",
+  "status": "downloaded",
+  "result": {
+    "task_id": "mt_f21c07b891b9b947a9dfb1a2ebf8c64f",
+    "request_id": "53c0479b-c785-438d-8723-c5e146afc371",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790188055461,
+    "updated_at": 1790188091609,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790188091237-fr3f19sbpx.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790188091237-fr3f19sbpx.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 36036
+  },
+  "elapsedMs": 37015,
+  "sha256": "34c57eda498c220d9b3ecf75c70cfec2109acd965a386efdf4ab84638867fb50",
+  "visualQA": "pending"
+}

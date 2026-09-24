@@ -2,13 +2,19 @@ const DEFAULT_MEDIA_API_BASE = 'https://game.aiwaves.tech/alteru-media/api';
 
 export type MediaTaskStatus = 'queued' | 'running' | 'succeeded' | 'failed';
 export type MediaImageMode = 'text' | 'edit' | 'avatar';
+export type GptImageModel = 'gpt-image-2' | 'gpt-image-2.5-flare' | 'gpt-image-2.5-sunburst';
 export type MediaAudioKind = 'music' | 'sfx';
 
 export interface MediaImage {
   type: 'image';
   url: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
+  urls?: string[];
+  model?: GptImageModel;
+  mode?: 'text' | 'edit';
+  reference_count?: number;
+  requested_size?: { width: number; height: number } | 'auto';
   format: 'png' | 'webp';
 }
 
@@ -49,7 +55,11 @@ export interface GenerateImageMediaRequest {
   mode: MediaImageMode;
   prompt: string;
   referenceUrls?: string[];
-  size: { width: number; height: number };
+  size: { width: number; height: number } | 'auto';
+  model?: GptImageModel;
+  n?: number;
+  quality?: 'low' | 'medium' | 'high' | 'auto' | 'xhigh' | 'max';
+  background?: 'transparent' | 'opaque' | 'auto';
 }
 
 export interface SubmitVideoMediaRequest {
@@ -164,9 +174,7 @@ async function mediaRequest<T>(
   options?: MediaClientOptions,
 ): Promise<T> {
   const headers = new Headers(init.headers);
-  // Keep task-status GET requests CORS-simple. The public media status endpoint
-  // does not need a JSON content type when no request body is present.
-  if (init.body !== undefined && !headers.has('Content-Type')) headers.set('Content-Type', 'application/json');
+  if (!headers.has('Content-Type')) headers.set('Content-Type', 'application/json');
   const response = await clientFetch(options)(`${apiBase(options)}${path}`, {
     ...init,
     headers,
@@ -240,7 +248,8 @@ export async function submitImageMedia(
   request: GenerateImageMediaRequest,
   options?: MediaClientOptions,
 ): Promise<MediaTask> {
-  return assertTaskSucceeded(await mediaRequest<MediaTask>('/v1/images/generations', {
+  if (!request.model && request.size === 'auto') throw new MediaServiceError('INVALID_REQUEST', 'auto size requires an explicit GPT model', 0, false);
+  const task = await mediaRequest<MediaTask>('/v1/images/generations', {
     method: 'POST',
     body: JSON.stringify({
       request_id: request.requestId ?? createMediaRequestId(),
@@ -248,9 +257,14 @@ export async function submitImageMedia(
       mode: request.mode,
       prompt: requireText(request.prompt, 'prompt'),
       reference_urls: request.referenceUrls ?? [],
-      size: fitMediaImageSize(request.size),
+      size: request.model ? request.size : fitMediaImageSize(request.size as { width: number; height: number }),
+      model: request.model,
+      n: request.n,
+      quality: request.quality,
+      background: request.background,
     }),
-  }, options));
+  }, options);
+  return assertTaskSucceeded(task);
 }
 
 export async function generateImageMedia(

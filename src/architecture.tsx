@@ -1,4 +1,5 @@
 import {useId} from 'react'
+import doorWallArt from './door-wall-art.json'
 import {entities,furniture,world,type Scene} from './world'
 import type {Point} from './spatial/world'
 import {atmosphereMode,atmospherePlacements,homeGroundClusters,type AtlasPlacement} from './atmosphere'
@@ -45,74 +46,61 @@ export function architectureInstances(scene:Scene):ModuleInstance[]{
  ]
 }
 const url=(name:string)=>`./art/modules/${name}.png`
-function NorthWall({p,scene}:{p:ModuleInstance;scene:Scene}){
- const c=palettes[scene],base=p.y+p.h,f=world.scenes[scene].interior
- const art=scene==='home'?'home-wall-v5':scene==='hall'?'hall-wall-v4':'service-wall-v4'
- const sx=(p.x-f.x)/f.w*768,sw=p.w/f.w*768
- // The source is 768×256; a 276×64 wall would stretch it by 44%.
- // Crop its height to keep one source pixel the same size on both axes.
- const cropH=sw*p.h/p.w,cropY=(256-cropH)/2
- return <g data-wall-piece="north">
-  <rect x={p.x} y={p.y} width={p.w} height={p.h} fill={c.face}/>
-  <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox={`${sx} ${cropY} ${sw} ${cropH}`} preserveAspectRatio="none" overflow="hidden"><image href={url(art)} width="768" height="256" filter={scene==='service'?'url(#mm-service-wall-tone)':undefined}/></svg>
-  <rect x={p.x} y={p.y} width={p.w} height="6" fill={c.cap}/>
-  <path d={`M${p.x} ${p.y+1}h${p.w}`} stroke={c.light} opacity=".55"/>
-  <rect x={p.x} y={base-5} width={p.w} height="5" fill={c.trim}/>
-  <path d={`M${p.x} ${base}h${p.w}`} stroke={c.edge} strokeWidth="1.5"/>
-  <rect x={p.x} y={base} width={p.w} height="7" fill="#101f28" opacity=".45"/>
-  <path d={`M${p.x} ${p.y}v${p.h}M${p.x+p.w} ${p.y}v${p.h}`} stroke={c.edge} strokeWidth="1.5"/>
- </g>
+/** Whole generated wall module, equal pixel scale on both axes; repeat then clip. */
+function RebuiltWall({p}:{p:ModuleInstance}){
+ const art=doorWallArt.find(a=>a.id==='wall-panel-root')!,scale=p.h/art.height,tileWidth=art.width*scale
+ return <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox={`0 0 ${p.w} ${p.h}`} overflow="hidden">
+  <rect width={p.w} height={p.h} fill="#344c52"/>
+  {Array.from({length:Math.ceil(p.w/tileWidth)},(_,i)=><image key={i} href="./art/rebuild-20260924/wall-panel-root.png" x={i*tileWidth} y="0" width={tileWidth} height={p.h}/>)}
+ </svg>
 }
+function NorthWall({p}:{p:ModuleInstance;scene:Scene}){return <g data-wall-piece="north"><RebuiltWall p={p}/></g>}
 function SideWall({p,scene,end=false}:{p:ModuleInstance;scene:Scene;end?:boolean}){
- const c=palettes[scene],floor=world.scenes[scene].interior,left=p.x<floor.x,outerBottom=floor.y+floor.h+wall.thickness
- const scale=outerBottom/(sideWallSource.bottom-sideWallSource.top)
- const imageX=p.x+p.w/2-sideWallSource.width*scale/2,imageY=-sideWallSource.top*scale
+ const left=p.x<world.scenes[scene].interior.x,art=doorWallArt.find(a=>a.id==='wall-panel-root')!
+ // Rotate only the generated horizontal top-cap strip; keep scale uniform.
+ const scale=p.w/95,length=art.width*scale
  return <g data-wall-piece={end?'door-end':'side'}>
-  <rect x={p.x} y={p.y} width={p.w} height={p.h} fill={c.face}/>
-  <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox={`${p.x} ${p.y} ${p.w} ${p.h}`} overflow="hidden"><image href={url(`${scene}-side-wall-v7`)} x={imageX} y={imageY} width={sideWallSource.width*scale} height={sideWallSource.height*scale} opacity=".88" transform={!left?`translate(${2*p.x+p.w} 0) scale(-1 1)`:undefined}/></svg>
-  <path d={`M${left?p.x+p.w:p.x} ${p.y}v${p.h}`} stroke={c.edge} strokeWidth="1.25" opacity=".75"/>
-  <path d={`M${left?p.x:p.x+p.w} ${p.y}v${p.h}`} stroke={c.edge} strokeWidth=".75" opacity=".3"/>
+  <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox={`0 ${p.y} ${p.w} ${p.h}`} overflow="hidden">
+   <rect x="0" y={p.y} width={p.w} height={p.h} fill="#263e45"/>
+   <g transform={left?undefined:`translate(${p.w} 0) scale(-1 1)`}><g transform={`translate(${p.w} 0) rotate(90)`}>
+    {Array.from({length:Math.ceil(512/length)},(_,i)=><image key={i} href="./art/rebuild-20260924/wall-panel-root.png" x={i*length} y="0" width={length} height={art.height*scale}/>)}
+   </g></g>
+  </svg>
  </g>
 }
 function FrontDoor({p,side}:{p:ModuleInstance;side:'north'|'south'}){
- const threshold=p.y+p.h,scale=64/384
- const x=p.x+p.w/2-195*scale,y=threshold-455*scale
- return <svg data-door-passage={side} x={x} y={y} width={384*scale} height={512*scale} viewBox="384 0 384 512" overflow="hidden">
-  <image href={url('door-front-atlas-v3')} width="768" height="512"/>
- </svg>
+ const art=doorWallArt.find(a=>a.id==='door-front-root-v2')!,h=p.h-5,w=h*art.width/art.height
+ return <g data-door-passage={side}>
+  <rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#11242a"/>
+  <RebuiltWall p={{...p,w:3}}/><RebuiltWall p={{...p,x:p.x+p.w-3,w:3}}/>
+  <image href="./art/rebuild-20260924/door-front-root-v2.png" x={p.x+(p.w-w)/2} y={p.y+p.h-h-2} width={w} height={h}/>
+ </g>
 }
 function SideDoor({p,scene,foreground,actor}:{p:ModuleInstance;scene:Scene;foreground:boolean;actor?:Point}){
  const left=p.x<world.scenes[scene].interior.x
  const door=Object.values(entities).find(e=>e.scene===scene&&e.kind==='door'&&e.side===(left?'W':'E'))
  if(!door?.threshold)return null
- const uid=useId().replace(/:/g,''),nearClip=`mm-side-near-${uid}`
- const passageScale=p.h/251,anchorX=door.threshold.x+(left?-4:4),anchorY=door.threshold.y
- const leafWidth=36,leafHeight=70,leafBaseline=p.y+4,hingeX=left?p.x+p.w-12:p.x+12
+ const floor=world.scenes[scene].interior,wallX=left?floor.x-wall.side:floor.x+floor.w
+ const leafArt=doorWallArt.find(a=>a.id==='door-side-root')!
+ const leafHeight=70,leafWidth=leafHeight*leafArt.width/leafArt.height,leafBaseline=p.y+4,hingeX=left?floor.x:floor.x+floor.w
  const leafLeft=left?hingeX:hingeX-leafWidth
  // The west leaf opens into the adjoining room. The east leaf opens into
  // this hall and is the only face visible here.
  const hasLeaf=!left,leafFront=Boolean(actor&&actor.y+world.actor.h<=leafBaseline+1)
  const showLeaf=hasLeaf&&foreground===leafFront
  return <g data-door-passage={left?'west':'east'} data-door-layer={foreground?'foreground':'background'}>
-  <defs><clipPath id={nearClip}><rect x="349" y="313" width="71" height="122"/></clipPath></defs>
   {!foreground&&<>
-   <rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#263f47"/>
-   <g transform={`translate(${anchorX} ${anchorY}) scale(${passageScale}) translate(-384 -307.5)`}>
-    <image href={url('door-side-passage-v3')} width="768" height="512"/>
-   </g>
+   <svg x={wallX} y={p.y} width={wall.side} height={p.h} overflow="hidden"><image href={url('hall-ground-v3')} width={wall.side} height={p.h} preserveAspectRatio="xMidYMid slice"/></svg>
+   <g data-side-passage="far-jamb"><RebuiltWall p={{...p,x:wallX,y:p.y-36,w:wall.side,h:36}}/></g>
   </>}
-  {foreground&&<g data-side-passage="near-jamb" transform={`translate(${anchorX} ${anchorY}) scale(${passageScale}) translate(-384 -307.5)`}>
-   <image href={url('door-side-passage-v3')} width="768" height="512" clipPath={`url(#${nearClip})`}/>
-  </g>}
+  {foreground&&<g data-side-passage="near-jamb"><RebuiltWall p={{...p,x:wallX,y:p.y+p.h-36,w:wall.side,h:36}}/></g>}
   {showLeaf&&<g data-side-door-leaf="open-face">
-   <rect x={leafLeft} y={leafBaseline-leafHeight-2} width={leafWidth} height="2.5" fill="#8fa7ad" stroke="#263b43" strokeWidth=".6"/>
-   <svg x={leafLeft} y={leafBaseline-leafHeight} width={leafWidth} height={leafHeight} viewBox="78 66 350 634" preserveAspectRatio="none" overflow="visible">
-    <image href={url('door-side-leaf-v5')} width="512" height="768"/>
-   </svg>
+   <image href="./art/rebuild-20260924/door-side-root.png" x={leafLeft} y={leafBaseline-leafHeight} width={leafWidth} height={leafHeight}/>
   </g>}
  </g>
 }
 function Furniture({p}:{p:ModuleInstance}){
+ if(p.kind==='desk-wood'&&p.x===furniture.voiceTable.x&&p.y===furniture.voiceTable.y)return <image href="./art/rebuild-20260924/voice-console.png" x={p.x} y={p.y+p.h-32} width={p.w} height={32} preserveAspectRatio="xMidYMax meet"/>
  if(p.kind==='rug')return <image href={url('rug')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid meet"/>
  const name=p.kind==='desk-service'?'service-console-v6':'home-worktable-v5'
  return <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox="72 72 368 372" preserveAspectRatio="xMidYMid meet" overflow="hidden"><image href={url(name)} width="512" height="512"/></svg>
@@ -130,14 +118,15 @@ function AmbientPiece({p}:{p:AtlasPlacement}){
   <image href={spec.path} width={spec.width} height={spec.height} transform={p.flipX?`translate(${spec.width} 0) scale(-1 1)`:undefined}/>
  </svg>
 }
-export function SceneArchitecture({scene,foreground=false,actor}:{scene:Scene;foreground?:boolean;actor?:Point}){
+export function SceneArchitecture({scene,foreground=false,actor,exportOnly}:{scene:Scene;foreground?:boolean;actor?:Point;exportOnly?:string}){
  const uid=useId().replace(/:/g,''),mask=`mm-wall-${uid}`,groundClip=`mm-ground-${uid}`,f=world.scenes[scene].interior,c=palettes[scene],o=openings(scene)
  const parts=architectureInstances(scene).filter(p=>foreground?p.kind==='foreground-wall'||p.kind==='south-door'||p.kind==='side-door':p.kind!=='foreground-wall'&&p.kind!=='south-door').filter(p=>!(scene==='home'&&atmosphereMode==='ground'&&p.kind==='rug'))
  return <svg className={`mm-architecture${foreground?' mm-architecture--foreground':''}`} data-scene-architecture={scene} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" aria-hidden="true">
   <defs><filter id="mm-hall-wall-tone" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values=".16 .50 .09 0 0  .16 .50 .09 0 .07  .16 .50 .09 0 .09  0 0 0 1 0"/></filter><filter id="mm-service-wall-tone" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values=".34 .20 .08 0 -.03  .10 .42 .18 0 -.01  .07 .24 .45 0 .05  0 0 0 1 0"/></filter>{scene==='home'&&atmosphereMode==='ground'&&<clipPath id={groundClip}>{homeGroundClusters.map(p=><rect key={p.id} {...p.clip}/>)}</clipPath>}{foreground&&<><radialGradient id={mask+'-fade'}><stop offset="0" stopColor="black"/><stop offset=".62" stopColor="black"/><stop offset="1" stopColor="white"/></radialGradient><mask id={mask}><rect width={W} height={H} fill="white"/>{actor&&actor.y>f.y+f.h-85&&<circle cx={actor.x} cy={actor.y-16} r="38" fill={`url(#${mask}-fade)`}/>}</mask></>}</defs>
   <g mask={foreground?`url(#${mask})`:undefined}>
    {parts.map((p,i)=>{
-    if(p.kind==='floor')return <g key={i}><rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#526f72"/><image href={url(scene==='home'?'home-ground-v4':scene==='hall'?'hall-ground-v3':'service-ground-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice"/>{scene==='home'&&atmosphereMode==='ground'&&<image href={url('home-ground-furnished-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${groundClip})`}/>}<path d={`M${p.x} ${p.y}v${p.h}m${p.w} ${-p.h}v${p.h}`} stroke={c.edge} strokeWidth="3"/></g>
+    if(exportOnly&&exportOnly!==`part-${i}`)return null
+    if(p.kind==='floor')return <g key={i}><rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#526f72"/><image href={scene==='home'?'./art/rebuild-20260924/home-floor.png':url(scene==='hall'?'hall-ground-v3':'service-ground-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice"/>{scene==='home'&&atmosphereMode==='ground'&&<image href={url('home-ground-furnished-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${groundClip})`}/>}<path d={`M${p.x} ${p.y}v${p.h}m${p.w} ${-p.h}v${p.h}`} stroke={c.edge} strokeWidth="3"/></g>
     if(p.kind==='rug'||p.kind==='desk-wood'||p.kind==='desk-service')return <Furniture key={i} p={p}/>
     if(p.kind==='north-wall')return <NorthWall key={i} p={p} scene={scene}/>
     if(p.kind==='side-wall')return <SideWall key={i} p={p} scene={scene} end={[...o.west,...o.east].some(g=>g.start===p.y+p.h)}/>
@@ -145,9 +134,9 @@ export function SceneArchitecture({scene,foreground=false,actor}:{scene:Scene;fo
     if(p.kind==='side-door')return <SideDoor key={i} p={p} scene={scene} foreground={foreground} actor={actor}/>
     if(p.kind==='south-door')return <FrontDoor key={i} p={p} side="south"/>
     const outerX=p.x-(p.x===f.x?wall.side:0),outerRight=p.x+p.w+(p.x+p.w===f.x+f.w?wall.side:0),outerW=outerRight-outerX
-    return <g key={i} data-wall-piece="foreground"><rect x={outerX} y={p.y} width={outerW} height={p.h} fill={c.face}/><image href={url('wall-north')} x={p.x} y={p.y+wall.thickness} width={p.w} height={p.h-wall.thickness} preserveAspectRatio="xMidYMid slice" opacity=".78" filter={scene==='hall'?'url(#mm-hall-wall-tone)':undefined}/><rect x={outerX} y={p.y} width={outerW} height={wall.thickness} fill={c.cap}/><path d={`M${outerX} ${p.y}h${outerW}M${outerX} ${p.y+wall.thickness}h${outerW}M${outerX} ${p.y+p.h}h${outerW}`} stroke={c.edge} strokeWidth="2"/><path d={`M${outerX+2} ${p.y+3}h${Math.max(0,outerW-4)}`} stroke={c.light} opacity=".6"/><rect x={outerX} y={p.y+p.h-8} width={outerW} height="8" fill={c.trim}/><path d={`M${outerX} ${p.y}v${p.h}M${outerRight} ${p.y}v${p.h}`} stroke={c.edge} strokeWidth="2"/></g>
+    return <g key={i} data-wall-piece="foreground"><RebuiltWall p={{...p,x:outerX,w:outerW}}/></g>
    })}
-   {!foreground&&atmosphereMode==='props'&&atmospherePlacements(scene).map(p=><AmbientPiece key={p.id} p={p}/>)}
+   {!foreground&&atmosphereMode==='props'&&atmospherePlacements(scene).filter(p=>!exportOnly||exportOnly===p.id).map(p=><AmbientPiece key={p.id} p={p}/>)}
   </g>
  </svg>
 }

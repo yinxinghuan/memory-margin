@@ -275,3 +275,23 @@ html,body,#root{height:100%;overflow:hidden}
 .mm-portrait-viewer h2{font-size:17px;margin:0}
 .mm-portrait-viewer button{min-width:44px;min-height:44px;display:grid;place-items:center;background:#143525;color:#d4f0d5;border:1px solid #69b686}
 .mm-portrait-viewer .mm-portrait-large{width:100%;height:auto;aspect-ratio:1;max-height:calc(100dvh - 124px);max-width:calc(100dvh - 124px);margin:auto}
+
+/* Interaction cues are local: distant targets remain invisible 44px tap areas. */
+.mm-app .mm-hotspot:not(.mm-hotspot--near)::before{visibility:hidden}
+.mm-chat-error{color:var(--mm-terminal-error,#ef978f);font-size:14px;line-height:1.5}
+
+.mm-conversation[data-composing="true"] .mm-conversation-turn,.mm-conversation[data-composing="true"] .mm-conversation-history,.mm-conversation[data-composing="true"] .mm-conversation-options>:not(.mm-conversation-more):not(.mm-chat-error){display:none}
+.mm-conversation-more form{scroll-margin-block:16px}
+
+#rpg canvas{image-rendering:pixelated}
+/* Nearby exit text already lives in the action button. Keep the doorway and
+   the arriving player's face/body unobstructed by a duplicate map label. */
+.mm-hotspot--door span,.mm-hotspot--door::before{display:none!important}
+
+.mm-backpack-entry>span{display:grid;gap:4px}
+.mm-backpack-entry>span p{margin:3px 0 0}
+.mm-backpack-entry>span small{display:block;color:#a0cbaa}
+.mm-atlas-viewport button{min-height:94px;width:86px}
+.mm-atlas-viewport button .mm-room-plan{position:static;inset:auto;width:48px;height:62px;color:#91efac}
+.mm-atlas-viewport button[aria-current="location"] .mm-room-plan{color:#bcf5cd}
+@media(max-width:340px){.mm-atlas-viewport button{width:76px}.mm-atlas-viewport button .mm-room-plan{height:56px;width:43px}}
