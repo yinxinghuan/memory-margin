@@ -307,3 +307,4 @@ html,body,#root{height:100%;overflow:hidden}
 @media(max-height:650px){.mm-dialog[data-kind="map"]>header{padding-top:6px!important;padding-bottom:6px!important}.mm-dialog[data-kind="map"]>header small{display:none}.mm-atlas-location{display:none}.mm-atlas-route{max-height:160px}}
 
 .mm-action-entry{display:grid;gap:5px}.mm-action-entry>button{width:100%}.mm-action-reason{margin:0 0 8px;font-size:13px;line-height:1.5;color:#a0cbaa}.mm-action-entry>button:disabled{opacity:.5;cursor:default}
+@media(max-height:650px){.mm-interaction-layer .mm-closeup:has(.mm-object-art){height:76px}.mm-interaction-layer .mm-closeup .mm-object-art{transform:scale(.7)}.mm-interaction-layer .mm-message{min-height:0;margin:8px 0}.mm-interaction-layer .mm-read-more{margin-top:6px}}
