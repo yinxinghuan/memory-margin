@@ -67,3 +67,11 @@
 
 ## 2026-09-26 互动面板状态一致性
 `interaction-presentation.ts` 从已有事实生成物品当前描述，并通过原 domain resolver 查询操作前提（不提交、不改存档）。已读资料由统一 entity → document 映射提供正文和放大入口，覆盖回执、封签、记录、早餐、告示、服务说明、播放记录。内容面板不再使用接近前指导，也不根据“剧情动作为空”推断“没有可操作内容”。放大只读已揭示资料；C-09 查明后同步到放大记录。
+
+## 2026-09-26 七区域正式地图
+- `src/world.ts` 是七处场景、12 个门实体、12 条有向连接与碰撞的真源；新增区域仍走同一 RPGJS renderer。
+- `src/exploration.ts` 定义四项生活观察/检测、双语材料和阶段提示。剧情效果经 `explorationRules` 进入原 reducer，不新增存档权威。
+- `migrateStorySave` 只补缺失事实与地图节点；保留旧选择、当前地点、已到访地点和对话历史。
+- `MemoryMap` 从 portals 广度搜索路线：未知地点可看名称/方向，只有沿途均已到访才可快捷前往；服务端同一规则再次校验。
+- `scripts/export-room-maps.ts` 只导出当前世界 TMX，不会覆盖已准入美术；`bake-scene-layers.tsx` + `crop-scene-layers.py` 把现有平台素材装配为七处独立深度层。
+- 新区域复用当前游戏平台素材；本轮没有新生图、没有读取旧街素材作为生成参考。

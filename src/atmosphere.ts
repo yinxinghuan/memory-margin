@@ -22,8 +22,19 @@ export const serviceAtlasPlacements:AtlasPlacement[]=[
  {id:'service-maintenance-console',kind:'furniture',atlas:'service-maintenance',cell:[0,0],source:[63,68,383,372],rect:{x:270,y:278,w:48,h:46.6},obstacle:{x:276,y:295,w:37,h:24}},
 ]
 
+// Existing platform-generated furniture, arranged for four different daily functions.
+function place(source:AtlasPlacement,id:string,x:number,y:number):AtlasPlacement{
+ const dx=x-source.rect.x,dy=y-source.rect.y
+ return {...source,id,rect:{...source.rect,x,y},obstacle:source.obstacle?{...source.obstacle,x:source.obstacle.x+dx,y:source.obstacle.y+dy}:undefined}
+}
+export const expandedPlacements:Record<string,AtlasPlacement[]>={
+ commons:[place(serviceAtlasPlacements[1],'commons-seat-a',78,248),place(serviceAtlasPlacements[1],'commons-seat-b',128,288),place(homeAtlasPlacements[1],'commons-cabinet',259,113),place(homeAtlasPlacements[2],'commons-serving-cart',242,337)],
+ 'neighbor-room':[place(homeAtlasPlacements[0],'neighbor-bed',76,100),place(homeAtlasPlacements[1],'neighbor-cabinet',252,98),place(serviceAtlasPlacements[1],'neighbor-chair',235,310),place(homeAtlasPlacements[3],'neighbor-slippers',126,175)],
+ repair:[place(serviceAtlasPlacements[1],'repair-seat',90,201),place(serviceAtlasPlacements[2],'repair-tools',81,111),place(serviceAtlasPlacements[0],'repair-buffer',260,105),place(homeAtlasPlacements[2],'repair-cart',260,332)],
+ archive:[place(serviceAtlasPlacements[0],'archive-bank-a',78,92),place(serviceAtlasPlacements[0],'archive-bank-b',138,92),place(serviceAtlasPlacements[0],'archive-bank-c',198,92),place(serviceAtlasPlacements[0],'archive-bank-d',258,92),place(serviceAtlasPlacements[0],'archive-bank-e',268,328)],
+}
 export function atmospherePlacements(scene:string):AtlasPlacement[]{
- return scene==='home'?homeAtlasPlacements:scene==='service'?serviceAtlasPlacements:[]
+ return scene==='home'?homeAtlasPlacements:scene==='service'?serviceAtlasPlacements:expandedPlacements[scene]??[]
 }
 
 /** Regions admitted from the one-piece platform scene plate; the diagonal chair is excluded. */

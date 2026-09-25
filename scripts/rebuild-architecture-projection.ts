@@ -1,8 +1,8 @@
 import {readFileSync,writeFileSync} from 'node:fs'
 import {architectureInstances} from '../src/architecture'
-import type {Scene} from '../src/world'
+import {world,type Scene} from '../src/world'
 import doorWallArt from '../src/door-wall-art.json'
-const sceneIds:Scene[]=['home','hall','service']
+const sceneIds=Object.keys(world.scenes) as Scene[]
 export const projectionWalls=sceneIds.flatMap(scene=>architectureInstances(scene).flatMap((p,index)=>{
  const panel=doorWallArt.find(a=>a.id==='wall-panel-root')!,side=doorWallArt.find(a=>a.id==='door-side-root')!,front=doorWallArt.find(a=>a.id==='door-front-root-v2')!
  const base={id:`${scene}-${p.kind}-${index}`}

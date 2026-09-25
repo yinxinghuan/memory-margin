@@ -308,3 +308,13 @@ html,body,#root{height:100%;overflow:hidden}
 
 .mm-action-entry{display:grid;gap:5px}.mm-action-entry>button{width:100%}.mm-action-reason{margin:0 0 8px;font-size:13px;line-height:1.5;color:#a0cbaa}.mm-action-entry>button:disabled{opacity:.5;cursor:default}
 @media(max-height:650px){.mm-interaction-layer .mm-closeup:has(.mm-object-art){height:76px}.mm-interaction-layer .mm-closeup .mm-object-art{transform:scale(.7)}.mm-interaction-layer .mm-message{min-height:0;margin:8px 0}.mm-interaction-layer .mm-read-more{margin-top:6px}}
+
+/* Objectives open a concrete route; the map is a seven-place neighborhood. */
+.mm-objective--route{width:calc(100% - 38px);text-align:left;color:inherit;border-top:0;border-right:0;border-bottom:0;cursor:pointer}
+.mm-objective--route>svg{width:18px;height:18px;margin-left:auto;align-self:center}
+.mm-atlas-world>button small{display:block;font-size:10px;opacity:.7;margin-top:2px}
+.mm-atlas-world>button{width:27%;max-width:96px}
+.mm-atlas-world>button{height:28%;min-height:0;padding:4px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.mm-atlas-world>button .mm-room-plan{flex:1;min-height:0;height:auto;width:46px}
+.mm-atlas-world>button span{flex:none;line-height:1.15;max-width:100%;font-size:10px}
+.mm-atlas-world>button small{font-size:9px;line-height:1.1;margin-top:1px}

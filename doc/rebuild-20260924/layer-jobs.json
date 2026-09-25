@@ -35,6 +35,48 @@
     "output": "public/art/rpg-layers/home-back-4.png"
   },
   {
+    "id": "home-back-5",
+    "scene": "home",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/home-back-5.png",
+    "output": "public/art/rpg-layers/home-back-5.png"
+  },
+  {
+    "id": "home-back-6",
+    "scene": "home",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/home-back-6.png",
+    "output": "public/art/rpg-layers/home-back-6.png"
+  },
+  {
+    "id": "home-back-7",
+    "scene": "home",
+    "depth": 64,
+    "source": "doc/rebuild-20260924/layers-raw/home-back-7.png",
+    "output": "public/art/rpg-layers/home-back-7.png"
+  },
+  {
+    "id": "home-back-8",
+    "scene": "home",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/home-back-8.png",
+    "output": "public/art/rpg-layers/home-back-8.png"
+  },
+  {
+    "id": "home-back-9",
+    "scene": "home",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/home-back-9.png",
+    "output": "public/art/rpg-layers/home-back-9.png"
+  },
+  {
+    "id": "home-front-0",
+    "scene": "home",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/home-front-0.png",
+    "output": "public/art/rpg-layers/home-front-0.png"
+  },
+  {
     "id": "home-sleep-bench",
     "scene": "home",
     "depth": 313,
@@ -84,6 +126,90 @@
     "output": "public/art/rpg-layers/hall-back-0.png"
   },
   {
+    "id": "hall-back-1",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-1.png",
+    "output": "public/art/rpg-layers/hall-back-1.png"
+  },
+  {
+    "id": "hall-back-2",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-2.png",
+    "output": "public/art/rpg-layers/hall-back-2.png"
+  },
+  {
+    "id": "hall-back-3",
+    "scene": "hall",
+    "depth": 64,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-3.png",
+    "output": "public/art/rpg-layers/hall-back-3.png"
+  },
+  {
+    "id": "hall-back-4",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-4.png",
+    "output": "public/art/rpg-layers/hall-back-4.png"
+  },
+  {
+    "id": "hall-back-5",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-5.png",
+    "output": "public/art/rpg-layers/hall-back-5.png"
+  },
+  {
+    "id": "hall-back-6",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-6.png",
+    "output": "public/art/rpg-layers/hall-back-6.png"
+  },
+  {
+    "id": "hall-back-7",
+    "scene": "hall",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-7.png",
+    "output": "public/art/rpg-layers/hall-back-7.png"
+  },
+  {
+    "id": "hall-back-8",
+    "scene": "hall",
+    "depth": 148,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-8.png",
+    "output": "public/art/rpg-layers/hall-back-8.png"
+  },
+  {
+    "id": "hall-back-9",
+    "scene": "hall",
+    "depth": 356,
+    "source": "doc/rebuild-20260924/layers-raw/hall-back-9.png",
+    "output": "public/art/rpg-layers/hall-back-9.png"
+  },
+  {
+    "id": "hall-front-0",
+    "scene": "hall",
+    "depth": 194,
+    "source": "doc/rebuild-20260924/layers-raw/hall-front-0.png",
+    "output": "public/art/rpg-layers/hall-front-0.png"
+  },
+  {
+    "id": "hall-front-1",
+    "scene": "hall",
+    "depth": 402,
+    "source": "doc/rebuild-20260924/layers-raw/hall-front-1.png",
+    "output": "public/art/rpg-layers/hall-front-1.png"
+  },
+  {
+    "id": "hall-front-2",
+    "scene": "hall",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/hall-front-2.png",
+    "output": "public/art/rpg-layers/hall-front-2.png"
+  },
+  {
     "id": "hall-object-seal",
     "scene": "hall",
     "depth": 210.2,
@@ -107,135 +233,16 @@
   {
     "id": "service-back-1",
     "scene": "service",
-    "depth": 272,
+    "depth": 273,
     "source": "doc/rebuild-20260924/layers-raw/service-back-1.png",
     "output": "public/art/rpg-layers/service-back-1.png"
   },
   {
     "id": "service-back-2",
     "scene": "service",
-    "depth": 273,
+    "depth": -500,
     "source": "doc/rebuild-20260924/layers-raw/service-back-2.png",
     "output": "public/art/rpg-layers/service-back-2.png"
-  },
-  {
-    "id": "service-memory-archive-buffer",
-    "scene": "service",
-    "depth": 210,
-    "source": "doc/rebuild-20260924/layers-raw/service-memory-archive-buffer.png",
-    "output": "public/art/rpg-layers/service-memory-archive-buffer.png"
-  },
-  {
-    "id": "service-memory-intake-chair",
-    "scene": "service",
-    "depth": 287,
-    "source": "doc/rebuild-20260924/layers-raw/service-memory-intake-chair.png",
-    "output": "public/art/rpg-layers/service-memory-intake-chair.png"
-  },
-  {
-    "id": "service-service-maintenance-console",
-    "scene": "service",
-    "depth": 319,
-    "source": "doc/rebuild-20260924/layers-raw/service-service-maintenance-console.png",
-    "output": "public/art/rpg-layers/service-service-maintenance-console.png"
-  },
-  {
-    "id": "service-object-ledger",
-    "scene": "service",
-    "depth": 272.2,
-    "source": "doc/rebuild-20260924/layers-raw/service-object-ledger.png",
-    "output": "public/art/rpg-layers/service-object-ledger.png"
-  },
-  {
-    "id": "service-object-terms-card",
-    "scene": "service",
-    "depth": 58.2,
-    "source": "doc/rebuild-20260924/layers-raw/service-object-terms-card.png",
-    "output": "public/art/rpg-layers/service-object-terms-card.png"
-  },
-  {
-    "id": "service-object-choice-desk",
-    "scene": "service",
-    "depth": 273.2,
-    "source": "doc/rebuild-20260924/layers-raw/service-object-choice-desk.png",
-    "output": "public/art/rpg-layers/service-object-choice-desk.png"
-  },
-  {
-    "id": "service-object-preview-screen",
-    "scene": "service",
-    "depth": 362.2,
-    "source": "doc/rebuild-20260924/layers-raw/service-object-preview-screen.png",
-    "output": "public/art/rpg-layers/service-object-preview-screen.png"
-  },
-  {
-    "id": "home-back-5",
-    "scene": "home",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/home-back-5.png",
-    "output": "public/art/rpg-layers/home-back-5.png"
-  },
-  {
-    "id": "home-back-6",
-    "scene": "home",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/home-back-6.png",
-    "output": "public/art/rpg-layers/home-back-6.png"
-  },
-  {
-    "id": "home-back-7",
-    "scene": "home",
-    "depth": 64,
-    "source": "doc/rebuild-20260924/layers-raw/home-back-7.png",
-    "output": "public/art/rpg-layers/home-back-7.png"
-  },
-  {
-    "id": "home-back-8",
-    "scene": "home",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/home-back-8.png",
-    "output": "public/art/rpg-layers/home-back-8.png"
-  },
-  {
-    "id": "home-back-9",
-    "scene": "home",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/home-back-9.png",
-    "output": "public/art/rpg-layers/home-back-9.png"
-  },
-  {
-    "id": "home-front-0",
-    "scene": "home",
-    "depth": 464,
-    "source": "doc/rebuild-20260924/layers-raw/home-front-0.png",
-    "output": "public/art/rpg-layers/home-front-0.png"
-  },
-  {
-    "id": "hall-back-1",
-    "scene": "hall",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-1.png",
-    "output": "public/art/rpg-layers/hall-back-1.png"
-  },
-  {
-    "id": "hall-back-2",
-    "scene": "hall",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-2.png",
-    "output": "public/art/rpg-layers/hall-back-2.png"
-  },
-  {
-    "id": "hall-back-3",
-    "scene": "hall",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-3.png",
-    "output": "public/art/rpg-layers/hall-back-3.png"
-  },
-  {
-    "id": "hall-back-4",
-    "scene": "hall",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-4.png",
-    "output": "public/art/rpg-layers/hall-back-4.png"
   },
   {
     "id": "service-back-3",
@@ -250,13 +257,6 @@
     "depth": -500,
     "source": "doc/rebuild-20260924/layers-raw/service-back-4.png",
     "output": "public/art/rpg-layers/service-back-4.png"
-  },
-  {
-    "id": "service-back-5",
-    "scene": "service",
-    "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/service-back-5.png",
-    "output": "public/art/rpg-layers/service-back-5.png"
   },
   {
     "id": "service-front-0",
@@ -280,45 +280,472 @@
     "output": "public/art/rpg-layers/service-front-2.png"
   },
   {
-    "id": "hall-back-5",
-    "scene": "hall",
+    "id": "service-memory-archive-buffer",
+    "scene": "service",
+    "depth": 210,
+    "source": "doc/rebuild-20260924/layers-raw/service-memory-archive-buffer.png",
+    "output": "public/art/rpg-layers/service-memory-archive-buffer.png"
+  },
+  {
+    "id": "service-memory-intake-chair",
+    "scene": "service",
+    "depth": 287,
+    "source": "doc/rebuild-20260924/layers-raw/service-memory-intake-chair.png",
+    "output": "public/art/rpg-layers/service-memory-intake-chair.png"
+  },
+  {
+    "id": "service-service-maintenance-console",
+    "scene": "service",
+    "depth": 319,
+    "source": "doc/rebuild-20260924/layers-raw/service-service-maintenance-console.png",
+    "output": "public/art/rpg-layers/service-service-maintenance-console.png"
+  },
+  {
+    "id": "service-object-terms-card",
+    "scene": "service",
+    "depth": 58.2,
+    "source": "doc/rebuild-20260924/layers-raw/service-object-terms-card.png",
+    "output": "public/art/rpg-layers/service-object-terms-card.png"
+  },
+  {
+    "id": "service-object-choice-desk",
+    "scene": "service",
+    "depth": 273.2,
+    "source": "doc/rebuild-20260924/layers-raw/service-object-choice-desk.png",
+    "output": "public/art/rpg-layers/service-object-choice-desk.png"
+  },
+  {
+    "id": "service-object-preview-screen",
+    "scene": "service",
+    "depth": 362.2,
+    "source": "doc/rebuild-20260924/layers-raw/service-object-preview-screen.png",
+    "output": "public/art/rpg-layers/service-object-preview-screen.png"
+  },
+  {
+    "id": "commons-back-0",
+    "scene": "commons",
+    "depth": -1000,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-0.png",
+    "output": "public/art/rpg-layers/commons-back-0.png"
+  },
+  {
+    "id": "commons-back-1",
+    "scene": "commons",
     "depth": -500,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-5.png",
-    "output": "public/art/rpg-layers/hall-back-5.png"
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-1.png",
+    "output": "public/art/rpg-layers/commons-back-1.png"
   },
   {
-    "id": "hall-back-6",
-    "scene": "hall",
-    "depth": 148,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-6.png",
-    "output": "public/art/rpg-layers/hall-back-6.png"
+    "id": "commons-back-2",
+    "scene": "commons",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-2.png",
+    "output": "public/art/rpg-layers/commons-back-2.png"
   },
   {
-    "id": "hall-back-7",
-    "scene": "hall",
-    "depth": 356,
-    "source": "doc/rebuild-20260924/layers-raw/hall-back-7.png",
-    "output": "public/art/rpg-layers/hall-back-7.png"
+    "id": "commons-back-3",
+    "scene": "commons",
+    "depth": 64,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-3.png",
+    "output": "public/art/rpg-layers/commons-back-3.png"
   },
   {
-    "id": "hall-front-0",
-    "scene": "hall",
-    "depth": 194,
-    "source": "doc/rebuild-20260924/layers-raw/hall-front-0.png",
-    "output": "public/art/rpg-layers/hall-front-0.png"
+    "id": "commons-back-4",
+    "scene": "commons",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-4.png",
+    "output": "public/art/rpg-layers/commons-back-4.png"
   },
   {
-    "id": "hall-front-1",
-    "scene": "hall",
-    "depth": 402,
-    "source": "doc/rebuild-20260924/layers-raw/hall-front-1.png",
-    "output": "public/art/rpg-layers/hall-front-1.png"
+    "id": "commons-back-5",
+    "scene": "commons",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-5.png",
+    "output": "public/art/rpg-layers/commons-back-5.png"
   },
   {
-    "id": "hall-front-2",
-    "scene": "hall",
+    "id": "commons-back-6",
+    "scene": "commons",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-6.png",
+    "output": "public/art/rpg-layers/commons-back-6.png"
+  },
+  {
+    "id": "commons-back-7",
+    "scene": "commons",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-7.png",
+    "output": "public/art/rpg-layers/commons-back-7.png"
+  },
+  {
+    "id": "commons-back-8",
+    "scene": "commons",
+    "depth": 162,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-8.png",
+    "output": "public/art/rpg-layers/commons-back-8.png"
+  },
+  {
+    "id": "commons-back-9",
+    "scene": "commons",
+    "depth": 288,
+    "source": "doc/rebuild-20260924/layers-raw/commons-back-9.png",
+    "output": "public/art/rpg-layers/commons-back-9.png"
+  },
+  {
+    "id": "commons-front-0",
+    "scene": "commons",
+    "depth": 208,
+    "source": "doc/rebuild-20260924/layers-raw/commons-front-0.png",
+    "output": "public/art/rpg-layers/commons-front-0.png"
+  },
+  {
+    "id": "commons-front-1",
+    "scene": "commons",
+    "depth": 334,
+    "source": "doc/rebuild-20260924/layers-raw/commons-front-1.png",
+    "output": "public/art/rpg-layers/commons-front-1.png"
+  },
+  {
+    "id": "commons-front-2",
+    "scene": "commons",
     "depth": 464,
-    "source": "doc/rebuild-20260924/layers-raw/hall-front-2.png",
-    "output": "public/art/rpg-layers/hall-front-2.png"
+    "source": "doc/rebuild-20260924/layers-raw/commons-front-2.png",
+    "output": "public/art/rpg-layers/commons-front-2.png"
+  },
+  {
+    "id": "commons-front-3",
+    "scene": "commons",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/commons-front-3.png",
+    "output": "public/art/rpg-layers/commons-front-3.png"
+  },
+  {
+    "id": "commons-front-4",
+    "scene": "commons",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/commons-front-4.png",
+    "output": "public/art/rpg-layers/commons-front-4.png"
+  },
+  {
+    "id": "commons-commons-seat-a",
+    "scene": "commons",
+    "depth": 289,
+    "source": "doc/rebuild-20260924/layers-raw/commons-commons-seat-a.png",
+    "output": "public/art/rpg-layers/commons-commons-seat-a.png"
+  },
+  {
+    "id": "commons-commons-seat-b",
+    "scene": "commons",
+    "depth": 329,
+    "source": "doc/rebuild-20260924/layers-raw/commons-commons-seat-b.png",
+    "output": "public/art/rpg-layers/commons-commons-seat-b.png"
+  },
+  {
+    "id": "commons-commons-cabinet",
+    "scene": "commons",
+    "depth": 148,
+    "source": "doc/rebuild-20260924/layers-raw/commons-commons-cabinet.png",
+    "output": "public/art/rpg-layers/commons-commons-cabinet.png"
+  },
+  {
+    "id": "commons-commons-serving-cart",
+    "scene": "commons",
+    "depth": 381,
+    "source": "doc/rebuild-20260924/layers-raw/commons-commons-serving-cart.png",
+    "output": "public/art/rpg-layers/commons-commons-serving-cart.png"
+  },
+  {
+    "id": "neighbor-room-back-0",
+    "scene": "neighbor-room",
+    "depth": -1000,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-0.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-0.png"
+  },
+  {
+    "id": "neighbor-room-back-1",
+    "scene": "neighbor-room",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-1.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-1.png"
+  },
+  {
+    "id": "neighbor-room-back-2",
+    "scene": "neighbor-room",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-2.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-2.png"
+  },
+  {
+    "id": "neighbor-room-back-3",
+    "scene": "neighbor-room",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-3.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-3.png"
+  },
+  {
+    "id": "neighbor-room-back-4",
+    "scene": "neighbor-room",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-4.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-4.png"
+  },
+  {
+    "id": "neighbor-room-back-5",
+    "scene": "neighbor-room",
+    "depth": 162,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-back-5.png",
+    "output": "public/art/rpg-layers/neighbor-room-back-5.png"
+  },
+  {
+    "id": "neighbor-room-front-0",
+    "scene": "neighbor-room",
+    "depth": 208,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-front-0.png",
+    "output": "public/art/rpg-layers/neighbor-room-front-0.png"
+  },
+  {
+    "id": "neighbor-room-front-1",
+    "scene": "neighbor-room",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-front-1.png",
+    "output": "public/art/rpg-layers/neighbor-room-front-1.png"
+  },
+  {
+    "id": "neighbor-room-neighbor-bed",
+    "scene": "neighbor-room",
+    "depth": 181,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-neighbor-bed.png",
+    "output": "public/art/rpg-layers/neighbor-room-neighbor-bed.png"
+  },
+  {
+    "id": "neighbor-room-neighbor-cabinet",
+    "scene": "neighbor-room",
+    "depth": 133,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-neighbor-cabinet.png",
+    "output": "public/art/rpg-layers/neighbor-room-neighbor-cabinet.png"
+  },
+  {
+    "id": "neighbor-room-neighbor-chair",
+    "scene": "neighbor-room",
+    "depth": 351,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-neighbor-chair.png",
+    "output": "public/art/rpg-layers/neighbor-room-neighbor-chair.png"
+  },
+  {
+    "id": "neighbor-room-neighbor-slippers",
+    "scene": "neighbor-room",
+    "depth": 189,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-neighbor-slippers.png",
+    "output": "public/art/rpg-layers/neighbor-room-neighbor-slippers.png"
+  },
+  {
+    "id": "neighbor-room-object-neighbor-keepsake",
+    "scene": "neighbor-room",
+    "depth": 248.2,
+    "source": "doc/rebuild-20260924/layers-raw/neighbor-room-object-neighbor-keepsake.png",
+    "output": "public/art/rpg-layers/neighbor-room-object-neighbor-keepsake.png"
+  },
+  {
+    "id": "repair-back-0",
+    "scene": "repair",
+    "depth": -1000,
+    "source": "doc/rebuild-20260924/layers-raw/repair-back-0.png",
+    "output": "public/art/rpg-layers/repair-back-0.png"
+  },
+  {
+    "id": "repair-back-1",
+    "scene": "repair",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/repair-back-1.png",
+    "output": "public/art/rpg-layers/repair-back-1.png"
+  },
+  {
+    "id": "repair-back-2",
+    "scene": "repair",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/repair-back-2.png",
+    "output": "public/art/rpg-layers/repair-back-2.png"
+  },
+  {
+    "id": "repair-back-3",
+    "scene": "repair",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/repair-back-3.png",
+    "output": "public/art/rpg-layers/repair-back-3.png"
+  },
+  {
+    "id": "repair-front-0",
+    "scene": "repair",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/repair-front-0.png",
+    "output": "public/art/rpg-layers/repair-front-0.png"
+  },
+  {
+    "id": "repair-front-1",
+    "scene": "repair",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/repair-front-1.png",
+    "output": "public/art/rpg-layers/repair-front-1.png"
+  },
+  {
+    "id": "repair-front-2",
+    "scene": "repair",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/repair-front-2.png",
+    "output": "public/art/rpg-layers/repair-front-2.png"
+  },
+  {
+    "id": "repair-repair-seat",
+    "scene": "repair",
+    "depth": 242,
+    "source": "doc/rebuild-20260924/layers-raw/repair-repair-seat.png",
+    "output": "public/art/rpg-layers/repair-repair-seat.png"
+  },
+  {
+    "id": "repair-repair-tools",
+    "scene": "repair",
+    "depth": 152,
+    "source": "doc/rebuild-20260924/layers-raw/repair-repair-tools.png",
+    "output": "public/art/rpg-layers/repair-repair-tools.png"
+  },
+  {
+    "id": "repair-repair-buffer",
+    "scene": "repair",
+    "depth": 150,
+    "source": "doc/rebuild-20260924/layers-raw/repair-repair-buffer.png",
+    "output": "public/art/rpg-layers/repair-repair-buffer.png"
+  },
+  {
+    "id": "repair-repair-cart",
+    "scene": "repair",
+    "depth": 376,
+    "source": "doc/rebuild-20260924/layers-raw/repair-repair-cart.png",
+    "output": "public/art/rpg-layers/repair-repair-cart.png"
+  },
+  {
+    "id": "archive-back-0",
+    "scene": "archive",
+    "depth": -1000,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-0.png",
+    "output": "public/art/rpg-layers/archive-back-0.png"
+  },
+  {
+    "id": "archive-back-1",
+    "scene": "archive",
+    "depth": 272,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-1.png",
+    "output": "public/art/rpg-layers/archive-back-1.png"
+  },
+  {
+    "id": "archive-back-2",
+    "scene": "archive",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-2.png",
+    "output": "public/art/rpg-layers/archive-back-2.png"
+  },
+  {
+    "id": "archive-back-3",
+    "scene": "archive",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-3.png",
+    "output": "public/art/rpg-layers/archive-back-3.png"
+  },
+  {
+    "id": "archive-back-4",
+    "scene": "archive",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-4.png",
+    "output": "public/art/rpg-layers/archive-back-4.png"
+  },
+  {
+    "id": "archive-back-5",
+    "scene": "archive",
+    "depth": -500,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-5.png",
+    "output": "public/art/rpg-layers/archive-back-5.png"
+  },
+  {
+    "id": "archive-back-6",
+    "scene": "archive",
+    "depth": 288,
+    "source": "doc/rebuild-20260924/layers-raw/archive-back-6.png",
+    "output": "public/art/rpg-layers/archive-back-6.png"
+  },
+  {
+    "id": "archive-front-0",
+    "scene": "archive",
+    "depth": 334,
+    "source": "doc/rebuild-20260924/layers-raw/archive-front-0.png",
+    "output": "public/art/rpg-layers/archive-front-0.png"
+  },
+  {
+    "id": "archive-front-1",
+    "scene": "archive",
+    "depth": 464,
+    "source": "doc/rebuild-20260924/layers-raw/archive-front-1.png",
+    "output": "public/art/rpg-layers/archive-front-1.png"
+  },
+  {
+    "id": "archive-archive-bank-a",
+    "scene": "archive",
+    "depth": 137,
+    "source": "doc/rebuild-20260924/layers-raw/archive-archive-bank-a.png",
+    "output": "public/art/rpg-layers/archive-archive-bank-a.png"
+  },
+  {
+    "id": "archive-archive-bank-b",
+    "scene": "archive",
+    "depth": 137,
+    "source": "doc/rebuild-20260924/layers-raw/archive-archive-bank-b.png",
+    "output": "public/art/rpg-layers/archive-archive-bank-b.png"
+  },
+  {
+    "id": "archive-archive-bank-c",
+    "scene": "archive",
+    "depth": 137,
+    "source": "doc/rebuild-20260924/layers-raw/archive-archive-bank-c.png",
+    "output": "public/art/rpg-layers/archive-archive-bank-c.png"
+  },
+  {
+    "id": "archive-archive-bank-d",
+    "scene": "archive",
+    "depth": 137,
+    "source": "doc/rebuild-20260924/layers-raw/archive-archive-bank-d.png",
+    "output": "public/art/rpg-layers/archive-archive-bank-d.png"
+  },
+  {
+    "id": "archive-archive-bank-e",
+    "scene": "archive",
+    "depth": 373,
+    "source": "doc/rebuild-20260924/layers-raw/archive-archive-bank-e.png",
+    "output": "public/art/rpg-layers/archive-archive-bank-e.png"
+  },
+  {
+    "id": "archive-object-ledger",
+    "scene": "archive",
+    "depth": 272.2,
+    "source": "doc/rebuild-20260924/layers-raw/archive-object-ledger.png",
+    "output": "public/art/rpg-layers/archive-object-ledger.png"
+  },
+  {
+    "id": "commons-object-scent-station",
+    "scene": "commons",
+    "depth": 240.2,
+    "source": "doc/rebuild-20260924/layers-raw/commons-object-scent-station.png",
+    "output": "public/art/rpg-layers/commons-object-scent-station.png"
+  },
+  {
+    "id": "repair-object-repair-scanner",
+    "scene": "repair",
+    "depth": 260.2,
+    "source": "doc/rebuild-20260924/layers-raw/repair-object-repair-scanner.png",
+    "output": "public/art/rpg-layers/repair-object-repair-scanner.png"
+  },
+  {
+    "id": "archive-object-archive-index",
+    "scene": "archive",
+    "depth": 220.2,
+    "source": "doc/rebuild-20260924/layers-raw/archive-object-archive-index.png",
+    "output": "public/art/rpg-layers/archive-object-archive-index.png"
   }
 ]

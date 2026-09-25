@@ -12,490 +12,1500 @@
   },
   "assets": [
     {
-      "id": "home-ground-v4",
-      "path": "public/art/modules/home-ground-v4.png",
-      "imageWidth": 768,
-      "imageHeight": 1024,
+      "id": "home-back-0",
+      "path": "public/art/rpg-layers/home-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 1024
+          "w": 558,
+          "h": 780
         }
       ]
     },
     {
-      "id": "hall-ground-v3",
-      "path": "public/art/modules/hall-ground-v3.png",
-      "imageWidth": 768,
-      "imageHeight": 1024,
+      "id": "home-back-1",
+      "path": "public/art/rpg-layers/home-back-1.png",
+      "imageWidth": 212,
+      "imageHeight": 105,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 1024
+          "w": 212,
+          "h": 105
         }
       ]
     },
     {
-      "id": "service-ground-v3",
-      "path": "public/art/modules/service-ground-v3.png",
-      "imageWidth": 768,
-      "imageHeight": 1024,
+      "id": "home-back-2",
+      "path": "public/art/rpg-layers/home-back-2.png",
+      "imageWidth": 182,
+      "imageHeight": 91,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 1024
+          "w": 182,
+          "h": 91
         }
       ]
     },
     {
-      "id": "home-wall-v5",
-      "path": "public/art/modules/home-wall-v5.png",
-      "imageWidth": 768,
-      "imageHeight": 256,
+      "id": "home-back-3",
+      "path": "public/art/rpg-layers/home-back-3.png",
+      "imageWidth": 96,
+      "imageHeight": 64,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 256
+          "w": 96,
+          "h": 64
         }
       ]
     },
     {
-      "id": "hall-wall-v4",
-      "path": "public/art/modules/hall-wall-v4.png",
-      "imageWidth": 768,
-      "imageHeight": 256,
+      "id": "home-back-4",
+      "path": "public/art/rpg-layers/home-back-4.png",
+      "imageWidth": 91,
+      "imageHeight": 92,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 256
+          "w": 91,
+          "h": 92
         }
       ]
     },
     {
-      "id": "service-wall-v4",
-      "path": "public/art/modules/service-wall-v4.png",
-      "imageWidth": 768,
-      "imageHeight": 256,
+      "id": "home-back-5",
+      "path": "public/art/rpg-layers/home-back-5.png",
+      "imageWidth": 218,
+      "imageHeight": 128,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 256
+          "w": 218,
+          "h": 128
         }
       ]
     },
     {
-      "id": "wall-north",
-      "path": "public/art/modules/wall-north.png",
-      "imageWidth": 768,
-      "imageHeight": 256,
+      "id": "home-back-6",
+      "path": "public/art/rpg-layers/home-back-6.png",
+      "imageWidth": 234,
+      "imageHeight": 128,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 256
+          "w": 234,
+          "h": 128
         }
       ]
     },
     {
-      "id": "home-side-wall-v7",
-      "path": "public/art/modules/home-side-wall-v7.png",
-      "imageWidth": 256,
-      "imageHeight": 1536,
+      "id": "home-back-7",
+      "path": "public/art/rpg-layers/home-back-7.png",
+      "imageWidth": 100,
+      "imageHeight": 128,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 1536
+          "w": 100,
+          "h": 128
         }
       ]
     },
     {
-      "id": "hall-side-wall-v7",
-      "path": "public/art/modules/hall-side-wall-v7.png",
-      "imageWidth": 256,
-      "imageHeight": 1536,
+      "id": "home-back-8",
+      "path": "public/art/rpg-layers/home-back-8.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 1536
+          "w": 36,
+          "h": 928
         }
       ]
     },
     {
-      "id": "service-side-wall-v7",
-      "path": "public/art/modules/service-side-wall-v7.png",
-      "imageWidth": 256,
-      "imageHeight": 1536,
+      "id": "home-back-9",
+      "path": "public/art/rpg-layers/home-back-9.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 1536
+          "w": 36,
+          "h": 928
         }
       ]
     },
     {
-      "id": "rug",
-      "path": "public/art/modules/rug.png",
-      "imageWidth": 512,
-      "imageHeight": 256,
+      "id": "home-front-0",
+      "path": "public/art/rpg-layers/home-front-0.png",
+      "imageWidth": 624,
+      "imageHeight": 132,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 512,
-          "h": 256
+          "w": 624,
+          "h": 132
         }
       ]
     },
     {
-      "id": "home-worktable-v5",
-      "path": "public/art/modules/home-worktable-v5.png",
-      "imageWidth": 512,
+      "id": "home-sleep-bench",
+      "path": "public/art/rpg-layers/home-sleep-bench.png",
+      "imageWidth": 97,
+      "imageHeight": 154,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 97,
+          "h": 154
+        }
+      ]
+    },
+    {
+      "id": "home-storage-cabinet",
+      "path": "public/art/rpg-layers/home-storage-cabinet.png",
+      "imageWidth": 87,
+      "imageHeight": 76,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 87,
+          "h": 76
+        }
+      ]
+    },
+    {
+      "id": "home-repair-cart",
+      "path": "public/art/rpg-layers/home-repair-cart.png",
+      "imageWidth": 80,
+      "imageHeight": 98,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 98
+        }
+      ]
+    },
+    {
+      "id": "home-worn-slippers",
+      "path": "public/art/rpg-layers/home-worn-slippers.png",
+      "imageWidth": 24,
+      "imageHeight": 26,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 24,
+          "h": 26
+        }
+      ]
+    },
+    {
+      "id": "home-object-receipt",
+      "path": "public/art/rpg-layers/home-object-receipt.png",
+      "imageWidth": 35,
+      "imageHeight": 49,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 35,
+          "h": 49
+        }
+      ]
+    },
+    {
+      "id": "home-object-breakfast-card",
+      "path": "public/art/rpg-layers/home-object-breakfast-card.png",
+      "imageWidth": 39,
+      "imageHeight": 33,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 39,
+          "h": 33
+        }
+      ]
+    },
+    {
+      "id": "hall-back-0",
+      "path": "public/art/rpg-layers/hall-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 558,
+          "h": 780
+        }
+      ]
+    },
+    {
+      "id": "hall-back-1",
+      "path": "public/art/rpg-layers/hall-back-1.png",
+      "imageWidth": 224,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 224,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "hall-back-2",
+      "path": "public/art/rpg-layers/hall-back-2.png",
+      "imageWidth": 244,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 244,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "hall-back-3",
+      "path": "public/art/rpg-layers/hall-back-3.png",
+      "imageWidth": 84,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 84,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "hall-back-4",
+      "path": "public/art/rpg-layers/hall-back-4.png",
+      "imageWidth": 36,
+      "imageHeight": 288,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 288
+        }
+      ]
+    },
+    {
+      "id": "hall-back-5",
+      "path": "public/art/rpg-layers/hall-back-5.png",
+      "imageWidth": 36,
+      "imageHeight": 540,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 540
+        }
+      ]
+    },
+    {
+      "id": "hall-back-6",
+      "path": "public/art/rpg-layers/hall-back-6.png",
+      "imageWidth": 36,
+      "imageHeight": 704,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 704
+        }
+      ]
+    },
+    {
+      "id": "hall-back-7",
+      "path": "public/art/rpg-layers/hall-back-7.png",
+      "imageWidth": 36,
+      "imageHeight": 124,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 124
+        }
+      ]
+    },
+    {
+      "id": "hall-back-8",
+      "path": "public/art/rpg-layers/hall-back-8.png",
+      "imageWidth": 36,
+      "imageHeight": 172,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 172
+        }
+      ]
+    },
+    {
+      "id": "hall-back-9",
+      "path": "public/art/rpg-layers/hall-back-9.png",
+      "imageWidth": 95,
+      "imageHeight": 232,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 95,
+          "h": 232
+        }
+      ]
+    },
+    {
+      "id": "hall-front-0",
+      "path": "public/art/rpg-layers/hall-front-0.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "hall-front-1",
+      "path": "public/art/rpg-layers/hall-front-1.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "hall-front-2",
+      "path": "public/art/rpg-layers/hall-front-2.png",
+      "imageWidth": 624,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 624,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "hall-object-seal",
+      "path": "public/art/rpg-layers/hall-object-seal.png",
+      "imageWidth": 29,
+      "imageHeight": 29,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 29,
+          "h": 29
+        }
+      ]
+    },
+    {
+      "id": "hall-object-hall-notice",
+      "path": "public/art/rpg-layers/hall-object-hall-notice.png",
+      "imageWidth": 32,
+      "imageHeight": 42,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 42
+        }
+      ]
+    },
+    {
+      "id": "service-back-0",
+      "path": "public/art/rpg-layers/service-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 558,
+          "h": 780
+        }
+      ]
+    },
+    {
+      "id": "service-back-1",
+      "path": "public/art/rpg-layers/service-back-1.png",
+      "imageWidth": 100,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "service-back-2",
+      "path": "public/art/rpg-layers/service-back-2.png",
+      "imageWidth": 552,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 552,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "service-back-3",
+      "path": "public/art/rpg-layers/service-back-3.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 928
+        }
+      ]
+    },
+    {
+      "id": "service-back-4",
+      "path": "public/art/rpg-layers/service-back-4.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 928
+        }
+      ]
+    },
+    {
+      "id": "service-front-0",
+      "path": "public/art/rpg-layers/service-front-0.png",
+      "imageWidth": 260,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "service-front-1",
+      "path": "public/art/rpg-layers/service-front-1.png",
+      "imageWidth": 280,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 280,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "service-front-2",
+      "path": "public/art/rpg-layers/service-front-2.png",
+      "imageWidth": 84,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 84,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "service-memory-archive-buffer",
+      "path": "public/art/rpg-layers/service-memory-archive-buffer.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "service-memory-intake-chair",
+      "path": "public/art/rpg-layers/service-memory-intake-chair.png",
+      "imageWidth": 96,
+      "imageHeight": 91,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 91
+        }
+      ]
+    },
+    {
+      "id": "service-service-maintenance-console",
+      "path": "public/art/rpg-layers/service-service-maintenance-console.png",
+      "imageWidth": 96,
+      "imageHeight": 93,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 93
+        }
+      ]
+    },
+    {
+      "id": "service-object-terms-card",
+      "path": "public/art/rpg-layers/service-object-terms-card.png",
+      "imageWidth": 46,
+      "imageHeight": 41,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 46,
+          "h": 41
+        }
+      ]
+    },
+    {
+      "id": "service-object-choice-desk",
+      "path": "public/art/rpg-layers/service-object-choice-desk.png",
+      "imageWidth": 48,
+      "imageHeight": 56,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 48,
+          "h": 56
+        }
+      ]
+    },
+    {
+      "id": "service-object-preview-screen",
+      "path": "public/art/rpg-layers/service-object-preview-screen.png",
+      "imageWidth": 36,
+      "imageHeight": 34,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 34
+        }
+      ]
+    },
+    {
+      "id": "commons-back-0",
+      "path": "public/art/rpg-layers/commons-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 558,
+          "h": 780
+        }
+      ]
+    },
+    {
+      "id": "commons-back-1",
+      "path": "public/art/rpg-layers/commons-back-1.png",
+      "imageWidth": 224,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 224,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "commons-back-2",
+      "path": "public/art/rpg-layers/commons-back-2.png",
+      "imageWidth": 244,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 244,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "commons-back-3",
+      "path": "public/art/rpg-layers/commons-back-3.png",
+      "imageWidth": 84,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 84,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "commons-back-4",
+      "path": "public/art/rpg-layers/commons-back-4.png",
+      "imageWidth": 36,
+      "imageHeight": 316,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 316
+        }
+      ]
+    },
+    {
+      "id": "commons-back-5",
+      "path": "public/art/rpg-layers/commons-back-5.png",
+      "imageWidth": 36,
       "imageHeight": 512,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 512,
+          "w": 36,
           "h": 512
         }
       ]
     },
     {
-      "id": "service-console-v6",
-      "path": "public/art/modules/service-console-v6.png",
-      "imageWidth": 512,
+      "id": "commons-back-6",
+      "path": "public/art/rpg-layers/commons-back-6.png",
+      "imageWidth": 36,
+      "imageHeight": 568,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 568
+        }
+      ]
+    },
+    {
+      "id": "commons-back-7",
+      "path": "public/art/rpg-layers/commons-back-7.png",
+      "imageWidth": 36,
+      "imageHeight": 260,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 260
+        }
+      ]
+    },
+    {
+      "id": "commons-back-8",
+      "path": "public/art/rpg-layers/commons-back-8.png",
+      "imageWidth": 36,
+      "imageHeight": 172,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 172
+        }
+      ]
+    },
+    {
+      "id": "commons-back-9",
+      "path": "public/art/rpg-layers/commons-back-9.png",
+      "imageWidth": 95,
+      "imageHeight": 232,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 95,
+          "h": 232
+        }
+      ]
+    },
+    {
+      "id": "commons-front-0",
+      "path": "public/art/rpg-layers/commons-front-0.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "commons-front-1",
+      "path": "public/art/rpg-layers/commons-front-1.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "commons-front-2",
+      "path": "public/art/rpg-layers/commons-front-2.png",
+      "imageWidth": 260,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "commons-front-3",
+      "path": "public/art/rpg-layers/commons-front-3.png",
+      "imageWidth": 280,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 280,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "commons-front-4",
+      "path": "public/art/rpg-layers/commons-front-4.png",
+      "imageWidth": 84,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 84,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "commons-commons-seat-a",
+      "path": "public/art/rpg-layers/commons-commons-seat-a.png",
+      "imageWidth": 96,
+      "imageHeight": 91,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 91
+        }
+      ]
+    },
+    {
+      "id": "commons-commons-seat-b",
+      "path": "public/art/rpg-layers/commons-commons-seat-b.png",
+      "imageWidth": 96,
+      "imageHeight": 91,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 91
+        }
+      ]
+    },
+    {
+      "id": "commons-commons-cabinet",
+      "path": "public/art/rpg-layers/commons-commons-cabinet.png",
+      "imageWidth": 87,
+      "imageHeight": 76,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 87,
+          "h": 76
+        }
+      ]
+    },
+    {
+      "id": "commons-commons-serving-cart",
+      "path": "public/art/rpg-layers/commons-commons-serving-cart.png",
+      "imageWidth": 80,
+      "imageHeight": 98,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 98
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room-back-0",
+      "path": "public/art/rpg-layers/neighbor-room-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 558,
+          "h": 780
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room-back-1",
+      "path": "public/art/rpg-layers/neighbor-room-back-1.png",
+      "imageWidth": 552,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 552,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room-back-2",
+      "path": "public/art/rpg-layers/neighbor-room-back-2.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 928
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room-back-3",
+      "path": "public/art/rpg-layers/neighbor-room-back-3.png",
+      "imageWidth": 36,
+      "imageHeight": 316,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 316
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room-back-4",
+      "path": "public/art/rpg-layers/neighbor-room-back-4.png",
+      "imageWidth": 36,
       "imageHeight": 512,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 512,
+          "w": 36,
           "h": 512
         }
       ]
     },
     {
-      "id": "door-front-atlas-v3",
-      "path": "public/art/modules/door-front-atlas-v3.png",
-      "imageWidth": 768,
-      "imageHeight": 512,
+      "id": "neighbor-room-back-5",
+      "path": "public/art/rpg-layers/neighbor-room-back-5.png",
+      "imageWidth": 95,
+      "imageHeight": 232,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 384,
-          "h": 512
-        },
-        {
-          "x": 384,
-          "y": 0,
-          "w": 384,
-          "h": 512
+          "w": 95,
+          "h": 232
         }
       ]
     },
     {
-      "id": "door-side-passage-v3",
-      "path": "public/art/modules/door-side-passage-v3.png",
-      "imageWidth": 768,
-      "imageHeight": 512,
+      "id": "neighbor-room-front-0",
+      "path": "public/art/rpg-layers/neighbor-room-front-0.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 768,
-          "h": 512
+          "w": 36,
+          "h": 72
         }
       ]
     },
     {
-      "id": "door-side-leaf-v5",
-      "path": "public/art/modules/door-side-leaf-v5.png",
-      "imageWidth": 512,
-      "imageHeight": 768,
+      "id": "neighbor-room-front-1",
+      "path": "public/art/rpg-layers/neighbor-room-front-1.png",
+      "imageWidth": 624,
+      "imageHeight": 132,
       "crops": [
         {
-          "x": 78,
-          "y": 66,
-          "w": 350,
-          "h": 634
+          "x": 0,
+          "y": 0,
+          "w": 624,
+          "h": 132
         }
       ]
     },
     {
-      "id": "cast",
-      "path": "public/art/cast.png",
-      "imageWidth": 1024,
-      "imageHeight": 1024,
+      "id": "neighbor-room-neighbor-bed",
+      "path": "public/art/rpg-layers/neighbor-room-neighbor-bed.png",
+      "imageWidth": 97,
+      "imageHeight": 154,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 512,
-          "h": 512
-        },
-        {
-          "x": 512,
-          "y": 0,
-          "w": 512,
-          "h": 512
-        },
-        {
-          "x": 0,
-          "y": 512,
-          "w": 512,
-          "h": 512
-        },
-        {
-          "x": 512,
-          "y": 512,
-          "w": 512,
-          "h": 512
+          "w": 97,
+          "h": 154
         }
       ]
     },
     {
-      "id": "neighbor-stand-v5",
-      "path": "public/art/neighbor-stand-v5.png",
-      "imageWidth": 256,
-      "imageHeight": 256,
+      "id": "neighbor-room-neighbor-cabinet",
+      "path": "public/art/rpg-layers/neighbor-room-neighbor-cabinet.png",
+      "imageWidth": 87,
+      "imageHeight": 76,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 256
+          "w": 87,
+          "h": 76
         }
       ]
     },
     {
-      "id": "caretaker-stand-v5",
-      "path": "public/art/caretaker-stand-v5.png",
-      "imageWidth": 256,
-      "imageHeight": 256,
+      "id": "neighbor-room-neighbor-chair",
+      "path": "public/art/rpg-layers/neighbor-room-neighbor-chair.png",
+      "imageWidth": 96,
+      "imageHeight": 91,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 256
+          "w": 96,
+          "h": 91
         }
       ]
     },
     {
-      "id": "clerk-stand-v5",
-      "path": "public/art/clerk-stand-v5.png",
-      "imageWidth": 256,
-      "imageHeight": 256,
+      "id": "neighbor-room-neighbor-slippers",
+      "path": "public/art/rpg-layers/neighbor-room-neighbor-slippers.png",
+      "imageWidth": 24,
+      "imageHeight": 26,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 256
+          "w": 24,
+          "h": 26
         }
       ]
     },
     {
-      "id": "objects",
-      "path": "public/art/objects.png",
-      "imageWidth": 960,
-      "imageHeight": 960,
+      "id": "neighbor-room-object-neighbor-keepsake",
+      "path": "public/art/rpg-layers/neighbor-room-object-neighbor-keepsake.png",
+      "imageWidth": 96,
+      "imageHeight": 64,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 320,
-          "y": 0,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 640,
-          "y": 0,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 0,
-          "y": 320,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 320,
-          "y": 320,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 640,
-          "y": 320,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 0,
-          "y": 640,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 320,
-          "y": 640,
-          "w": 320,
-          "h": 320
-        },
-        {
-          "x": 640,
-          "y": 640,
-          "w": 320,
-          "h": 320
+          "w": 96,
+          "h": 64
         }
       ]
     },
     {
-      "id": "hero",
-      "path": "public/art/hero.png",
-      "imageWidth": 768,
-      "imageHeight": 1024,
+      "id": "repair-back-0",
+      "path": "public/art/rpg-layers/repair-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 256,
-          "y": 0,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 512,
-          "y": 0,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 0,
-          "y": 256,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 256,
-          "y": 256,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 512,
-          "y": 256,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 0,
-          "y": 512,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 256,
-          "y": 512,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 512,
-          "y": 512,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 0,
-          "y": 768,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 256,
-          "y": 768,
-          "w": 256,
-          "h": 256
-        },
-        {
-          "x": 512,
-          "y": 768,
-          "w": 256,
-          "h": 256
+          "w": 558,
+          "h": 780
         }
       ]
     },
     {
-      "id": "door-leaf-v2",
-      "path": "public/art/modules/door-leaf-v2.png",
-      "imageWidth": 512,
-      "imageHeight": 512,
+      "id": "repair-back-1",
+      "path": "public/art/rpg-layers/repair-back-1.png",
+      "imageWidth": 552,
+      "imageHeight": 128,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 512,
-          "h": 512
+          "w": 552,
+          "h": 128
         }
       ]
     },
     {
-      "id": "home-floor-rebuild-20260924",
-      "path": "public/art/rebuild-20260924/home-floor.png",
-      "imageWidth": 1024,
-      "imageHeight": 1024,
+      "id": "repair-back-2",
+      "path": "public/art/rpg-layers/repair-back-2.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 1024,
-          "h": 1024
+          "w": 36,
+          "h": 928
         }
       ]
     },
     {
-      "id": "voice-console-rebuild-20260924",
-      "path": "public/art/rebuild-20260924/voice-console.png",
-      "imageWidth": 757,
-      "imageHeight": 505,
+      "id": "repair-back-3",
+      "path": "public/art/rpg-layers/repair-back-3.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
       "crops": [
         {
           "x": 0,
           "y": 0,
-          "w": 757,
-          "h": 505
+          "w": 36,
+          "h": 928
+        }
+      ]
+    },
+    {
+      "id": "repair-front-0",
+      "path": "public/art/rpg-layers/repair-front-0.png",
+      "imageWidth": 260,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 260,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "repair-front-1",
+      "path": "public/art/rpg-layers/repair-front-1.png",
+      "imageWidth": 280,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 280,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "repair-front-2",
+      "path": "public/art/rpg-layers/repair-front-2.png",
+      "imageWidth": 84,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 84,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "repair-repair-seat",
+      "path": "public/art/rpg-layers/repair-repair-seat.png",
+      "imageWidth": 96,
+      "imageHeight": 91,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 91
+        }
+      ]
+    },
+    {
+      "id": "repair-repair-tools",
+      "path": "public/art/rpg-layers/repair-repair-tools.png",
+      "imageWidth": 96,
+      "imageHeight": 93,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 96,
+          "h": 93
+        }
+      ]
+    },
+    {
+      "id": "repair-repair-buffer",
+      "path": "public/art/rpg-layers/repair-repair-buffer.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "repair-repair-cart",
+      "path": "public/art/rpg-layers/repair-repair-cart.png",
+      "imageWidth": 80,
+      "imageHeight": 98,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 98
+        }
+      ]
+    },
+    {
+      "id": "archive-back-0",
+      "path": "public/art/rpg-layers/archive-back-0.png",
+      "imageWidth": 558,
+      "imageHeight": 780,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 558,
+          "h": 780
+        }
+      ]
+    },
+    {
+      "id": "archive-back-1",
+      "path": "public/art/rpg-layers/archive-back-1.png",
+      "imageWidth": 100,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-back-2",
+      "path": "public/art/rpg-layers/archive-back-2.png",
+      "imageWidth": 552,
+      "imageHeight": 128,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 552,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "id": "archive-back-3",
+      "path": "public/art/rpg-layers/archive-back-3.png",
+      "imageWidth": 36,
+      "imageHeight": 568,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 568
+        }
+      ]
+    },
+    {
+      "id": "archive-back-4",
+      "path": "public/art/rpg-layers/archive-back-4.png",
+      "imageWidth": 36,
+      "imageHeight": 260,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 260
+        }
+      ]
+    },
+    {
+      "id": "archive-back-5",
+      "path": "public/art/rpg-layers/archive-back-5.png",
+      "imageWidth": 36,
+      "imageHeight": 928,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 928
+        }
+      ]
+    },
+    {
+      "id": "archive-back-6",
+      "path": "public/art/rpg-layers/archive-back-6.png",
+      "imageWidth": 36,
+      "imageHeight": 172,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 172
+        }
+      ]
+    },
+    {
+      "id": "archive-front-0",
+      "path": "public/art/rpg-layers/archive-front-0.png",
+      "imageWidth": 36,
+      "imageHeight": 72,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 36,
+          "h": 72
+        }
+      ]
+    },
+    {
+      "id": "archive-front-1",
+      "path": "public/art/rpg-layers/archive-front-1.png",
+      "imageWidth": 624,
+      "imageHeight": 132,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 624,
+          "h": 132
+        }
+      ]
+    },
+    {
+      "id": "archive-archive-bank-a",
+      "path": "public/art/rpg-layers/archive-archive-bank-a.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-archive-bank-b",
+      "path": "public/art/rpg-layers/archive-archive-bank-b.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-archive-bank-c",
+      "path": "public/art/rpg-layers/archive-archive-bank-c.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-archive-bank-d",
+      "path": "public/art/rpg-layers/archive-archive-bank-d.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-archive-bank-e",
+      "path": "public/art/rpg-layers/archive-archive-bank-e.png",
+      "imageWidth": 104,
+      "imageHeight": 100,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 104,
+          "h": 100
+        }
+      ]
+    },
+    {
+      "id": "archive-object-ledger",
+      "path": "public/art/rpg-layers/archive-object-ledger.png",
+      "imageWidth": 38,
+      "imageHeight": 51,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 38,
+          "h": 51
+        }
+      ]
+    },
+    {
+      "id": "commons-object-scent-station",
+      "path": "public/art/rpg-layers/commons-object-scent-station.png",
+      "imageWidth": 82,
+      "imageHeight": 80,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 82,
+          "h": 80
+        }
+      ]
+    },
+    {
+      "id": "repair-object-repair-scanner",
+      "path": "public/art/rpg-layers/repair-object-repair-scanner.png",
+      "imageWidth": 86,
+      "imageHeight": 84,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 86,
+          "h": 84
+        }
+      ]
+    },
+    {
+      "id": "archive-object-archive-index",
+      "path": "public/art/rpg-layers/archive-object-archive-index.png",
+      "imageWidth": 80,
+      "imageHeight": 76,
+      "crops": [
+        {
+          "x": 0,
+          "y": 0,
+          "w": 80,
+          "h": 76
         }
       ]
     }
@@ -503,7 +1513,7 @@
   "scenes": [
     {
       "id": "home",
-      "background": "home-floor-rebuild-20260924",
+      "background": "home-back-0",
       "architecture": [
         {
           "kind": "floor",
@@ -697,7 +1707,7 @@
     },
     {
       "id": "hall",
-      "background": "hall-ground-v3",
+      "background": "hall-back-0",
       "architecture": [
         {
           "kind": "floor",
@@ -710,7 +1720,21 @@
           "kind": "north-wall",
           "x": 54,
           "y": 0,
-          "w": 276,
+          "w": 112,
+          "h": 64
+        },
+        {
+          "kind": "north-wall",
+          "x": 208,
+          "y": 0,
+          "w": 122,
+          "h": 64
+        },
+        {
+          "kind": "north-door",
+          "x": 166,
+          "y": 0,
+          "w": 42,
           "h": 64
         },
         {
@@ -788,6 +1812,31 @@
         }
       ],
       "targets": [
+        {
+          "id": "commons-door",
+          "kind": "door",
+          "approach": {
+            "x": 184,
+            "y": 68
+          },
+          "threshold": {
+            "x": 184,
+            "y": 64
+          },
+          "activation": {
+            "x": 166,
+            "y": 64,
+            "w": 42,
+            "h": 50
+          },
+          "side": "N",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
         {
           "id": "home-return",
           "kind": "door",
@@ -898,7 +1947,7 @@
     },
     {
       "id": "service",
-      "background": "service-ground-v3",
+      "background": "service-back-0",
       "architecture": [
         {
           "kind": "floor",
@@ -906,13 +1955,6 @@
           "y": 64,
           "w": 276,
           "h": 390
-        },
-        {
-          "kind": "desk-service",
-          "x": 97,
-          "y": 222,
-          "w": 50,
-          "h": 50
         },
         {
           "kind": "desk-service",
@@ -982,12 +2024,6 @@
           "h": 20
         },
         {
-          "x": 97,
-          "y": 222,
-          "w": 50,
-          "h": 50
-        },
-        {
           "x": 258,
           "y": 223,
           "w": 50,
@@ -1019,20 +2055,6 @@
           "approach": {
             "x": 178,
             "y": 153
-          },
-          "states": [
-            "static"
-          ],
-          "renderedStates": [
-            "static"
-          ]
-        },
-        {
-          "id": "ledger",
-          "kind": "record",
-          "approach": {
-            "x": 117,
-            "y": 291
           },
           "states": [
             "static"
@@ -1109,9 +2131,785 @@
           ]
         }
       ]
+    },
+    {
+      "id": "commons",
+      "background": "commons-back-0",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 112,
+          "h": 64
+        },
+        {
+          "kind": "north-wall",
+          "x": 208,
+          "y": 0,
+          "w": 122,
+          "h": 64
+        },
+        {
+          "kind": "north-door",
+          "x": 166,
+          "y": 0,
+          "w": 42,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 158
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 208,
+          "w": 18,
+          "h": 256
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 284
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 334,
+          "w": 18,
+          "h": 130
+        },
+        {
+          "kind": "side-door",
+          "x": 18,
+          "y": 158,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "side-door",
+          "x": 312,
+          "y": 284,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 112,
+          "h": 66
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 208,
+          "y": 398,
+          "w": 122,
+          "h": 66
+        },
+        {
+          "kind": "south-door",
+          "x": 166,
+          "y": 398,
+          "w": 42,
+          "h": 66
+        }
+      ],
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 184,
+        "y": 428
+      },
+      "obstacles": [
+        {
+          "x": 252,
+          "y": 220,
+          "w": 48,
+          "h": 20
+        },
+        {
+          "x": 86,
+          "y": 269,
+          "w": 31,
+          "h": 20
+        },
+        {
+          "x": 136,
+          "y": 309,
+          "w": 31,
+          "h": 20
+        },
+        {
+          "x": 263,
+          "y": 122,
+          "w": 42,
+          "h": 26
+        },
+        {
+          "x": 247,
+          "y": 350,
+          "w": 31,
+          "h": 31
+        }
+      ],
+      "targets": [
+        {
+          "id": "commons-return",
+          "kind": "door",
+          "approach": {
+            "x": 184,
+            "y": 428
+          },
+          "threshold": {
+            "x": 184,
+            "y": 436
+          },
+          "activation": {
+            "x": 166,
+            "y": 404,
+            "w": 42,
+            "h": 50
+          },
+          "side": "S",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "neighbor-door",
+          "kind": "door",
+          "approach": {
+            "x": 60,
+            "y": 174
+          },
+          "threshold": {
+            "x": 54,
+            "y": 174
+          },
+          "activation": {
+            "x": 54,
+            "y": 158,
+            "w": 48,
+            "h": 50
+          },
+          "side": "W",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "repair-door",
+          "kind": "door",
+          "approach": {
+            "x": 184,
+            "y": 68
+          },
+          "threshold": {
+            "x": 184,
+            "y": 64
+          },
+          "activation": {
+            "x": 166,
+            "y": 64,
+            "w": 42,
+            "h": 50
+          },
+          "side": "N",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "archive-door",
+          "kind": "door",
+          "approach": {
+            "x": 310,
+            "y": 300
+          },
+          "threshold": {
+            "x": 321,
+            "y": 300
+          },
+          "activation": {
+            "x": 282,
+            "y": 284,
+            "w": 48,
+            "h": 50
+          },
+          "side": "E",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "scent-station",
+          "kind": "desk",
+          "approach": {
+            "x": 264,
+            "y": 252
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neighbor-room",
+      "background": "neighbor-room-back-0",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 276,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 158
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 208,
+          "w": 18,
+          "h": 256
+        },
+        {
+          "kind": "side-door",
+          "x": 312,
+          "y": 158,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 276,
+          "h": 66
+        }
+      ],
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 310,
+        "y": 174
+      },
+      "obstacles": [
+        {
+          "x": 244,
+          "y": 232,
+          "w": 48,
+          "h": 16
+        },
+        {
+          "x": 82,
+          "y": 114,
+          "w": 38,
+          "h": 67
+        },
+        {
+          "x": 256,
+          "y": 107,
+          "w": 42,
+          "h": 26
+        },
+        {
+          "x": 243,
+          "y": 331,
+          "w": 31,
+          "h": 20
+        }
+      ],
+      "targets": [
+        {
+          "id": "neighbor-return",
+          "kind": "door",
+          "approach": {
+            "x": 310,
+            "y": 174
+          },
+          "threshold": {
+            "x": 321,
+            "y": 174
+          },
+          "activation": {
+            "x": 282,
+            "y": 158,
+            "w": 48,
+            "h": 50
+          },
+          "side": "E",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "neighbor-keepsake",
+          "kind": "record",
+          "approach": {
+            "x": 257,
+            "y": 268
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repair",
+      "background": "repair-back-0",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 276,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 112,
+          "h": 66
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 208,
+          "y": 398,
+          "w": 122,
+          "h": 66
+        },
+        {
+          "kind": "south-door",
+          "x": 166,
+          "y": 398,
+          "w": 42,
+          "h": 66
+        }
+      ],
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 184,
+        "y": 428
+      },
+      "obstacles": [
+        {
+          "x": 235,
+          "y": 242,
+          "w": 58,
+          "h": 18
+        },
+        {
+          "x": 98,
+          "y": 222,
+          "w": 31,
+          "h": 20
+        },
+        {
+          "x": 87,
+          "y": 128,
+          "w": 37,
+          "h": 24
+        },
+        {
+          "x": 266,
+          "y": 123,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 265,
+          "y": 345,
+          "w": 31,
+          "h": 31
+        }
+      ],
+      "targets": [
+        {
+          "id": "repair-return",
+          "kind": "door",
+          "approach": {
+            "x": 184,
+            "y": 428
+          },
+          "threshold": {
+            "x": 184,
+            "y": 436
+          },
+          "activation": {
+            "x": 166,
+            "y": 404,
+            "w": 42,
+            "h": 50
+          },
+          "side": "S",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "repair-scanner",
+          "kind": "desk",
+          "approach": {
+            "x": 252,
+            "y": 280
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "background": "archive-back-0",
+      "architecture": [
+        {
+          "kind": "floor",
+          "x": 54,
+          "y": 64,
+          "w": 276,
+          "h": 390
+        },
+        {
+          "kind": "desk-service",
+          "x": 97,
+          "y": 222,
+          "w": 50,
+          "h": 50
+        },
+        {
+          "kind": "north-wall",
+          "x": 54,
+          "y": 0,
+          "w": 276,
+          "h": 64
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 0,
+          "w": 18,
+          "h": 284
+        },
+        {
+          "kind": "side-wall",
+          "x": 36,
+          "y": 334,
+          "w": 18,
+          "h": 130
+        },
+        {
+          "kind": "side-wall",
+          "x": 330,
+          "y": 0,
+          "w": 18,
+          "h": 464
+        },
+        {
+          "kind": "side-door",
+          "x": 18,
+          "y": 284,
+          "w": 54,
+          "h": 50
+        },
+        {
+          "kind": "foreground-wall",
+          "x": 54,
+          "y": 398,
+          "w": 276,
+          "h": 66
+        }
+      ],
+      "walkRegion": {
+        "x": 54,
+        "y": 64,
+        "w": 276,
+        "h": 390
+      },
+      "spawn": {
+        "x": 60,
+        "y": 300
+      },
+      "obstacles": [
+        {
+          "x": 244,
+          "y": 202,
+          "w": 48,
+          "h": 18
+        },
+        {
+          "x": 97,
+          "y": 222,
+          "w": 50,
+          "h": 50
+        },
+        {
+          "x": 84,
+          "y": 110,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 144,
+          "y": 110,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 204,
+          "y": 110,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 264,
+          "y": 110,
+          "w": 41,
+          "h": 27
+        },
+        {
+          "x": 274,
+          "y": 346,
+          "w": 41,
+          "h": 27
+        }
+      ],
+      "targets": [
+        {
+          "id": "archive-return",
+          "kind": "door",
+          "approach": {
+            "x": 60,
+            "y": 300
+          },
+          "threshold": {
+            "x": 54,
+            "y": 300
+          },
+          "activation": {
+            "x": 54,
+            "y": 284,
+            "w": 48,
+            "h": 50
+          },
+          "side": "W",
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "archive-index",
+          "kind": "record",
+          "approach": {
+            "x": 260,
+            "y": 242
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        },
+        {
+          "id": "ledger",
+          "kind": "record",
+          "approach": {
+            "x": 117,
+            "y": 291
+          },
+          "states": [
+            "static"
+          ],
+          "renderedStates": [
+            "static"
+          ]
+        }
+      ]
     }
   ],
   "portals": [
+    {
+      "id": "to-commons",
+      "from": "hall",
+      "to": "commons",
+      "arrival": {
+        "x": 184,
+        "y": 428
+      },
+      "target": "commons-return"
+    },
+    {
+      "id": "commons-to-hall",
+      "from": "commons",
+      "to": "hall",
+      "arrival": {
+        "x": 184,
+        "y": 68
+      },
+      "target": "commons-door"
+    },
+    {
+      "id": "to-neighbor-room",
+      "from": "commons",
+      "to": "neighbor-room",
+      "arrival": {
+        "x": 310,
+        "y": 174
+      },
+      "target": "neighbor-return"
+    },
+    {
+      "id": "neighbor-to-commons",
+      "from": "neighbor-room",
+      "to": "commons",
+      "arrival": {
+        "x": 60,
+        "y": 174
+      },
+      "target": "neighbor-door"
+    },
+    {
+      "id": "to-repair",
+      "from": "commons",
+      "to": "repair",
+      "arrival": {
+        "x": 184,
+        "y": 428
+      },
+      "target": "repair-return"
+    },
+    {
+      "id": "repair-to-commons",
+      "from": "repair",
+      "to": "commons",
+      "arrival": {
+        "x": 184,
+        "y": 68
+      },
+      "target": "repair-door"
+    },
+    {
+      "id": "to-archive",
+      "from": "commons",
+      "to": "archive",
+      "arrival": {
+        "x": 60,
+        "y": 300
+      },
+      "target": "archive-return"
+    },
+    {
+      "id": "archive-to-commons",
+      "from": "archive",
+      "to": "commons",
+      "arrival": {
+        "x": 310,
+        "y": 300
+      },
+      "target": "archive-door"
+    },
     {
       "id": "to-hall",
       "from": "home",

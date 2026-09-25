@@ -11,7 +11,7 @@ export const wall={back:64,thickness:10,side:18,foreground:56}
 // Scene-specific platform wall modules are continuous and may be cropped to a
 // narrow central band without exposing unrelated fixtures or bright padding.
 export const sideWallSource={width:256,height:1536,top:0,bottom:1536} as const
-const palettes:Record<Scene,{cap:string;face:string;edge:string;trim:string;light:string}>={
+const palettes:Record<string,{cap:string;face:string;edge:string;trim:string;light:string}>={
  home:{cap:'#a9aa9d',face:'#8c918b',edge:'#384a4b',trim:'#655c50',light:'#c7b79d'},
  hall:{cap:'#929d9c',face:'#78898b',edge:'#334c55',trim:'#526469',light:'#afc7c2'},
  service:{cap:'#a9a595',face:'#818d88',edge:'#3c5152',trim:'#766948',light:'#c9c2a2'},
@@ -34,7 +34,7 @@ export function architectureInstances(scene:Scene):ModuleInstance[]{
  return [
   {kind:'floor',x:f.x,y:f.y,w:f.w,h:f.h},
   ...(scene==='home'?[{kind:'rug' as const,...furniture.homeRugLeft},{kind:'rug' as const,...furniture.homeRugRight},{kind:'desk-wood' as const,...furniture.voiceTable},{kind:'desk-wood' as const,...furniture.receiptTable}]:[]),
-  ...(scene==='service'?[{kind:'desk-service' as const,...furniture.ledgerTable},{kind:'desk-service' as const,...furniture.decisionDesk}]:[]),
+  ...(scene==='service'?[{kind:'desk-service' as const,...furniture.decisionDesk}]:scene==='archive'?[{kind:'desk-service' as const,...furniture.ledgerTable}]:[]),
   ...subtract(f.x,f.x+f.w,o.north).map(s=>({kind:'north-wall' as const,x:s.start,y:0,w:s.end-s.start,h:f.y})),
   ...o.north.map(s=>({kind:'north-door' as const,x:s.start,y:0,w:s.end-s.start,h:f.y})),
   ...subtract(0,outerBottom,o.west).map(s=>({kind:'side-wall' as const,x:f.x-side,y:s.start,w:side,h:s.end-s.start})),
@@ -119,14 +119,14 @@ function AmbientPiece({p}:{p:AtlasPlacement}){
  </svg>
 }
 export function SceneArchitecture({scene,foreground=false,actor,exportOnly}:{scene:Scene;foreground?:boolean;actor?:Point;exportOnly?:string}){
- const uid=useId().replace(/:/g,''),mask=`mm-wall-${uid}`,groundClip=`mm-ground-${uid}`,f=world.scenes[scene].interior,c=palettes[scene],o=openings(scene)
+ const uid=useId().replace(/:/g,''),mask=`mm-wall-${uid}`,groundClip=`mm-ground-${uid}`,f=world.scenes[scene].interior,c=palettes[scene]??palettes[scene==='neighbor-room'?'home':scene==='commons'?'hall':'service'],o=openings(scene)
  const parts=architectureInstances(scene).filter(p=>foreground?p.kind==='foreground-wall'||p.kind==='south-door'||p.kind==='side-door':p.kind!=='foreground-wall'&&p.kind!=='south-door').filter(p=>!(scene==='home'&&atmosphereMode==='ground'&&p.kind==='rug'))
  return <svg className={`mm-architecture${foreground?' mm-architecture--foreground':''}`} data-scene-architecture={scene} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" aria-hidden="true">
   <defs><filter id="mm-hall-wall-tone" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values=".16 .50 .09 0 0  .16 .50 .09 0 .07  .16 .50 .09 0 .09  0 0 0 1 0"/></filter><filter id="mm-service-wall-tone" colorInterpolationFilters="sRGB"><feColorMatrix type="matrix" values=".34 .20 .08 0 -.03  .10 .42 .18 0 -.01  .07 .24 .45 0 .05  0 0 0 1 0"/></filter>{scene==='home'&&atmosphereMode==='ground'&&<clipPath id={groundClip}>{homeGroundClusters.map(p=><rect key={p.id} {...p.clip}/>)}</clipPath>}{foreground&&<><radialGradient id={mask+'-fade'}><stop offset="0" stopColor="black"/><stop offset=".62" stopColor="black"/><stop offset="1" stopColor="white"/></radialGradient><mask id={mask}><rect width={W} height={H} fill="white"/>{actor&&actor.y>f.y+f.h-85&&<circle cx={actor.x} cy={actor.y-16} r="38" fill={`url(#${mask}-fade)`}/>}</mask></>}</defs>
   <g mask={foreground?`url(#${mask})`:undefined}>
    {parts.map((p,i)=>{
     if(exportOnly&&exportOnly!==`part-${i}`)return null
-    if(p.kind==='floor')return <g key={i}><rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#526f72"/><image href={scene==='home'?'./art/rebuild-20260924/home-floor.png':url(scene==='hall'?'hall-ground-v3':'service-ground-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice"/>{scene==='home'&&atmosphereMode==='ground'&&<image href={url('home-ground-furnished-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${groundClip})`}/>}<path d={`M${p.x} ${p.y}v${p.h}m${p.w} ${-p.h}v${p.h}`} stroke={c.edge} strokeWidth="3"/></g>
+    if(p.kind==='floor')return <g key={i}><rect x={p.x} y={p.y} width={p.w} height={p.h} fill="#526f72"/><image href={(scene==='home'||scene==='neighbor-room')?'./art/rebuild-20260924/home-floor.png':url((scene==='hall'||scene==='commons')?'hall-ground-v3':'service-ground-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice"/>{scene==='home'&&atmosphereMode==='ground'&&<image href={url('home-ground-furnished-v3')} x={p.x} y={p.y} width={p.w} height={p.h} preserveAspectRatio="xMidYMid slice" clipPath={`url(#${groundClip})`}/>}<path d={`M${p.x} ${p.y}v${p.h}m${p.w} ${-p.h}v${p.h}`} stroke={c.edge} strokeWidth="3"/></g>
     if(p.kind==='rug'||p.kind==='desk-wood'||p.kind==='desk-service')return <Furniture key={i} p={p}/>
     if(p.kind==='north-wall')return <NorthWall key={i} p={p} scene={scene}/>
     if(p.kind==='side-wall')return <SideWall key={i} p={p} scene={scene} end={[...o.west,...o.east].some(g=>g.start===p.y+p.h)}/>

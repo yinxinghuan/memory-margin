@@ -21,7 +21,13 @@ function evidenceRoute(){
  head=step(head,'service-door','to-service').head
  assert.equal(head.scene,'service')
  head=step(head,'clerk','talk-clerk').head
+ head=step(head,'service-exit','service-to-hall').head
+ head=step(head,'commons-door','to-commons').head
+ head=step(head,'archive-door','to-archive').head
  head=step(head,'ledger','read-ledger').head
+ head=step(head,'archive-return','archive-to-commons').head
+ head=step(head,'commons-return','commons-to-hall').head
+ head=step(head,'service-door','to-service').head
  return head
 }
 
@@ -52,7 +58,7 @@ test('new arrival learns the missing-memory rule through sources before deciding
  const ending=step(head,'voice-box','revisit-voice')
  assert.match(ending.text,/面馆/)
  assert.equal(ending.head.save.facts.voiceRevisited,true)
- assert.match(objective(ending.head.save),/今早/)
+ assert.match(objective(ending.head.save),/早餐/)
  const morning=step(ending.head,'voice-box','try-save-morning')
  assert.equal(morning.head.save.facts.morningHandled,true)
  assert.equal(morning.head.save.facts.morningStored,false)

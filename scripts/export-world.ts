@@ -60,7 +60,7 @@ const rebuildAssets=JSON.parse(readFileSync('doc/rebuild-20260924/art/processing
 for(const asset of rebuildAssets.filter(a=>a.id!=='hero-root'))assets.push({id:`${asset.id}-rebuild-20260924`,path:asset.output,imageWidth:asset.processed[0],imageHeight:asset.processed[1],crops:[{x:0,y:0,w:asset.processed[0],h:asset.processed[1]}]})
 const manifest={version:1,coordinateAnchor:'top-left' as const,world:{width:384,height:512,step:world.step},actor:{width:world.actor.w,height:world.actor.h},assets,scenes,portals:Object.entries(portals).map(([id,p])=>({id,from:p.from,to:p.scene,arrival:p.position,target:p.target}))}
 writeFileSync('doc/world-manifest.json',JSON.stringify(manifest,null,2)+'\n')
-const sceneIds=['home','hall','service'] as const
+const sceneIds=Object.keys(world.scenes) as Scene[]
 const sliceCrop=(sourceWidth:number,sourceHeight:number,displayWidth:number,displayHeight:number)=>{
  const scale=Math.max(displayWidth/sourceWidth,displayHeight/sourceHeight)
  const w=displayWidth/scale,h=displayHeight/scale

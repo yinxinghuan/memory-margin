@@ -1,12 +1,14 @@
+import {discoveries} from './exploration'
 import {cartridge,type StorySave,type Locale} from './story'
 import {resolveDomainAction} from './vendor/story/engine/domainRules'
-export const recordIdForEntity:Record<string,string>={receipt:'receipt',seal:'seal',ledger:'ledger','breakfast-card':'breakfast','hall-notice':'hall-notice','terms-card':'terms','preview-screen':'preview'}
+export const recordIdForEntity:Record<string,string>={...Object.fromEntries(discoveries.map(d=>[d.entity,d.entity])),receipt:'receipt',seal:'seal',ledger:'ledger','breakfast-card':'breakfast','hall-notice':'hall-notice','terms-card':'terms','preview-screen':'preview'}
 export function actionBlockReason(save:StorySave,action:string){
  const result=resolveDomainAction(save,cartridge(save.locale),action)
  return result?.status==='accepted'?'':result?.reasons.join(save.locale==='zh'?'；':'; ')??(save.locale==='zh'?'此操作暂不可用。':'This action is unavailable.')
 }
 export function panelDescription(id:string,f:StorySave['facts'],locale:Locale){
  const t=(zh:string,en:string)=>locale==='zh'?zh:en
+ const discovery=discoveries.find(d=>d.entity===id);if(discovery)return discovery.intro[locale==='zh'?0:1]
  switch(id){
  case 'voice-box':return f.morningStored?t('今早的印象已长期保留在语音盒里。','This morning’s impression is kept in the voice box.'):f.morningHandled?t('今早的印象仍在临时缓存中，将在今天结束时清空。','This morning’s impression remains temporary and will be cleared at the end of today.'):f.kept?t('昨夜的声音已经完整取回。','Last night’s voice has been recovered in full.'):f.lent?t('昨夜的声音已借出，30 天内无法取回结尾。','Last night’s voice is on loan; its ending cannot be recalled for 30 days.'):f.voiceHeard?t('那段属于你的声音，在结尾处断掉了。','Your own voice breaks off before the ending.'):t('语音盒亮着“你留下的第一段”。','The voice box reads “Your first saved fragment.”')
  case 'receipt':return t('桌上放着你的迁入回执。','Your arrival receipt lies on the desk.')
