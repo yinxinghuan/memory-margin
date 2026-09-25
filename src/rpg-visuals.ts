@@ -1,4 +1,4 @@
-import {Assets,Graphics,type Container,type Sprite} from 'pixi.js'
+import {Assets,Sprite,Texture,type Container} from 'pixi.js'
 import {Direction} from '@rpgjs/common'
 import type {RpgEvent} from '@rpgjs/server'
 import layers from './scene-layers.json'
@@ -32,32 +32,42 @@ export function updateSceneVisualState(scene:Scene,facts:Record<string,unknown>)
  if((event.graphics()[0]??null)!==graphic){event.setGraphic(graphic?[graphic]:[]);event.syncChanges()}
 }
 
-// One small stencil per foreground texture. No raster uploads or scene rebakes while walking.
+// Cached soft alpha texture, shared by wall segments; walking only moves masks.
 export function createForegroundReveal(){
+ const canvas=document.createElement('canvas');canvas.width=canvas.height=1024
+ const ctx=canvas.getContext('2d')!,gradient=ctx.createRadialGradient(512,512,0,512,512,48)
+ gradient.addColorStop(0,'rgba(255,255,255,.2)');gradient.addColorStop(.58,'rgba(255,255,255,.2)');gradient.addColorStop(1,'white')
+ ctx.fillStyle=gradient;ctx.fillRect(0,0,1024,1024)
+ const texture=Texture.from(canvas);texture.source.scaleMode='linear'
  let active='',nextScan=0
- let masks:{sprite:Sprite;mask:Graphics}[]=[]
+ let masks:{sprite:Sprite;mask:Sprite;layer:typeof layers[number]}[]=[]
  return (client:any,scene:string,position:{x:number;y:number})=>{
   const now=performance.now()
   if(active!==scene){for(const {sprite,mask} of masks){if(!sprite.destroyed)sprite.mask=null;if(!mask.destroyed)mask.destroy()}masks=[];active=scene;nextScan=0}
-  if(now>=nextScan||!masks.length){
+  if(now>=nextScan){
    nextScan=now+500
+   const room=world.scenes[scene]
+   const fronts=layers.filter(l=>l.scene===scene&&l.id.includes('-front-')&&l.y>=room.interior.y+room.interior.h-80&&!Object.values(entities).some(e=>e.scene===scene&&e.kind==='door'&&e.side==='S'&&Math.abs(l.x-e.visual.x)<1&&Math.abs(l.width*l.scale-e.visual.w)<1))
    const visit=(node:Container)=>{
     const sprite=node as Sprite,label=sprite.texture?.source?.label
-    if(typeof label==='string'&&label.includes(`/rpg-layers/${scene}-front-`)&&!masks.some(m=>m.sprite===sprite)&&sprite.parent){
-     const mask=new Graphics().rect(-1000,-1000,2000,2000).fill(0xffffff).ellipse(0,0,38,45).cut()
-     mask.label='mm-local-foreground-reveal';sprite.parent.addChild(mask);mask.visible=false;masks.push({sprite,mask})
+    const layer=typeof label==='string'?fronts.find(l=>label.includes(l.image.replace('./','/'))):undefined
+    if(layer&&!masks.some(m=>m.sprite===sprite)&&sprite.parent){
+     const mask=new Sprite({texture});mask.anchor.set(.5);mask.label='mm-soft-foreground-reveal';sprite.parent.addChild(mask);mask.visible=false;masks.push({sprite,mask,layer})
     }
     for(const child of [...(node.children??[])])visit(child)
    }
    if(client.canvasApp?.stage)visit(client.canvasApp.stage)
    masks=masks.filter(m=>!m.sprite.destroyed&&!m.mask.destroyed)
   }
-  const room=world.scenes[scene],near=position.y>room.interior.y+room.interior.h-85
-  for(const {sprite,mask} of masks){
+  const center={x:position.x,y:position.y-28}
+  for(const {sprite,mask,layer} of masks){
+   const near=center.x+48>layer.x&&center.x-48<layer.x+layer.width*layer.scale&&center.y+48>layer.y&&center.y-48<layer.y+layer.height*layer.scale
    mask.visible=near
-   if(near&&sprite.mask!==mask)sprite.setMask({mask,inverse:false})
-   if(!near&&sprite.mask)sprite.mask=null
-   mask.position.set(position.x,position.y-24)
+   if(!near){if(sprite.mask)sprite.mask=null;continue}
+   // Cropped wall textures have their own origin and render scale.
+   mask.scale.set(sprite.scale.x/layer.scale,sprite.scale.y/layer.scale)
+   mask.position.set(sprite.x+((center.x-layer.x)/layer.scale-sprite.anchor.x*layer.width)*sprite.scale.x,sprite.y+((center.y-layer.y)/layer.scale-sprite.anchor.y*layer.height)*sprite.scale.y)
+   if(sprite.mask!==mask)sprite.setMask({mask,inverse:false})
   }
  }
 }
