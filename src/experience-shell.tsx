@@ -1,3 +1,4 @@
+import {useMapGesture} from './use-map-gesture'
 import {useMemo,useState} from 'react'
 import type {Scene,EntityId} from './world'
 import {sceneLabels,world,entities} from './world'
@@ -19,7 +20,7 @@ const mapOrder:Scene[]=['home','hall','service']
 export function mapRoute(scene:Scene,destination:Scene,visited:ReadonlySet<string>){
  const from=mapOrder.indexOf(scene),to=mapOrder.indexOf(destination)
  const segment=mapOrder.slice(Math.min(from,to),Math.max(from,to)+1)
- return (from<=to?segment:segment.reverse()).filter(id=>visited.has(id))
+ return from<0||to<0||segment.some(id=>!visited.has(id))?[]:(from<=to?segment:segment.reverse())
 }
 
 function RoomPlan({scene,known}:{scene:Scene;known:boolean}){
@@ -36,9 +37,10 @@ function RoomPlan({scene,known}:{scene:Scene;known:boolean}){
  </svg>
 }
 
-export function MemoryMap({save,scene,locale}:{save:StorySave;scene:Scene;locale:Locale}){
+export function MemoryMap({save,scene,locale,onTravel,busy=false}:{onTravel:(scene:Scene)=>void;busy?:boolean;save:StorySave;scene:Scene;locale:Locale}){
  const copy=(zh:string,en:string)=>t(locale,zh,en)
- const visited=new Set(save.map.filter(node=>node.visited).map(node=>node.id))
+ const g=useMapGesture();
+ const visited=new Set(save.map.filter(node=>node.visited||node.current).map(node=>node.id))
  const [destination,setDestination]=useState<Scene>(scene)
  const route=useMemo(()=>{
   if(destination===scene)return [scene]
@@ -49,8 +51,9 @@ export function MemoryMap({save,scene,locale}:{save:StorySave;scene:Scene;locale
  const direction=first?copy(first==='home'?'从走廊左侧门返回转生居所。':first==='hall'?(scene==='home'?'从北侧门进入公共走廊。':'从南侧门回到公共走廊。'):'从走廊右侧门进入记忆服务点。',first==='home'?'Use the west door in the hall to return home.':first==='hall'?(scene==='home'?'Use the north door to enter the shared hall.':'Use the south exit to return to the shared hall.'):'Use the east door in the hall to enter memory service.'):copy('选择另一处已到访地点查看路线。','Select another visited place for directions.')
  return <div className="mm-atlas">
   <div className="mm-atlas-location"><span>{copy('你在这里','YOU ARE HERE')}</span><strong>{sceneLabels[scene][locale==='zh'?0:1]}</strong></div>
-  <div className="mm-atlas-viewport"><svg viewBox="0 0 100 100" aria-hidden="true">{links.map(([a,b])=><line key={a+b} x1={positions[a][0]} y1={positions[a][1]} x2={positions[b][0]} y2={positions[b][1]} data-open={visited.has(a)&&visited.has(b)}/>)}</svg>{(Object.keys(positions) as Scene[]).map(id=><button key={id} style={{left:`${positions[id][0]}%`,top:`${positions[id][1]}%`}} disabled={!visited.has(id)} aria-current={id===scene?'location':undefined} aria-pressed={id===destination} onClick={()=>setDestination(id)}><RoomPlan scene={id} known={visited.has(id)}/><span>{visited.has(id)?sceneLabels[id][locale==='zh'?0:1]:copy('未探索','Unexplored')}</span></button>)}</div>
-  <section className="mm-atlas-route"><small>{destination===scene?copy('当前位置','CURRENT LOCATION'):copy('前往','DESTINATION')}</small><strong>{sceneLabels[destination][locale==='zh'?0:1]}</strong><p>{reachable?direction:copy('这里尚未发现可用路线。','No known route reaches this place yet.')}</p>{route.length>1&&<ol>{route.slice(1).map((id,index)=><li key={id}><span>{index+1}</span>{sceneLabels[id][locale==='zh'?0:1]}</li>)}</ol>}</section>
+  <nav className="mm-atlas-tools"><button onClick={g.reset}>{copy('全图','Fit')}</button><button onClick={()=>g.locate(positions[scene][0]/100,positions[scene][1]/100)}>{copy('定位','Locate')}</button><button aria-label={copy('缩小地图','Zoom out')} disabled={g.zoom<=1} onClick={()=>g.scale(g.zoom-.25)}>−</button><button aria-label={copy('放大地图','Zoom in')} disabled={g.zoom>=3} onClick={()=>g.scale(g.zoom+.25)}>+</button></nav><p>{copy('拖动查看 · 双指缩放','Drag to explore · Pinch to zoom')}</p>
+  <div className="mm-atlas-viewport" ref={g.viewport} {...g.handlers}><div className="mm-atlas-world" ref={g.layer}><svg viewBox="0 0 100 100" aria-hidden="true">{links.map(([a,b])=><line key={a+b} x1={positions[a][0]} y1={positions[a][1]} x2={positions[b][0]} y2={positions[b][1]} data-open={visited.has(a)&&visited.has(b)}/>)}</svg>{(Object.keys(positions) as Scene[]).map(id=><button key={id} style={{left:`${positions[id][0]}%`,top:`${positions[id][1]}%`}} aria-disabled={!visited.has(id)} aria-current={id===scene?'location':undefined} aria-pressed={id===destination} onClick={()=>{if(visited.has(id))setDestination(id)}}><RoomPlan scene={id} known={visited.has(id)}/><span>{visited.has(id)?sceneLabels[id][locale==='zh'?0:1]:copy('未探索','Unexplored')}</span></button>)}</div></div>
+  <section className="mm-atlas-route"><small>{destination===scene?copy('当前位置','CURRENT LOCATION'):copy('前往','DESTINATION')}</small><strong>{sceneLabels[destination][locale==='zh'?0:1]}</strong><button className="mm-map-travel" disabled={busy||destination===scene||!reachable} onClick={()=>onTravel(destination)}>{busy?copy('正在前往…','Travelling…'):destination===scene?copy('你在这里','You are here'):!reachable?copy('首次到访后解锁','Visit once to unlock'):copy('前往这里','Go here')}</button><p>{reachable?direction:copy('这里尚未发现可用路线。','No known route reaches this place yet.')}</p>{route.length>1&&<ol>{route.slice(1).map((id,index)=><li key={id}><span>{index+1}</span>{sceneLabels[id][locale==='zh'?0:1]}</li>)}</ol>}</section>
  </div>
 }
 

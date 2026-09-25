@@ -295,3 +295,13 @@ html,body,#root{height:100%;overflow:hidden}
 .mm-atlas-viewport button .mm-room-plan{position:static;inset:auto;width:48px;height:62px;color:#91efac}
 .mm-atlas-viewport button[aria-current="location"] .mm-room-plan{color:#bcf5cd}
 @media(max-width:340px){.mm-atlas-viewport button{width:76px}.mm-atlas-viewport button .mm-room-plan{height:56px;width:43px}}
+
+.mm-atlas-tools{display:flex;gap:6px;margin:10px 0}.mm-atlas-tools button{min-width:44px;min-height:44px}.mm-atlas-viewport{overflow:hidden;touch-action:none;position:relative;cursor:grab}.mm-atlas-world{position:absolute;inset:0;transform-origin:center;will-change:transform}.mm-atlas-viewport button{touch-action:none}.mm-atlas-world>svg{position:absolute;inset:0;width:100%;height:100%}.mm-map-travel{width:100%;min-height:48px;background:#24513a!important;color:#d8ffe1!important;border:2px solid #8ccc97!important;font-weight:700}.mm-atlas-route{position:sticky;bottom:0;background:#0d241a;padding:12px!important}.mm-atlas-route>ol{max-height:85px;overflow:auto}.mm-atlas>p{font-size:12px}.mm-atlas-viewport button[aria-disabled=true]{opacity:.45}
+
+/* Keep the atlas and its action area in separate rows, never overlapping. */
+.mm-dialog[data-kind="map"]{height:min(760px,calc(100dvh - 16px));max-height:calc(100dvh - 16px)}
+.mm-dialog[data-kind="map"] .mm-dialog-body{display:flex;flex-direction:column;overflow:hidden;padding:10px;min-height:0;flex:1}
+.mm-atlas{display:flex;flex-direction:column;gap:8px;min-height:0;flex:1}
+.mm-atlas-location{flex:none;padding:5px 9px}.mm-atlas-tools{flex:none;margin:0}.mm-atlas>p{margin:0;flex:none}
+.mm-atlas-viewport{flex:1;min-height:170px;height:auto}.mm-atlas-route{position:static;flex:none;max-height:180px;overflow:auto;padding:8px!important}.mm-atlas-route p{font-size:12px;margin-top:6px}.mm-atlas-route>ol{flex-wrap:wrap;margin-top:6px;padding-top:6px}.mm-atlas-tools button{background:#143525;color:#d8ffe1;border:1px solid #69b686}.mm-atlas-tools button:disabled{opacity:.45}
+@media(max-height:650px){.mm-dialog[data-kind="map"]>header{padding-top:6px!important;padding-bottom:6px!important}.mm-dialog[data-kind="map"]>header small{display:none}.mm-atlas-location{display:none}.mm-atlas-route{max-height:160px}}
