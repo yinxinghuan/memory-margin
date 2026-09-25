@@ -305,3 +305,5 @@ html,body,#root{height:100%;overflow:hidden}
 .mm-atlas-location{flex:none;padding:5px 9px}.mm-atlas-tools{flex:none;margin:0}.mm-atlas>p{margin:0;flex:none}
 .mm-atlas-viewport{flex:1;min-height:170px;height:auto}.mm-atlas-route{position:static;flex:none;max-height:180px;overflow:auto;padding:8px!important}.mm-atlas-route p{font-size:12px;margin-top:6px}.mm-atlas-route>ol{flex-wrap:wrap;margin-top:6px;padding-top:6px}.mm-atlas-tools button{background:#143525;color:#d8ffe1;border:1px solid #69b686}.mm-atlas-tools button:disabled{opacity:.45}
 @media(max-height:650px){.mm-dialog[data-kind="map"]>header{padding-top:6px!important;padding-bottom:6px!important}.mm-dialog[data-kind="map"]>header small{display:none}.mm-atlas-location{display:none}.mm-atlas-route{max-height:160px}}
+
+.mm-action-entry{display:grid;gap:5px}.mm-action-entry>button{width:100%}.mm-action-reason{margin:0 0 8px;font-size:13px;line-height:1.5;color:#a0cbaa}.mm-action-entry>button:disabled{opacity:.5;cursor:default}
